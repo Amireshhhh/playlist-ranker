@@ -1,4 +1,4 @@
-# 🎧 Constraint-Aware Playlist Ranking System
+#  Constraint-Aware Playlist Ranking System
 
 > Production-grade playlist continuation system built on Spotify's Million Playlist Dataset, implementing multi-objective learning-to-rank with diversity, fatigue control, and exposure fairness constraints.
 
@@ -9,19 +9,19 @@
 
 ---
 
-## 🎯 What This Does
+##  What This Does
 
 Given a partial playlist, this system ranks candidate tracks to continue the playlist while:
-- ✅ Maximizing relevance (NDCG@10 > 0.35)
-- ✅ Preventing artist fatigue (repeat rate < 15%)
-- ✅ Ensuring diversity (artist entropy > 3.5)
-- ✅ Promoting exposure fairness (balanced popularity distribution)
+-  Maximizing relevance (NDCG@10 > 0.35)
+-  Preventing artist fatigue (repeat rate < 15%)
+-  Ensuring diversity (artist entropy > 3.5)
+-  Promoting exposure fairness (balanced popularity distribution)
 
 **Real-world application**: Powers playlist auto-continuation and recommendation systems at scale.
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 - Python 3.8+
@@ -99,7 +99,7 @@ curl -X POST "http://localhost:8000/rank" \
 
 ---
 
-## 📊 System Architecture
+##  System Architecture
 
 ```
 ┌─────────────────┐
@@ -134,7 +134,7 @@ curl -X POST "http://localhost:8000/rank" \
 
 ---
 
-## 🧪 Key Features
+##  Key Features
 
 ### 1. Multi-Objective Optimization
 Balances competing objectives through weighted loss:
@@ -173,7 +173,7 @@ FastAPI endpoint with:
 
 ---
 
-## 🗂️ Project Structure
+##  Project Structure
 
 ```
 playlist-ranker/
@@ -214,7 +214,7 @@ playlist-ranker/
 
 ---
 
-## 🔬 Technical Details
+##  Technical Details
 
 ### Dataset
 - **Source**: [Spotify Million Playlist Dataset](https://www.aicrowd.com/challenges/spotify-million-playlist-dataset-challenge)
@@ -247,7 +247,7 @@ Dense(1) → Score
 
 ---
 
-## 📚 API Documentation
+##  API Documentation
 
 ### Rank Endpoint
 
@@ -298,7 +298,7 @@ Returns API status and model info.
 
 ---
 
-## 🧪 Running Experiments
+##  Running Experiments
 
 ### Baseline (No Constraints)
 ```bash
@@ -320,7 +320,7 @@ python training/train.py --sweep --config training/sweep_config.yaml
 
 ---
 
-## 🐳 Docker Deployment
+##  Docker Deployment
 
 ```bash
 # Build image
@@ -335,7 +335,7 @@ docker run --gpus all -p 8000:8000 playlist-ranker:latest
 
 ---
 
-## 📊 Evaluation Metrics
+##  Evaluation Metrics
 
 ### Ranking Quality
 - **NDCG@K**: Normalized Discounted Cumulative Gain
@@ -350,7 +350,7 @@ docker run --gpus all -p 8000:8000 playlist-ranker:latest
 
 ---
 
-## 🎓 Use Cases
+##  Use Cases
 
 1. **Playlist Auto-Continuation**: Extend user playlists intelligently
 2. **Radio Stations**: Generate diverse radio streams
@@ -359,7 +359,7 @@ docker run --gpus all -p 8000:8000 playlist-ranker:latest
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions welcome! Please:
 1. Fork the repository
@@ -369,42 +369,3 @@ Contributions welcome! Please:
 5. Open a Pull Request
 
 ---
-
-## 📝 License
-
-This project is licensed under the MIT License - see [LICENSE](LICENSE) file.
-
----
-
-## 🙏 Acknowledgments
-
-- **Spotify** for the Million Playlist Dataset
-- **RecSys community** for research inspiration
-- **PyTorch team** for the framework
-
----
-
-## 📧 Contact
-
-**Your Name** - your.email@example.com
-
-Project Link: [https://github.com/yourusername/playlist-ranker](https://github.com/yourusername/playlist-ranker)
-
----
-
-## 📖 Citation
-
-If you use this code in your research, please cite:
-
-```bibtex
-@software{playlist_ranker_2026,
-  author = {Your Name},
-  title = {Constraint-Aware Playlist Ranking System},
-  year = {2026},
-  url = {https://github.com/yourusername/playlist-ranker}
-}
-```
-
----
-
-**Built with ❤️ for production-grade music recommendation**
