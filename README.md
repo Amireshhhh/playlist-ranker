@@ -32,7 +32,7 @@ Given a partial playlist, this system ranks candidate tracks to continue the pla
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/playlist-ranker.git
+git clone https://github.com/Amireshhhh/playlist-ranker.git
 cd playlist-ranker
 
 # Create virtual environment
