@@ -394,6 +394,6 @@ of these have been measured yet)
 ---
 
 **Document Version**: 1.0  
-**Last Updated**: January 2026  
-**Author**: [Your Name]  
-**Contact**: [Your Email]
+**Last Updated**: November 2026  
+**Author**: Amirreza Eshraghi  
+**Contact**: https://github.com/Amireshhhh

@@ -17,8 +17,7 @@ requirements = read_requirements("requirements.txt")
 setup(
     name="playlist-ranker",
     version="1.0.0",
-    author="Your Name",
-    author_email="your.email@example.com",
+    author="Amirreza Eshraghi",
     description="Constraint-aware playlist ranking system using Spotify-scale data",
     long_description=long_description,
     long_description_content_type="text/markdown",
