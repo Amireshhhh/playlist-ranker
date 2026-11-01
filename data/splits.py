@@ -8,11 +8,14 @@ import json
 import random
 import argparse
 from pathlib import Path
-from typing import List, Dict, Tuple
+from typing import List, Dict
 from collections import defaultdict
 import logging
 
-from mpd_loader import MPDLoader
+try:  # run as a script: python data/splits.py
+    from mpd_loader import MPDLoader
+except ImportError:  # imported as a package module: data.splits
+    from data.mpd_loader import MPDLoader
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -48,7 +51,8 @@ class SplitGenerator:
         assert abs(train_ratio + val_ratio + test_ratio - 1.0) < 1e-6, \
             "Split ratios must sum to 1.0"
         
-        random.seed(seed)
+        self.rng = random.Random(seed)
+        self.playlists: List[Dict] = []
     
     def generate_prefix_continuation_pairs(
         self,
@@ -139,7 +143,8 @@ class SplitGenerator:
         logger.info(f"Total playlists: {len(playlists)}")
         
         # Shuffle playlists
-        random.shuffle(playlists)
+        self.rng.shuffle(playlists)
+        self.playlists = playlists
         
         # Split indices
         n = len(playlists)
@@ -193,16 +198,20 @@ class SplitGenerator:
         with open(metadata_file, 'w', encoding='utf-8') as f:
             json.dump(metadata, f, indent=2)
         
-        logger.info(f"\nSplit generation complete!")
+        logger.info("\nSplit generation complete!")
         logger.info(f"Output directory: {output_path}")
     
     def build_track_artist_mapping(self, output_dir: str):
         """
-        Build global track->artist and artist->tracks mappings.
-        
+        Build track->artist and artist->tracks mappings for the playlists used in
+        the splits (the same set selected by --max-playlists), so the mappings and
+        the splits always describe the same data.
+
         Args:
             output_dir: Directory to save mappings
         """
+        if not self.playlists:
+            raise RuntimeError("generate_splits() must run before build_track_artist_mapping()")
         logger.info("Building track-artist mappings...")
         
         track_to_artist = {}
@@ -210,7 +219,7 @@ class SplitGenerator:
         track_names = {}
         artist_names = {}
         
-        for playlist in self.mpd_loader.iter_playlists():
+        for playlist in self.playlists:
             for track in playlist['tracks']:
                 track_uri = track['track_uri']
                 artist_uri = track['artist_uri']
@@ -238,7 +247,7 @@ class SplitGenerator:
         with open(output_path / "artist_names.json", 'w') as f:
             json.dump(artist_names, f)
         
-        logger.info(f"Saved mappings:")
+        logger.info("Saved mappings:")
         logger.info(f"  Tracks: {len(track_to_artist)}")
         logger.info(f"  Artists: {len(artist_to_tracks)}")
 

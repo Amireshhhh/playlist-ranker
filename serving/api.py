@@ -4,11 +4,14 @@ FastAPI Application for Playlist Ranking Service
 Production-ready API for serving ranking predictions.
 """
 
-import json
+import os
 import time
+from collections import Counter
 from pathlib import Path
 from typing import List, Dict, Optional
 import logging
+
+from contextlib import asynccontextmanager
 
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
@@ -19,6 +22,7 @@ import sys
 sys.path.append(str(Path(__file__).parent.parent))
 
 from models.ranker import RankingModel
+from models.rerank import rerank as _rerank
 from features.build_features import FeatureBuilder
 from evaluation.metrics import PlaylistHealthMetrics
 
@@ -26,14 +30,29 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Initialize FastAPI app
+@asynccontextmanager
+async def lifespan(_app):
+    await load_model()
+    yield
+
+
 app = FastAPI(
+    lifespan=lifespan,
     title="Playlist Ranking API",
     description="Constraint-aware playlist continuation with diversity and fairness",
     version="1.0.0"
 )
 
+# Paths can be overridden with environment variables.
+MODEL_PATH = Path(os.environ.get("MODEL_PATH", "./checkpoints/full_constraints/best_model.pt"))
+DATA_DIR = Path(os.environ.get("DATA_DIR", "./data/processed"))
+
+# Constraint weights accepted by /rank at inference time (see _rerank).
+SUPPORTED_CONSTRAINTS = {"fatigue", "diversity"}
+
 # Global model and feature builder (loaded on startup)
 model = None
+model_trained = False
 feature_builder = None
 device = None
 
@@ -52,7 +71,11 @@ class RankRequest(BaseModel):
     top_k: int = Field(10, description="Number of tracks to return", ge=1, le=100)
     constraint_weights: Optional[Dict[str, float]] = Field(
         None,
-        description="Custom constraint weights {fatigue, diversity, exposure}"
+        description=(
+            "Optional re-ranking weights, keys 'fatigue' and/or 'diversity' (>= 0). "
+            "fatigue penalises artists from the last 5 prefix tracks; diversity penalises "
+            "each earlier pick of the same artist. Weights are in units of score standard deviations."
+        )
     )
 
 
@@ -79,10 +102,9 @@ class RankResponse(BaseModel):
     metadata: Dict
 
 
-@app.on_event("startup")
 async def load_model():
     """Load model and feature builder on startup."""
-    global model, feature_builder, device
+    global model, model_trained, feature_builder, device
     
     logger.info("Loading model and feature builder...")
     
@@ -91,29 +113,29 @@ async def load_model():
     logger.info(f"Using device: {device}")
     
     # Load model
-    model_path = Path("./checkpoints/full_constraints/best_model.pt")
-    
-    if model_path.exists():
-        logger.info(f"Loading model from {model_path}")
-        checkpoint = torch.load(model_path, map_location=device)
-        
-        model = RankingModel(input_dim=32, hidden_dims=[128, 64, 32])
+    if MODEL_PATH.exists():
+        logger.info(f"Loading model from {MODEL_PATH}")
+        checkpoint = torch.load(MODEL_PATH, map_location=device, weights_only=True)
+        cfg = checkpoint.get('config', {})
+
+        model = RankingModel(
+            input_dim=cfg.get('input_dim', 32),
+            hidden_dims=cfg.get('hidden_dims', [128, 64, 32]),
+            dropout=cfg.get('dropout', 0.3),
+        )
         model.load_state_dict(checkpoint['model_state_dict'])
-        model.to(device)
-        model.eval()
-        
+        model_trained = True
         logger.info("Model loaded successfully")
     else:
-        logger.warning(f"Model not found at {model_path}")
-        logger.info("Creating dummy model for demonstration")
-        
+        logger.warning(f"Model not found at {MODEL_PATH}; using an UNTRAINED model (scores are meaningless)")
         model = RankingModel(input_dim=32, hidden_dims=[128, 64, 32])
-        model.to(device)
-        model.eval()
-    
+        model_trained = False
+    model.to(device)
+    model.eval()
+
     # Load feature builder
-    data_dir = Path("./data/processed")
-    if data_dir.exists():
+    data_dir = DATA_DIR
+    if (data_dir / "track_to_artist.json").exists():
         feature_builder = FeatureBuilder(data_dir=str(data_dir))
         logger.info("Feature builder loaded")
     else:
@@ -144,6 +166,7 @@ async def health_check():
     return {
         "status": "healthy",
         "model_loaded": model is not None,
+        "model_trained": model_trained,
         "feature_builder_loaded": feature_builder is not None,
         "device": str(device)
     }
@@ -161,144 +184,90 @@ async def rank_tracks(request: RankRequest):
         RankResponse with ranked tracks and diagnostics
     """
     start_time = time.time()
-    
+
+    # Validate inputs (outside the try block, so these stay 400s)
+    if not request.playlist_prefix:
+        raise HTTPException(status_code=400, detail="playlist_prefix cannot be empty")
+    weights = request.constraint_weights or {}
+    unknown = set(weights) - SUPPORTED_CONSTRAINTS
+    if unknown:
+        raise HTTPException(
+            status_code=400,
+            detail=f"Unsupported constraint_weights keys: {sorted(unknown)}. Supported: {sorted(SUPPORTED_CONSTRAINTS)}",
+        )
+    if any(v < 0 for v in weights.values()):
+        raise HTTPException(status_code=400, detail="constraint_weights must be >= 0")
+
     try:
-        # Validate inputs
-        if not request.playlist_prefix:
-            raise HTTPException(status_code=400, detail="playlist_prefix cannot be empty")
-        
-        # Convert prefix to track dicts
+        artist_of = (lambda t: feature_builder.track_to_artist.get(t, 'unknown')) if feature_builder else (lambda t: 'unknown')
+
         prefix = [
-            {
-                'track_uri': track_uri,
-                'artist_uri': feature_builder.track_to_artist.get(track_uri, 'unknown') if feature_builder else 'unknown',
-                'pos': i
-            }
+            {'track_uri': track_uri, 'artist_uri': artist_of(track_uri), 'pos': i}
             for i, track_uri in enumerate(request.playlist_prefix)
         ]
-        
+
         # Get candidates
         if request.candidate_tracks:
-            candidates = request.candidate_tracks
+            candidates = list(dict.fromkeys(request.candidate_tracks))  # de-duplicate, keep order
+        elif feature_builder:
+            candidates = feature_builder.candidates_from_cooccurrence(request.playlist_prefix, top_n=100)
         else:
-            # Use co-occurrence to get candidates
-            if feature_builder:
-                candidates = _get_candidates_from_cooccurrence(
-                    request.playlist_prefix,
-                    feature_builder,
-                    top_n=100
-                )
-            else:
-                # Mock candidates
-                candidates = [f"track_{i}" for i in range(100)]
-        
-        # Extract features and score
-        scores = []
-        
-        if model and feature_builder:
-            for candidate in candidates:
-                features = feature_builder.extract_features(prefix, candidate)
-                features_tensor = torch.tensor(features, dtype=torch.float32).unsqueeze(0).to(device)
-                
-                with torch.no_grad():
-                    score = model(features_tensor).item()
-                
-                scores.append(score)
+            candidates = [f"track_{i}" for i in range(100)]  # mock candidates
+
+        # Score all candidates in one forward pass
+        if feature_builder and candidates:
+            features = np.stack([feature_builder.extract_features(prefix, c) for c in candidates])
+            with torch.no_grad():
+                scores = model(torch.from_numpy(features).to(device)).squeeze(-1).cpu().tolist()
+            mock = False
         else:
-            # Mock scores
             scores = np.random.rand(len(candidates)).tolist()
-        
-        # Rank by score
-        ranked_indices = np.argsort(scores)[::-1]
-        
-        # Get top-K
+            mock = True
+
+        recent_artists = {t['artist_uri'] for t in prefix[-5:]}
         top_k = min(request.top_k, len(candidates))
-        top_indices = ranked_indices[:top_k]
-        
-        # Build response
-        ranked_tracks = []
-        for rank, idx in enumerate(top_indices):
-            track_uri = candidates[idx]
-            artist_uri = feature_builder.track_to_artist.get(track_uri, 'unknown') if feature_builder else 'unknown'
-            
-            ranked_tracks.append(RankedTrack(
-                track_uri=track_uri,
-                score=scores[idx],
-                artist_uri=artist_uri,
-                rank=rank + 1
-            ))
-        
-        # Compute diagnostics
+        order = _rerank(
+            scores,
+            [artist_of(c) for c in candidates],
+            recent_artists,
+            top_k,
+            fatigue=weights.get('fatigue', 0.0),
+            diversity=weights.get('diversity', 0.0),
+        )
+
+        ranked_tracks = [
+            RankedTrack(track_uri=candidates[i], score=scores[i], artist_uri=artist_of(candidates[i]), rank=r + 1)
+            for r, i in enumerate(order)
+        ]
+
         artist_ids = [t.artist_uri for t in ranked_tracks]
-        
         diagnostics = Diagnostics(
             artist_entropy=PlaylistHealthMetrics.artist_entropy(artist_ids),
             repeat_rate=PlaylistHealthMetrics.repeat_rate(artist_ids),
             artist_coverage=PlaylistHealthMetrics.artist_coverage(artist_ids),
-            gini_coefficient=None  # Can be computed if needed
+            gini_coefficient=(
+                float(PlaylistHealthMetrics.gini_coefficient(list(Counter(artist_ids).values())))
+                if artist_ids else None
+            ),
         )
-        
-        # Metadata
-        processing_time_ms = (time.time() - start_time) * 1000
-        
+
         metadata = {
             "num_candidates": len(candidates),
-            "processing_time_ms": round(processing_time_ms, 2),
+            "processing_time_ms": round((time.time() - start_time) * 1000, 2),
             "prefix_length": len(request.playlist_prefix),
-            "model_version": "1.0.0"
+            "model_version": "1.0.0",
+            "model_trained": model_trained,
+            "mock_scores": mock,
+            "constraint_weights_applied": {k: float(v) for k, v in weights.items()},
         }
-        
-        return RankResponse(
-            ranked_tracks=ranked_tracks,
-            diagnostics=diagnostics,
-            metadata=metadata
-        )
-    
+
+        return RankResponse(ranked_tracks=ranked_tracks, diagnostics=diagnostics, metadata=metadata)
+
+    except HTTPException:
+        raise
     except Exception as e:
-        logger.error(f"Error in rank_tracks: {e}")
-        raise HTTPException(status_code=500, detail=str(e))
-
-
-def _get_candidates_from_cooccurrence(
-    prefix_tracks: List[str],
-    feature_builder: FeatureBuilder,
-    top_n: int = 100
-) -> List[str]:
-    """
-    Get candidate tracks using co-occurrence.
-    
-    Args:
-        prefix_tracks: Tracks in the prefix
-        feature_builder: FeatureBuilder instance
-        top_n: Number of candidates to return
-        
-    Returns:
-        List of candidate track URIs
-    """
-    candidate_scores = {}
-    
-    for prefix_track in prefix_tracks:
-        cooccur_tracks = feature_builder.track_cooccurrence.get(prefix_track, {})
-        
-        for track, count in cooccur_tracks.items():
-            if track not in prefix_tracks:
-                candidate_scores[track] = candidate_scores.get(track, 0) + count
-    
-    # Sort by score and take top-N
-    sorted_candidates = sorted(candidate_scores.items(), key=lambda x: x[1], reverse=True)
-    
-    candidates = [track for track, score in sorted_candidates[:top_n]]
-    
-    # Fill up to top_n with random tracks if needed
-    if len(candidates) < top_n and feature_builder.track_frequencies:
-        all_tracks = list(feature_builder.track_frequencies.keys())
-        additional_needed = top_n - len(candidates)
-        
-        candidate_set = set(candidates) | set(prefix_tracks)
-        additional_tracks = [t for t in all_tracks if t not in candidate_set][:additional_needed]
-        candidates.extend(additional_tracks)
-    
-    return candidates
+        logger.exception("Error in rank_tracks")
+        raise HTTPException(status_code=500, detail=f"{type(e).__name__}: {e}")
 
 
 def main():
@@ -308,10 +277,9 @@ def main():
     logger.info("Starting Playlist Ranking API...")
     
     uvicorn.run(
-        "api:app",
-        host="0.0.0.0",
-        port=8000,
-        reload=True
+        "serving.api:app",
+        host=os.environ.get("HOST", "0.0.0.0"),
+        port=int(os.environ.get("PORT", "8000")),
     )
 
 

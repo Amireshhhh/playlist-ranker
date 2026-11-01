@@ -11,6 +11,7 @@ echo ""
 # Check Python version
 echo "Checking Python version..."
 python --version
+python -c 'import sys; assert sys.version_info >= (3, 10), "Python 3.10+ required"'
 
 # Create virtual environment
 if [ ! -d "venv" ]; then
@@ -25,7 +26,7 @@ source venv/bin/activate
 # Install dependencies
 echo "Installing dependencies..."
 pip install --upgrade pip
-pip install -r requirements.txt
+pip install -r requirements-dev.txt
 pip install -e .
 
 echo ""
@@ -56,9 +57,13 @@ echo ""
 echo "  2. Train full model with constraints:"
 echo "     python training/train.py --experiment full_constraints"
 echo ""
-echo "  3. Start API server:"
+echo "  3. Evaluate both on the test split:"
+echo "     python evaluation/evaluate.py --checkpoint baseline=checkpoints/baseline/best_model.pt \\"
+echo "         --checkpoint full=checkpoints/full_constraints/best_model.pt"
+echo ""
+echo "  4. Start API server:"
 echo "     uvicorn serving.api:app --reload"
 echo ""
-echo "  4. Visit http://localhost:8000/docs for interactive API"
+echo "  5. Visit http://localhost:8000/docs for interactive API"
 echo ""
 echo "=============================================="

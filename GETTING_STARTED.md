@@ -2,339 +2,184 @@
 
 ## 🎯 Overview
 
-This guide will walk you through setting up and running the Constraint-Aware Playlist Ranking System from scratch.
+This guide walks you through setting up and running the Constraint-Aware Playlist Ranking System from scratch: data, features, training, evaluation and the API.
 
 ## 📋 Prerequisites
 
-- Python 3.8 or higher
-- 8GB RAM minimum
-- 20GB disk space (for full dataset) or 1GB (for sample)
-- Git (for cloning repository)
+- Python 3.10 or newer (tested on 3.11 and 3.13)
+- Git
 
 ## 🚀 Installation
 
-### Option 1: Quick Start (Recommended for Demo)
+### Option 1: Quick Start (sample data)
 
 ```bash
-# Clone repository
-git clone https://github.com/yourusername/playlist-ranker.git
+git clone https://github.com/Amireshhhh/playlist-ranker.git
 cd playlist-ranker
 
-# Run quick start script
 chmod +x quickstart.sh
 ./quickstart.sh
 ```
 
 This will:
-- Create virtual environment
-- Install dependencies
-- Generate sample data (1000 playlists)
+- Create a virtual environment (`venv/`)
+- Install the dependencies and the package
+- Generate synthetic sample data (1,000 playlists over a 400-track catalog)
 - Create train/val/test splits
 - Build features
 
 ### Option 2: Manual Setup
 
 ```bash
-# Create virtual environment
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-# Install dependencies
-pip install -r requirements.txt
+pip install -r requirements-dev.txt
 pip install -e .
 
-# Generate sample data
 python data/mpd_loader.py --sample
-
-# Create splits
 python data/splits.py --input-dir ./data/mpd --output-dir ./data/processed --max-playlists 1000
-
-# Build features
 python features/build_features.py --data-dir ./data/processed
 ```
 
-## 📊 Using Full Spotify Dataset (Optional)
+## 📊 Using the Full Spotify Dataset
 
-For production-scale experiments:
+1. **Download** the dataset from https://www.aicrowd.com/challenges/spotify-million-playlist-dataset-challenge
+   (free account; `python data/mpd_loader.py --download` prints the steps).
 
-1. **Download Dataset**
-   - Visit: https://www.aicrowd.com/challenges/spotify-million-playlist-dataset-challenge
-   - Create account (free)
-   - Download: `spotify_million_playlist_dataset.zip` (~5GB)
-
-2. **Extract Data**
+2. **Extract** it into `./data/mpd`:
    ```bash
    unzip spotify_million_playlist_dataset.zip -d ./data/mpd
    ```
+   Remove the sample file `data/mpd/mpd.slice.0-999.json` first if you generated sample data:
+   the loader reads every `*.json` file under `data/mpd`.
 
-3. **Process Full Dataset**
+3. **Process** it:
    ```bash
-   # This will take 10-30 minutes
    python data/splits.py --input-dir ./data/mpd --output-dir ./data/processed
    python features/build_features.py --data-dir ./data/processed
    ```
+   Use `--max-playlists N` on `splits.py` to work with a subset first.
 
 ## 🏋️ Training Models
 
-### Train Baseline (No Constraints)
+### Baseline (no constraints)
 
 ```bash
-python training/train.py \
-  --experiment baseline \
-  --no-constraints \
-  --data-dir ./data/processed \
-  --checkpoint-dir ./checkpoints
+python training/train.py --experiment baseline --no-constraints
 ```
 
-**Expected output:**
-```
-Epoch 1/50
-  Train - Total: 0.4523, Rank: 0.4523
-  Val   - Total: 0.4201, Rank: 0.4201
-...
-✓ Saved best model (val_loss: 0.3801)
-```
-
-### Train Full Model (With Constraints)
+### Full model (with constraints)
 
 ```bash
-python training/train.py \
-  --experiment full_constraints \
-  --data-dir ./data/processed \
-  --checkpoint-dir ./checkpoints
+python training/train.py --experiment full_constraints
 ```
 
-**Expected output:**
+Checkpoints go to `checkpoints/<experiment>/best_model.pt` (best validation loss). Each epoch logs every loss component and the validation NDCG@10, for example:
+
 ```
-Epoch 1/50
-  Train - Total: 0.4821, Rank: 0.4312, Fatigue: 0.0321, Diversity: 0.0188
-  Val   - Total: 0.4512, Rank: 0.4021, Fatigue: 0.0298, Diversity: 0.0193
-...
+INFO:__main__:Epoch 2/50  lr=1.00e-03
+INFO:__main__:  Train - Total: 0.2465, Rank: 0.2823, Fatigue: 0.5743, Diversity: -1.9173, Exposure: 0.0894
+INFO:__main__:  Val   - Total: 0.1749, Rank: 0.2083, Fatigue: 0.5986, Diversity: -1.9169, Exposure: 0.0842, NDCG@10: 0.6140
 ```
 
-**Training time:**
-- Sample data (1000 playlists): ~5-10 minutes
-- Full dataset (1M playlists): ~2-4 hours (GPU) or ~8-12 hours (CPU)
+Use `--epochs N` to override the configured number of epochs.
+
+## 📈 Evaluation
+
+```bash
+python evaluation/evaluate.py \
+  --checkpoint baseline=checkpoints/baseline/best_model.pt \
+  --checkpoint full=checkpoints/full_constraints/best_model.pt \
+  --fatigue 0.5 --diversity 0.5 \
+  --output results.json
+```
+
+For each test prefix this retrieves 100 candidates by co-occurrence, ranks them with every checkpoint (and with re-ranking when `--fatigue`/`--diversity` are set), and reports NDCG@10, Recall@10, MRR and the playlist-health metrics of the top 10. The README's "Results" section shows the numbers for the sample data.
 
 ## 🧪 Testing
 
-Run unit tests:
+```bash
+pytest tests/
+```
+
+## 🌐 Running the API Server
 
 ```bash
-pytest tests/ -v
+uvicorn serving.api:app --host 0.0.0.0 --port 8000
+# or, after pip install -e .:
+playlist-ranker
 ```
 
-Expected output:
-```
-tests/test_model.py::TestRankingModel::test_model_creation PASSED
-tests/test_model.py::TestRankingModel::test_forward_pass PASSED
-...
-========== 15 passed in 2.34s ==========
-```
-
-## 🌐 Running API Server
-
-### Start Server
-
-```bash
-uvicorn serving.api:app --host 0.0.0.0 --port 8000 --reload
-```
-
-Server will be available at:
 - API: http://localhost:8000
-- Interactive Docs: http://localhost:8000/docs
-- Health Check: http://localhost:8000/health
+- Interactive docs: http://localhost:8000/docs
+- Health check: http://localhost:8000/health
 
-### Test API
+The server loads `checkpoints/full_constraints/best_model.pt` and `data/processed/` (override with `MODEL_PATH` and `DATA_DIR`). `/health` reports `"model_trained": false` if no checkpoint was found.
 
-**Using curl:**
+### Test the API
+
+Use track URIs that exist in your data (for the sample data, e.g. `spotify:track:artist_3_0`):
 
 ```bash
 curl -X POST "http://localhost:8000/rank" \
   -H "Content-Type: application/json" \
   -d '{
-    "playlist_prefix": ["track_1", "track_2", "track_3"],
-    "top_k": 10
+    "playlist_prefix": ["spotify:track:artist_3_0", "spotify:track:artist_3_1"],
+    "top_k": 10,
+    "constraint_weights": {"fatigue": 0.5, "diversity": 0.5}
   }'
 ```
 
-**Using Python:**
-
-```python
-import requests
-
-response = requests.post(
-    "http://localhost:8000/rank",
-    json={
-        "playlist_prefix": ["track_1", "track_2", "track_3"],
-        "top_k": 10
-    }
-)
-
-print(response.json())
-```
-
-**Expected response:**
-
-```json
-{
-  "ranked_tracks": [
-    {
-      "track_uri": "spotify:track:abc123",
-      "score": 0.87,
-      "artist_uri": "spotify:artist:xyz456",
-      "rank": 1
-    }
-  ],
-  "diagnostics": {
-    "artist_entropy": 3.72,
-    "repeat_rate": 0.12,
-    "artist_coverage": 0.80
-  },
-  "metadata": {
-    "num_candidates": 100,
-    "processing_time_ms": 45.2
-  }
-}
-```
-
-## 📓 Running Jupyter Notebooks
-
-```bash
-# Start Jupyter
-jupyter notebook notebooks/demo.ipynb
-```
-
-The demo notebook includes:
-- Data exploration
-- Feature visualization
-- Model inference
-- Evaluation metrics
-- Playlist health analysis
-
 ## 🐳 Docker Deployment
 
-Build and run with Docker:
-
 ```bash
-# Build image
-docker build -t playlist-ranker:latest -f serving/Dockerfile .
-
-# Run container
-docker run -p 8000:8000 playlist-ranker:latest
-
-# Test
+docker build -f serving/Dockerfile -t playlist-ranker .
+docker run -p 8000:8000 \
+  -v "$PWD/checkpoints:/app/checkpoints" \
+  -v "$PWD/data/processed:/app/data/processed" \
+  playlist-ranker
 curl http://localhost:8000/health
-```
-
-## 📈 Evaluation
-
-Evaluate trained model:
-
-```python
-from evaluation.metrics import EvaluationSuite
-import json
-
-# Load test data
-with open('./data/processed/test_features.json', 'r') as f:
-    test_data = json.load(f)
-
-# Initialize evaluator
-evaluator = EvaluationSuite()
-
-# Run evaluation
-# (see notebooks/demo.ipynb for complete example)
 ```
 
 ## 🎨 Customization
 
-### Adjust Constraint Weights
+### Constraint weights (training)
 
-Edit `training/config.yaml`:
-
-```yaml
-lambda_fatigue: 0.1      # Increase to penalize artist repetition more
-lambda_diversity: 0.05   # Increase for more diversity
-lambda_exposure: 0.03    # Increase for more fairness
-```
-
-### Change Model Architecture
-
-Edit `training/config.yaml`:
+`training/config.yaml`:
 
 ```yaml
-hidden_dims: [256, 128, 64]  # Larger model
-dropout: 0.4                  # More regularization
+lambda_fatigue: 0.1      # mass on artists from the last 5 prefix tracks
+lambda_diversity: 0.05   # negative entropy of the soft artist distribution
+lambda_exposure: 0.03    # distance from the artist popularity prior
+temperature: 1.0         # softmax temperature of the soft ranking distribution
 ```
 
-### Modify Features
+### Constraint weights (inference)
 
-Edit `features/build_features.py` to add custom features.
+Pass `constraint_weights` (`fatigue`, `diversity`) to `/rank`, or `--fatigue` / `--diversity` to `evaluation/evaluate.py`.
+
+### Model architecture
+
+```yaml
+hidden_dims: [256, 128, 64]
+dropout: 0.4
+```
+
+### Features
+
+Edit `FeatureBuilder.extract_features` in `features/build_features.py`; keep the vector at `input_dim` (32) values or change `input_dim` in the config.
 
 ## 🐛 Troubleshooting
 
-### Issue: "No JSON files found"
+**"No JSON files found"**: generate sample data (`python data/mpd_loader.py --sample`) or extract the MPD into `data/mpd`.
 
-**Solution:** Run data generation:
-```bash
-python data/mpd_loader.py --sample
-```
+**`FileNotFoundError: ... artist_popularity.json` when training**: run `python features/build_features.py` first.
 
-### Issue: "Model not found"
+**`/health` shows `"model_trained": false`**: train a model (`python training/train.py --experiment full_constraints`) or set `MODEL_PATH`.
 
-**Solution:** Train model first:
-```bash
-python training/train.py --experiment baseline
-```
-
-### Issue: "Out of memory"
-
-**Solution:** Reduce batch size in `training/config.yaml`:
-```yaml
-batch_size: 256  # Default is 512
-```
-
-### Issue: "API returns 500 error"
-
-**Solution:** Check logs and ensure model is trained:
-```bash
-python training/train.py --experiment full_constraints
-```
-
-## 📊 Expected Performance
-
-### Sample Data (1000 playlists)
-- NDCG@10: ~0.30-0.35
-- Training time: 5-10 minutes
-- API latency: <50ms
-
-### Full Dataset (1M playlists)
-- NDCG@10: ~0.35-0.40
-- Training time: 2-4 hours (GPU)
-- API latency: <100ms
-
-## 📝 Next Steps
-
-1. **Experiment with constraints:** Try different λ values
-2. **Add features:** Extend feature engineering
-3. **Deploy:** Use Docker for production
-4. **Monitor:** Add MLflow/W&B tracking
-5. **Scale:** Implement batch prediction
-
-## 🤝 Contributing
-
-See CONTRIBUTING.md (to be created) for guidelines.
-
-## 📧 Support
-
-For issues or questions:
-- GitHub Issues: https://github.com/yourusername/playlist-ranker/issues
-- Email: your.email@example.com
+**Out of memory**: lower `batch_size` (groups per batch) in `training/config.yaml`, or use `--max-playlists`.
 
 ## 📄 License
 
-MIT License - see LICENSE file.
-
----
-
-**Built with ❤️ for production-grade music recommendation**
+MIT License, see LICENSE.

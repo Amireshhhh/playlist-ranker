@@ -7,7 +7,7 @@ Extracts features from prefix-continuation pairs for training and inference.
 import json
 import argparse
 from pathlib import Path
-from typing import Dict, List, Tuple
+from typing import Dict, List
 from collections import defaultdict, Counter
 import logging
 import numpy as np
@@ -19,14 +19,19 @@ logger = logging.getLogger(__name__)
 class FeatureBuilder:
     """Build features for (prefix, candidate_track) pairs."""
     
-    def __init__(self, data_dir: str):
+    def __init__(self, data_dir: str, seed: int = 42):
         """
         Initialize feature builder.
         
         Args:
             data_dir: Directory containing processed splits and mappings
+            seed: Seed for negative sampling
         """
         self.data_dir = Path(data_dir)
+        self.rng = np.random.default_rng(seed)
+        # Training pairs grouped by playlist, kept so train features can be computed
+        # with that playlist's own contribution removed (see build_feature_dataset).
+        self.train_pairs_by_playlist: Dict[int, List[Dict]] = defaultdict(list)
         
         # Load mappings
         logger.info("Loading track-artist mappings...")
@@ -59,26 +64,70 @@ class FeatureBuilder:
         logger.info(f"Processing {len(train_pairs)} training pairs...")
         
         for pair in train_pairs:
-            prefix_tracks = [t['track_uri'] for t in pair['prefix']]
-            continuation_tracks = [t['track_uri'] for t in pair['continuation']]
-            
-            # Track frequencies
-            for track in prefix_tracks + continuation_tracks:
-                self.track_frequencies[track] += 1
-                artist = self.track_to_artist.get(track)
-                if artist:
-                    self.artist_frequencies[artist] += 1
-            
-            # Co-occurrence: tracks in prefix with tracks in continuation
-            for prefix_track in prefix_tracks:
-                for cont_track in continuation_tracks:
-                    self.track_cooccurrence[prefix_track][cont_track] += 1
+            self.train_pairs_by_playlist[pair['playlist_id']].append(pair)
+        self._apply_pairs(train_pairs, +1)
         
-        logger.info(f"Built statistics:")
+        logger.info("Built statistics:")
         logger.info(f"  Unique tracks: {len(self.track_frequencies)}")
         logger.info(f"  Unique artists: {len(self.artist_frequencies)}")
         logger.info(f"  Co-occurrence pairs: {sum(len(v) for v in self.track_cooccurrence.values())}")
     
+    def _apply_pairs(self, pairs: List[Dict], sign: int):
+        """Add (sign=+1) or remove (sign=-1) the statistics contributed by `pairs`."""
+        for pair in pairs:
+            prefix_tracks = [t['track_uri'] for t in pair['prefix']]
+            continuation_tracks = [t['track_uri'] for t in pair['continuation']]
+
+            # Track and artist frequencies
+            for track in prefix_tracks + continuation_tracks:
+                self.track_frequencies[track] += sign
+                artist = self.track_to_artist.get(track)
+                if artist:
+                    self.artist_frequencies[artist] += sign
+
+            # Co-occurrence: tracks in prefix with tracks in continuation
+            for prefix_track in prefix_tracks:
+                row = self.track_cooccurrence[prefix_track]
+                for cont_track in continuation_tracks:
+                    row[cont_track] += sign
+
+    @staticmethod
+    def _freq(counter: Counter, key) -> int:
+        """Frequency with a floor of 1, so unseen and left-out items are treated alike."""
+        return max(counter.get(key, 0), 1)
+
+    def artist_popularity(self) -> Dict[str, float]:
+        """Share of training track occurrences belonging to each artist (sums to 1)."""
+        total = sum(v for v in self.artist_frequencies.values() if v > 0)
+        if total == 0:
+            return {}
+        return {a: v / total for a, v in self.artist_frequencies.items() if v > 0}
+
+    def candidates_from_cooccurrence(self, prefix_tracks: List[str], top_n: int = 100) -> List[str]:
+        """
+        Candidate generation: tracks that co-occurred with the prefix tracks in the
+        training data, ranked by summed co-occurrence count. If fewer than top_n are
+        found, the list is filled with the most frequent training tracks.
+        Prefix tracks are never returned.
+        """
+        prefix_set = set(prefix_tracks)
+        candidate_scores: Counter = Counter()
+        for prefix_track in prefix_tracks:
+            for track, count in self.track_cooccurrence.get(prefix_track, {}).items():
+                if count > 0 and track not in prefix_set:
+                    candidate_scores[track] += count
+
+        candidates = [t for t, _ in candidate_scores.most_common(top_n)]
+        if len(candidates) < top_n:
+            chosen = set(candidates) | prefix_set
+            for track, count in self.track_frequencies.most_common():
+                if len(candidates) >= top_n:
+                    break
+                if count > 0 and track not in chosen:
+                    candidates.append(track)
+                    chosen.add(track)
+        return candidates
+
     def extract_features(
         self,
         prefix: List[Dict],
@@ -139,11 +188,11 @@ class FeatureBuilder:
         
         # === Popularity Features ===
         # Candidate track frequency (log scale)
-        track_freq = self.track_frequencies.get(candidate_track, 1)
+        track_freq = self._freq(self.track_frequencies, candidate_track)
         features.append(np.log1p(track_freq))
         
         # Candidate artist frequency (log scale)
-        artist_freq = self.artist_frequencies.get(candidate_artist, 1)
+        artist_freq = self._freq(self.artist_frequencies, candidate_artist)
         features.append(np.log1p(artist_freq))
         
         # Popularity ratio (track vs artist)
@@ -183,7 +232,7 @@ class FeatureBuilder:
         features.append(max_artist_count)
         
         # Average track popularity in prefix
-        prefix_popularities = [self.track_frequencies.get(t, 1) for t in prefix_track_uris]
+        prefix_popularities = [self._freq(self.track_frequencies, t) for t in prefix_track_uris]
         avg_prefix_popularity = np.mean(prefix_popularities) if prefix_popularities else 0
         features.append(np.log1p(avg_prefix_popularity))
         
@@ -212,7 +261,18 @@ class FeatureBuilder:
     ):
         """
         Build feature dataset for a split.
-        
+
+        Every (prefix, continuation) pair becomes one *group*: its continuation
+        tracks are positives (label 1), and `num_negatives` random tracks per
+        positive are negatives (label 0). Records carry the group id and artist,
+        which the constraint losses need during training.
+
+        For the train split, the statistics used for a playlist's pairs are computed
+        with all of that playlist's pairs removed (leave-one-playlist-out). Without
+        this, each positive would be counted in its own co-occurrence feature, which
+        leaks the label: the model then learns "co-occurrence > 0 means positive",
+        a signal that does not exist for unseen playlists.
+
         Args:
             split_name: 'train', 'val', or 'test'
             output_file: Output file path
@@ -226,49 +286,33 @@ class FeatureBuilder:
             pairs = json.load(f)
         
         logger.info(f"Loaded {len(pairs)} pairs")
-        
-        # Build feature dataset
+
+        all_tracks = [t for t, c in self.track_frequencies.items() if c > 0]
+        if not all_tracks:
+            raise RuntimeError("No training statistics: build train_pairs.json first")
+
+        # Group pairs by playlist so train pairs can be featurized leave-one-playlist-out.
+        by_playlist: Dict[int, List[Dict]] = defaultdict(list)
+        for pair in pairs:
+            by_playlist[pair['playlist_id']].append(pair)
+
         feature_data = []
-        
-        all_tracks = list(self.track_frequencies.keys())
-        
-        for i, pair in enumerate(pairs):
-            if (i + 1) % 1000 == 0:
-                logger.info(f"  Processed {i + 1}/{len(pairs)} pairs...")
-            
-            prefix = pair['prefix']
-            continuation = pair['continuation']
-            
-            # Positive examples (tracks in continuation)
-            for cont_track in continuation:
-                features = self.extract_features(prefix, cont_track['track_uri'])
-                
-                feature_data.append({
-                    'features': features.tolist(),
-                    'label': 1,  # Positive
-                    'track_uri': cont_track['track_uri'],
-                    'prefix_length': len(prefix)
-                })
-            
-            # Negative examples (random tracks NOT in continuation)
-            continuation_track_uris = {t['track_uri'] for t in continuation}
-            negatives = []
-            
-            while len(negatives) < num_negatives:
-                neg_track = np.random.choice(all_tracks)
-                if neg_track not in continuation_track_uris:
-                    negatives.append(neg_track)
-            
-            for neg_track in negatives:
-                features = self.extract_features(prefix, neg_track)
-                
-                feature_data.append({
-                    'features': features.tolist(),
-                    'label': 0,  # Negative
-                    'track_uri': neg_track,
-                    'prefix_length': len(prefix)
-                })
-        
+        group_id = 0
+        done = 0
+
+        for playlist_id, playlist_pairs in by_playlist.items():
+            held_out = self.train_pairs_by_playlist.get(playlist_id, []) if split_name == 'train' else []
+            self._apply_pairs(held_out, -1)
+            try:
+                for pair in playlist_pairs:
+                    feature_data.extend(self._featurize_pair(pair, group_id, all_tracks, num_negatives))
+                    group_id += 1
+                    done += 1
+                    if done % 1000 == 0:
+                        logger.info(f"  Processed {done}/{len(pairs)} pairs...")
+            finally:
+                self._apply_pairs(held_out, +1)
+
         # Save feature dataset
         with open(output_file, 'w') as f:
             json.dump(feature_data, f)
@@ -276,6 +320,39 @@ class FeatureBuilder:
         logger.info(f"Saved {len(feature_data)} feature vectors to {output_file}")
         logger.info(f"  Positives: {sum(1 for x in feature_data if x['label'] == 1)}")
         logger.info(f"  Negatives: {sum(1 for x in feature_data if x['label'] == 0)}")
+
+    def _featurize_pair(self, pair: Dict, group_id: int, all_tracks: List[str], num_negatives: int) -> List[Dict]:
+        """Feature records for one pair: its positives plus sampled negatives."""
+        prefix = pair['prefix']
+        continuation = pair['continuation']
+        recent_artists = {t['artist_uri'] for t in prefix[-5:]}
+
+        def record(track_uri: str, label: int) -> Dict:
+            artist = self.track_to_artist.get(track_uri, 'unknown')
+            return {
+                'features': [round(float(v), 6) for v in self.extract_features(prefix, track_uri)],
+                'label': label,
+                'group': group_id,
+                'track_uri': track_uri,
+                'artist_uri': artist,
+                'artist_in_recent_prefix': artist in recent_artists,
+                'prefix_length': len(prefix),
+            }
+
+        records = [record(t['track_uri'], 1) for t in continuation]
+
+        # Negatives: tracks that are neither in the continuation nor in the prefix.
+        excluded = {t['track_uri'] for t in continuation} | {t['track_uri'] for t in prefix}
+        wanted = num_negatives * len(continuation)
+        if len(all_tracks) - len(excluded & set(all_tracks)) < 1:
+            return records
+        negatives = []
+        while len(negatives) < wanted:
+            neg_track = all_tracks[self.rng.integers(len(all_tracks))]
+            if neg_track not in excluded:
+                negatives.append(neg_track)
+        records.extend(record(t, 0) for t in negatives)
+        return records
 
 
 def main():
@@ -287,6 +364,10 @@ def main():
     args = parser.parse_args()
     
     builder = FeatureBuilder(data_dir=args.data_dir)
+
+    # Artist popularity prior, used by the exposure-fairness loss during training.
+    with open(Path(args.data_dir) / "artist_popularity.json", 'w') as f:
+        json.dump(builder.artist_popularity(), f)
     
     # Build features for all splits
     for split in ['train', 'val', 'test']:

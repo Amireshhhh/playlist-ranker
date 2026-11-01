@@ -5,7 +5,7 @@ Implements NDCG, MRR, Recall, and playlist health metrics.
 """
 
 import numpy as np
-from typing import List, Dict, Tuple
+from typing import List, Dict
 from collections import Counter
 import logging
 
@@ -45,7 +45,7 @@ class RankingMetrics:
         if idcg == 0:
             return 0.0
         
-        return dcg / idcg
+        return float(dcg / idcg)
     
     @staticmethod
     def mrr(relevance_scores: List[int]) -> float:
@@ -143,7 +143,7 @@ class PlaylistHealthMetrics:
             p = count / total
             entropy -= p * np.log2(p)
         
-        return entropy
+        return float(entropy)
     
     @staticmethod
     def repeat_rate(artist_ids: List[str]) -> float:
@@ -179,12 +179,12 @@ class PlaylistHealthMetrics:
         sorted_freqs = sorted(frequencies)
         n = len(sorted_freqs)
         
-        cumsum = np.cumsum(sorted_freqs)
+        np.cumsum(sorted_freqs)
         
         # Gini formula
         gini = (2 * np.sum((np.arange(1, n + 1)) * sorted_freqs)) / (n * np.sum(sorted_freqs)) - (n + 1) / n
         
-        return gini
+        return float(gini)
     
     @staticmethod
     def popularity_bias(artist_ids: List[str], artist_popularity: Dict[str, float]) -> float:
@@ -202,7 +202,7 @@ class PlaylistHealthMetrics:
             return 0.0
         
         popularities = [artist_popularity.get(a, 0.0) for a in artist_ids]
-        return np.mean(popularities)
+        return float(np.mean(popularities))
 
 
 class EvaluationSuite:

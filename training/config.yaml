@@ -6,7 +6,7 @@ hidden_dims: [128, 64, 32]
 dropout: 0.3
 
 # Training Hyperparameters
-batch_size: 512
+batch_size: 64        # groups (one playlist prefix + its candidates) per batch
 learning_rate: 0.001
 weight_decay: 0.00001
 num_epochs: 50
@@ -15,6 +15,7 @@ patience: 5  # Early stopping patience
 # Loss Function
 margin: 0.5  # Pairwise margin
 max_grad_norm: 1.0  # Gradient clipping
+temperature: 1.0    # Softmax temperature of the soft ranking distribution used by the constraints
 
 # Constraint Weights
 lambda_fatigue: 0.1      # Artist repetition penalty
@@ -22,17 +23,16 @@ lambda_diversity: 0.05   # Diversity (entropy) penalty
 lambda_exposure: 0.03    # Exposure fairness penalty
 
 # Data
-num_negatives: 5  # Negatives per positive during feature extraction
+num_negatives: 5  # Negatives per positive (set with: python features/build_features.py --num-negatives N)
 
 # Evaluation
-top_k: 10  # Number of top results for constraint evaluation
+top_k: 10  # K for NDCG@K during validation
 
-# Experiment Tracking
-experiment_name: "full_constraints"
-log_interval: 100  # Log every N batches
+# Reproducibility
+seed: 42
 
 # Notes:
 # - Set lambda_* to 0.0 to disable specific constraints
-# - For baseline (no constraints): lambda_fatigue=0.0, lambda_diversity=0.0, lambda_exposure=0.0
-# - Increase batch_size if you have more memory
+# - For baseline (no constraints) pass --no-constraints to training/train.py
+# - The experiment name comes from --experiment (checkpoints/<experiment>/best_model.pt)
 # - Decrease learning_rate if training is unstable

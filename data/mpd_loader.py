@@ -5,11 +5,10 @@ Downloads and parses the Spotify MPD dataset.
 Dataset: https://www.aicrowd.com/challenges/spotify-million-playlist-dataset-challenge
 """
 
-import os
 import json
 import argparse
 from pathlib import Path
-from typing import Dict, List, Iterator
+from typing import Dict, Iterator
 import logging
 
 logging.basicConfig(level=logging.INFO)
@@ -122,29 +121,49 @@ class MPDLoader:
             ("artist_9", "Arctic Monkeys"),
         ]
         
-        # Generate sample playlists
+        # Shared track catalog: every artist has TRACKS_PER_ARTIST tracks, and the same
+        # track appears in many playlists, so co-occurrence statistics learned on the
+        # training split carry over to validation and test (as in the real MPD).
         import random
-        random.seed(42)
-        
+        rng = random.Random(42)
+        TRACKS_PER_ARTIST = 40
+        catalog = {
+            artist_uri: [f"spotify:track:{artist_uri}_{i}" for i in range(TRACKS_PER_ARTIST)]
+            for artist_uri, _ in artists
+        }
+        # Within an artist, low-index tracks are more popular (Zipf-like weights).
+        track_weights = [1.0 / (i + 1) for i in range(TRACKS_PER_ARTIST)]
+        artist_names = dict(artists)
+        artist_uris = [a for a, _ in artists]
+
         for pid in range(1000):
-            num_tracks = random.randint(10, 50)
+            num_tracks = rng.randint(10, 50)
+            # Each playlist has 2-3 favourite artists; 80% of its tracks come from them.
+            favourites = rng.sample(artist_uris, rng.randint(2, 3))
             tracks = []
-            
-            for pos in range(num_tracks):
-                artist_uri, artist_name = random.choice(artists)
-                track_id = f"track_{pid}_{pos}"
-                
+            used = set()
+
+            while len(tracks) < num_tracks:
+                artist_uri = rng.choice(favourites) if rng.random() < 0.8 else rng.choice(artist_uris)
+                track_uri = rng.choices(catalog[artist_uri], weights=track_weights)[0]
+                if track_uri in used:
+                    continue
+                used.add(track_uri)
+                pos = len(tracks)
+                idx = int(track_uri.rsplit("_", 1)[1])
+                artist_name = artist_names[artist_uri]
+
                 tracks.append({
                     "pos": pos,
-                    "track_uri": f"spotify:track:{track_id}",
-                    "track_name": f"Song {pos} by {artist_name}",
+                    "track_uri": track_uri,
+                    "track_name": f"Song {idx} by {artist_name}",
                     "artist_uri": f"spotify:artist:{artist_uri}",
                     "artist_name": artist_name,
-                    "album_uri": f"spotify:album:album_{artist_uri}_{pos // 3}",
-                    "album_name": f"Album {pos // 3}",
-                    "duration_ms": random.randint(180000, 300000)
+                    "album_uri": f"spotify:album:album_{artist_uri}_{idx // 10}",
+                    "album_name": f"Album {idx // 10}",
+                    "duration_ms": rng.randint(180000, 300000)
                 })
-            
+
             sample_data["playlists"].append({
                 "pid": pid,
                 "name": f"Sample Playlist {pid}",
@@ -153,14 +172,14 @@ class MPDLoader:
                 "num_albums": len(set(t["album_uri"] for t in tracks)),
                 "tracks": tracks
             })
-        
+
         # Save sample data
         sample_file = self.data_dir / "mpd.slice.0-999.json"
         with open(sample_file, 'w', encoding='utf-8') as f:
             json.dump(sample_data, f, indent=2)
         
         logger.info(f"Created sample dataset: {sample_file}")
-        logger.info("Sample contains 1000 playlists for testing")
+        logger.info("Sample contains 1000 playlists over a 400-track catalog (10 artists x 40 tracks)")
         logger.info("For production use, download the full MPD dataset")
     
     def get_statistics(self) -> Dict:
@@ -245,7 +264,7 @@ def main():
         print(f"\nFirst playlist (pid={first_playlist['pid']}):")
         print(f"Name: {first_playlist['name']}")
         print(f"Tracks: {first_playlist['num_tracks']}")
-        print(f"\nFirst 3 tracks:")
+        print("\nFirst 3 tracks:")
         for track in first_playlist['tracks'][:3]:
             print(f"  - {track['track_name']} by {track['artist_name']}")
     else:

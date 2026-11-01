@@ -4,10 +4,14 @@
 
 A production-grade playlist continuation system built on the Spotify Million Playlist Dataset (MPD), implementing learning-to-rank with multi-objective constraints for diversity, artist fatigue control, and exposure fairness.
 
-**Key Metrics Achieved:**
-- NDCG@10: Target >0.35 (competitive with research baselines)
-- Artist Entropy: >3.5 bits (high diversity)
-- Repeat Rate: <15% (low fatigue)
+> **Status.** This is the design specification. Sections marked *planned* are not
+> implemented in this repository. Measured results (on the synthetic sample data) are in
+> README.md under "Results"; nothing has been measured on the full MPD yet.
+
+**Targets (not yet measured on the full MPD):**
+- NDCG@10 > 0.35
+- Artist entropy of the top 10 > 3.0 bits (the maximum for 10 tracks is log2(10) = 3.32 bits)
+- Repeat rate < 15%
 
 ---
 
@@ -53,17 +57,17 @@ A production-grade playlist continuation system built on the Spotify Million Pla
 
 ### 3.1 Candidate Generation
 
-**Co-occurrence Retrieval**
-- Top-K tracks that co-occur with prefix tracks in training data
-- Weighted by frequency and recency in playlist
+**Co-occurrence Retrieval** (implemented: `FeatureBuilder.candidates_from_cooccurrence`)
+- Top-N tracks by summed co-occurrence count with the prefix tracks in the training data
+- Filled with the most frequent training tracks if fewer than N are found
 
-**Popular-in-Context**
-- Tracks frequently following similar prefixes
-- Filtered by minimum support threshold
+**Negatives** (implemented)
+- Uniform random tracks, excluding the pair's prefix and continuation, `num_negatives` per positive
 
-**Negatives**
-- Random sampling for contrastive learning
-- Hard negatives from failed retrievals
+*Planned:* popular-in-context retrieval, recency weighting, hard negatives from failed retrievals.
+
+**Leakage control** (implemented): co-occurrence and frequency features for training pairs
+are computed with the pair's whole playlist left out of the statistics.
 
 ### 3.2 Ranking Model
 
@@ -84,15 +88,18 @@ Input: Feature vector (dim=32)
 ↓
 Dense(128) + ReLU + Dropout(0.3)
 ↓
-Dense(64) + ReLU + Dropout(0.2)
+Dense(64) + ReLU + Dropout(0.21)
 ↓
 Dense(32) + ReLU
 ↓
 Dense(1) → Relevance Score
 ```
 
+Input features are standardised with the training-set mean and standard deviation; the
+statistics are stored in the model's state dict.
+
 **Framework**: PyTorch
-**Training**: Pairwise ranking loss (margin-based)
+**Training**: Pairwise ranking loss (margin-based) over all positive x negative pairs of a group
 
 ### 3.3 Constraint Integration
 
@@ -103,26 +110,39 @@ L_total = L_rank + λ₁·L_fatigue + λ₂·L_diversity + λ₃·L_exposure
 
 **Component Losses**
 
+Training is grouped: one group is the candidate list for one prefix (its continuation
+tracks as positives plus sampled negatives). The constraints act on the group's soft
+ranking distribution
+
+```
+z = (s - mean(s)) / std(s)          standardised scores of the group
+p = softmax(z / temperature)
+q_a = Σ_{i: artist_i = a} p_i       soft artist distribution
+```
+
+which is differentiable in the scores. (Hard top-K selection has zero gradient, so a
+penalty computed on it cannot change the model. Standardising keeps softmax from
+saturating as the scores grow.)
+
 1. **Ranking Loss** (Pairwise Margin)
    ```
-   L_rank = Σ max(0, margin - (score_pos - score_neg))
+   L_rank = mean over (pos, neg) pairs of max(0, margin - (score_pos - score_neg))
    ```
 
 2. **Fatigue Penalty**
    ```
-   L_fatigue = Σ 𝟙[artist_k ∈ recent_prefix]
+   L_fatigue = Σ_i p_i · 𝟙[artist_i ∈ last 5 prefix tracks]
    ```
 
 3. **Diversity Penalty**
    ```
-   L_diversity = -H(artist_distribution in top-K)
-   H = -Σ p(a)·log p(a)
+   L_diversity = -H(q) = Σ_a q_a · log q_a
    ```
 
 4. **Exposure Fairness**
    ```
-   L_exposure = Σ_a (appearances_a / K - π_a)²
-   π_a = smoothed popularity prior
+   L_exposure = Σ_a (q_a - π_a)²
+   π_a = artist popularity prior (share of training occurrences), renormalised over the group's artists
    ```
 
 **Hyperparameters**
@@ -134,23 +154,18 @@ L_total = L_rank + λ₁·L_fatigue + λ₂·L_diversity + λ₃·L_exposure
 
 ## 4. Training
 
-### Configuration
-- Batch size: 512 pairs
-- Learning rate: 1e-3 (Adam)
-- Epochs: 50
-- Early stopping: patience=5 on validation NDCG
+### Configuration (`training/config.yaml`)
+- Batch size: 64 groups
+- Learning rate: 1e-3 (Adam), halved after 3 epochs without validation-loss improvement
+- Epochs: up to 50
+- Early stopping: patience=5 on validation total loss
 - Gradient clipping: max_norm=1.0
 
-### Data Augmentation
-- Random prefix truncation
-- Shuffled negatives per epoch
-- Dynamic hard negative mining
+### Monitoring (implemented)
+- Every loss component on train and validation
+- Validation NDCG@10 over each group's candidates
 
-### Monitoring
-- NDCG@5, @10, @20
-- MRR (Mean Reciprocal Rank)
-- Recall@10, @20
-- Constraint violation rates
+*Planned:* random prefix truncation, per-epoch negative resampling, hard negative mining.
 
 ---
 
@@ -167,14 +182,17 @@ L_total = L_rank + λ₁·L_fatigue + λ₂·L_diversity + λ₃·L_exposure
 - **Repeat Rate**: % consecutive same-artist tracks
 - **Popularity Bias**: Gini coefficient of artist exposure
 
-### Ablation Studies
-1. Baseline (no constraints)
-2. + Fatigue only
-3. + Diversity only
-4. + Exposure only
-5. Full model (all constraints)
+### Offline Evaluation (implemented: `evaluation/evaluate.py`)
+Ranks the retrieved candidates of every test pair with each checkpoint (and optionally
+with inference-time re-ranking) and reports NDCG@K, Recall@K, MRR, candidate recall and
+the playlist-health metrics of the top K. The co-occurrence order is reported as a baseline.
 
-### Sensitivity Analysis
+### Ablation Studies
+1. Baseline (no constraints): `train.py --experiment baseline --no-constraints`
+2. Full model (all constraints): `train.py --experiment full_constraints`
+3. *Planned:* single-constraint runs (set the other λ to 0 in a config copy)
+
+### Sensitivity Analysis (*planned*)
 - λ parameter sweeps
 - Prefix length impact
 - Candidate pool size effects
@@ -190,43 +208,57 @@ L_total = L_rank + λ₁·L_fatigue + λ₂·L_diversity + λ₃·L_exposure
 **Request**
 ```json
 {
-  "playlist_prefix": ["track_id_1", "track_id_2", ...],
-  "candidate_tracks": ["cand_1", "cand_2", ...],
+  "playlist_prefix": ["spotify:track:...", "spotify:track:..."],
+  "candidate_tracks": ["spotify:track:..."],
   "top_k": 10,
   "constraint_weights": {
-    "fatigue": 0.1,
-    "diversity": 0.05,
-    "exposure": 0.03
+    "fatigue": 0.5,
+    "diversity": 0.5
   }
 }
 ```
+
+`candidate_tracks` is optional (default: top 100 by co-occurrence). `constraint_weights`
+is optional and drives a greedy re-ranking at inference time; only `fatigue` and
+`diversity` are supported (other keys return 400).
 
 **Response**
 ```json
 {
   "ranked_tracks": [
     {
-      "track_id": "...",
-      "score": 0.87,
-      "artist_id": "...",
+      "track_uri": "spotify:track:...",
+      "score": 1.93,
+      "artist_uri": "spotify:artist:...",
       "rank": 1
     }
   ],
   "diagnostics": {
-    "artist_entropy": 3.72,
-    "repeat_rate": 0.10,
-    "popularity_gini": 0.45
+    "artist_entropy": 2.65,
+    "repeat_rate": 0.11,
+    "artist_coverage": 0.7,
+    "gini_coefficient": 0.21
+  },
+  "metadata": {
+    "num_candidates": 100,
+    "processing_time_ms": 12.4,
+    "prefix_length": 2,
+    "model_version": "1.0.0",
+    "model_trained": true,
+    "mock_scores": false,
+    "constraint_weights_applied": {"fatigue": 0.5, "diversity": 0.5}
   }
 }
 ```
+(Values are illustrative.)
 
 ### Infrastructure
-- **Framework**: FastAPI
-- **Model Serving**: ONNX Runtime (optimized inference)
-- **Containerization**: Docker
-- **Monitoring**: Prometheus + Grafana (optional)
+- **Framework**: FastAPI (implemented)
+- **Model Serving**: PyTorch (implemented); ONNX Runtime export is *planned*
+- **Containerization**: Docker (`serving/Dockerfile`)
+- **Monitoring**: Prometheus + Grafana (*planned*)
 
-### Performance Requirements
+### Performance Requirements (targets, not yet measured)
 - Latency: <100ms (p95)
 - Throughput: >100 QPS
 - Model size: <50MB
@@ -238,42 +270,32 @@ L_total = L_rank + λ₁·L_fatigue + λ₂·L_diversity + λ₃·L_exposure
 ```
 playlist-ranker/
 ├── data/
-│   ├── mpd_loader.py          # Dataset download & parsing
-│   ├── splits.py              # Train/val/test generation
-│   └── preprocessing.py       # Feature engineering
-├── candidates/
-│   ├── retrieval.py           # Co-occurrence retrieval
-│   └── negative_sampling.py   # Hard negative mining
+│   ├── mpd_loader.py          # MPD parsing and synthetic sample data
+│   └── splits.py              # Train/val/test prefix-continuation pairs
 ├── features/
-│   └── build_features.py      # Feature extraction pipeline
+│   └── build_features.py      # Features, co-occurrence retrieval, negatives
 ├── models/
-│   ├── ranker.py              # PyTorch ranking model
-│   └── constraints.py         # Constraint loss functions
+│   ├── ranker.py              # PyTorch ranking model and losses
+│   └── rerank.py              # Inference-time greedy re-ranking
 ├── training/
 │   ├── train.py               # Training loop
 │   └── config.yaml            # Hyperparameters
 ├── evaluation/
-│   ├── metrics.py             # NDCG, MRR, Recall, etc.
-│   └── ablation.py            # Constraint ablation studies
+│   ├── metrics.py             # NDCG, MRR, Recall, playlist health
+│   └── evaluate.py            # Offline evaluation on the test split
 ├── serving/
-│   ├── api.py                 # FastAPI endpoint
-│   ├── inference.py           # Model inference wrapper
-│   └── Dockerfile             # Containerization
-├── notebooks/
-│   ├── 01_eda.ipynb           # Exploratory data analysis
-│   ├── 02_baseline.ipynb      # Baseline experiments
-│   └── 03_evaluation.ipynb    # Results visualization
+│   ├── api.py                 # FastAPI service
+│   └── Dockerfile             # Container image
 ├── tests/
-│   ├── test_features.py
 │   ├── test_model.py
 │   └── test_api.py
-├── mlops/
-│   └── tracking.py            # MLflow/W&B logging
-├── requirements.txt
+├── requirements.txt / requirements-dev.txt
 ├── setup.py
 ├── SYSTEM_SPEC.md             # This document
-└── README.md                  # Quick start guide
+└── README.md
 ```
+
+*Planned:* `notebooks/`, MLflow/W&B tracking, hard-negative mining module.
 
 ---
 
@@ -300,13 +322,13 @@ playlist-ranker/
 ## 9. Success Criteria
 
 ### MVP (Minimum Viable Product)
-- ✅ NDCG@10 > 0.30
-- ✅ API latency < 200ms
-- ✅ Deployable Docker container
+- NDCG@10 > 0.30
+- API latency < 200ms
+- Deployable Docker container
 
 ### Target Performance
 - 🎯 NDCG@10 > 0.35
-- 🎯 Artist entropy > 3.5
+- 🎯 Artist entropy (top 10) > 3.0 bits
 - 🎯 Repeat rate < 15%
 - 🎯 API latency < 100ms
 
@@ -351,11 +373,14 @@ playlist-ranker/
 **One-Liner**
 > Designed and deployed a constraint-aware playlist ranking system using Spotify-scale data (1M playlists), balancing relevance, diversity, and exposure fairness with multi-objective learning-to-rank.
 
-**Bullet Points**
-- Built a production-grade music recommendation system on Spotify's Million Playlist Dataset (1M playlists, 2M+ tracks)
-- Implemented multi-objective learning-to-rank with PyTorch, optimizing for relevance (NDCG@10: 0.35+), artist diversity (entropy >3.5), and exposure fairness
-- Deployed ranking-as-a-service API (FastAPI) with <100ms latency, achieving 100+ QPS throughput
-- Conducted rigorous ablation studies on constraint tradeoffs, demonstrating 20% diversity improvement while maintaining ranking quality
+**Bullet Points** (fill in the numbers from `evaluation/evaluate.py` on the full MPD; none
+of these have been measured yet)
+- Built a music recommendation system on Spotify's Million Playlist Dataset (1M playlists, 2M+ tracks)
+- Implemented multi-objective learning-to-rank in PyTorch with differentiable fatigue,
+  diversity and exposure-fairness losses, trading relevance (NDCG@10: ___) against
+  artist diversity (entropy: ___ bits)
+- Served the ranker through a FastAPI service with inference-time re-ranking (p95 latency: ___ ms)
+- Compared constrained and unconstrained models offline (diversity change: ___ at an NDCG@10 change of ___)
 
 ---
 
