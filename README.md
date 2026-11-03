@@ -87,6 +87,20 @@ pytest tests/
 
 ---
 
+##  Playlist Insights Dashboards
+
+`python -m insights` analyses a playlist and writes a static HTML dashboard per playlist, plus an index per user. It covers lyrics word counts, themes and sentiment, k-means song groups, an artist kNN graph, tempo flow, mood, artist origins, and recommendations from free APIs and this repo's ranker. Every source is free (LRCLIB, Deezer, MusicBrainz, Last.fm, ReccoBeats, Wikipedia), and the analysis runs locally.
+
+```bash
+pip install -r requirements-insights.txt
+python -m insights demo                               # offline demo, synthetic data
+python -m insights analyze exports/*.csv --user amir  # Exportify CSVs
+```
+
+See [docs/INSIGHTS.md](docs/INSIGHTS.md) for inputs, methods and data sources.
+
+---
+
 ##  System Architecture
 
 ```
@@ -182,7 +196,9 @@ playlist-ranker/
 ├── serving/
 │   ├── api.py                # FastAPI application
 │   └── Dockerfile            # Container image
-├── tests/                    # pytest suite (model, losses, metrics, API)
+├── insights/                 # playlist analysis + dashboards (python -m insights)
+├── docs/INSIGHTS.md          # insights inputs, methods, free data sources
+├── tests/                    # pytest suite (model, losses, metrics, API, insights)
 ├── requirements.txt          # runtime dependencies
 ├── requirements-dev.txt      # + test dependencies
 ├── quickstart.sh

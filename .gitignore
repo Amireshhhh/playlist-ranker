@@ -68,3 +68,7 @@ htmlcov/
 tmp/
 temp/
 *.tmp
+
+# Playlist insights output and API cache
+reports/
+.cache/

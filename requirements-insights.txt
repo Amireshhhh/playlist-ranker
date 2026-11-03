@@ -1,0 +1,8 @@
+# Playlist insights / dashboards (python -m insights). All free, all run locally.
+-r requirements.txt
+scikit-learn==1.5.2   # k-means, PCA, TF-IDF, NMF topics
+vaderSentiment==3.3.2 # offline lyric sentiment
+wordcloud==1.9.4      # word-cloud images
+requests==2.32.3      # free API clients
+pycountry==24.6.1     # ISO country codes for the origin map
+plotly==5.24.1        # only for --inline-js (bundles plotly.js 2.35.2)
