@@ -83,16 +83,17 @@ def basic(pl: Playlist) -> Dict:
 def mainstream_score(pl: Playlist) -> Optional[Dict]:
     """Where the playlist sits between deep cuts and hits.
 
-    Uses Spotify popularity (0-100, Exportify) when present, else Deezer rank. Deezer rank
-    is unbounded, so it is mapped with log10(rank) / 6 (rank 1,000,000 -> 1.0), clipped to [0, 1].
+    Uses Spotify popularity (0-100, Exportify) when present, else Deezer rank divided by
+    1,000,000 and clipped to [0, 1]. (A log scale was tried first: on a real 24-song playlist
+    every track landed between 0.93 and 1.0, so it could not tell hits from deep cuts.)
     This is a relative score for comparing playlists processed the same way, not a calibrated one.
     """
     scored = [(t.popularity / 100, t) for t in pl.tracks if t.popularity is not None]
     src = "Spotify popularity"
     if not scored:
-        scored = [(min(math.log10(t.deezer_rank) / 6, 1.0), t) for t in pl.tracks
+        scored = [(min(t.deezer_rank / 1_000_000, 1.0), t) for t in pl.tracks
                   if t.deezer_rank and t.deezer_rank > 0]
-        src = "Deezer rank (log-scaled)"
+        src = "Deezer rank / 1,000,000"
     if not scored:
         return None
     scored.sort(key=lambda x: x[0])

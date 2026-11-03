@@ -26,7 +26,7 @@ MIN_INTERVAL = {
     "musicbrainz.org": 1.1,
     "ws.audioscrobbler.com": 0.25,
     "api.deezer.com": 0.12,     # stays under 50 requests / 5 s
-    "lrclib.net": 0.1,
+    "lrclib.net": 0.5,          # returned HTTP 429 at 0.1 s spacing (observed in CI, Nov 2026)
     "api.reccobeats.com": 0.2,
     "en.wikipedia.org": 0.1,
 }
@@ -38,16 +38,17 @@ class OfflineError(RuntimeError):
 
 class CachedHTTP:
     def __init__(self, cache_dir: str = ".cache/insights", offline: bool = False,
-                 user_agent: str = DEFAULT_UA, timeout: float = 20.0):
+                 user_agent: str = DEFAULT_UA, timeout: float = 20.0, retries: int = 3):
         self.cache_dir = Path(cache_dir)
         self.cache_dir.mkdir(parents=True, exist_ok=True)
         self.offline = offline
         self.user_agent = os.environ.get("INSIGHTS_USER_AGENT", user_agent)
         self.timeout = timeout
+        self.retries = retries
         self._last: Dict[str, float] = {}
         self._lock = threading.Lock()
         self._session = None
-        self.stats = {"hits": 0, "requests": 0, "errors": 0}
+        self.stats = {"hits": 0, "requests": 0, "retries": 0, "errors": 0}
 
     def _path(self, url: str) -> Path:
         h = hashlib.sha1(url.encode()).hexdigest()
@@ -83,14 +84,26 @@ class CachedHTTP:
             import requests
             self._session = requests.Session()
             self._session.headers.update({"User-Agent": self.user_agent, "Accept": "application/json"})
-        self._wait(urlparse(url).hostname or "")
-        self.stats["requests"] += 1
-        try:
-            r = self._session.get(full, timeout=self.timeout)
-        except Exception as e:  # network errors are reported, not raised
-            self.stats["errors"] += 1
-            logger.warning("GET %s failed: %s", cache_url, e)
-            return None
+        host = urlparse(url).hostname or ""
+        r = None
+        for attempt in range(self.retries + 1):
+            self._wait(host)
+            self.stats["requests"] += 1
+            try:
+                r = self._session.get(full, timeout=self.timeout)
+            except Exception as e:  # network errors are reported, not raised
+                self.stats["errors"] += 1
+                logger.warning("GET %s failed: %s", cache_url, e)
+                return None
+            if r.status_code not in (429, 502, 503, 504) or attempt == self.retries:
+                break
+            # Rate limited / temporarily unavailable: honour Retry-After, else back off 2, 4, 8 s.
+            try:
+                delay = min(float(r.headers.get("Retry-After", "")), 30.0)
+            except ValueError:
+                delay = 2.0 * 2 ** attempt
+            self.stats["retries"] += 1
+            time.sleep(delay)
         if r.status_code == 404:
             body = None
         elif r.status_code == 200:

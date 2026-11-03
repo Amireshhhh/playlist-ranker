@@ -167,8 +167,8 @@ def test_mainstream_prefers_spotify_popularity():
     m = stats.mainstream_score(pl)
     assert m["source"] == "Spotify popularity" and m["score"] == pytest.approx(0.5)
     assert m["deepest_cut"].title == "a" and m["biggest_hit"].title == "b"
-    pl = Playlist("p", [Track("a", "x", deezer_rank=1000), Track("b", "y", deezer_rank=10**6)])
-    assert stats.mainstream_score(pl)["score"] == pytest.approx((3 / 6 + 1.0) / 2)
+    pl = Playlist("p", [Track("a", "x", deezer_rank=250_000), Track("b", "y", deezer_rank=2 * 10**6)])
+    assert stats.mainstream_score(pl)["score"] == pytest.approx((0.25 + 1.0) / 2)
 
 
 def test_overlap():
@@ -248,6 +248,31 @@ def test_cache_and_offline(tmp_path, monkeypatch):
     off = CachedHTTP(cache_dir=str(tmp_path), offline=True)
     assert off.get_json("https://example.org/x", {"q": 1}) == {"ok": 1}
     assert off.get_json("https://example.org/missing") is None
+
+
+def test_retry_on_429(tmp_path, monkeypatch):
+    import insights.httpcache as hc
+    monkeypatch.setattr(hc.time, "sleep", lambda s: None)
+    http = CachedHTTP(cache_dir=str(tmp_path))
+
+    class R:
+        def __init__(self, code):
+            self.status_code, self.headers = code, {"Retry-After": "1"}
+
+        def json(self):
+            return {"ok": 1}
+
+    codes = iter([429, 503, 200])
+
+    class S:
+        headers = {}
+
+        def get(self, url, timeout):
+            return R(next(codes))
+
+    http._session = S()
+    assert http.get_json("https://lrclib.net/api/search", {"q": 1}) == {"ok": 1}
+    assert http.stats["retries"] == 2
 
 
 def test_lrclib_prefers_exact_then_search():

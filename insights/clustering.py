@@ -119,8 +119,11 @@ def cluster_songs(pl: Playlist, lyrics_report=None, k_range=range(2, 9), seed: i
     rows = np.any(X != 0, axis=1)
     Xr = X[rows]
     best = None
+    # At least ~4 songs per group on average: silhouette alone picked k = 8 for 24 real
+    # songs, leaving several 2-song groups.
+    k_max = max(2, len(Xr) // 4)
     for k in k_range:
-        if k >= len(Xr):
+        if k >= len(Xr) or k > k_max:
             break
         km = KMeans(n_clusters=k, n_init=10, random_state=seed).fit(Xr)
         if len(set(km.labels_)) < 2:
