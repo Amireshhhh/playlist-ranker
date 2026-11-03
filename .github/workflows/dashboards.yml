@@ -1,0 +1,40 @@
+name: Dashboards
+
+on:
+  push:
+    branches: [main, feature/playlist-insights]
+  workflow_dispatch:
+
+permissions:
+  contents: write   # push the built site to the gh-pages branch
+
+concurrency:
+  group: dashboards
+  cancel-in-progress: true
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # The insights module does not need torch (only the optional trained-ranker
+      # recommendations do), so install the light dependencies only.
+      - name: Install dependencies
+        run: pip install numpy==2.1.3 pyyaml==6.0.2 scikit-learn==1.5.2 vaderSentiment==3.3.2 wordcloud==1.9.4 requests==2.32.3 pycountry==24.6.1 plotly==5.24.1
+
+      - name: Build dashboards
+        env:
+          LASTFM_API_KEY: ${{ secrets.LASTFM_API_KEY }}
+        run: ./scripts/build_site.sh site
+
+      - name: Publish to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
+          force_orphan: true
