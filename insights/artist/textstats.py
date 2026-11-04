@@ -12,7 +12,7 @@ import itertools
 import math
 import re
 from collections import Counter, defaultdict
-from typing import Dict, List, Optional
+from typing import Dict, List
 
 import numpy as np
 from scipy import stats as ss
