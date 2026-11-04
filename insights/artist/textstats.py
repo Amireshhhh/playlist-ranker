@@ -431,8 +431,39 @@ def analyze(corpus, min_album_songs: int = 1) -> Dict:
     res["facts"] = facts
     res["headline"] = headline(res)
     res["coverage"] = [{"album": s.album, "track": s.title, "status": s.status}
-                       for s in corpus.songs if s.status in ("missing", "duplicate", "instrumental")]
+                       for s in corpus.songs if s.status in ("missing", "duplicate", "instrumental", "no_tracklist")]
     res["ok"] = True
+    return mask_slurs(res)
+
+
+SLURS = re.compile(r"\bnigg(a|as|er|ers|az)\b")
+
+
+def _mask(w: str) -> str:
+    return SLURS.sub(lambda m: "n" + "*" * (len(m.group(0)) - 2) + m.group(0)[-1], w)
+
+
+def mask_slurs(res: Dict) -> Dict:
+    """Racial slurs are counted like any word but shown masked (n****s) on the public page."""
+    for r in res.get("top_content", []) + res.get("top_all", []) + res.get("keyness", []):
+        r["w"] = _mask(r["w"])
+    for a in res.get("album_top", []):
+        a["words"] = [(_mask(w), c) for w, c in a["words"]]
+    res["lookup"] = {_mask(w): v for w, v in res.get("lookup", {}).items()}
+    for r in res.get("phrases", []):
+        r["p"] = _mask(r["p"])
+    nw = res.get("network", {})
+    for n in nw.get("nodes", []):
+        n["id"] = _mask(n["id"])
+    for e in nw.get("edges", []):
+        e["a"], e["b"] = _mask(e["a"]), _mask(e["b"])
+    if "hub" in nw:
+        nw["hub"] = _mask(nw["hub"])
+    f = res.get("facts", {})
+    if "top_word" in f:
+        f["top_word"] = _mask(f["top_word"])
+    if "headline" in res:
+        res["headline"] = {k: _mask(v) for k, v in res["headline"].items()}
     return res
 
 

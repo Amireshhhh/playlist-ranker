@@ -102,3 +102,38 @@ def test_discography_picks_studio_albums_and_standard_tracklist():
     assert [a["title"] for a in albums] == ["Debut", "Later"]
     tl = discography.canonical_tracklist(http, "g1")
     assert [t["title"] for t in tl] == ["A", "B"] and tl[0]["duration_s"] == 200
+
+
+def test_slurs_masked_for_display():
+    assert T._mask("niggas in paris") == "n****s in paris"
+    res = {"top_content": [{"w": "nigga"}], "top_all": [], "keyness": [], "album_top": [], "lookup": {"nigga": 1},
+           "phrases": [], "network": {}, "facts": {"top_word": "nigga"}, "headline": {"title": "“nigga” is X's word"}}
+    out = T.mask_slurs(res)
+    assert out["top_content"][0]["w"] == "n***a" and "n***a" in out["lookup"] and "nigga" not in out["headline"]["title"]
+
+
+def test_network_error_retries(tmp_path, monkeypatch):
+    import insights.httpcache as hc
+    from insights.httpcache import CachedHTTP
+    monkeypatch.setattr(hc.time, "sleep", lambda s: None)
+    http = CachedHTTP(cache_dir=str(tmp_path))
+    calls = iter([TimeoutError("read timed out"), None])
+
+    class R:
+        status_code, headers = 200, {}
+
+        def json(self):
+            return {"ok": 1}
+
+    class S:
+        headers = {}
+
+        def get(self, url, timeout):
+            e = next(calls)
+            if e:
+                raise e
+            return R()
+
+    http._session = S()
+    assert http.get_json("https://musicbrainz.org/ws/2/release") == {"ok": 1}
+    assert http.stats["retries"] == 1 and http.stats["errors"] == 0

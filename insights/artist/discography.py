@@ -113,6 +113,9 @@ def build(src, artist: str, max_albums: int = 20, progress=None) -> Optional[Cor
     for order, alb in enumerate(albums):
         tl = canonical_tracklist(http, alb["id"])
         corpus.albums.append({"title": alb["title"], "year": alb["year"], "order": order, "tracks": len(tl)})
+        if not tl:  # say so on the page instead of dropping the album silently
+            corpus.songs.append(Song(title="(tracklist unavailable from MusicBrainz)", album=alb["title"], year=alb["year"],
+                                     order=order, position=0, duration_s=None, status="no_tracklist"))
         for t in tl:
             s = Song(title=t["title"], album=alb["title"], year=alb["year"], order=order, position=t["position"],
                      duration_s=t["duration_s"])

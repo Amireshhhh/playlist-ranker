@@ -344,7 +344,8 @@ def render(res: Dict, out_path: Path, inline_js: bool = False, back_href: Option
 
     # Coverage --------------------------------------------------------------
     cov = res["coverage"]
-    status = {"missing": "no lyrics found", "duplicate": "same title earlier (counted once)", "instrumental": "instrumental"}
+    status = {"missing": "no lyrics found", "duplicate": "same title earlier (counted once)", "instrumental": "instrumental",
+              "no_tracklist": "album skipped: MusicBrainz did not return its tracklist"}
     body = card("Tracks not analysed", ("<div class='scroll'><table><thead><tr><th>Album</th><th>Track</th><th>Why</th></tr></thead><tbody>" +
                 "".join(f"<tr><td>{esc(c['album'])}</td><td>{esc(c['track'])}</td><td>{esc(status[c['status']])}</td></tr>" for c in cov) +
                 "</tbody></table></div>") if cov else "<p>Every track on the studio albums had lyrics.</p>",

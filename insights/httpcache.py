@@ -38,7 +38,7 @@ class OfflineError(RuntimeError):
 
 class CachedHTTP:
     def __init__(self, cache_dir: str = ".cache/insights", offline: bool = False,
-                 user_agent: str = DEFAULT_UA, timeout: float = 20.0, retries: int = 3):
+                 user_agent: str = DEFAULT_UA, timeout: float = 45.0, retries: int = 3):
         self.cache_dir = Path(cache_dir)
         self.cache_dir.mkdir(parents=True, exist_ok=True)
         self.offline = offline
@@ -91,7 +91,12 @@ class CachedHTTP:
             self.stats["requests"] += 1
             try:
                 r = self._session.get(full, timeout=self.timeout)
-            except Exception as e:  # network errors are reported, not raised
+            except Exception as e:  # network errors: retry with backoff, then report (never raise)
+                if attempt < self.retries:
+                    self.stats["retries"] += 1
+                    logger.warning("GET %s failed (%s), retrying", cache_url, type(e).__name__)
+                    time.sleep(2.0 * 2 ** attempt)
+                    continue
                 self.stats["errors"] += 1
                 logger.warning("GET %s failed: %s", cache_url, e)
                 return None
