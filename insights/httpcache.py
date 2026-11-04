@@ -32,6 +32,11 @@ MIN_INTERVAL = {
 }
 
 
+# Responses from these hosts are kept in memory for one run only and never written to disk:
+# LRCLIB responses contain full lyrics text, which this project must not store.
+NO_DISK = {"lrclib.net"}
+
+
 class OfflineError(RuntimeError):
     pass
 
@@ -48,6 +53,7 @@ class CachedHTTP:
         self._last: Dict[str, float] = {}
         self._lock = threading.Lock()
         self._session = None
+        self._memory: Dict[str, Any] = {}
         self.stats = {"hits": 0, "requests": 0, "retries": 0, "errors": 0}
 
     def _path(self, url: str) -> Path:
@@ -75,7 +81,12 @@ class CachedHTTP:
         key_params = {k: v for k, v in params.items() if k not in cache_key_exclude}
         cache_url = f"{url}?{urlencode(key_params)}" if key_params else url
         path = self._path(cache_url)
-        if path.exists():
+        host = urlparse(url).hostname or ""
+        if host in NO_DISK:
+            if cache_url in self._memory:
+                self.stats["hits"] += 1
+                return self._memory[cache_url]
+        elif path.exists():
             self.stats["hits"] += 1
             return json.loads(path.read_text(encoding="utf-8"))["body"]
         if self.offline:
@@ -84,7 +95,6 @@ class CachedHTTP:
             import requests
             self._session = requests.Session()
             self._session.headers.update({"User-Agent": self.user_agent, "Accept": "application/json"})
-        host = urlparse(url).hostname or ""
         r = None
         for attempt in range(self.retries + 1):
             self._wait(host)
@@ -122,6 +132,9 @@ class CachedHTTP:
             self.stats["errors"] += 1
             logger.warning("GET %s -> HTTP %s", cache_url, r.status_code)
             return None
+        if host in NO_DISK:
+            self._memory[cache_url] = body
+            return body
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(json.dumps({"url": cache_url, "fetched": time.time(), "body": body}), encoding="utf-8")
         return body

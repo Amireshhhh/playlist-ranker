@@ -358,3 +358,29 @@ def test_demo_dashboards(tmp_path):
     assert lines and not any(ln in heavy for ln in lines)
     summary = json.loads((tmp_path / "demo-user" / "demo-heavy-days" / "summary.json").read_text())
     assert summary["stats"]["n_tracks"] == 40
+
+
+def test_lrclib_responses_never_written_to_disk(tmp_path):
+    http = CachedHTTP(cache_dir=str(tmp_path))
+    n = {"calls": 0}
+
+    class R:
+        status_code, headers = 200, {}
+
+        def json(self):
+            return [{"plainLyrics": "secret line one\nsecret line two", "syncedLyrics": "[00:01.00] secret"}]
+
+    class S:
+        headers = {}
+
+        def get(self, url, timeout):
+            n["calls"] += 1
+            return R()
+
+    http._session = S()
+    assert http.get_json("https://lrclib.net/api/search", {"q": "x"})[0]["plainLyrics"].startswith("secret")
+    assert http.get_json("https://lrclib.net/api/search", {"q": "x"})  # served from memory
+    assert n["calls"] == 1
+    assert not list(tmp_path.rglob("*.json"))  # nothing on disk
+    # a fresh client (next run) has no copy
+    assert CachedHTTP(cache_dir=str(tmp_path), offline=True).get_json("https://lrclib.net/api/search", {"q": "x"}) is None

@@ -27,17 +27,28 @@ jobs:
       - name: Install dependencies
         run: pip install numpy==2.1.3 pyyaml==6.0.2 scikit-learn==1.5.2 vaderSentiment==3.3.2 wordcloud==1.9.4 requests==2.32.3 pycountry==24.6.1 plotly==5.24.1 scipy==1.14.1 simplemma==1.1.2 wordfreq==3.1.1 afinn==0.1 networkx==3.4.2
 
-      # Keep API responses between runs: rebuilds only fetch what is new.
+      # Keep metadata API responses (MusicBrainz, Deezer, Wikipedia) between runs.
+      # Lyrics are never written to this cache (see NO_DISK in insights/httpcache.py).
+      # The "v2" prefix stops older caches, which did contain LRCLIB responses, from being restored.
       - uses: actions/cache@v4
         with:
           path: .cache/insights
-          key: insights-cache-${{ github.run_id }}
-          restore-keys: insights-cache-
+          key: insights-cache-v2-${{ github.run_id }}
+          restore-keys: insights-cache-v2-
+
+
 
       - name: Build dashboards
         env:
           LASTFM_API_KEY: ${{ secrets.LASTFM_API_KEY }}
         run: ./scripts/build_site.sh site
+
+      - name: Check that no lyrics are on disk
+        run: |
+          if grep -rl -E '"(plainLyrics|syncedLyrics)"' .cache site 2>/dev/null; then
+            echo "Lyrics text found on disk" && exit 1
+          fi
+          echo "No lyrics in .cache or site"
 
       - name: Publish to gh-pages
         uses: peaceiris/actions-gh-pages@v4
