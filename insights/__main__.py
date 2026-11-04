@@ -43,11 +43,33 @@ def main(argv=None):
     a.add_argument("--data-dir", help="processed MPD data, enables the trained-ranker recommendations")
     a.add_argument("--checkpoint", help="model checkpoint for --data-dir")
     a.add_argument("--inline-js", action="store_true", help="embed plotly.js (works without internet, +3.5 MB)")
+    ar = sub.add_parser("artist", help="statistical lyrics study of one or more artists")
+    ar.add_argument("names", nargs="+", help="artist names, e.g. Gojira 'Kendrick Lamar'")
+    ar.add_argument("--out", default="reports")
+    ar.add_argument("--cache", default=".cache/insights")
+    ar.add_argument("--offline", action="store_true")
+    ar.add_argument("--inline-js", action="store_true")
+    ar.add_argument("--demo", action="store_true", help="synthetic artist with planted trends (offline)")
     d = sub.add_parser("demo", help="offline demo on synthetic data")
     d.add_argument("--out", default="reports")
     d.add_argument("--inline-js", action="store_true")
     args = ap.parse_args(argv)
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
+
+    if args.cmd == "artist":
+        from insights.artist import run as artist_run
+        if args.demo:
+            from insights.artist import demo as artist_demo
+            print(f"Artist page: {artist_run.build('demo', None, args.out, inline_js=args.inline_js, corpus=artist_demo.make())}")
+            return 0
+        src = Sources(cache_dir=args.cache, offline=args.offline)
+        failed = 0
+        for n in args.names:
+            path = artist_run.build(n, src, args.out, inline_js=args.inline_js)
+            print(f"Artist page: {path}" if path else f"Artist page: FAILED for {n}")
+            failed += path is None
+        logging.info("HTTP: %s", src.http.stats)
+        return 1 if failed == len(args.names) else 0
 
     if args.cmd == "demo":
         from insights import demo

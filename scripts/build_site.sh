@@ -14,6 +14,26 @@ if python -m insights analyze examples/heavy_and_more.csv --name "Heavy and More
   REAL_OK=1
 fi
 
+# 3a. Synthetic artist with planted trends (offline; shows every section of an artist page).
+python -m insights artist --demo x --out "$OUT" >/dev/null 2>&1 || true
+
+# 3b. Artist lyric studies (MusicBrainz discography + LRCLIB lyrics). One line per artist.
+ARTISTS=()
+if [ -f examples/artists.txt ]; then
+  mapfile -t ARTISTS < <(grep -v '^\s*$' examples/artists.txt)
+fi
+ARTIST_LINKS=""
+for a in "${ARTISTS[@]}"; do
+  start=$(date +%s)
+  if out=$(python -m insights artist "$a" --out "$OUT" --cache .cache/insights 2>&1 | tee /dev/stderr | grep '^Artist page: ' | tail -1); then
+    path=${out#Artist page: }
+    if [ -f "$path" ]; then
+      rel=${path#"$OUT"/}
+      ARTIST_LINKS+="<a class='c' href='${rel}'><b>${a}</b><div class='s'>Lyrics study, built in $(( $(date +%s) - start )) s</div></a>"
+    fi
+  fi
+done
+
 {
   echo "<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>"
   echo "<title>Playlist Insights</title><style>"
@@ -26,6 +46,8 @@ fi
   if [ "$REAL_OK" = 1 ]; then
     echo "<a class='c' href='example/index.html'><b>Example: Heavy and More</b><div class='s'>24 real songs, enriched live from LRCLIB, Deezer, MusicBrainz, Wikipedia (and Last.fm if a key is set).</div></a>"
   fi
+  echo "<h2>Artists</h2>$ARTIST_LINKS"
+  echo "<a class='c' href='artists/the-demo-whales/index.html'><b>Demo artist (synthetic)</b><div class='s'>Invented lyrics with planted trends: the tests must find exactly those.</div></a><h2>Playlists</h2>"
   echo "<a class='c' href='demo-user/index.html'><b>Demo user (synthetic data)</b><div class='s'>Three invented playlists with made-up artists and lyrics. Shows every section.</div></a>"
   echo "<p class='s'>Built $(date -u '+%Y-%m-%d %H:%M UTC') from commit ${GITHUB_SHA:-local}.</p></main></body></html>"
 } > "$OUT/index.html"

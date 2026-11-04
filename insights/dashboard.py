@@ -666,7 +666,8 @@ def _series_css(p: Dict) -> str:
     return "".join(f"--s{i}:{p[f's{i}']};" for i in range(1, 9))
 
 
-def _html(title: str, P: Page, pl: Optional[Playlist], inline_js: bool, back_href: Optional[str]) -> str:
+def _html(title: str, P: Page, pl: Optional[Playlist], inline_js: bool, back_href: Optional[str],
+          subtitle: Optional[str] = None, back_label: str = "← all playlists") -> str:
     css = CSS % {**LIGHT, **{f"d{k}": v for k, v in DARK.items()}, "series": _series_css(LIGHT), "dseries": _series_css(DARK)}
     if inline_js:
         from plotly.offline import get_plotlyjs
@@ -675,8 +676,9 @@ def _html(title: str, P: Page, pl: Optional[Playlist], inline_js: bool, back_hre
         plotly_tag = f"<script src='{PLOTLY_CDN}' charset='utf-8'></script>"
     js = JS % {"figs": json.dumps(P.figs, default=_json_default), "light": json.dumps(LIGHT), "dark": json.dumps(DARK)}
     nav = "".join(f"<a href='#{sid}'>{esc(t)}</a>" for sid, t in P.nav)
-    back = f"<a href='{esc(back_href)}'>← all playlists</a>" if back_href else ""
-    sub = (f"{esc(pl.owner)} · {len(pl.tracks)} tracks · source {esc(pl.source)}" if pl else "Playlist dashboards")
+    back = f"<a href='{esc(back_href)}'>{esc(back_label)}</a>" if back_href else ""
+    sub = esc(subtitle) if subtitle else (f"{esc(pl.owner)} · {len(pl.tracks)} tracks · source {esc(pl.source)}"
+                                          if pl else "Playlist dashboards")
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     return (f"<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>"
             f"<title>{esc(title)}</title><style>{css}</style>{plotly_tag}</head><body>"

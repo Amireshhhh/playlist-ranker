@@ -6,3 +6,8 @@ wordcloud==1.9.4      # word-cloud images
 requests==2.32.3      # free API clients
 pycountry==24.6.1     # ISO country codes for the origin map
 plotly==5.24.1        # only for --inline-js (bundles plotly.js 2.35.2)
+scipy==1.14.1         # statistical tests (artist pages)
+simplemma==1.1.2      # lemmatiser, no model download
+wordfreq==3.1.1       # everyday-English word frequencies (keyness)
+afinn==0.1            # second sentiment lexicon
+networkx==3.4.2       # word co-occurrence network
