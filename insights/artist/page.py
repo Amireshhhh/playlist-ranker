@@ -57,6 +57,34 @@ def _heat(names_r, names_c, z, fmt=".2f", height=None, zmin=None, zmax=None):
                     yaxis={"autorange": "reversed", "gridcolor": "rgba(0,0,0,0)"}))
 
 
+DOMAINS = {
+    # Word swaps for a non-music corpus. Applied to page text and chart labels, never to data payloads.
+    "speeches": [("Songs with lyrics", "Speeches"), ("Studio albums", "Eras"), ("studio albums", "eras"),
+                 ("Tracks not analysed", "Texts not analysed"), ("lyrics study", "language study"),
+                 ("Mean lyric similarity", "Mean language similarity"), ("lyric similarity", "language similarity"),
+                 ("in the lyrics", "in the speeches"), ("the lyrics", "the speeches"), ("lyrics", "speeches"),
+                 ("a chorus repeated", "a refrain repeated"), ("Albums", "Eras"), ("albums", "eras"), ("Album", "Era"),
+                 ("album", "era"), ("Songs", "Speeches"), ("songs", "speeches"), ("Song", "Speech"), ("song", "speech"),
+                 ("never sung", "never used"), ("career order", "chronological order"), ("words sung", "words spoken"), ("sung", "spoken")],
+}
+
+
+def relabel(text: str, domain: Optional[str]) -> str:
+    import re
+    for a, b in DOMAINS.get(domain or "", []):
+        text = re.sub(rf"(?<![\w-]){re.escape(a)}(?![\w-])", b, text)
+    return text.replace("s's ", "s' ")
+
+
+def _relabel_html(html: str, domain: Optional[str]) -> str:
+    """Relabel everything except the word payloads (LOOKUP, SELFSIM), whose keys are data."""
+    if not domain:
+        return html
+    import re
+    parts = re.split(r"(<script>window\.(?:LOOKUP|SELFSIM)=.*?</script>)", html, flags=re.S)
+    return "".join(p if p.startswith("<script>window.") else relabel(p, domain) for p in parts)
+
+
 def render(res: Dict, out_path: Path, inline_js: bool = False, back_href: Optional[str] = None) -> Path:
     P = Page()
     f = res["facts"]
@@ -353,8 +381,9 @@ def render(res: Dict, out_path: Path, inline_js: bool = False, back_href: Option
                 (f"Ignored {len(res.get('unofficial_ignored', []))} album groups with no official release (bootlegs): "
                  f"{esc(', '.join(res['unofficial_ignored'][:12]))}{'…' if len(res.get('unofficial_ignored', [])) > 12 else ''}. "
                  if res.get("unofficial_ignored") else "") +
-                "Studio albums and tracklists from MusicBrainz (primary type Album, no Live/Compilation/Soundtrack; the most common "
-                "official tracklist of each). Lyrics from LRCLIB. Lemmas: simplemma. English baseline: wordfreq. Sentiment: VADER, AFINN.", wide=True)
+                (res.get("source_note") or
+                 "Studio albums and tracklists from MusicBrainz (primary type Album, no Live/Compilation/Soundtrack; the most common "
+                 "official tracklist of each). Lyrics from LRCLIB.") + " Lemmas: simplemma. English baseline: wordfreq. Sentiment: VADER, AFINN.", wide=True)
     P.section("coverage", "What the analysis covers", body)
 
     extra_js = _ARTIST_JS
@@ -362,6 +391,7 @@ def render(res: Dict, out_path: Path, inline_js: bool = False, back_href: Option
                    subtitle=f"{f['songs']} songs on {A} studio albums ({res['albums'][0]['year']}–{res['albums'][-1]['year']})",
                    back_label="← all dashboards")
     html = html.replace("</body>", f"<style>{_ARTIST_CSS}</style><script>{extra_js}</script></body>")
+    html = _relabel_html(html, res.get("domain"))
     out_path = Path(out_path)
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(html, encoding="utf-8")
@@ -401,7 +431,7 @@ _ARTIST_JS = """
   }
   // Ranks against the other artists, from the Atlas (only when served over http, e.g. GitHub Pages).
   const slug=location.pathname.split('/').filter(Boolean).slice(-2,-1)[0];
-  if(location.protocol.startsWith('http')) fetch('../../atlas/ranks.json').then(r=>r.ok?r.json():null).then(all=>{
+  if(location.protocol.startsWith('http') && location.pathname.includes('/artists/')) fetch('../../atlas/ranks.json').then(r=>r.ok?r.json():null).then(all=>{
     const me=all&&all[slug]; if(!me) return;
     const n=Object.keys(all).length; const box=document.getElementById('atlas-box');
     const items=Object.values(me.ranks).filter(r=>r.rank<=3||r.rank>r.of-1).sort((a,b)=>a.rank-b.rank).slice(0,6);

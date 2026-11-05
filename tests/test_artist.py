@@ -171,3 +171,53 @@ def test_atlas_end_to_end(tmp_path):
     ranks = json.loads((tmp_path / "atlas" / "ranks.json").read_text())
     assert set(ranks) == {"alpha-tide", "beta-stone", "gamma-sky"}
     assert all(name not in [n for n, _ in r["nearest"]] for name, r in ((r["artist"], r) for r in ranks.values()))
+
+
+def test_speeches_relabel_and_trend(tmp_path):
+    from insights import speeches
+    from insights.artist import run
+    d = tmp_path / "inaugural"
+    d.mkdir()
+    import random
+    rng = random.Random(1)
+    for k, year in enumerate(range(1789, 2025, 8)):
+        p_we = 0.01 + 0.004 * k
+        words = [("we" if rng.random() < p_we else rng.choice("the nation people government liberty union duty law".split()))
+                 for _ in range(400)]
+        (d / f"{year}-President{k}.txt").write_text(". ".join(" ".join(words[i:i + 12]) for i in range(0, 400, 12)) + ".")
+    c = speeches.load(str(d))
+    assert c.domain == "speeches" and len(c.albums) == 6
+    path = run.build("us-presidents", None, str(tmp_path / "site"), corpus=c, section="speeches")
+    html = path.read_text()
+    summary = json.loads((path.parent / "summary.json").read_text())
+    assert "turned toward “we”" in summary["headline"]["title"]
+    assert " album" not in summary["headline"]["lede"] and "era" in summary["headline"]["lede"]
+    visible = html.split("<script>window.LOOKUP")[0]
+    assert "Studio albums" not in visible and "Eras" in visible
+
+
+def test_reuse_from_previous_site(tmp_path):
+    from insights.artist import run
+    c = demo.make()
+    first = run.build("The Demo Whales", None, str(tmp_path / "old"), corpus=c)
+    assert json.loads((first.parent / "analysis.json").read_text())["engine"] == run.engine_version()
+    # a fetch-free rebuild: src=None would crash if anything tried to fetch
+    again = run.build("The Demo Whales", None, str(tmp_path / "new"), prev_dir=str(tmp_path / "old"))
+    assert again is not None and "stopped saying" in again.read_text()
+
+
+def test_mirror_and_play_pages(tmp_path):
+    from insights import mirror, play
+    from insights.artist import atlas, run
+    m = mirror.build(str(tmp_path)).read_text()
+    assert "never uploaded" in m and "__" not in m.split("<script>")[0].replace("__init__", "")
+    for i, name in enumerate(["A One", "B Two", "C Three", "D Four"]):
+        c = demo.make(seed=30 + i)
+        c.artist = name
+        for s in c.songs:
+            if s.lyrics:
+                s.lyrics += "\n" + (name.split()[1].lower() + " ") * 8
+        run.build(name, None, str(tmp_path), corpus=c)
+    atlas.build(str(tmp_path))
+    g = play.build(str(tmp_path)).read_text()
+    assert "Whose words?" in g and '"slug"' in g

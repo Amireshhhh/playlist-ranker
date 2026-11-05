@@ -50,6 +50,11 @@ def main(argv=None):
     ar.add_argument("--offline", action="store_true")
     ar.add_argument("--inline-js", action="store_true")
     ar.add_argument("--demo", action="store_true", help="synthetic artist with planted trends (offline)")
+    ar.add_argument("--prev", help="previously published site: reuse analyses made by the same engine version")
+    sp = sub.add_parser("speeches", help="the same study on US inaugural addresses (public domain)")
+    sp.add_argument("folder", help="unzipped NLTK inaugural corpus folder")
+    sp.add_argument("--out", default="reports")
+    sp.add_argument("--inline-js", action="store_true")
     at = sub.add_parser("atlas", help="compare all artist pages already built under <site>/artists")
     at.add_argument("--site", default="reports")
     at.add_argument("--inline-js", action="store_true")
@@ -68,11 +73,21 @@ def main(argv=None):
         src = Sources(cache_dir=args.cache, offline=args.offline)
         failed = 0
         for n in args.names:
-            path = artist_run.build(n, src, args.out, inline_js=args.inline_js)
+            path = artist_run.build(n, src, args.out, inline_js=args.inline_js, prev_dir=args.prev)
             print(f"Artist page: {path}" if path else f"Artist page: FAILED for {n}")
             failed += path is None
         logging.info("HTTP: %s", src.http.stats)
         return 1 if failed == len(args.names) else 0
+
+    if args.cmd == "speeches":
+        from insights import speeches
+        from insights.artist import run as artist_run
+        c = speeches.load(args.folder)
+        if c is None:
+            print("Speeches: no <year>-<name>.txt files found")
+            return 1
+        print(f"Speeches page: {artist_run.build('us-presidents', None, args.out, inline_js=args.inline_js, corpus=c, section='speeches')}")
+        return 0
 
     if args.cmd == "atlas":
         from insights.artist import atlas

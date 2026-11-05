@@ -38,9 +38,19 @@ jobs:
 
 
 
+      # The previously published site: artist analyses made by the same engine version are reused,
+      # so a layout change republishes in minutes instead of re-fetching every artist.
+      - name: Check out the published site
+        uses: actions/checkout@v4
+        continue-on-error: true
+        with:
+          ref: gh-pages
+          path: prev
+
       - name: Build dashboards
         env:
           LASTFM_API_KEY: ${{ secrets.LASTFM_API_KEY }}
+          PREV: prev
         run: ./scripts/build_site.sh site
 
       - name: Check that no lyrics are on disk

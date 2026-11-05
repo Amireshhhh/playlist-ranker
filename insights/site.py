@@ -54,15 +54,35 @@ def build(site: str, commit: str = "local") -> Path:
                 f"<div class='s'>{esc(a['headline'])}</div><div class='m'>{a['songs']} songs · {a['albums']} albums · {y} · "
                 f"{a['held']} findings held</div></a>")
 
+    speeches = []
+    for f in sorted((root / "speeches").glob("*/summary.json")):
+        d = json.loads(f.read_text(encoding="utf-8"))
+        speeches.append({"slug": f.parent.name, "artist": d["artist"], "songs": d["facts"]["songs"], "headline": d["headline"]["title"],
+                         "years": (d["per_song"][0]["year"], d["per_song"][-1]["year"]) if d.get("per_song") else None,
+                         "held": sum(t["result"] == "Held" for t in d["tests"])})
+    has_mirror = (root / "mirror" / "index.html").exists()
+    has_play = (root / "play" / "index.html").exists()
+
     parts = [f"<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>"
-             f"<title>{NAME}</title><meta name='description' content='What artists actually say: a statistical atlas of song lyrics.'>"
+             f"<title>{NAME}</title><meta name='description' content='How voices change: tested statistics of lyrics, speeches and your own writing.'>"
              f"<style>{CSS}</style></head><body><main>",
-             f"<h1>What artists actually say.</h1><p class='lede'>{NAME} measures song lyrics the way a scientist would: every "
-             "studio album, the same tests for every artist, and a public scorecard of what held and what failed.</p>",
+             f"<h1>How voices change.</h1><p class='lede'>{NAME} measures language the way a scientist would: a whole body of work, "
+             "the same tests for every voice, and a public scorecard of what held and what failed. Artists' lyrics, presidents' "
+             "speeches, or your own journal.</p>",
              "<div class='cta'>" + ("<a class='btn primary' href='atlas/index.html'>Open the Atlas</a>" if has_atlas else "") +
-             "<a class='btn' href='#artists'>Browse artists</a><a class='btn' href='#yours'>Analyse your playlist</a></div>",
+             "<a class='btn' href='#artists'>Browse artists</a><a class='btn' href='mirror/index.html'>Analyse your writing</a></div>",
              f"<div class='stats'><div><b>{len(real)}</b><span>artists</span></div><div><b>{songs:,}</b><span>songs analysed</span></div>"
-             f"<div><b>0</b><span>lyrics stored</span></div></div>",
+             f"<div><b>{sum(x['songs'] for x in speeches)}</b><span>speeches</span></div><div><b>0</b><span>lyrics stored</span></div></div>",
+             "<h2>Explore</h2><div class='grid'>" +
+             ("<a class='c' href='atlas/index.html'><b>The Atlas</b><div class='s'>Every artist on the same measures: biggest vocabulary, "
+              "most self-focused, darkest, signature words, who sounds alike.</div></a>" if has_atlas else "") +
+             "".join(f"<a class='c' href='speeches/{esc(x['slug'])}/index.html'><b>{esc(x['artist'].capitalize())}, "
+                     f"{x['years'][0]}–{x['years'][1]}</b><div class='s'>{esc(x['headline'])}</div><div class='m'>{x['songs']} inaugural "
+                     f"addresses · public domain · {x['held']} findings held</div></a>" for x in speeches) +
+             ("<a class='c' href='mirror/index.html'><b>Mirror: your own writing</b><div class='s'>Drop in journal entries or essays and "
+              "see how your voice changes over time. Runs in your browser; nothing is uploaded.</div></a>" if has_mirror else "") +
+             ("<a class='c' href='play/index.html'><b>Whose words?</b><div class='s'>A daily game: six signature words, four artists. "
+              "Guess whose vocabulary it is.</div></a>" if has_play else "") + "</div>",
              f"<h2 id='artists'>Artists</h2><div class='grid'>{''.join(acard(a) for a in real)}</div>"]
     demo = [a for a in artists if a["demo"]]
     pl = "".join(f"<a class='c' href='{esc(u.name)}/index.html'><b>{esc(u.name.replace('-', ' ').title())}</b>"

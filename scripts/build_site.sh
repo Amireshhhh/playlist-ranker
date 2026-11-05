@@ -15,15 +15,29 @@ python -m insights analyze examples/heavy_and_more.csv --name "Heavy and More" -
 python -m insights artist --demo x --out "$OUT" >/dev/null 2>&1 || true
 
 # 4. Artist lyric studies (MusicBrainz discography + LRCLIB lyrics). One artist per line.
+#    PREV (the previously published site, checked out by CI) lets unchanged analyses be reused.
+PREV_ARG=()
+[ -n "${PREV:-}" ] && [ -d "$PREV/artists" ] && PREV_ARG=(--prev "$PREV")
 if [ -f examples/artists.txt ]; then
   while IFS= read -r a; do
     [ -z "${a// }" ] && continue
-    python -m insights artist "$a" --out "$OUT" --cache .cache/insights || echo "artist failed: $a"
+    python -m insights artist "$a" --out "$OUT" --cache .cache/insights "${PREV_ARG[@]}" || echo "artist failed: $a"
   done < examples/artists.txt
 fi
 
-# 5. Cross-artist Atlas, then the home page.
+# 5. Beyond music: US inaugural addresses (public domain, NLTK corpus).
+SPEECH_DIR=.cache/speech-corpus
+if [ ! -d "$SPEECH_DIR/inaugural" ]; then
+  mkdir -p "$SPEECH_DIR" && curl -fsSL -o "$SPEECH_DIR/inaugural.zip" \
+    https://raw.githubusercontent.com/nltk/nltk_data/gh-pages/packages/corpora/inaugural.zip \
+    && unzip -q -o "$SPEECH_DIR/inaugural.zip" -d "$SPEECH_DIR" || echo "speech corpus download failed"
+fi
+[ -d "$SPEECH_DIR/inaugural" ] && { python -m insights speeches "$SPEECH_DIR/inaugural" --out "$OUT" || echo "speeches failed"; }
+
+# 6. Cross-artist Atlas, the game, Mirror, then the home page.
 python -m insights atlas --site "$OUT" || echo "atlas skipped"
+python -m insights.play "$OUT" || echo "game skipped"
+python -m insights.mirror "$OUT" || exit 1
 python -m insights.site "$OUT" || exit 1
 touch "$OUT/.nojekyll"
 echo "Site built in $OUT"
