@@ -41,6 +41,7 @@ setup(
     install_requires=requirements,
     extras_require={
         "dev": read_requirements("requirements-dev.txt"),
+        "insights": read_requirements("requirements-insights.txt"),
     },
     entry_points={
         "console_scripts": [
