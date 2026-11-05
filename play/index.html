@@ -1,0 +1,58 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Whose words?</title>
+<style>
+:root{color-scheme:light;--bg:#f9f9f7;--card:#fcfcfb;--ink:#0b0b0b;--ink2:#52514e;--muted:#898781;--line:rgba(11,11,11,.1);--acc:#2a78d6;--ok:#0ca30c;--bad:#d03b3b}
+@media (prefers-color-scheme:dark){:root{color-scheme:dark;--bg:#0d0d0d;--card:#1a1a19;--ink:#f0efec;--ink2:#c3c2b7;--muted:#898781;--line:rgba(255,255,255,.1);--acc:#3987e5}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:620px;margin:0 auto;padding:28px 16px 64px}a{color:var(--acc)}
+h1{font-size:clamp(32px,7vw,48px);margin:8px 0 4px;letter-spacing:-.02em}.sub{color:var(--ink2);margin:0 0 20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px}
+.words{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 18px}.words span{font-size:20px;font-weight:600;padding:6px 14px;border-radius:999px;border:1px solid var(--line);background:var(--bg)}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.opts button{font:inherit;font-weight:600;padding:14px 10px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--ink);cursor:pointer}
+.opts button:hover{border-color:var(--acc)}.opts button.ok{background:var(--ok);border-color:var(--ok);color:#fff}.opts button.bad{background:var(--bad);border-color:var(--bad);color:#fff}
+.meta{display:flex;justify-content:space-between;color:var(--muted);font-size:14px;margin-bottom:6px}
+.next{margin-top:16px;font:inherit;font-weight:600;padding:10px 18px;border-radius:999px;border:0;background:var(--acc);color:#fff;cursor:pointer;display:none}
+.hint{color:var(--ink2);font-size:14px;margin-top:12px;min-height:1.5em}.big{font-size:40px;font-weight:700}
+</style></head><body><main>
+<a href="../index.html">← home</a>
+<h1>Whose words?</h1><p class="sub">Six words an artist uses far more than the other 19 in the Atlas. Who is it? A new set every day.</p>
+<div class="card" id="game"></div>
+<p class="sub" style="margin-top:16px;font-size:13px">Words are each artist's strongest signature words (weighted log-odds vs all other artists). Wrong answers are the
+artists with the most similar vocabulary. <a href="../atlas/index.html">See the Atlas</a>.</p>
+</main><script>
+const A=[{"slug": "arctic-monkeys", "artist": "Arctic Monkeys", "words": ["brick", "snap", "shoo", "easy", "sure", "thought"], "nearest": ["Taylor Swift", "Bob Dylan", "Queen"]}, {"slug": "billie-eilish", "artist": "Billie Eilish", "words": ["hm", "sorry", "addiction", "therefore", "overheat", "think"], "nearest": ["Fleetwood Mac", "Taylor Swift", "Queen"]}, {"slug": "bob-dylan", "artist": "Bob Dylan", "words": ["ready", "serve", "henry", "highway", "blues", "lord"], "nearest": ["Johnny Cash", "Taylor Swift", "Fleetwood Mac"]}, {"slug": "bon-iver", "artist": "Bon Iver", "words": ["hear", "mile", "harm", "move", "tall", "bother"], "nearest": ["Taylor Swift", "Fleetwood Mac", "Bob Dylan"]}, {"slug": "daft-punk", "artist": "Daft Punk", "words": ["free", "human", "dance", "rock", "funk", "air"], "nearest": ["Fleetwood Mac", "Billie Eilish", "Queen"]}, {"slug": "eminem", "artist": "Eminem", "words": ["fuck", "shit", "bitch", "fuckin", "em", "rap"], "nearest": ["Kendrick Lamar", "Bob Dylan", "Taylor Swift"]}, {"slug": "fleetwood-mac", "artist": "Fleetwood Mac", "words": ["love", "baby", "silver", "somebody", "shadow", "woman"], "nearest": ["Queen", "Taylor Swift", "Bob Dylan"]}, {"slug": "gojira", "artist": "Gojira", "words": ["growe", "light", "create", "embrace", "force", "space"], "nearest": ["Mastodon", "Metallica", "Fleetwood Mac"]}, {"slug": "johnny-cash", "artist": "Johnny Cash", "words": ["old", "mountain", "amen", "johnny", "mighty", "heaven"], "nearest": ["Bob Dylan", "Taylor Swift", "Fleetwood Mac"]}, {"slug": "kendrick-lamar", "artist": "Kendrick Lamar", "words": ["n***a", "bitch", "n****s", "fuck", "gon", "talkin"], "nearest": ["Eminem", "Taylor Swift", "Bob Dylan"]}, {"slug": "mastodon", "artist": "Mastodon", "words": ["weight", "spirit", "deep", "bone", "fire", "void"], "nearest": ["Gojira", "Metallica", "Fleetwood Mac"]}, {"slug": "metallica", "artist": "Metallica", "words": ["cheat", "death", "tick", "anger", "misery", "within"], "nearest": ["Mastodon", "Taylor Swift", "Bob Dylan"]}, {"slug": "nirvana", "artist": "Nirvana", "words": ["gimme", "rape", "hello", "daddys", "alcohol", "servant"], "nearest": ["Radiohead", "Fleetwood Mac", "Queen"]}, {"slug": "pink-floyd", "artist": "Pink Floyd", "words": ["hammer", "sun", "wall", "worm", "di", "doctor"], "nearest": ["Fleetwood Mac", "Taylor Swift", "Queen"]}, {"slug": "queen", "artist": "Queen", "words": ["love", "fool", "live", "radio", "chat", "baby"], "nearest": ["Fleetwood Mac", "Bob Dylan", "Taylor Swift"]}, {"slug": "radiohead", "artist": "Radiohead", "words": ["mess", "hurt", "case", "release", "uptight", "raindrop"], "nearest": ["Taylor Swift", "Fleetwood Mac", "Queen"]}, {"slug": "system-of-a-down", "artist": "System of a Down", "words": ["hollywood", "banana", "bite", "boom", "pie", "eat"], "nearest": ["Metallica", "Taylor Swift", "Fleetwood Mac"]}, {"slug": "taylor-swift", "artist": "Taylor Swift", "words": ["wish", "never", "stay", "dress", "shake", "yet"], "nearest": ["Bob Dylan", "Fleetwood Mac", "Queen"]}, {"slug": "the-beatles", "artist": "The Beatles", "words": ["love", "girl", "number", "nine", "yellow", "lonely"], "nearest": ["Queen", "Fleetwood Mac", "Bob Dylan"]}, {"slug": "tool", "artist": "Tool", "words": ["feed", "suck", "push", "cheat", "shove", "steal"], "nearest": ["Mastodon", "Metallica", "Taylor Swift"]}], ROUNDS=Math.min(5,A.length);
+function rng(seed){return()=>{seed|=0;seed=seed+0x6D2B79F5|0;let t=Math.imul(seed^seed>>>15,1|seed);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+const day=new Date().toISOString().slice(0,10), R=rng([...day].reduce((h,c)=>(h*31+c.charCodeAt(0))|0,7));
+const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(R()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+const pool=shuffle(A.filter(a=>a.words.length>=4)).slice(0,ROUNDS);
+let k=0,score=0,marks=[];
+const g=document.getElementById('game');
+function el(t,txt,cls){const e=document.createElement(t);if(txt!==undefined)e.textContent=txt;if(cls)e.className=cls;return e}
+function round(){
+  g.replaceChildren();const a=pool[k];
+  const m=el('div',undefined,'meta');m.append(el('span',`Round ${k+1} of ${pool.length}`),el('span',`Score ${score}`));g.appendChild(m);
+  const w=el('div',undefined,'words');a.words.slice(0,6).forEach(x=>w.appendChild(el('span',x)));g.appendChild(w);
+  const names=A.map(x=>x.artist).filter(n=>n!==a.artist);
+  const near=a.nearest.filter(n=>n!==a.artist).slice(0,3);
+  while(near.length<3){const n=names[Math.floor(R()*names.length)];if(!near.includes(n))near.push(n)}
+  const opts=shuffle([a.artist,...near]),o=el('div',undefined,'opts'),hint=el('div','', 'hint'),nx=el('button',k+1<pool.length?'Next →':'See result','next');
+  opts.forEach(n=>{const b=el('button',n);b.onclick=()=>{
+    const right=n===a.artist;if(right)score++;marks.push(right?'🟩':'🟥');
+    [...o.children].forEach(c=>{c.disabled=true;if(c.textContent===a.artist)c.classList.add('ok');else if(c===b)c.classList.add('bad')});
+    hint.textContent=(right?'Yes! ':'It was '+a.artist+'. ')+'Closest vocabulary: '+a.nearest.join(', ')+'.';
+    const link=el('a',' Open the full study →');link.href='../artists/'+a.slug+'/index.html';hint.appendChild(link);
+    nx.style.display='inline-block'};o.appendChild(b)});
+  nx.onclick=()=>{k++;k<pool.length?round():done()};
+  g.append(o,hint,nx);
+}
+function done(){
+  g.replaceChildren();g.appendChild(el('div',`${score} / ${pool.length}`,'big'));
+  const share=`Whose words? ${day}\n${marks.join('')} ${score}/${pool.length}\n${location.href}`;
+  let best=null;try{best=+localStorage.getItem('ww-best')||0;if(score>best)localStorage.setItem('ww-best',score)}catch(e){}
+  g.appendChild(el('p',best!==null?`Your best: ${Math.max(best,score)} / ${pool.length}. Come back tomorrow for a new set.`:'Come back tomorrow for a new set.','hint'));
+  const b=el('button','Copy result','next');b.style.display='inline-block';
+  b.onclick=()=>{navigator.clipboard&&navigator.clipboard.writeText(share).then(()=>b.textContent='Copied!',()=>b.textContent='Copy failed')};g.appendChild(b);
+}
+round();
+</script></body></html>

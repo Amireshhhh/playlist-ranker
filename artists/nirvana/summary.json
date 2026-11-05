@@ -1,0 +1,6756 @@
+{
+ "artist": "Nirvana",
+ "albums": [
+  {
+   "title": "Bleach",
+   "year": 1989,
+   "order": 0,
+   "tracks": 13
+  },
+  {
+   "title": "Nevermind",
+   "year": 1991,
+   "order": 1,
+   "tracks": 12
+  },
+  {
+   "title": "In Utero",
+   "year": 1993,
+   "order": 2,
+   "tracks": 12
+  }
+ ],
+ "per_song": [
+  {
+   "title": "Blew",
+   "album": "Bleach",
+   "year": 1989,
+   "order": 0,
+   "words": 195,
+   "words_unique_lines": 73,
+   "repetition": 0.6256410256410256,
+   "mattr": 0.563013698630137,
+   "mattr_u": 0.5766666666666667,
+   "vader": -0.043637499999999996,
+   "afinn": 8.219178082191782,
+   "pron_I": 5.47945205479452,
+   "pron_we": 1.36986301369863,
+   "pron_you": 9.58904109589041,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 13.698630136986301,
+   "theme_death & pain": 0.0,
+   "theme_mind & soul": 54.794520547945204,
+   "theme_love": 0.0,
+   "theme_time": 0.0,
+   "theme_conflict": 0.0,
+   "repetition_pct": 62.56410256410256
+  },
+  {
+   "title": "Floyd the Barber",
+   "album": "Bleach",
+   "year": 1989,
+   "order": 0,
+   "words": 104,
+   "words_unique_lines": 86,
+   "repetition": 0.17307692307692313,
+   "mattr": 0.6920000000000001,
+   "mattr_u": 0.8032432432432433,
+   "vader": -0.17353333333333334,
+   "afinn": -15.116279069767442,
+   "pron_I": 16.27906976744186,
+   "pron_we": 0.0,
+   "pron_you": 0.0,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 11.627906976744185,
+   "theme_death & pain": 11.627906976744185,
+   "theme_mind & soul": 0.0,
+   "theme_love": 0.0,
+   "theme_time": 0.0,
+   "theme_conflict": 0.0,
+   "repetition_pct": 17.307692307692314
+  },
+  {
+   "title": "About a Girl",
+   "album": "Bleach",
+   "year": 1989,
+   "order": 0,
+   "words": 156,
+   "words_unique_lines": 82,
+   "repetition": 0.47435897435897434,
+   "mattr": 0.6824299065420562,
+   "mattr_u": 0.6933333333333332,
+   "vader": 0.14787857142857144,
+   "afinn": 8.536585365853659,
+   "pron_I": 15.853658536585366,
+   "pron_we": 0.0,
+   "pron_you": 9.75609756097561,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 24.390243902439025,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 0.0,
+   "theme_death & pain": 0.0,
+   "theme_mind & soul": 12.195121951219512,
+   "theme_love": 0.0,
+   "theme_time": 12.195121951219512,
+   "theme_conflict": 0.0,
+   "repetition_pct": 47.43589743589743
+  },
+  {
+   "title": "School",
+   "album": "Bleach",
+   "year": 1989,
+   "order": 0,
+   "words": 154,
+   "words_unique_lines": 18,
+   "repetition": 0.8831168831168831,
+   "mattr": 0.24095238095238095,
+   "mattr_u": null,
+   "vader": 0.054266666666666664,
+   "afinn": 11.11111111111111,
+   "pron_I": 5.555555555555555,
+   "pron_we": 0.0,
+   "pron_you": 11.11111111111111,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 0.0,
+   "theme_death & pain": 0.0,
+   "theme_mind & soul": 55.55555555555556,
+   "theme_love": 0.0,
+   "theme_time": 0.0,
+   "theme_conflict": 0.0,
+   "repetition_pct": 88.31168831168831
+  },
+  {
+   "title": "Love Buzz",
+   "album": "Bleach",
+   "year": 1989,
+   "order": 0,
+   "words": 110,
+   "words_unique_lines": 37,
+   "repetition": 0.6636363636363636,
+   "mattr": 0.5111475409836066,
+   "mattr_u": null,
+   "vader": 0.26292,
+   "afinn": -2.7027027027027026,
+   "pron_I": 16.216216216216218,
+   "pron_we": 0.0,
+   "pron_you": 13.513513513513514,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 0.0,
+   "theme_death & pain": 27.027027027027028,
+   "theme_mind & soul": 27.027027027027028,
+   "theme_love": 54.054054054054056,
+   "theme_time": 0.0,
+   "theme_conflict": 0.0,
+   "repetition_pct": 66.36363636363636
+  },
+  {
+   "title": "Paper Cuts",
+   "album": "Bleach",
+   "year": 1989,
+   "order": 0,
+   "words": 176,
+   "words_unique_lines": 160,
+   "repetition": 0.09090909090909094,
+   "mattr": 0.7445669291338582,
+   "mattr_u": 0.7911711711711712,
+   "vader": 0.06386333333333333,
+   "afinn": 3.75,
+   "pron_I": 12.5,
+   "pron_we": 0.0,
+   "pron_you": 1.875,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 12.5,
+   "theme_darkness": 6.25,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 0.0,
+   "theme_death & pain": 0.0,
+   "theme_mind & soul": 0.0,
+   "theme_love": 6.25,
+   "theme_time": 6.25,
+   "theme_conflict": 0.0,
+   "repetition_pct": 9.090909090909093
+  },
+  {
+   "title": "Negative Creep",
+   "album": "Bleach",
+   "year": 1989,
+   "order": 0,
+   "words": 361,
+   "words_unique_lines": 84,
+   "repetition": 0.7673130193905817,
+   "mattr": 0.2698076923076923,
+   "mattr_u": 0.4891428571428571,
+   "vader": -0.09227142857142856,
+   "afinn": -3.5714285714285716,
+   "pron_I": 5.9523809523809526,
+   "pron_we": 4.761904761904762,
+   "pron_you": 0.0,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 23.80952380952381,
+   "theme_life & growth": 11.904761904761905,
+   "theme_death & pain": 0.0,
+   "theme_mind & soul": 0.0,
+   "theme_love": 0.0,
+   "theme_time": 0.0,
+   "theme_conflict": 0.0,
+   "repetition_pct": 76.73130193905817
+  },
+  {
+   "title": "Scoff",
+   "album": "Bleach",
+   "year": 1989,
+   "order": 0,
+   "words": 238,
+   "words_unique_lines": 48,
+   "repetition": 0.7983193277310925,
+   "mattr": 0.3482539682539682,
+   "mattr_u": null,
+   "vader": -0.02888,
+   "afinn": -2.0833333333333335,
+   "pron_I": 16.666666666666668,
+   "pron_we": 0.0,
+   "pron_you": 4.166666666666667,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 20.833333333333332,
+   "theme_death & pain": 20.833333333333332,
+   "theme_mind & soul": 0.0,
+   "theme_love": 0.0,
+   "theme_time": 0.0,
+   "theme_conflict": 0.0,
+   "repetition_pct": 79.83193277310924
+  },
+  {
+   "title": "Swap Meet",
+   "album": "Bleach",
+   "year": 1989,
+   "order": 0,
+   "words": 261,
+   "words_unique_lines": 103,
+   "repetition": 0.6053639846743295,
+   "mattr": 0.7030188679245284,
+   "mattr_u": 0.6555555555555556,
+   "vader": 0.3556153846153846,
+   "afinn": 12.62135922330097,
+   "pron_I": 0.0,
+   "pron_we": 0.0,
+   "pron_you": 0.0,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 9.70873786407767,
+   "theme_death & pain": 0.0,
+   "theme_mind & soul": 0.0,
+   "theme_love": 67.96116504854369,
+   "theme_time": 0.0,
+   "theme_conflict": 0.0,
+   "repetition_pct": 60.53639846743295
+  },
+  {
+   "title": "Mr. Moustache",
+   "album": "Bleach",
+   "year": 1989,
+   "order": 0,
+   "words": 165,
+   "words_unique_lines": 75,
+   "repetition": 0.5454545454545454,
+   "mattr": 0.7418965517241379,
+   "mattr_u": 0.8261538461538461,
+   "vader": 0.10692857142857141,
+   "afinn": 13.333333333333334,
+   "pron_I": 16.0,
+   "pron_we": 0.0,
+   "pron_you": 8.0,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 13.333333333333334,
+   "theme_life & growth": 0.0,
+   "theme_death & pain": 0.0,
+   "theme_mind & soul": 0.0,
+   "theme_love": 0.0,
+   "theme_time": 0.0,
+   "theme_conflict": 0.0,
+   "repetition_pct": 54.54545454545454
+  },
+  {
+   "title": "Sifting",
+   "album": "Bleach",
+   "year": 1989,
+   "order": 0,
+   "words": 231,
+   "words_unique_lines": 39,
+   "repetition": 0.8311688311688312,
+   "mattr": 0.29802197802197805,
+   "mattr_u": null,
+   "vader": -0.07468333333333334,
+   "afinn": 0.0,
+   "pron_I": 0.0,
+   "pron_we": 0.0,
+   "pron_you": 7.6923076923076925,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 0.0,
+   "theme_death & pain": 0.0,
+   "theme_mind & soul": 0.0,
+   "theme_love": 0.0,
+   "theme_time": 0.0,
+   "theme_conflict": 0.0,
+   "repetition_pct": 83.11688311688312
+  },
+  {
+   "title": "Big Cheese",
+   "album": "Bleach",
+   "year": 1989,
+   "order": 0,
+   "words": 134,
+   "words_unique_lines": 56,
+   "repetition": 0.582089552238806,
+   "mattr": 0.5331764705882354,
+   "mattr_u": 0.7114285714285714,
+   "vader": -0.13437272727272728,
+   "afinn": -7.142857142857143,
+   "pron_I": 12.5,
+   "pron_we": 0.0,
+   "pron_you": 5.357142857142857,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 35.714285714285715,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 0.0,
+   "theme_death & pain": 0.0,
+   "theme_mind & soul": 0.0,
+   "theme_love": 0.0,
+   "theme_time": 0.0,
+   "theme_conflict": 17.857142857142858,
+   "repetition_pct": 58.2089552238806
+  },
+  {
+   "title": "Downer",
+   "album": "Bleach",
+   "year": 1989,
+   "order": 0,
+   "words": 153,
+   "words_unique_lines": 123,
+   "repetition": 0.196078431372549,
+   "mattr": 0.8848076923076923,
+   "mattr_u": 0.8951351351351352,
+   "vader": -0.004589999999999997,
+   "afinn": -3.252032520325203,
+   "pron_I": 6.504065040650406,
+   "pron_we": 1.6260162601626016,
+   "pron_you": 4.065040650406504,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 8.130081300813009,
+   "theme_life & growth": 0.0,
+   "theme_death & pain": 8.130081300813009,
+   "theme_mind & soul": 8.130081300813009,
+   "theme_love": 0.0,
+   "theme_time": 0.0,
+   "theme_conflict": 0.0,
+   "repetition_pct": 19.6078431372549
+  },
+  {
+   "title": "Smells Like Teen Spirit",
+   "album": "Nevermind",
+   "year": 1991,
+   "order": 1,
+   "words": 262,
+   "words_unique_lines": 133,
+   "repetition": 0.49236641221374045,
+   "mattr": 0.6518309859154929,
+   "mattr_u": 0.799047619047619,
+   "vader": 0.034852173913043474,
+   "afinn": -7.518796992481203,
+   "pron_I": 9.022556390977444,
+   "pron_we": 2.255639097744361,
+   "pron_you": 0.7518796992481203,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 7.518796992481203,
+   "theme_darkness": 0.0,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 0.0,
+   "theme_death & pain": 0.0,
+   "theme_mind & soul": 7.518796992481203,
+   "theme_love": 0.0,
+   "theme_time": 0.0,
+   "theme_conflict": 7.518796992481203,
+   "repetition_pct": 49.23664122137404
+  },
+  {
+   "title": "In Bloom",
+   "album": "Nevermind",
+   "year": 1991,
+   "order": 1,
+   "words": 272,
+   "words_unique_lines": 77,
+   "repetition": 0.7169117647058824,
+   "mattr": 0.5764125560538117,
+   "mattr_u": 0.6521428571428571,
+   "vader": 0.03358125000000001,
+   "afinn": 5.194805194805195,
+   "pron_I": 2.5974025974025974,
+   "pron_we": 2.5974025974025974,
+   "pron_you": 0.0,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 12.987012987012987,
+   "theme_life & growth": 0.0,
+   "theme_death & pain": 0.0,
+   "theme_mind & soul": 0.0,
+   "theme_love": 0.0,
+   "theme_time": 12.987012987012987,
+   "theme_conflict": 12.987012987012987,
+   "repetition_pct": 71.69117647058823
+  },
+  {
+   "title": "Come as You Are",
+   "album": "Nevermind",
+   "year": 1991,
+   "order": 1,
+   "words": 148,
+   "words_unique_lines": 94,
+   "repetition": 0.3648648648648649,
+   "mattr": 0.4222222222222222,
+   "mattr_u": 0.5733333333333334,
+   "vader": 0.14747333333333332,
+   "afinn": -7.446808510638298,
+   "pron_I": 7.446808510638298,
+   "pron_we": 0.0,
+   "pron_you": 5.319148936170213,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 0.0,
+   "theme_death & pain": 0.0,
+   "theme_mind & soul": 0.0,
+   "theme_love": 0.0,
+   "theme_time": 10.638297872340425,
+   "theme_conflict": 53.191489361702125,
+   "repetition_pct": 36.48648648648649
+  },
+  {
+   "title": "Breed",
+   "album": "Nevermind",
+   "year": 1991,
+   "order": 1,
+   "words": 317,
+   "words_unique_lines": 148,
+   "repetition": 0.5331230283911672,
+   "mattr": 0.41514925373134326,
+   "mattr_u": 0.41535353535353536,
+   "vader": -0.0960857142857143,
+   "afinn": 8.783783783783784,
+   "pron_I": 12.837837837837839,
+   "pron_we": 4.054054054054054,
+   "pron_you": 2.027027027027027,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 13.513513513513514,
+   "theme_life & growth": 0.0,
+   "theme_death & pain": 0.0,
+   "theme_mind & soul": 40.54054054054054,
+   "theme_love": 0.0,
+   "theme_time": 0.0,
+   "theme_conflict": 0.0,
+   "repetition_pct": 53.31230283911672
+  },
+  {
+   "title": "Lithium",
+   "album": "Nevermind",
+   "year": 1991,
+   "order": 1,
+   "words": 334,
+   "words_unique_lines": 151,
+   "repetition": 0.5479041916167664,
+   "mattr": 0.48252631578947364,
+   "mattr_u": 0.6270588235294118,
+   "vader": 0.10553636363636364,
+   "afinn": 4.635761589403973,
+   "pron_I": 19.205298013245034,
+   "pron_we": 0.6622516556291391,
+   "pron_you": 3.3112582781456954,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 6.622516556291391,
+   "theme_darkness": 0.0,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 0.0,
+   "theme_death & pain": 6.622516556291391,
+   "theme_mind & soul": 6.622516556291391,
+   "theme_love": 6.622516556291391,
+   "theme_time": 0.0,
+   "theme_conflict": 0.0,
+   "repetition_pct": 54.79041916167664
+  },
+  {
+   "title": "Polly",
+   "album": "Nevermind",
+   "year": 1991,
+   "order": 1,
+   "words": 215,
+   "words_unique_lines": 105,
+   "repetition": 0.5116279069767442,
+   "mattr": 0.7204819277108433,
+   "mattr_u": 0.7875,
+   "vader": 0.06036666666666665,
+   "afinn": 6.666666666666667,
+   "pron_I": 11.428571428571429,
+   "pron_we": 0.0,
+   "pron_you": 2.857142857142857,
+   "theme_water": 9.523809523809524,
+   "theme_sky & cosmos": 9.523809523809524,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 9.523809523809524,
+   "theme_life & growth": 0.0,
+   "theme_death & pain": 9.523809523809524,
+   "theme_mind & soul": 19.047619047619047,
+   "theme_love": 0.0,
+   "theme_time": 0.0,
+   "theme_conflict": 0.0,
+   "repetition_pct": 51.162790697674424
+  },
+  {
+   "title": "Territorial Pissings",
+   "album": "Nevermind",
+   "year": 1991,
+   "order": 1,
+   "words": 209,
+   "words_unique_lines": 82,
+   "repetition": 0.6076555023923444,
+   "mattr": 0.404375,
+   "mattr_u": 0.6793939393939393,
+   "vader": 0.09781818181818182,
+   "afinn": 10.975609756097562,
+   "pron_I": 3.658536585365854,
+   "pron_we": 0.0,
+   "pron_you": 3.658536585365854,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 0.0,
+   "theme_death & pain": 0.0,
+   "theme_mind & soul": 0.0,
+   "theme_love": 12.195121951219512,
+   "theme_time": 0.0,
+   "theme_conflict": 0.0,
+   "repetition_pct": 60.76555023923444
+  },
+  {
+   "title": "Drain You",
+   "album": "Nevermind",
+   "year": 1991,
+   "order": 1,
+   "words": 197,
+   "words_unique_lines": 109,
+   "repetition": 0.4467005076142132,
+   "mattr": 0.7902702702702703,
+   "mattr_u": 0.7903333333333333,
+   "vader": 0.17053999999999997,
+   "afinn": 9.174311926605505,
+   "pron_I": 10.091743119266056,
+   "pron_we": 0.0,
+   "pron_you": 10.091743119266056,
+   "theme_water": 9.174311926605505,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 0.0,
+   "theme_death & pain": 0.0,
+   "theme_mind & soul": 9.174311926605505,
+   "theme_love": 18.34862385321101,
+   "theme_time": 0.0,
+   "theme_conflict": 0.0,
+   "repetition_pct": 44.67005076142132
+  },
+  {
+   "title": "Lounge Act",
+   "album": "Nevermind",
+   "year": 1991,
+   "order": 1,
+   "words": 266,
+   "words_unique_lines": 152,
+   "repetition": 0.4285714285714286,
+   "mattr": 0.7787096774193549,
+   "mattr_u": 0.7846601941747573,
+   "vader": 0.045927272727272705,
+   "afinn": -10.526315789473685,
+   "pron_I": 11.842105263157896,
+   "pron_we": 2.6315789473684212,
+   "pron_you": 3.289473684210526,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 6.578947368421052,
+   "theme_death & pain": 0.0,
+   "theme_mind & soul": 0.0,
+   "theme_love": 0.0,
+   "theme_time": 0.0,
+   "theme_conflict": 6.578947368421052,
+   "repetition_pct": 42.85714285714286
+  },
+  {
+   "title": "Stay Away",
+   "album": "Nevermind",
+   "year": 1991,
+   "order": 1,
+   "words": 190,
+   "words_unique_lines": 55,
+   "repetition": 0.7105263157894737,
+   "mattr": 0.44198581560283684,
+   "mattr_u": 0.8166666666666668,
+   "vader": -0.0444,
+   "afinn": 1.8181818181818181,
+   "pron_I": 1.8181818181818181,
+   "pron_we": 0.0,
+   "pron_you": 0.0,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 0.0,
+   "theme_death & pain": 18.181818181818183,
+   "theme_mind & soul": 18.181818181818183,
+   "theme_love": 18.181818181818183,
+   "theme_time": 0.0,
+   "theme_conflict": 0.0,
+   "repetition_pct": 71.05263157894737
+  },
+  {
+   "title": "On a Plain",
+   "album": "Nevermind",
+   "year": 1991,
+   "order": 1,
+   "words": 304,
+   "words_unique_lines": 157,
+   "repetition": 0.48355263157894735,
+   "mattr": 0.6371764705882353,
+   "mattr_u": 0.7755555555555556,
+   "vader": -0.02592727272727272,
+   "afinn": -5.732484076433121,
+   "pron_I": 14.012738853503185,
+   "pron_we": 0.0,
+   "pron_you": 0.6369426751592356,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 12.738853503184714,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 0.0,
+   "theme_death & pain": 12.738853503184714,
+   "theme_mind & soul": 12.738853503184714,
+   "theme_love": 6.369426751592357,
+   "theme_time": 12.738853503184714,
+   "theme_conflict": 0.0,
+   "repetition_pct": 48.35526315789473
+  },
+  {
+   "title": "Something in the Way",
+   "album": "Nevermind",
+   "year": 1991,
+   "order": 1,
+   "words": 181,
+   "words_unique_lines": 58,
+   "repetition": 0.6795580110497237,
+   "mattr": 0.5574242424242424,
+   "mattr_u": 0.78,
+   "vader": -0.045783333333333336,
+   "afinn": -3.4482758620689653,
+   "pron_I": 6.896551724137931,
+   "pron_we": 0.0,
+   "pron_you": 0.0,
+   "theme_water": 17.24137931034483,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 17.24137931034483,
+   "theme_life & growth": 0.0,
+   "theme_death & pain": 0.0,
+   "theme_mind & soul": 0.0,
+   "theme_love": 0.0,
+   "theme_time": 0.0,
+   "theme_conflict": 0.0,
+   "repetition_pct": 67.95580110497237
+  },
+  {
+   "title": "Serve the Servants",
+   "album": "In Utero",
+   "year": 1993,
+   "order": 2,
+   "words": 182,
+   "words_unique_lines": 107,
+   "repetition": 0.41208791208791207,
+   "mattr": 0.5950375939849625,
+   "mattr_u": 0.8131034482758621,
+   "vader": -0.07585789473684211,
+   "afinn": -12.149532710280374,
+   "pron_I": 7.4766355140186915,
+   "pron_we": 0.9345794392523364,
+   "pron_you": 1.8691588785046729,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 9.345794392523365,
+   "theme_death & pain": 18.69158878504673,
+   "theme_mind & soul": 18.69158878504673,
+   "theme_love": 0.0,
+   "theme_time": 0.0,
+   "theme_conflict": 9.345794392523365,
+   "repetition_pct": 41.208791208791204
+  },
+  {
+   "title": "Scentless Apprentice",
+   "album": "In Utero",
+   "year": 1993,
+   "order": 2,
+   "words": 110,
+   "words_unique_lines": 89,
+   "repetition": 0.19090909090909092,
+   "mattr": 0.7570491803278688,
+   "mattr_u": 0.857,
+   "vader": 0.052913333333333326,
+   "afinn": 3.3707865168539324,
+   "pron_I": 6.741573033707865,
+   "pron_we": 0.0,
+   "pron_you": 2.247191011235955,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 22.471910112359552,
+   "theme_earth & nature": 11.235955056179776,
+   "theme_life & growth": 22.471910112359552,
+   "theme_death & pain": 0.0,
+   "theme_mind & soul": 0.0,
+   "theme_love": 11.235955056179776,
+   "theme_time": 0.0,
+   "theme_conflict": 0.0,
+   "repetition_pct": 19.090909090909093
+  },
+  {
+   "title": "Heart\u2010Shaped Box",
+   "album": "In Utero",
+   "year": 1993,
+   "order": 2,
+   "words": 265,
+   "words_unique_lines": 95,
+   "repetition": 0.6415094339622642,
+   "mattr": 0.6325925925925926,
+   "mattr_u": 0.8391304347826087,
+   "vader": -0.187975,
+   "afinn": -7.368421052631579,
+   "pron_I": 10.526315789473685,
+   "pron_we": 0.0,
+   "pron_you": 8.421052631578947,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 21.05263157894737,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 10.526315789473685,
+   "theme_death & pain": 0.0,
+   "theme_mind & soul": 0.0,
+   "theme_love": 10.526315789473685,
+   "theme_time": 10.526315789473685,
+   "theme_conflict": 0.0,
+   "repetition_pct": 64.15094339622642
+  },
+  {
+   "title": "Rape Me",
+   "album": "In Utero",
+   "year": 1993,
+   "order": 2,
+   "words": 161,
+   "words_unique_lines": 48,
+   "repetition": 0.7018633540372671,
+   "mattr": 0.39125,
+   "mattr_u": null,
+   "vader": -0.22849166666666668,
+   "afinn": -39.583333333333336,
+   "pron_I": 22.916666666666668,
+   "pron_we": 0.0,
+   "pron_you": 6.25,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 20.833333333333332,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 0.0,
+   "theme_death & pain": 0.0,
+   "theme_mind & soul": 0.0,
+   "theme_love": 20.833333333333332,
+   "theme_time": 0.0,
+   "theme_conflict": 20.833333333333332,
+   "repetition_pct": 70.1863354037267
+  },
+  {
+   "title": "Frances Farmer Will Have Her Revenge on Seattle",
+   "album": "In Utero",
+   "year": 1993,
+   "order": 2,
+   "words": 206,
+   "words_unique_lines": 123,
+   "repetition": 0.40291262135922334,
+   "mattr": 0.6561783439490446,
+   "mattr_u": 0.8302702702702703,
+   "vader": 0.09320625,
+   "afinn": -4.065040650406504,
+   "pron_I": 2.4390243902439024,
+   "pron_we": 1.6260162601626016,
+   "pron_you": 8.130081300813009,
+   "theme_water": 8.130081300813009,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 24.390243902439025,
+   "theme_earth & nature": 8.130081300813009,
+   "theme_life & growth": 0.0,
+   "theme_death & pain": 0.0,
+   "theme_mind & soul": 0.0,
+   "theme_love": 0.0,
+   "theme_time": 0.0,
+   "theme_conflict": 0.0,
+   "repetition_pct": 40.29126213592234
+  },
+  {
+   "title": "Dumb",
+   "album": "In Utero",
+   "year": 1993,
+   "order": 2,
+   "words": 243,
+   "words_unique_lines": 110,
+   "repetition": 0.5473251028806585,
+   "mattr": 0.4697938144329897,
+   "mattr_u": 0.7095081967213115,
+   "vader": 0.17180666666666664,
+   "afinn": 12.727272727272727,
+   "pron_I": 14.545454545454545,
+   "pron_we": 2.727272727272727,
+   "pron_you": 0.9090909090909091,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 27.272727272727273,
+   "theme_light": 27.272727272727273,
+   "theme_darkness": 0.0,
+   "theme_fire": 9.090909090909092,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 0.0,
+   "theme_death & pain": 0.0,
+   "theme_mind & soul": 36.36363636363637,
+   "theme_love": 9.090909090909092,
+   "theme_time": 9.090909090909092,
+   "theme_conflict": 0.0,
+   "repetition_pct": 54.73251028806585
+  },
+  {
+   "title": "Very Ape",
+   "album": "In Utero",
+   "year": 1993,
+   "order": 2,
+   "words": 134,
+   "words_unique_lines": 76,
+   "repetition": 0.4328358208955224,
+   "mattr": 0.6934117647058824,
+   "mattr_u": 0.7762962962962964,
+   "vader": 0.07948461538461538,
+   "afinn": 0.0,
+   "pron_I": 10.526315789473685,
+   "pron_we": 0.0,
+   "pron_you": 1.3157894736842106,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 39.473684210526315,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 26.31578947368421,
+   "theme_life & growth": 0.0,
+   "theme_death & pain": 0.0,
+   "theme_mind & soul": 0.0,
+   "theme_love": 0.0,
+   "theme_time": 0.0,
+   "theme_conflict": 0.0,
+   "repetition_pct": 43.28358208955224
+  },
+  {
+   "title": "Milk It",
+   "album": "In Utero",
+   "year": 1993,
+   "order": 2,
+   "words": 160,
+   "words_unique_lines": 98,
+   "repetition": 0.38749999999999996,
+   "mattr": 0.6727927927927928,
+   "mattr_u": 0.7383673469387755,
+   "vader": -0.12853888888888887,
+   "afinn": -14.285714285714286,
+   "pron_I": 11.224489795918368,
+   "pron_we": 3.061224489795918,
+   "pron_you": 2.0408163265306123,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 30.612244897959183,
+   "theme_light": 10.204081632653061,
+   "theme_darkness": 0.0,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 10.204081632653061,
+   "theme_death & pain": 0.0,
+   "theme_mind & soul": 0.0,
+   "theme_love": 0.0,
+   "theme_time": 0.0,
+   "theme_conflict": 0.0,
+   "repetition_pct": 38.74999999999999
+  },
+  {
+   "title": "Pennyroyal Tea",
+   "album": "In Utero",
+   "year": 1993,
+   "order": 2,
+   "words": 101,
+   "words_unique_lines": 65,
+   "repetition": 0.3564356435643564,
+   "mattr": 0.63,
+   "mattr_u": 0.72875,
+   "vader": -0.14677272727272728,
+   "afinn": -13.846153846153847,
+   "pron_I": 16.923076923076923,
+   "pron_we": 0.0,
+   "pron_you": 0.0,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 15.384615384615385,
+   "theme_death & pain": 0.0,
+   "theme_mind & soul": 0.0,
+   "theme_love": 0.0,
+   "theme_time": 15.384615384615385,
+   "theme_conflict": 0.0,
+   "repetition_pct": 35.64356435643564
+  },
+  {
+   "title": "Radio Friendly Unit Shifter",
+   "album": "In Utero",
+   "year": 1993,
+   "order": 2,
+   "words": 224,
+   "words_unique_lines": 112,
+   "repetition": 0.5,
+   "mattr": 0.5819428571428571,
+   "mattr_u": 0.7019047619047619,
+   "vader": -0.02605714285714285,
+   "afinn": -4.464285714285714,
+   "pron_I": 10.714285714285714,
+   "pron_we": 0.8928571428571429,
+   "pron_you": 6.25,
+   "theme_water": 8.928571428571429,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 17.857142857142858,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 0.0,
+   "theme_death & pain": 0.0,
+   "theme_mind & soul": 44.642857142857146,
+   "theme_love": 8.928571428571429,
+   "theme_time": 0.0,
+   "theme_conflict": 26.785714285714285,
+   "repetition_pct": 50.0
+  },
+  {
+   "title": "Tourette\u2019s",
+   "album": "In Utero",
+   "year": 1993,
+   "order": 2,
+   "words": 84,
+   "words_unique_lines": 70,
+   "repetition": 0.16666666666666663,
+   "mattr": 0.5137142857142858,
+   "mattr_u": 0.5904761904761905,
+   "vader": 0.4707615384615385,
+   "afinn": 2.857142857142857,
+   "pron_I": 11.428571428571429,
+   "pron_we": 2.857142857142857,
+   "pron_you": 0.0,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 14.285714285714286,
+   "theme_life & growth": 0.0,
+   "theme_death & pain": 0.0,
+   "theme_mind & soul": 0.0,
+   "theme_love": 171.42857142857142,
+   "theme_time": 28.571428571428573,
+   "theme_conflict": 0.0,
+   "repetition_pct": 16.666666666666664
+  },
+  {
+   "title": "All Apologies",
+   "album": "In Utero",
+   "year": 1993,
+   "order": 2,
+   "words": 252,
+   "words_unique_lines": 86,
+   "repetition": 0.6587301587301587,
+   "mattr": 0.3407881773399015,
+   "mattr_u": 0.7643243243243244,
+   "vader": 0.0037800000000000056,
+   "afinn": 2.3255813953488373,
+   "pron_I": 11.627906976744185,
+   "pron_we": 1.1627906976744187,
+   "pron_you": 1.1627906976744187,
+   "theme_water": 11.627906976744185,
+   "theme_sky & cosmos": 23.25581395348837,
+   "theme_light": 23.25581395348837,
+   "theme_darkness": 0.0,
+   "theme_fire": 23.25581395348837,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 0.0,
+   "theme_death & pain": 0.0,
+   "theme_mind & soul": 0.0,
+   "theme_love": 0.0,
+   "theme_time": 0.0,
+   "theme_conflict": 11.627906976744185,
+   "repetition_pct": 65.87301587301587
+  }
+ ],
+ "pronouns": {
+  "I": {
+   "rows": [
+    {
+     "album": "Bleach",
+     "year": 1989,
+     "order": 0,
+     "mean": 9.962081906945503,
+     "lo": 6.592816378855413,
+     "hi": 13.124155142532906,
+     "n": 13
+    },
+    {
+     "album": "Nevermind",
+     "year": 1991,
+     "order": 1,
+     "mean": 9.238194345190449,
+     "lo": 6.653904886074457,
+     "hi": 11.905241474459427,
+     "n": 12
+    },
+    {
+     "album": "In Utero",
+     "year": 1993,
+     "order": 2,
+     "mean": 11.424193047302971,
+     "lo": 8.707311791690351,
+     "hi": 14.381729914362825,
+     "n": 12
+    }
+   ],
+   "rho": 0.5,
+   "p": 1.0,
+   "song_rho": 0.05872471935115229,
+   "song_p": 0.7299091371329999
+  },
+  "we": {
+   "rows": [
+    {
+     "album": "Bleach",
+     "year": 1989,
+     "order": 0,
+     "mean": 0.5967526181358457,
+     "lo": 0.0,
+     "hi": 1.4155159352285953,
+     "n": 13
+    },
+    {
+     "album": "Nevermind",
+     "year": 1991,
+     "order": 1,
+     "mean": 1.0167438626832144,
+     "lo": 0.27448588358313003,
+     "hi": 1.8536821168400115,
+     "n": 12
+    },
+    {
+     "album": "In Utero",
+     "year": 1993,
+     "order": 2,
+     "mean": 1.1051569678465003,
+     "lo": 0.47170899090848883,
+     "hi": 1.7541303005004079,
+     "n": 12
+    }
+   ],
+   "rho": 1.0,
+   "p": 0.3333333333333333,
+   "song_rho": 0.25849923354141036,
+   "song_p": 0.1223920216496663
+  },
+  "you": {
+   "rows": [
+    {
+     "album": "Bleach",
+     "year": 1989,
+     "order": 0,
+     "mean": 5.77891701138572,
+     "lo": 3.5125359100008287,
+     "hi": 8.09687791499832,
+     "n": 13
+    },
+    {
+     "album": "Nevermind",
+     "year": 1991,
+     "order": 1,
+     "mean": 2.6619294051446323,
+     "lo": 1.2577191821737395,
+     "hi": 4.341481595867557,
+     "n": 12
+    },
+    {
+     "album": "In Utero",
+     "year": 1993,
+     "order": 2,
+     "mean": 3.216330935759394,
+     "lo": 1.6666641399217568,
+     "hi": 4.967467779901425,
+     "n": 12
+    }
+   ],
+   "rho": -0.5,
+   "p": 1.0,
+   "song_rho": -0.21752398632929518,
+   "song_p": 0.19591295988751323
+  }
+ },
+ "repetition": {
+  "rows": [
+   {
+    "album": "Bleach",
+    "year": 1989,
+    "order": 0,
+    "mean": 55.66559194438457,
+    "lo": 41.217934112256,
+    "hi": 68.22968618713,
+    "n": 13
+   },
+   {
+    "album": "Nevermind",
+    "year": 1991,
+    "order": 1,
+    "mean": 54.36135471471081,
+    "lo": 48.74159803895952,
+    "hi": 60.51814323010708,
+    "n": 12
+   },
+   {
+    "album": "In Utero",
+    "year": 1993,
+    "order": 2,
+    "mean": 44.98979837577601,
+    "lo": 35.74528184308802,
+    "hi": 54.11310654612595,
+    "n": 12
+   }
+  ],
+  "rho": -1.0,
+  "p": 0.3333333333333333,
+  "song_rho": -0.28563367645191845,
+  "song_p": 0.08658081210369113
+ },
+ "mattr": {
+  "rows": [
+   {
+    "album": "Bleach",
+    "year": 1989,
+    "order": 0,
+    "mean": 0.5548533597977132,
+    "lo": 0.44851747205624765,
+    "hi": 0.6702276348372712,
+    "n": 13
+   },
+   {
+    "album": "Nevermind",
+    "year": 1991,
+    "order": 1,
+    "mean": 0.5732137281440105,
+    "lo": 0.49787159176855367,
+    "hi": 0.6485575580795224,
+    "n": 12
+   },
+   {
+    "album": "In Utero",
+    "year": 1993,
+    "order": 2,
+    "mean": 0.5778792835819314,
+    "lo": 0.5109233674493855,
+    "hi": 0.6416032897685846,
+    "n": 12
+   }
+  ],
+  "rho": 1.0,
+  "p": 0.3333333333333333,
+  "song_rho": 0.021623676210268474,
+  "song_p": 0.8989151560901067
+ },
+ "mattr_u": {
+  "rows": [
+   {
+    "album": "Bleach",
+    "year": 1989,
+    "order": 0,
+    "mean": 0.7157589310922644,
+    "lo": 0.6318250774584108,
+    "hi": 0.7927767456100788,
+    "n": 9
+   },
+   {
+    "album": "Nevermind",
+    "year": 1991,
+    "order": 1,
+    "mean": 0.7067538214609174,
+    "lo": 0.6365096413461188,
+    "hi": 0.7636942771106677,
+    "n": 12
+   },
+   {
+    "album": "In Utero",
+    "year": 1993,
+    "order": 2,
+    "mean": 0.759011933635491,
+    "lo": 0.7142742152192729,
+    "hi": 0.7992874015617659,
+    "n": 11
+   }
+  ],
+  "rho": 0.5,
+  "p": 1.0,
+  "song_rho": 0.12856808918390877,
+  "song_p": 0.4831321205750806
+ },
+ "themes": [
+  {
+   "theme": "water",
+   "rows": [
+    {
+     "album": "Bleach",
+     "year": 1989,
+     "order": 0,
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 13
+    },
+    {
+     "album": "Nevermind",
+     "year": 1991,
+     "order": 1,
+     "mean": 2.994958396729988,
+     "lo": 0.0,
+     "hi": 6.511652430665401,
+     "n": 12
+    },
+    {
+     "album": "In Utero",
+     "year": 1993,
+     "order": 2,
+     "mean": 2.390546642177385,
+     "lo": 0.0,
+     "hi": 4.942169957413861,
+     "n": 12
+    }
+   ],
+   "H": 3.757767548906772,
+   "p": 0.15276052582701347,
+   "overall": 1.7466502828888777,
+   "q": 0.45828157748104037
+  },
+  {
+   "theme": "sky & cosmos",
+   "rows": [
+    {
+     "album": "Bleach",
+     "year": 1989,
+     "order": 0,
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 13
+    },
+    {
+     "album": "Nevermind",
+     "year": 1991,
+     "order": 1,
+     "mean": 0.7936507936507936,
+     "lo": 0.0,
+     "hi": 2.380952380952381,
+     "n": 12
+    },
+    {
+     "album": "In Utero",
+     "year": 1993,
+     "order": 2,
+     "mean": 10.051205861225094,
+     "lo": 2.272727272727273,
+     "hi": 18.999823015330524,
+     "n": 12
+    }
+   ],
+   "H": 6.590436241610741,
+   "p": 0.03705996061708356,
+   "overall": 3.5172508069867745,
+   "q": 0.22235976370250138
+  },
+  {
+   "theme": "light",
+   "rows": [
+    {
+     "album": "Bleach",
+     "year": 1989,
+     "order": 0,
+     "mean": 0.9615384615384616,
+     "lo": 0.0,
+     "hi": 2.8846153846153846,
+     "n": 13
+    },
+    {
+     "album": "Nevermind",
+     "year": 1991,
+     "order": 1,
+     "mean": 1.1784427957310495,
+     "lo": 0.0,
+     "hi": 2.983452007502199,
+     "n": 12
+    },
+    {
+     "album": "In Utero",
+     "year": 1993,
+     "order": 2,
+     "mean": 5.061051904905725,
+     "lo": 0.0,
+     "hi": 10.875005393277819,
+     "n": 12
+    }
+   ],
+   "H": 1.5659909710542712,
+   "p": 0.4570349173041528,
+   "overall": 2.361457740747062,
+   "q": 0.6031686272964804
+  },
+  {
+   "theme": "darkness",
+   "rows": [
+    {
+     "album": "Bleach",
+     "year": 1989,
+     "order": 0,
+     "mean": 5.104194585901903,
+     "lo": 0.0,
+     "hi": 11.994103457518092,
+     "n": 13
+    },
+    {
+     "album": "Nevermind",
+     "year": 1991,
+     "order": 1,
+     "mean": 1.0615711252653928,
+     "lo": 0.0,
+     "hi": 3.1847133757961785,
+     "n": 12
+    },
+    {
+     "album": "In Utero",
+     "year": 1993,
+     "order": 2,
+     "mean": 1.7543859649122808,
+     "lo": 0.0,
+     "hi": 5.2631578947368425,
+     "n": 12
+    }
+   ],
+   "H": 1.6513939081053435,
+   "p": 0.4379296692214234,
+   "overall": 2.706649045915049,
+   "q": 0.6031686272964804
+  },
+  {
+   "theme": "fire",
+   "rows": [
+    {
+     "album": "Bleach",
+     "year": 1989,
+     "order": 0,
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 13
+    },
+    {
+     "album": "Nevermind",
+     "year": 1991,
+     "order": 1,
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 12
+    },
+    {
+     "album": "In Utero",
+     "year": 1993,
+     "order": 2,
+     "mean": 9.824946104139352,
+     "lo": 3.981782106782107,
+     "hi": 15.778740596992305,
+     "n": 12
+    }
+   ],
+   "H": 14.369965477560445,
+   "p": 0.0007578820897962675,
+   "overall": 3.186469006747898,
+   "q": 0.009094585077555211
+  },
+  {
+   "theme": "earth & nature",
+   "rows": [
+    {
+     "album": "Bleach",
+     "year": 1989,
+     "order": 0,
+     "mean": 3.482533726436166,
+     "lo": 0.0,
+     "hi": 7.770928258733137,
+     "n": 13
+    },
+    {
+     "album": "Nevermind",
+     "year": 1991,
+     "order": 1,
+     "mean": 4.438809611223404,
+     "lo": 1.0822510822510822,
+     "hi": 8.39462391186529,
+     "n": 12
+    },
+    {
+     "album": "In Utero",
+     "year": 1993,
+     "order": 2,
+     "mean": 4.997295009699273,
+     "lo": 0.9363295880149813,
+     "hi": 10.08526786501285,
+     "n": 12
+    }
+   ],
+   "H": 0.422022895434868,
+   "p": 0.8097647968696338,
+   "overall": 4.283951186344386,
+   "q": 0.8097647968696338
+  },
+  {
+   "theme": "life & growth",
+   "rows": [
+    {
+     "album": "Bleach",
+     "year": 1989,
+     "order": 0,
+     "mean": 5.213336170454108,
+     "lo": 1.7889087656529516,
+     "hi": 9.274202488601977,
+     "n": 13
+    },
+    {
+     "album": "Nevermind",
+     "year": 1991,
+     "order": 1,
+     "mean": 0.5482456140350876,
+     "lo": 0.0,
+     "hi": 1.644736842105263,
+     "n": 12
+    },
+    {
+     "album": "In Utero",
+     "year": 1993,
+     "order": 2,
+     "mean": 5.661059775968755,
+     "lo": 1.7275331185105622,
+     "hi": 10.095424272861921,
+     "n": 12
+    }
+   ],
+   "H": 4.452284242703397,
+   "p": 0.10794406298555315,
+   "overall": 3.845541483674311,
+   "q": 0.4317762519422126
+  },
+  {
+   "theme": "death & pain",
+   "rows": [
+    {
+     "album": "Bleach",
+     "year": 1989,
+     "order": 0,
+     "mean": 5.201411433685966,
+     "lo": 0.8944543828264758,
+     "hi": 10.543963287865726,
+     "n": 13
+    },
+    {
+     "album": "Nevermind",
+     "year": 1991,
+     "order": 1,
+     "mean": 3.9222498137586506,
+     "lo": 0.7936507936507936,
+     "hi": 7.746203637712475,
+     "n": 12
+    },
+    {
+     "album": "In Utero",
+     "year": 1993,
+     "order": 2,
+     "mean": 1.557632398753894,
+     "lo": 0.0,
+     "hi": 4.672897196261682,
+     "n": 12
+    }
+   ],
+   "H": 2.0867918154618454,
+   "p": 0.35225641821988285,
+   "overall": 3.6047820321099486,
+   "q": 0.6031686272964804
+  },
+  {
+   "theme": "mind & soul",
+   "rows": [
+    {
+     "album": "Bleach",
+     "year": 1989,
+     "order": 0,
+     "mean": 12.130946644812333,
+     "lo": 2.7043929482953875,
+     "hi": 23.752722240861225,
+     "n": 13
+    },
+    {
+     "album": "Nevermind",
+     "year": 1991,
+     "order": 1,
+     "mean": 9.485371395711717,
+     "lo": 3.6699580151272775,
+     "hi": 16.528685913348163,
+     "n": 12
+    },
+    {
+     "album": "In Utero",
+     "year": 1993,
+     "order": 2,
+     "mean": 8.30817352429502,
+     "lo": 0.0,
+     "hi": 18.089017680139175,
+     "n": 12
+    }
+   ],
+   "H": 1.1758670436840102,
+   "p": 0.5554739743572592,
+   "overall": 10.033103930341651,
+   "q": 0.6059716083897373
+  },
+  {
+   "theme": "love",
+   "rows": [
+    {
+     "album": "Bleach",
+     "year": 1989,
+     "order": 0,
+     "mean": 9.866555315584442,
+     "lo": 0.0,
+     "hi": 23.41034555840381,
+     "n": 13
+    },
+    {
+     "album": "Nevermind",
+     "year": 1991,
+     "order": 1,
+     "mean": 5.143125607844372,
+     "lo": 1.529051987767584,
+     "hi": 9.182498456306844,
+     "n": 12
+    },
+    {
+     "album": "In Utero",
+     "year": 1993,
+     "order": 2,
+     "mean": 19.336971343919895,
+     "lo": 2.6167067950775817,
+     "hi": 48.69499150337966,
+     "n": 12
+    }
+   ],
+   "H": 1.6798790728921642,
+   "p": 0.43173662697073845,
+   "overall": 11.40611844658835,
+   "q": 0.6031686272964804
+  },
+  {
+   "theme": "time",
+   "rows": [
+    {
+     "album": "Bleach",
+     "year": 1989,
+     "order": 0,
+     "mean": 1.4188555347091933,
+     "lo": 0.0,
+     "hi": 3.775797373358349,
+     "n": 13
+    },
+    {
+     "album": "Nevermind",
+     "year": 1991,
+     "order": 1,
+     "mean": 3.0303470302115105,
+     "lo": 0.0,
+     "hi": 6.21506040600769,
+     "n": 12
+    },
+    {
+     "album": "In Utero",
+     "year": 1993,
+     "order": 2,
+     "mean": 5.2977724030355615,
+     "lo": 0.8771929824561404,
+     "hi": 10.584152689415847,
+     "n": 12
+    }
+   ],
+   "H": 1.375760061770135,
+   "p": 0.5026405227470669,
+   "overall": 3.19952851757255,
+   "q": 0.6031686272964804
+  },
+  {
+   "theme": "conflict",
+   "rows": [
+    {
+     "album": "Bleach",
+     "year": 1989,
+     "order": 0,
+     "mean": 1.3736263736263736,
+     "lo": 0.0,
+     "hi": 4.1208791208791204,
+     "n": 13
+    },
+    {
+     "album": "Nevermind",
+     "year": 1991,
+     "order": 1,
+     "mean": 6.689687225801447,
+     "lo": 0.6265664160401002,
+     "hi": 16.1815018687919,
+     "n": 12
+    },
+    {
+     "album": "In Utero",
+     "year": 1993,
+     "order": 2,
+     "mean": 5.716062415692931,
+     "lo": 0.9689922480620154,
+     "hi": 11.14934037804066,
+     "n": 12
+    }
+   ],
+   "H": 2.731493099121693,
+   "p": 0.25519009280531735,
+   "overall": 4.506111852839875,
+   "q": 0.6031686272964804
+  }
+ ],
+ "sentiment": {
+  "VADER": {
+   "rows": [
+    {
+     "album": "Bleach",
+     "year": 1989,
+     "order": 0,
+     "mean": 0.03380801576628499,
+     "lo": -0.041399890442890455,
+     "hi": 0.11842083877660799,
+     "n": 13
+    },
+    {
+     "album": "Nevermind",
+     "year": 1991,
+     "order": 1,
+     "mean": 0.040324910145711775,
+     "lo": -0.0024936110944460193,
+     "hi": 0.08436532786276968,
+     "n": 12
+    },
+    {
+     "album": "In Utero",
+     "year": 1993,
+     "order": 2,
+     "mean": 0.006521590285323846,
+     "lo": -0.08987284802520822,
+     "hi": 0.11591237842486139,
+     "n": 12
+    }
+   ],
+   "H": 0.9052412736623268,
+   "p": 0.6359593474229961
+  },
+  "AFINN": {
+   "rows": [
+    {
+     "album": "Bleach",
+     "year": 1989,
+     "order": 0,
+     "mean": 1.8233025981058815,
+     "lo": -2.590577314819782,
+     "hi": 5.968310694684366,
+     "n": 13
+    },
+    {
+     "album": "Nevermind",
+     "year": 1991,
+     "order": 1,
+     "mean": 1.0480366253707694,
+     "lo": -3.1665918357600873,
+     "hi": 5.098054643342486,
+     "n": 12
+    },
+    {
+     "album": "In Utero",
+     "year": 1993,
+     "order": 2,
+     "mean": -6.206808174682274,
+     "lo": -14.101726518011445,
+     "hi": 0.31014142566421676,
+     "n": 12
+    }
+   ],
+   "H": 3.500756919429128,
+   "p": 0.1737081894568119
+  },
+  "agreement": 0.6204730020976079
+ },
+ "arc": [
+  {
+   "x": 5,
+   "y": 0.05904995495495495,
+   "lo": -0.01460939189189189,
+   "hi": 0.1323516430180179
+  },
+  {
+   "x": 15,
+   "y": 0.05332135135135135,
+   "lo": -0.01054587950450451,
+   "hi": 0.12169497522522525
+  },
+  {
+   "x": 25,
+   "y": 0.031213288288288295,
+   "lo": -0.04437647184684684,
+   "hi": 0.11345732770270273
+  },
+  {
+   "x": 35,
+   "y": 0.03772572072072072,
+   "lo": -0.018660930180180172,
+   "hi": 0.09801846058558555
+  },
+  {
+   "x": 45,
+   "y": -0.002944504504504502,
+   "lo": -0.08032401576576578,
+   "hi": 0.08069601801801803
+  },
+  {
+   "x": 55,
+   "y": 0.028967567567567565,
+   "lo": -0.06589153716216216,
+   "hi": 0.11854807094594594
+  },
+  {
+   "x": 65,
+   "y": 0.0026737837837837826,
+   "lo": -0.057316583333333324,
+   "hi": 0.05933329617117116
+  },
+  {
+   "x": 75,
+   "y": 0.02055328828828829,
+   "lo": -0.05896732207207208,
+   "hi": 0.10349175450450447
+  },
+  {
+   "x": 85,
+   "y": -0.017400045045045047,
+   "lo": -0.11298179617117116,
+   "hi": 0.07836490427927921
+  },
+  {
+   "x": 95,
+   "y": -0.05011788288288288,
+   "lo": -0.13965487837837837,
+   "hi": 0.036882662162162155
+  }
+ ],
+ "arc_test": {
+  "first": 0.04526934636943538,
+  "last": -0.006019300617787462,
+  "p": 0.19008373658621813
+ },
+ "top_content": [
+  {
+   "w": "away",
+   "all": 48,
+   "uniq": 13,
+   "songs": 6,
+   "song": "Stay Away",
+   "song_n": 20
+  },
+  {
+   "w": "girl",
+   "all": 46,
+   "uniq": 2,
+   "songs": 1,
+   "song": "Negative Creep",
+   "song_n": 46
+  },
+  {
+   "w": "hello",
+   "all": 36,
+   "uniq": 6,
+   "songs": 1,
+   "song": "Smells Like Teen Spirit",
+   "song_n": 36
+  },
+  {
+   "w": "think",
+   "all": 33,
+   "uniq": 12,
+   "songs": 5,
+   "song": "Dumb",
+   "song_n": 20
+  },
+  {
+   "w": "heart",
+   "all": 30,
+   "uniq": 19,
+   "songs": 5,
+   "song": "Tourette\u2019s",
+   "song_n": 16
+  },
+  {
+   "w": "love",
+   "all": 30,
+   "uniq": 10,
+   "songs": 8,
+   "song": "Love Buzz",
+   "song_n": 8
+  },
+  {
+   "w": "gimme",
+   "all": 27,
+   "uniq": 4,
+   "songs": 1,
+   "song": "Scoff",
+   "song_n": 27
+  },
+  {
+   "w": "find",
+   "all": 26,
+   "uniq": 9,
+   "songs": 5,
+   "song": "Territorial Pissings",
+   "song_n": 21
+  },
+  {
+   "w": "stay",
+   "all": 26,
+   "uniq": 4,
+   "songs": 2,
+   "song": "Stay Away",
+   "song_n": 25
+  },
+  {
+   "w": "rape",
+   "all": 26,
+   "uniq": 5,
+   "songs": 1,
+   "song": "Rape Me",
+   "song_n": 26
+  },
+  {
+   "w": "little",
+   "all": 25,
+   "uniq": 3,
+   "songs": 3,
+   "song": "Negative Creep",
+   "song_n": 23
+  },
+  {
+   "w": "nothing",
+   "all": 24,
+   "uniq": 2,
+   "songs": 2,
+   "song": "Sifting",
+   "song_n": 23
+  },
+  {
+   "w": "daddys",
+   "all": 23,
+   "uniq": 1,
+   "songs": 1,
+   "song": "Negative Creep",
+   "song_n": 23
+  },
+  {
+   "w": "care",
+   "all": 22,
+   "uniq": 16,
+   "songs": 4,
+   "song": "Breed",
+   "song_n": 15
+  },
+  {
+   "w": "feel",
+   "all": 21,
+   "uniq": 8,
+   "songs": 6,
+   "song": "Love Buzz",
+   "song_n": 8
+  },
+  {
+   "w": "good",
+   "all": 21,
+   "uniq": 6,
+   "songs": 5,
+   "song": "Territorial Pissings",
+   "song_n": 12
+  },
+  {
+   "w": "wrong",
+   "all": 20,
+   "uniq": 4,
+   "songs": 3,
+   "song": "Radio Friendly Unit Shifter",
+   "song_n": 13
+  },
+  {
+   "w": "mind",
+   "all": 19,
+   "uniq": 10,
+   "songs": 3,
+   "song": "Breed",
+   "song_n": 12
+  },
+  {
+   "w": "want",
+   "all": 19,
+   "uniq": 9,
+   "songs": 6,
+   "song": "Polly",
+   "song_n": 9
+  },
+  {
+   "w": "alcohol",
+   "all": 18,
+   "uniq": 1,
+   "songs": 1,
+   "song": "Scoff",
+   "song_n": 18
+  },
+  {
+   "w": "million",
+   "all": 18,
+   "uniq": 2,
+   "songs": 1,
+   "song": "Scoff",
+   "song_n": 18
+  },
+  {
+   "w": "need",
+   "all": 17,
+   "uniq": 7,
+   "songs": 7,
+   "song": "Big Cheese",
+   "song_n": 7
+  },
+  {
+   "w": "friend",
+   "all": 17,
+   "uniq": 11,
+   "songs": 8,
+   "song": "Come as You Are",
+   "song_n": 4
+  },
+  {
+   "w": "crack",
+   "all": 17,
+   "uniq": 5,
+   "songs": 2,
+   "song": "Lithium",
+   "song_n": 16
+  },
+  {
+   "w": "eye",
+   "all": 16,
+   "uniq": 6,
+   "songs": 5,
+   "song": "Sifting",
+   "song_n": 6
+  },
+  {
+   "w": "kill",
+   "all": 16,
+   "uniq": 2,
+   "songs": 2,
+   "song": "Scoff",
+   "song_n": 12
+  },
+  {
+   "w": "gun",
+   "all": 16,
+   "uniq": 6,
+   "songs": 3,
+   "song": "Come as You Are",
+   "song_n": 9
+  },
+  {
+   "w": "wait",
+   "all": 16,
+   "uniq": 3,
+   "songs": 3,
+   "song": "Heart\u2010Shaped Box",
+   "song_n": 9
+  },
+  {
+   "w": "keep",
+   "all": 15,
+   "uniq": 8,
+   "songs": 4,
+   "song": "Swap Meet",
+   "song_n": 12
+  },
+  {
+   "w": "new",
+   "all": 15,
+   "uniq": 4,
+   "songs": 3,
+   "song": "Heart\u2010Shaped Box",
+   "song_n": 9
+  },
+  {
+   "w": "something",
+   "all": 15,
+   "uniq": 3,
+   "songs": 2,
+   "song": "Something in the Way",
+   "song_n": 14
+  },
+  {
+   "w": "serve",
+   "all": 15,
+   "uniq": 2,
+   "songs": 1,
+   "song": "Serve the Servants",
+   "song_n": 15
+  },
+  {
+   "w": "servant",
+   "all": 15,
+   "uniq": 2,
+   "songs": 1,
+   "song": "Serve the Servants",
+   "song_n": 15
+  },
+  {
+   "w": "nirvana",
+   "all": 14,
+   "uniq": 1,
+   "songs": 1,
+   "song": "Paper Cuts",
+   "song_n": 14
+  },
+  {
+   "w": "means",
+   "all": 14,
+   "uniq": 2,
+   "songs": 1,
+   "song": "In Bloom",
+   "song_n": 14
+  },
+  {
+   "w": "advice",
+   "all": 14,
+   "uniq": 2,
+   "songs": 1,
+   "song": "Heart\u2010Shaped Box",
+   "song_n": 14
+  },
+  {
+   "w": "dumb",
+   "all": 14,
+   "uniq": 2,
+   "songs": 1,
+   "song": "Dumb",
+   "song_n": 14
+  },
+  {
+   "w": "believe",
+   "all": 13,
+   "uniq": 3,
+   "songs": 3,
+   "song": "School",
+   "song_n": 8
+  },
+  {
+   "w": "afraid",
+   "all": 13,
+   "uniq": 8,
+   "songs": 4,
+   "song": "Breed",
+   "song_n": 10
+  },
+  {
+   "w": "recess",
+   "all": 13,
+   "uniq": 1,
+   "songs": 1,
+   "song": "School",
+   "song_n": 13
+  }
+ ],
+ "top_all": [
+  {
+   "w": "i",
+   "n": 509
+  },
+  {
+   "w": "not",
+   "n": 256
+  },
+  {
+   "w": "a",
+   "n": 227
+  },
+  {
+   "w": "you",
+   "n": 192
+  },
+  {
+   "w": "am",
+   "n": 168
+  },
+  {
+   "w": "is",
+   "n": 163
+  },
+  {
+   "w": "the",
+   "n": 151
+  },
+  {
+   "w": "do",
+   "n": 141
+  },
+  {
+   "w": "to",
+   "n": 135
+  },
+  {
+   "w": "in",
+   "n": 119
+  },
+  {
+   "w": "and",
+   "n": 118
+  },
+  {
+   "w": "my",
+   "n": 114
+  },
+  {
+   "w": "me",
+   "n": 109
+  },
+  {
+   "w": "have",
+   "n": 106
+  },
+  {
+   "w": "it",
+   "n": 105
+  },
+  {
+   "w": "all",
+   "n": 85
+  },
+  {
+   "w": "your",
+   "n": 77
+  },
+  {
+   "w": "of",
+   "n": 60
+  },
+  {
+   "w": "what",
+   "n": 60
+  },
+  {
+   "w": "no",
+   "n": 59
+  },
+  {
+   "w": "yeah",
+   "n": 58
+  },
+  {
+   "w": "are",
+   "n": 57
+  },
+  {
+   "w": "we",
+   "n": 56
+  },
+  {
+   "w": "way",
+   "n": 54
+  },
+  {
+   "w": "away",
+   "n": 48
+  },
+  {
+   "w": "girl",
+   "n": 46
+  },
+  {
+   "w": "more",
+   "n": 46
+  },
+  {
+   "w": "for",
+   "n": 45
+  },
+  {
+   "w": "she",
+   "n": 44
+  },
+  {
+   "w": "will",
+   "n": 42
+  }
+ ],
+ "album_top": [
+  {
+   "album": "Bleach",
+   "words": [
+    [
+     "girl",
+     46
+    ],
+    [
+     "gimme",
+     27
+    ],
+    [
+     "little",
+     24
+    ],
+    [
+     "daddys",
+     23
+    ],
+    [
+     "nothing",
+     23
+    ],
+    [
+     "alcohol",
+     18
+    ],
+    [
+     "million",
+     18
+    ],
+    [
+     "love",
+     15
+    ]
+   ]
+  },
+  {
+   "album": "Nevermind",
+   "words": [
+    [
+     "hello",
+     36
+    ],
+    [
+     "away",
+     32
+    ],
+    [
+     "stay",
+     25
+    ],
+    [
+     "find",
+     22
+    ],
+    [
+     "good",
+     20
+    ],
+    [
+     "care",
+     20
+    ],
+    [
+     "gun",
+     16
+    ],
+    [
+     "crack",
+     16
+    ]
+   ]
+  },
+  {
+   "album": "In Utero",
+   "words": [
+    [
+     "think",
+     27
+    ],
+    [
+     "rape",
+     26
+    ],
+    [
+     "heart",
+     19
+    ],
+    [
+     "serve",
+     15
+    ],
+    [
+     "servant",
+     15
+    ],
+    [
+     "away",
+     14
+    ],
+    [
+     "advice",
+     14
+    ],
+    [
+     "dumb",
+     14
+    ]
+   ]
+  }
+ ],
+ "hist_len": [
+  [
+   1,
+   746
+  ],
+  [
+   2,
+   1525
+  ],
+  [
+   3,
+   1621
+  ],
+  [
+   4,
+   1761
+  ],
+  [
+   5,
+   805
+  ],
+  [
+   6,
+   421
+  ],
+  [
+   7,
+   287
+  ],
+  [
+   8,
+   132
+  ],
+  [
+   9,
+   96
+  ],
+  [
+   10,
+   40
+  ],
+  [
+   11,
+   12
+  ],
+  [
+   12,
+   8
+  ],
+  [
+   15,
+   1
+  ]
+ ],
+ "hist_freq": [
+  [
+   1,
+   355
+  ],
+  [
+   2,
+   175
+  ],
+  [
+   3,
+   134
+  ],
+  [
+   4,
+   48
+  ],
+  [
+   5,
+   23
+  ],
+  [
+   6,
+   25
+  ],
+  [
+   7,
+   4
+  ],
+  [
+   8,
+   10
+  ],
+  [
+   9,
+   20
+  ],
+  [
+   10,
+   11
+  ],
+  [
+   11,
+   4
+  ],
+  [
+   12,
+   6
+  ],
+  [
+   13,
+   11
+  ],
+  [
+   14,
+   14
+  ],
+  [
+   15,
+   8
+  ],
+  [
+   16,
+   3
+  ],
+  [
+   17,
+   3
+  ],
+  [
+   18,
+   6
+  ],
+  [
+   19,
+   6
+  ],
+  [
+   20,
+   70
+  ]
+ ],
+ "hist_line": [
+  [
+   1,
+   45
+  ],
+  [
+   2,
+   132
+  ],
+  [
+   3,
+   93
+  ],
+  [
+   4,
+   159
+  ],
+  [
+   5,
+   230
+  ],
+  [
+   6,
+   208
+  ],
+  [
+   7,
+   188
+  ],
+  [
+   8,
+   97
+  ],
+  [
+   9,
+   66
+  ],
+  [
+   10,
+   40
+  ],
+  [
+   11,
+   37
+  ],
+  [
+   12,
+   17
+  ],
+  [
+   13,
+   5
+  ],
+  [
+   17,
+   3
+  ],
+  [
+   20,
+   1
+  ]
+ ],
+ "keyness": [
+  {
+   "w": "smell",
+   "n": 9,
+   "songs": 3,
+   "per": 39.1
+  },
+  {
+   "w": "afraid",
+   "n": 13,
+   "songs": 4,
+   "per": 34.8
+  },
+  {
+   "w": "meat",
+   "n": 7,
+   "songs": 3,
+   "per": 22.0
+  },
+  {
+   "w": "heart",
+   "n": 30,
+   "songs": 5,
+   "per": 19.7
+  },
+  {
+   "w": "away",
+   "n": 48,
+   "songs": 6,
+   "per": 15.4
+  },
+  {
+   "w": "eyes",
+   "n": 16,
+   "songs": 5,
+   "per": 13.2
+  },
+  {
+   "w": "mind",
+   "n": 19,
+   "songs": 3,
+   "per": 9.9
+  },
+  {
+   "w": "wait",
+   "n": 16,
+   "songs": 3,
+   "per": 9.6
+  },
+  {
+   "w": "care",
+   "n": 22,
+   "songs": 4,
+   "per": 8.1
+  },
+  {
+   "w": "eat",
+   "n": 8,
+   "songs": 3,
+   "per": 7.9
+  },
+  {
+   "w": "fun",
+   "n": 11,
+   "songs": 3,
+   "per": 7.4
+  },
+  {
+   "w": "friend",
+   "n": 12,
+   "songs": 4,
+   "per": 6.9
+  },
+  {
+   "w": "cut",
+   "n": 8,
+   "songs": 3,
+   "per": 6.2
+  },
+  {
+   "w": "find",
+   "n": 26,
+   "songs": 5,
+   "per": 6.1
+  },
+  {
+   "w": "black",
+   "n": 13,
+   "songs": 4,
+   "per": 6.1
+  },
+  {
+   "w": "feel",
+   "n": 21,
+   "songs": 6,
+   "per": 6.0
+  },
+  {
+   "w": "little",
+   "n": 25,
+   "songs": 3,
+   "per": 6.0
+  },
+  {
+   "w": "believe",
+   "n": 13,
+   "songs": 3,
+   "per": 5.4
+  },
+  {
+   "w": "wish",
+   "n": 6,
+   "songs": 4,
+   "per": 5.3
+  },
+  {
+   "w": "love",
+   "n": 24,
+   "songs": 7,
+   "per": 4.9
+  },
+  {
+   "w": "anything",
+   "n": 12,
+   "songs": 4,
+   "per": 4.5
+  },
+  {
+   "w": "says",
+   "n": 10,
+   "songs": 4,
+   "per": 4.3
+  },
+  {
+   "w": "living",
+   "n": 6,
+   "songs": 3,
+   "per": 4.0
+  },
+  {
+   "w": "light",
+   "n": 6,
+   "songs": 3,
+   "per": 3.8
+  },
+  {
+   "w": "think",
+   "n": 33,
+   "songs": 5,
+   "per": 3.7
+  }
+ ],
+ "never": [
+  "may",
+  "year",
+  "years",
+  "going",
+  "many",
+  "world",
+  "great",
+  "last",
+  "long",
+  "used",
+  "part",
+  "state",
+  "since",
+  "game",
+  "next",
+  "must",
+  "team",
+  "might",
+  "money",
+  "city",
+  "days",
+  "play",
+  "company",
+  "real",
+  "called",
+  "different",
+  "set",
+  "however",
+  "government",
+  "looking",
+  "public",
+  "top",
+  "women",
+  "business",
+  "system",
+  "times",
+  "already",
+  "case",
+  "person",
+  "making",
+  "read",
+  "four",
+  "support",
+  "including",
+  "music",
+  "power",
+  "states",
+  "stop"
+ ],
+ "versus": [
+  {
+   "pair": "Light vs dark",
+   "a": 17,
+   "b": 5,
+   "a_songs": 6,
+   "b_songs": 1,
+   "p": 0.125
+  },
+  {
+   "pair": "Life vs death",
+   "a": 12,
+   "b": 4,
+   "a_songs": 5,
+   "b_songs": 3,
+   "p": 0.7265625
+  },
+  {
+   "pair": "Love vs hate",
+   "a": 30,
+   "b": 3,
+   "a_songs": 8,
+   "b_songs": 2,
+   "p": 0.109375
+  },
+  {
+   "pair": "Rise vs fall",
+   "a": 9,
+   "b": 6,
+   "a_songs": 5,
+   "b_songs": 4,
+   "p": 1.0
+  },
+  {
+   "pair": "Heaven vs hell",
+   "a": 0,
+   "b": 2,
+   "a_songs": 0,
+   "b_songs": 2,
+   "p": 0.5
+  },
+  {
+   "pair": "Hope vs fear",
+   "a": 2,
+   "b": 2,
+   "a_songs": 2,
+   "b_songs": 2,
+   "p": 1.0
+  }
+ ],
+ "album_sim": {
+  "names": [
+   "Bleach",
+   "Nevermind",
+   "In Utero"
+  ],
+  "z": [
+   [
+    0.015419049079219472,
+    0.022404347220674397,
+    0.016361909229996627
+   ],
+   [
+    0.022404347220674393,
+    0.026667677195301095,
+    0.021472401052180748
+   ],
+   [
+    0.016361909229996627,
+    0.021472401052180748,
+    0.02022573944047662
+   ]
+  ]
+ },
+ "cohesion": [
+  {
+   "album": "Bleach",
+   "within": 0.015419049079219472,
+   "null": 0.020020995146510165,
+   "p": 0.8622754491017964,
+   "q": 0.8622754491017964
+  },
+  {
+   "album": "Nevermind",
+   "within": 0.026667677195301095,
+   "null": 0.020508321602186966,
+   "p": 0.11177644710578842,
+   "q": 0.33532934131736525
+  },
+  {
+   "album": "In Utero",
+   "within": 0.02022573944047662,
+   "null": 0.020412602512182677,
+   "p": 0.48502994011976047,
+   "q": 0.7275449101796407
+  }
+ ],
+ "mantel": {
+  "rho": 0.05201184144874738,
+  "p": 0.18
+ },
+ "map_var": 0.08711633127010275,
+ "map": [
+  {
+   "title": "Blew",
+   "album": "Bleach",
+   "year": 1989,
+   "order": 0,
+   "x": 0.15239326885159607,
+   "y": -0.14150966521486716,
+   "near": "Breed",
+   "near_sim": 0.164
+  },
+  {
+   "title": "Floyd the Barber",
+   "album": "Bleach",
+   "year": 1989,
+   "order": 0,
+   "x": 0.10730258562318637,
+   "y": -0.07242423191759353,
+   "near": "Blew",
+   "near_sim": 0.097
+  },
+  {
+   "title": "About a Girl",
+   "album": "Bleach",
+   "year": 1989,
+   "order": 0,
+   "x": -0.029677563590111013,
+   "y": -0.027819232756367298,
+   "near": "Dumb",
+   "near_sim": 0.09
+  },
+  {
+   "title": "School",
+   "album": "Bleach",
+   "year": 1989,
+   "order": 0,
+   "x": 0.012837803599433227,
+   "y": 0.056427594823720874,
+   "near": "Love Buzz",
+   "near_sim": 0.091
+  },
+  {
+   "title": "Love Buzz",
+   "album": "Bleach",
+   "year": 1989,
+   "order": 0,
+   "x": -0.1853058055946559,
+   "y": 0.24205259426685055,
+   "near": "Tourette\u2019s",
+   "near_sim": 0.146
+  },
+  {
+   "title": "Paper Cuts",
+   "album": "Bleach",
+   "year": 1989,
+   "order": 0,
+   "x": -0.18594579012302473,
+   "y": -0.1745489734295822,
+   "near": "Territorial Pissings",
+   "near_sim": 0.12
+  },
+  {
+   "title": "Negative Creep",
+   "album": "Bleach",
+   "year": 1989,
+   "order": 0,
+   "x": 0.10038611940501221,
+   "y": 0.021525953801081826,
+   "near": "Downer",
+   "near_sim": 0.031
+  },
+  {
+   "title": "Scoff",
+   "album": "Bleach",
+   "year": 1989,
+   "order": 0,
+   "x": 0.09385176440313744,
+   "y": -0.08593482528831274,
+   "near": "Lithium",
+   "near_sim": 0.081
+  },
+  {
+   "title": "Swap Meet",
+   "album": "Bleach",
+   "year": 1989,
+   "order": 0,
+   "x": -0.12886150747379851,
+   "y": 0.1934853113918386,
+   "near": "Tourette\u2019s",
+   "near_sim": 0.133
+  },
+  {
+   "title": "Mr. Moustache",
+   "album": "Bleach",
+   "year": 1989,
+   "order": 0,
+   "x": 0.09676739780704378,
+   "y": 0.20052609838963908,
+   "near": "Heart\u2010Shaped Box",
+   "near_sim": 0.111
+  },
+  {
+   "title": "Sifting",
+   "album": "Bleach",
+   "year": 1989,
+   "order": 0,
+   "x": 0.15350625245503938,
+   "y": 0.01982880377401992,
+   "near": "Serve the Servants",
+   "near_sim": 0.067
+  },
+  {
+   "title": "Big Cheese",
+   "album": "Bleach",
+   "year": 1989,
+   "order": 0,
+   "x": -0.019189147188737297,
+   "y": -0.051624180052858126,
+   "near": "Stay Away",
+   "near_sim": 0.063
+  },
+  {
+   "title": "Downer",
+   "album": "Bleach",
+   "year": 1989,
+   "order": 0,
+   "x": 0.08658270320900828,
+   "y": -0.012626747451663601,
+   "near": "In Bloom",
+   "near_sim": 0.149
+  },
+  {
+   "title": "Smells Like Teen Spirit",
+   "album": "Nevermind",
+   "year": 1991,
+   "order": 1,
+   "x": -0.10227900955608367,
+   "y": -0.13745338132806684,
+   "near": "Territorial Pissings",
+   "near_sim": 0.08
+  },
+  {
+   "title": "In Bloom",
+   "album": "Nevermind",
+   "year": 1991,
+   "order": 1,
+   "x": 0.1699831402011429,
+   "y": 0.006261908247329244,
+   "near": "Downer",
+   "near_sim": 0.149
+  },
+  {
+   "title": "Come as You Are",
+   "album": "Nevermind",
+   "year": 1991,
+   "order": 1,
+   "x": 0.03390086122084176,
+   "y": -0.052773768408072366,
+   "near": "In Bloom",
+   "near_sim": 0.119
+  },
+  {
+   "title": "Breed",
+   "album": "Nevermind",
+   "year": 1991,
+   "order": 1,
+   "x": 0.20512078797404262,
+   "y": -0.29965599493302303,
+   "near": "Blew",
+   "near_sim": 0.164
+  },
+  {
+   "title": "Lithium",
+   "album": "Nevermind",
+   "year": 1991,
+   "order": 1,
+   "x": -0.2264120406995788,
+   "y": -0.1966561224867224,
+   "near": "Frances Farmer Will Have Her Revenge on Seattle",
+   "near_sim": 0.123
+  },
+  {
+   "title": "Polly",
+   "album": "Nevermind",
+   "year": 1991,
+   "order": 1,
+   "x": -0.027031991253593946,
+   "y": 0.23804606997744404,
+   "near": "Love Buzz",
+   "near_sim": 0.125
+  },
+  {
+   "title": "Territorial Pissings",
+   "album": "Nevermind",
+   "year": 1991,
+   "order": 1,
+   "x": -0.29324071472588475,
+   "y": -0.15143860441041027,
+   "near": "On a Plain",
+   "near_sim": 0.12
+  },
+  {
+   "title": "Drain You",
+   "album": "Nevermind",
+   "year": 1991,
+   "order": 1,
+   "x": 0.050875889353323725,
+   "y": -0.07671981702398148,
+   "near": "Blew",
+   "near_sim": 0.067
+  },
+  {
+   "title": "Lounge Act",
+   "album": "Nevermind",
+   "year": 1991,
+   "order": 1,
+   "x": -0.00882817976867584,
+   "y": 0.06302377418786353,
+   "near": "Radio Friendly Unit Shifter",
+   "near_sim": 0.106
+  },
+  {
+   "title": "Stay Away",
+   "album": "Nevermind",
+   "year": 1991,
+   "order": 1,
+   "x": 0.09671400872741351,
+   "y": -0.23853799669027437,
+   "near": "Scentless Apprentice",
+   "near_sim": 0.147
+  },
+  {
+   "title": "On a Plain",
+   "album": "Nevermind",
+   "year": 1991,
+   "order": 1,
+   "x": -0.2857643508113157,
+   "y": -0.1258294896853158,
+   "near": "Territorial Pissings",
+   "near_sim": 0.12
+  },
+  {
+   "title": "Something in the Way",
+   "album": "Nevermind",
+   "year": 1991,
+   "order": 1,
+   "x": 0.15680821840145395,
+   "y": 0.2117829227601823,
+   "near": "Tourette\u2019s",
+   "near_sim": 0.075
+  },
+  {
+   "title": "Serve the Servants",
+   "album": "In Utero",
+   "year": 1993,
+   "order": 2,
+   "x": 0.09327085260787424,
+   "y": 0.04175626588031295,
+   "near": "Sifting",
+   "near_sim": 0.067
+  },
+  {
+   "title": "Scentless Apprentice",
+   "album": "In Utero",
+   "year": 1993,
+   "order": 2,
+   "x": 0.2553255219918058,
+   "y": -0.1467631833482108,
+   "near": "Stay Away",
+   "near_sim": 0.147
+  },
+  {
+   "title": "Heart\u2010Shaped Box",
+   "album": "In Utero",
+   "year": 1993,
+   "order": 2,
+   "x": 0.03499147096042481,
+   "y": 0.18228645641339938,
+   "near": "Mr. Moustache",
+   "near_sim": 0.111
+  },
+  {
+   "title": "Rape Me",
+   "album": "In Utero",
+   "year": 1993,
+   "order": 2,
+   "x": 0.006603726038851945,
+   "y": -0.012908741106176192,
+   "near": "Come as You Are",
+   "near_sim": 0.056
+  },
+  {
+   "title": "Frances Farmer Will Have Her Revenge on Seattle",
+   "album": "In Utero",
+   "year": 1993,
+   "order": 2,
+   "x": -0.02548068767030106,
+   "y": -0.06450511005026632,
+   "near": "Lithium",
+   "near_sim": 0.123
+  },
+  {
+   "title": "Dumb",
+   "album": "In Utero",
+   "year": 1993,
+   "order": 2,
+   "x": -0.17929898632616745,
+   "y": 0.0347413218132245,
+   "near": "All Apologies",
+   "near_sim": 0.122
+  },
+  {
+   "title": "Very Ape",
+   "album": "In Utero",
+   "year": 1993,
+   "order": 2,
+   "x": 0.03611519120337508,
+   "y": 0.11825468910401679,
+   "near": "All Apologies",
+   "near_sim": 0.097
+  },
+  {
+   "title": "Milk It",
+   "album": "In Utero",
+   "year": 1993,
+   "order": 2,
+   "x": 0.10205114796865078,
+   "y": 0.08355619287396941,
+   "near": "Heart\u2010Shaped Box",
+   "near_sim": 0.066
+  },
+  {
+   "title": "Pennyroyal Tea",
+   "album": "In Utero",
+   "year": 1993,
+   "order": 2,
+   "x": 0.12332898792199147,
+   "y": 0.03969433821497356,
+   "near": "Milk It",
+   "near_sim": 0.039
+  },
+  {
+   "title": "Radio Friendly Unit Shifter",
+   "album": "In Utero",
+   "year": 1993,
+   "order": 2,
+   "x": -0.29525493392721935,
+   "y": -0.009297018915400463,
+   "near": "On a Plain",
+   "near_sim": 0.119
+  },
+  {
+   "title": "Tourette\u2019s",
+   "album": "In Utero",
+   "year": 1993,
+   "order": 2,
+   "x": -0.044745619574664976,
+   "y": 0.31054097109161233,
+   "near": "Love Buzz",
+   "near_sim": 0.146
+  },
+  {
+   "title": "All Apologies",
+   "album": "In Utero",
+   "year": 1993,
+   "order": 2,
+   "x": -0.13140137164084192,
+   "y": 0.015235817485684484,
+   "near": "Dumb",
+   "near_sim": 0.122
+  }
+ ],
+ "cl_function": {
+  "acc": 0.35135135135135137,
+  "chance": 0.3254054054054054,
+  "p": 0.43564356435643564
+ },
+ "confusion": {
+  "names": [
+   "Bleach",
+   "Nevermind",
+   "In Utero"
+  ],
+  "z": [
+   [
+    4,
+    0,
+    9
+   ],
+   [
+    5,
+    0,
+    7
+   ],
+   [
+    3,
+    0,
+    9
+   ]
+  ]
+ },
+ "cl_within1": 0.6756756756756757,
+ "cl_nopron": {
+  "acc": 0.2972972972972973,
+  "chance": 0.33108108108108114,
+  "p": 0.7623762376237624
+ },
+ "cl_content": {
+  "acc": 0.35135135135135137,
+  "chance": 0.3394594594594596,
+  "p": 0.5148514851485149
+ },
+ "zipf": {
+  "slope": -1.1545688107396146,
+  "r2": 0.9718475360599181,
+  "alpha": 1.586541677843062,
+  "points": [
+   [
+    1,
+    509.0
+   ],
+   [
+    2,
+    256.0
+   ],
+   [
+    3,
+    227.0
+   ],
+   [
+    4,
+    192.0
+   ],
+   [
+    5,
+    168.0
+   ],
+   [
+    6,
+    163.0
+   ],
+   [
+    7,
+    151.0
+   ],
+   [
+    8,
+    141.0
+   ],
+   [
+    9,
+    135.0
+   ],
+   [
+    10,
+    119.0
+   ],
+   [
+    11,
+    118.0
+   ],
+   [
+    12,
+    114.0
+   ],
+   [
+    13,
+    109.0
+   ],
+   [
+    14,
+    106.0
+   ],
+   [
+    15,
+    105.0
+   ],
+   [
+    16,
+    85.0
+   ],
+   [
+    17,
+    77.0
+   ],
+   [
+    18,
+    60.0
+   ],
+   [
+    19,
+    60.0
+   ],
+   [
+    20,
+    59.0
+   ],
+   [
+    21,
+    58.0
+   ],
+   [
+    22,
+    57.0
+   ],
+   [
+    24,
+    54.0
+   ],
+   [
+    25,
+    48.0
+   ],
+   [
+    26,
+    46.0
+   ],
+   [
+    28,
+    45.0
+   ],
+   [
+    30,
+    42.0
+   ],
+   [
+    31,
+    41.0
+   ],
+   [
+    33,
+    39.0
+   ],
+   [
+    35,
+    38.0
+   ],
+   [
+    37,
+    37.0
+   ],
+   [
+    40,
+    35.0
+   ],
+   [
+    42,
+    34.0
+   ],
+   [
+    44,
+    31.0
+   ],
+   [
+    47,
+    29.0
+   ],
+   [
+    50,
+    27.0
+   ],
+   [
+    53,
+    26.0
+   ],
+   [
+    56,
+    25.0
+   ],
+   [
+    59,
+    24.0
+   ],
+   [
+    63,
+    22.0
+   ],
+   [
+    66,
+    21.0
+   ],
+   [
+    70,
+    20.0
+   ],
+   [
+    75,
+    19.0
+   ],
+   [
+    79,
+    18.0
+   ],
+   [
+    84,
+    17.0
+   ],
+   [
+    89,
+    15.0
+   ],
+   [
+    94,
+    15.0
+   ],
+   [
+    99,
+    14.0
+   ],
+   [
+    105,
+    14.0
+   ],
+   [
+    112,
+    13.0
+   ],
+   [
+    118,
+    13.0
+   ],
+   [
+    125,
+    12.0
+   ],
+   [
+    133,
+    10.0
+   ],
+   [
+    140,
+    10.0
+   ],
+   [
+    149,
+    9.0
+   ],
+   [
+    157,
+    9.0
+   ],
+   [
+    167,
+    8.0
+   ],
+   [
+    177,
+    6.0
+   ],
+   [
+    187,
+    6.0
+   ],
+   [
+    198,
+    6.0
+   ],
+   [
+    210,
+    5.0
+   ],
+   [
+    222,
+    5.0
+   ],
+   [
+    236,
+    4.0
+   ],
+   [
+    249,
+    4.0
+   ],
+   [
+    264,
+    4.0
+   ],
+   [
+    280,
+    3.0
+   ],
+   [
+    296,
+    3.0
+   ],
+   [
+    314,
+    3.0
+   ],
+   [
+    333,
+    3.0
+   ],
+   [
+    352,
+    3.0
+   ],
+   [
+    373,
+    3.0
+   ],
+   [
+    395,
+    3.0
+   ],
+   [
+    419,
+    2.0
+   ],
+   [
+    443,
+    2.0
+   ],
+   [
+    470,
+    2.0
+   ],
+   [
+    497,
+    2.0
+   ],
+   [
+    527,
+    2.0
+   ],
+   [
+    558,
+    2.0
+   ],
+   [
+    591,
+    1.0
+   ],
+   [
+    626,
+    1.0
+   ],
+   [
+    663,
+    1.0
+   ],
+   [
+    702,
+    1.0
+   ],
+   [
+    744,
+    1.0
+   ],
+   [
+    788,
+    1.0
+   ],
+   [
+    834,
+    1.0
+   ],
+   [
+    884,
+    1.0
+   ],
+   [
+    936,
+    1.0
+   ]
+  ]
+ },
+ "heaps": {
+  "beta": 0.7554636756802655,
+  "p": 0.25674325674325676,
+  "points": [
+   {
+    "x": 1,
+    "y": 1,
+    "lo": 1.0,
+    "hi": 1.0
+   },
+   {
+    "x": 51,
+    "y": 21,
+    "lo": 11.0,
+    "hi": 46.0
+   },
+   {
+    "x": 101,
+    "y": 36,
+    "lo": 16.0,
+    "hi": 72.0
+   },
+   {
+    "x": 151,
+    "y": 36,
+    "lo": 16.0,
+    "hi": 96.0
+   },
+   {
+    "x": 201,
+    "y": 43,
+    "lo": 23.0,
+    "hi": 114.0
+   },
+   {
+    "x": 251,
+    "y": 74,
+    "lo": 29.0,
+    "hi": 130.0
+   },
+   {
+    "x": 301,
+    "y": 96,
+    "lo": 30.0,
+    "hi": 141.02499999999998
+   },
+   {
+    "x": 351,
+    "y": 118,
+    "lo": 30.0,
+    "hi": 154.0
+   },
+   {
+    "x": 401,
+    "y": 126,
+    "lo": 54.975,
+    "hi": 166.02499999999998
+   },
+   {
+    "x": 451,
+    "y": 127,
+    "lo": 66.0,
+    "hi": 178.0
+   },
+   {
+    "x": 501,
+    "y": 131,
+    "lo": 70.975,
+    "hi": 192.0
+   },
+   {
+    "x": 551,
+    "y": 133,
+    "lo": 78.975,
+    "hi": 202.02499999999998
+   },
+   {
+    "x": 601,
+    "y": 135,
+    "lo": 85.0,
+    "hi": 214.02499999999998
+   },
+   {
+    "x": 651,
+    "y": 149,
+    "lo": 91.0,
+    "hi": 224.02499999999998
+   },
+   {
+    "x": 701,
+    "y": 149,
+    "lo": 102.975,
+    "hi": 235.0
+   },
+   {
+    "x": 751,
+    "y": 166,
+    "lo": 110.0,
+    "hi": 242.0
+   },
+   {
+    "x": 801,
+    "y": 183,
+    "lo": 118.0,
+    "hi": 253.02499999999998
+   },
+   {
+    "x": 851,
+    "y": 198,
+    "lo": 125.95,
+    "hi": 265.0
+   },
+   {
+    "x": 901,
+    "y": 212,
+    "lo": 133.95,
+    "hi": 274.025
+   },
+   {
+    "x": 951,
+    "y": 217,
+    "lo": 140.0,
+    "hi": 278.04999999999995
+   },
+   {
+    "x": 1001,
+    "y": 222,
+    "lo": 147.975,
+    "hi": 288.025
+   },
+   {
+    "x": 1051,
+    "y": 224,
+    "lo": 159.95,
+    "hi": 297.025
+   },
+   {
+    "x": 1101,
+    "y": 224,
+    "lo": 164.0,
+    "hi": 307.025
+   },
+   {
+    "x": 1151,
+    "y": 224,
+    "lo": 171.95,
+    "hi": 314.0
+   },
+   {
+    "x": 1201,
+    "y": 225,
+    "lo": 177.975,
+    "hi": 321.0
+   },
+   {
+    "x": 1251,
+    "y": 225,
+    "lo": 186.0,
+    "hi": 329.025
+   },
+   {
+    "x": 1301,
+    "y": 231,
+    "lo": 193.0,
+    "hi": 338.04999999999995
+   },
+   {
+    "x": 1351,
+    "y": 234,
+    "lo": 200.975,
+    "hi": 349.0
+   },
+   {
+    "x": 1401,
+    "y": 234,
+    "lo": 207.0,
+    "hi": 357.0
+   },
+   {
+    "x": 1451,
+    "y": 234,
+    "lo": 211.975,
+    "hi": 363.025
+   },
+   {
+    "x": 1501,
+    "y": 237,
+    "lo": 220.0,
+    "hi": 369.025
+   },
+   {
+    "x": 1551,
+    "y": 262,
+    "lo": 225.0,
+    "hi": 375.025
+   },
+   {
+    "x": 1601,
+    "y": 270,
+    "lo": 233.975,
+    "hi": 385.025
+   },
+   {
+    "x": 1651,
+    "y": 270,
+    "lo": 238.975,
+    "hi": 393.0
+   },
+   {
+    "x": 1701,
+    "y": 270,
+    "lo": 247.975,
+    "hi": 402.0
+   },
+   {
+    "x": 1751,
+    "y": 270,
+    "lo": 256.975,
+    "hi": 410.0
+   },
+   {
+    "x": 1801,
+    "y": 290,
+    "lo": 261.975,
+    "hi": 416.07499999999993
+   },
+   {
+    "x": 1851,
+    "y": 297,
+    "lo": 268.975,
+    "hi": 423.0
+   },
+   {
+    "x": 1902,
+    "y": 297,
+    "lo": 274.0,
+    "hi": 427.025
+   },
+   {
+    "x": 1952,
+    "y": 307,
+    "lo": 280.975,
+    "hi": 435.025
+   },
+   {
+    "x": 2002,
+    "y": 310,
+    "lo": 289.0,
+    "hi": 445.0
+   },
+   {
+    "x": 2052,
+    "y": 316,
+    "lo": 295.975,
+    "hi": 451.0
+   },
+   {
+    "x": 2102,
+    "y": 316,
+    "lo": 301.0,
+    "hi": 457.04999999999995
+   },
+   {
+    "x": 2152,
+    "y": 317,
+    "lo": 306.0,
+    "hi": 467.0
+   },
+   {
+    "x": 2202,
+    "y": 329,
+    "lo": 313.975,
+    "hi": 472.0
+   },
+   {
+    "x": 2252,
+    "y": 332,
+    "lo": 316.975,
+    "hi": 480.0
+   },
+   {
+    "x": 2302,
+    "y": 342,
+    "lo": 324.95,
+    "hi": 484.025
+   },
+   {
+    "x": 2352,
+    "y": 364,
+    "lo": 332.0,
+    "hi": 493.025
+   },
+   {
+    "x": 2402,
+    "y": 381,
+    "lo": 336.0,
+    "hi": 498.025
+   },
+   {
+    "x": 2452,
+    "y": 384,
+    "lo": 340.975,
+    "hi": 503.0
+   },
+   {
+    "x": 2502,
+    "y": 397,
+    "lo": 349.95,
+    "hi": 514.0
+   },
+   {
+    "x": 2552,
+    "y": 414,
+    "lo": 355.975,
+    "hi": 518.025
+   },
+   {
+    "x": 2602,
+    "y": 414,
+    "lo": 362.0,
+    "hi": 522.025
+   },
+   {
+    "x": 2652,
+    "y": 423,
+    "lo": 370.975,
+    "hi": 526.025
+   },
+   {
+    "x": 2702,
+    "y": 425,
+    "lo": 376.975,
+    "hi": 532.0
+   },
+   {
+    "x": 2752,
+    "y": 440,
+    "lo": 382.0,
+    "hi": 539.0
+   },
+   {
+    "x": 2802,
+    "y": 443,
+    "lo": 389.0,
+    "hi": 545.025
+   },
+   {
+    "x": 2852,
+    "y": 447,
+    "lo": 394.975,
+    "hi": 551.025
+   },
+   {
+    "x": 2902,
+    "y": 447,
+    "lo": 402.0,
+    "hi": 559.0
+   },
+   {
+    "x": 2952,
+    "y": 447,
+    "lo": 405.0,
+    "hi": 567.025
+   },
+   {
+    "x": 3002,
+    "y": 453,
+    "lo": 411.0,
+    "hi": 571.025
+   },
+   {
+    "x": 3052,
+    "y": 463,
+    "lo": 420.0,
+    "hi": 576.0
+   },
+   {
+    "x": 3102,
+    "y": 463,
+    "lo": 428.9,
+    "hi": 582.0
+   },
+   {
+    "x": 3152,
+    "y": 463,
+    "lo": 433.975,
+    "hi": 589.0
+   },
+   {
+    "x": 3202,
+    "y": 468,
+    "lo": 441.975,
+    "hi": 593.0
+   },
+   {
+    "x": 3252,
+    "y": 476,
+    "lo": 446.0,
+    "hi": 598.025
+   },
+   {
+    "x": 3302,
+    "y": 476,
+    "lo": 454.0,
+    "hi": 604.0
+   },
+   {
+    "x": 3352,
+    "y": 476,
+    "lo": 458.95,
+    "hi": 609.025
+   },
+   {
+    "x": 3402,
+    "y": 476,
+    "lo": 463.975,
+    "hi": 616.0
+   },
+   {
+    "x": 3452,
+    "y": 480,
+    "lo": 469.975,
+    "hi": 619.025
+   },
+   {
+    "x": 3502,
+    "y": 488,
+    "lo": 475.975,
+    "hi": 626.025
+   },
+   {
+    "x": 3552,
+    "y": 495,
+    "lo": 480.975,
+    "hi": 632.05
+   },
+   {
+    "x": 3602,
+    "y": 498,
+    "lo": 488.0,
+    "hi": 637.025
+   },
+   {
+    "x": 3652,
+    "y": 499,
+    "lo": 495.975,
+    "hi": 644.0
+   },
+   {
+    "x": 3702,
+    "y": 499,
+    "lo": 502.0,
+    "hi": 648.025
+   },
+   {
+    "x": 3753,
+    "y": 499,
+    "lo": 508.0,
+    "hi": 657.0
+   },
+   {
+    "x": 3803,
+    "y": 510,
+    "lo": 512.975,
+    "hi": 662.0
+   },
+   {
+    "x": 3853,
+    "y": 520,
+    "lo": 520.0,
+    "hi": 667.0
+   },
+   {
+    "x": 3903,
+    "y": 525,
+    "lo": 525.975,
+    "hi": 670.025
+   },
+   {
+    "x": 3953,
+    "y": 530,
+    "lo": 532.975,
+    "hi": 673.025
+   },
+   {
+    "x": 4003,
+    "y": 534,
+    "lo": 537.0,
+    "hi": 679.025
+   },
+   {
+    "x": 4053,
+    "y": 542,
+    "lo": 544.0,
+    "hi": 683.05
+   },
+   {
+    "x": 4103,
+    "y": 544,
+    "lo": 549.0,
+    "hi": 689.0
+   },
+   {
+    "x": 4153,
+    "y": 545,
+    "lo": 552.975,
+    "hi": 695.025
+   },
+   {
+    "x": 4203,
+    "y": 548,
+    "lo": 559.0,
+    "hi": 700.025
+   },
+   {
+    "x": 4253,
+    "y": 560,
+    "lo": 563.0,
+    "hi": 705.0
+   },
+   {
+    "x": 4303,
+    "y": 576,
+    "lo": 570.0,
+    "hi": 709.0
+   },
+   {
+    "x": 4353,
+    "y": 576,
+    "lo": 572.0,
+    "hi": 715.0
+   },
+   {
+    "x": 4403,
+    "y": 582,
+    "lo": 578.0,
+    "hi": 718.05
+   },
+   {
+    "x": 4453,
+    "y": 592,
+    "lo": 583.975,
+    "hi": 722.05
+   },
+   {
+    "x": 4503,
+    "y": 601,
+    "lo": 589.975,
+    "hi": 728.0
+   },
+   {
+    "x": 4553,
+    "y": 601,
+    "lo": 594.975,
+    "hi": 733.0
+   },
+   {
+    "x": 4603,
+    "y": 601,
+    "lo": 600.0,
+    "hi": 739.0
+   },
+   {
+    "x": 4653,
+    "y": 608,
+    "lo": 606.0,
+    "hi": 742.0749999999999
+   },
+   {
+    "x": 4703,
+    "y": 616,
+    "lo": 610.975,
+    "hi": 747.0
+   },
+   {
+    "x": 4753,
+    "y": 622,
+    "lo": 613.975,
+    "hi": 750.0
+   },
+   {
+    "x": 4803,
+    "y": 622,
+    "lo": 621.975,
+    "hi": 756.0
+   },
+   {
+    "x": 4853,
+    "y": 624,
+    "lo": 627.0,
+    "hi": 759.0749999999999
+   },
+   {
+    "x": 4903,
+    "y": 633,
+    "lo": 633.975,
+    "hi": 763.0
+   },
+   {
+    "x": 4953,
+    "y": 638,
+    "lo": 640.0,
+    "hi": 769.0
+   },
+   {
+    "x": 5003,
+    "y": 643,
+    "lo": 646.0,
+    "hi": 771.0
+   },
+   {
+    "x": 5053,
+    "y": 654,
+    "lo": 651.975,
+    "hi": 776.025
+   },
+   {
+    "x": 5103,
+    "y": 660,
+    "lo": 654.975,
+    "hi": 779.0
+   },
+   {
+    "x": 5153,
+    "y": 661,
+    "lo": 660.975,
+    "hi": 783.0
+   },
+   {
+    "x": 5203,
+    "y": 677,
+    "lo": 666.975,
+    "hi": 791.0
+   },
+   {
+    "x": 5253,
+    "y": 677,
+    "lo": 671.0,
+    "hi": 795.025
+   },
+   {
+    "x": 5303,
+    "y": 677,
+    "lo": 675.925,
+    "hi": 799.0
+   },
+   {
+    "x": 5353,
+    "y": 683,
+    "lo": 682.0,
+    "hi": 802.0
+   },
+   {
+    "x": 5403,
+    "y": 696,
+    "lo": 688.975,
+    "hi": 805.025
+   },
+   {
+    "x": 5453,
+    "y": 705,
+    "lo": 695.0,
+    "hi": 811.0
+   },
+   {
+    "x": 5503,
+    "y": 705,
+    "lo": 698.975,
+    "hi": 816.025
+   },
+   {
+    "x": 5553,
+    "y": 719,
+    "lo": 702.0,
+    "hi": 820.0
+   },
+   {
+    "x": 5604,
+    "y": 737,
+    "lo": 709.0,
+    "hi": 824.025
+   },
+   {
+    "x": 5654,
+    "y": 746,
+    "lo": 715.0,
+    "hi": 827.025
+   },
+   {
+    "x": 5704,
+    "y": 754,
+    "lo": 720.0,
+    "hi": 833.0
+   },
+   {
+    "x": 5754,
+    "y": 769,
+    "lo": 723.975,
+    "hi": 838.0
+   },
+   {
+    "x": 5804,
+    "y": 769,
+    "lo": 730.95,
+    "hi": 841.025
+   },
+   {
+    "x": 5854,
+    "y": 769,
+    "lo": 737.0,
+    "hi": 846.0
+   },
+   {
+    "x": 5904,
+    "y": 770,
+    "lo": 744.0,
+    "hi": 851.0
+   },
+   {
+    "x": 5954,
+    "y": 772,
+    "lo": 748.975,
+    "hi": 855.025
+   },
+   {
+    "x": 6004,
+    "y": 780,
+    "lo": 753.0,
+    "hi": 857.025
+   },
+   {
+    "x": 6054,
+    "y": 780,
+    "lo": 758.95,
+    "hi": 862.025
+   },
+   {
+    "x": 6104,
+    "y": 793,
+    "lo": 765.0,
+    "hi": 865.0
+   },
+   {
+    "x": 6154,
+    "y": 802,
+    "lo": 768.975,
+    "hi": 870.0
+   },
+   {
+    "x": 6204,
+    "y": 806,
+    "lo": 775.975,
+    "hi": 873.0
+   },
+   {
+    "x": 6254,
+    "y": 807,
+    "lo": 780.0,
+    "hi": 877.025
+   },
+   {
+    "x": 6304,
+    "y": 811,
+    "lo": 783.975,
+    "hi": 880.025
+   },
+   {
+    "x": 6354,
+    "y": 815,
+    "lo": 790.0,
+    "hi": 884.0
+   },
+   {
+    "x": 6404,
+    "y": 821,
+    "lo": 794.975,
+    "hi": 887.025
+   },
+   {
+    "x": 6454,
+    "y": 821,
+    "lo": 802.0,
+    "hi": 890.0
+   },
+   {
+    "x": 6504,
+    "y": 822,
+    "lo": 808.95,
+    "hi": 893.0
+   },
+   {
+    "x": 6554,
+    "y": 838,
+    "lo": 814.975,
+    "hi": 896.0
+   },
+   {
+    "x": 6604,
+    "y": 840,
+    "lo": 819.975,
+    "hi": 899.0
+   },
+   {
+    "x": 6654,
+    "y": 844,
+    "lo": 825.0,
+    "hi": 902.0
+   },
+   {
+    "x": 6704,
+    "y": 860,
+    "lo": 831.0,
+    "hi": 905.0
+   },
+   {
+    "x": 6754,
+    "y": 861,
+    "lo": 836.975,
+    "hi": 909.0
+   },
+   {
+    "x": 6804,
+    "y": 872,
+    "lo": 843.0,
+    "hi": 915.0
+   },
+   {
+    "x": 6854,
+    "y": 889,
+    "lo": 848.0,
+    "hi": 917.0
+   },
+   {
+    "x": 6904,
+    "y": 899,
+    "lo": 853.975,
+    "hi": 919.0
+   },
+   {
+    "x": 6954,
+    "y": 908,
+    "lo": 859.0,
+    "hi": 923.0
+   },
+   {
+    "x": 7004,
+    "y": 914,
+    "lo": 866.0,
+    "hi": 925.0
+   },
+   {
+    "x": 7054,
+    "y": 916,
+    "lo": 872.975,
+    "hi": 927.0
+   },
+   {
+    "x": 7104,
+    "y": 916,
+    "lo": 877.0,
+    "hi": 927.0
+   },
+   {
+    "x": 7154,
+    "y": 920,
+    "lo": 881.975,
+    "hi": 932.0
+   },
+   {
+    "x": 7204,
+    "y": 922,
+    "lo": 887.0,
+    "hi": 934.0
+   },
+   {
+    "x": 7254,
+    "y": 924,
+    "lo": 896.0,
+    "hi": 936.0
+   },
+   {
+    "x": 7304,
+    "y": 936,
+    "lo": 903.0,
+    "hi": 936.0
+   },
+   {
+    "x": 7354,
+    "y": 936,
+    "lo": 912.0,
+    "hi": 936.0
+   },
+   {
+    "x": 7404,
+    "y": 936,
+    "lo": 927.0,
+    "hi": 936.0
+   },
+   {
+    "x": 7455,
+    "y": 936,
+    "lo": 936.0,
+    "hi": 936.0
+   }
+  ]
+ },
+ "rarefaction": {
+  "sample": 2122,
+  "rows": [
+   {
+    "album": "Bleach",
+    "expected": 363.3074844422267
+   },
+   {
+    "album": "Nevermind",
+    "expected": 386.33252222624026
+   },
+   {
+    "album": "In Utero",
+    "expected": 441.0
+   }
+  ]
+ },
+ "phrases": [
+  {
+   "p": "i think i",
+   "songs": 3,
+   "albums": 2,
+   "first": "Nevermind",
+   "last": "In Utero"
+  }
+ ],
+ "network": {
+  "nodes": [
+   {
+    "id": "care",
+    "x": 0.26281326883495104,
+    "y": -0.7340378101496171,
+    "f": 8,
+    "deg": 1
+   },
+   {
+    "id": "mind",
+    "x": 0.28758304565752124,
+    "y": -0.8512433170248142,
+    "f": 6,
+    "deg": 1
+   },
+   {
+    "id": "need",
+    "x": -0.35642458312009523,
+    "y": 0.6873264887799375,
+    "f": 7,
+    "deg": 2
+   },
+   {
+    "id": "think",
+    "x": -0.20809091730158708,
+    "y": 0.7218857185023712,
+    "f": 11,
+    "deg": 2
+   },
+   {
+    "id": "feel",
+    "x": 1.0,
+    "y": -0.24598640133284627,
+    "f": 8,
+    "deg": 1
+   },
+   {
+    "id": "good",
+    "x": 0.9667546521511187,
+    "y": -0.13795965763941218,
+    "f": 5,
+    "deg": 1
+   },
+   {
+    "id": "friend",
+    "x": -0.6404497067516567,
+    "y": -0.43520352152382935,
+    "f": 10,
+    "deg": 1
+   },
+   {
+    "id": "want",
+    "x": -0.724218723570459,
+    "y": -0.5103253497925099,
+    "f": 9,
+    "deg": 1
+   },
+   {
+    "id": "afraid",
+    "x": -0.4955400832169205,
+    "y": 0.7056043026606803,
+    "f": 5,
+    "deg": 1
+   },
+   {
+    "id": "burn",
+    "x": -0.09242695268287263,
+    "y": 0.7999395475200405,
+    "f": 6,
+    "deg": 1
+   }
+  ],
+  "edges": [
+   {
+    "a": "care",
+    "b": "mind",
+    "n": 5,
+    "lift": 8.3,
+    "p": 0.0003944860183402557,
+    "strict": true
+   },
+   {
+    "a": "need",
+    "b": "think",
+    "n": 3,
+    "lift": 5.6,
+    "p": 0.017041667754302308,
+    "strict": false
+   },
+   {
+    "a": "feel",
+    "b": "good",
+    "n": 4,
+    "lift": 9.2,
+    "p": 0.0010414449113343351,
+    "strict": true
+   },
+   {
+    "a": "friend",
+    "b": "want",
+    "n": 3,
+    "lift": 3.5,
+    "p": 0.057481026734977646,
+    "strict": false
+   },
+   {
+    "a": "afraid",
+    "b": "need",
+    "n": 3,
+    "lift": 22.5,
+    "p": 0.0003575866931666861,
+    "strict": true
+   },
+   {
+    "a": "burn",
+    "b": "think",
+    "n": 4,
+    "lift": 8.6,
+    "p": 0.0013645026229375792,
+    "strict": true
+   }
+  ],
+  "tested": 10,
+  "strict": 4,
+  "Q": 0.6666666666666667,
+  "Q_null": 0.7027777777777776,
+  "Q_p": 1.0,
+  "hub": "need",
+  "hub_deg": 2
+ },
+ "tests": [
+  {
+   "claim": "\u201cI\u201d rate changes with album order",
+   "stat": "album \u03c1 +0.50, song \u03c1 +0.06",
+   "p": 1.0,
+   "kind": "trend",
+   "family": "trends",
+   "key": "pron_I",
+   "rho": 0.5,
+   "method": "Spearman \u03c1 of album means vs release order, exact over all orders; song-level \u03c1 p 0.730",
+   "q": 1.0,
+   "result": "Failed"
+  },
+  {
+   "claim": "\u201cwe\u201d rate changes with album order",
+   "stat": "album \u03c1 +1.00, song \u03c1 +0.26",
+   "p": 0.3333333333333333,
+   "kind": "trend",
+   "family": "trends",
+   "key": "pron_we",
+   "rho": 1.0,
+   "method": "Spearman \u03c1 of album means vs release order, exact over all orders; song-level \u03c1 p 0.122",
+   "q": 0.6666666666666666,
+   "result": "Failed"
+  },
+  {
+   "claim": "\u201cyou\u201d rate changes with album order",
+   "stat": "album \u03c1 -0.50, song \u03c1 -0.22",
+   "p": 1.0,
+   "kind": "trend",
+   "family": "trends",
+   "key": "pron_you",
+   "rho": -0.5,
+   "method": "Spearman \u03c1 of album means vs release order, exact over all orders; song-level \u03c1 p 0.196",
+   "q": 1.0,
+   "result": "Failed"
+  },
+  {
+   "claim": "Share of repeated lines changes with album order",
+   "stat": "album \u03c1 -1.00, song \u03c1 -0.29",
+   "p": 0.3333333333333333,
+   "kind": "trend",
+   "family": "trends",
+   "key": "repetition_pct",
+   "rho": -1.0,
+   "method": "Spearman \u03c1 of album means vs release order, exact over all orders; song-level \u03c1 p 0.087",
+   "q": 0.6666666666666666,
+   "result": "Failed"
+  },
+  {
+   "claim": "Word variety (MATTR, all lines) changes with album order",
+   "stat": "album \u03c1 +1.00, song \u03c1 +0.02",
+   "p": 0.3333333333333333,
+   "kind": "trend",
+   "family": "trends",
+   "key": "mattr",
+   "rho": 1.0,
+   "method": "Spearman \u03c1 of album means vs release order, exact over all orders; song-level \u03c1 p 0.899",
+   "q": 0.6666666666666666,
+   "result": "Failed"
+  },
+  {
+   "claim": "Word variety (MATTR, repeats removed) changes with album order",
+   "stat": "album \u03c1 +0.50, song \u03c1 +0.13",
+   "p": 1.0,
+   "kind": "trend",
+   "family": "trends",
+   "key": "mattr_u",
+   "rho": 0.5,
+   "method": "Spearman \u03c1 of album means vs release order, exact over all orders; song-level \u03c1 p 0.483",
+   "q": 1.0,
+   "result": "Failed"
+  },
+  {
+   "claim": "Theme \u201cwater\u201d differs between albums",
+   "stat": "H 3.8",
+   "p": 0.15276052582701347,
+   "family": "themes",
+   "method": "Kruskal-Wallis over songs; q: Benjamini-Hochberg over the 12 themes",
+   "q": 0.45828157748104037,
+   "result": "Failed"
+  },
+  {
+   "claim": "Theme \u201csky & cosmos\u201d differs between albums",
+   "stat": "H 6.6",
+   "p": 0.03705996061708356,
+   "family": "themes",
+   "method": "Kruskal-Wallis over songs; q: Benjamini-Hochberg over the 12 themes",
+   "q": 0.22235976370250138,
+   "result": "Partly"
+  },
+  {
+   "claim": "Theme \u201clight\u201d differs between albums",
+   "stat": "H 1.6",
+   "p": 0.4570349173041528,
+   "family": "themes",
+   "method": "Kruskal-Wallis over songs; q: Benjamini-Hochberg over the 12 themes",
+   "q": 0.6031686272964804,
+   "result": "Failed"
+  },
+  {
+   "claim": "Theme \u201cdarkness\u201d differs between albums",
+   "stat": "H 1.7",
+   "p": 0.4379296692214234,
+   "family": "themes",
+   "method": "Kruskal-Wallis over songs; q: Benjamini-Hochberg over the 12 themes",
+   "q": 0.6031686272964804,
+   "result": "Failed"
+  },
+  {
+   "claim": "Theme \u201cfire\u201d differs between albums",
+   "stat": "H 14.4",
+   "p": 0.0007578820897962675,
+   "family": "themes",
+   "method": "Kruskal-Wallis over songs; q: Benjamini-Hochberg over the 12 themes",
+   "q": 0.009094585077555211,
+   "result": "Held"
+  },
+  {
+   "claim": "Theme \u201cearth & nature\u201d differs between albums",
+   "stat": "H 0.4",
+   "p": 0.8097647968696338,
+   "family": "themes",
+   "method": "Kruskal-Wallis over songs; q: Benjamini-Hochberg over the 12 themes",
+   "q": 0.8097647968696338,
+   "result": "Failed"
+  },
+  {
+   "claim": "Theme \u201clife & growth\u201d differs between albums",
+   "stat": "H 4.5",
+   "p": 0.10794406298555315,
+   "family": "themes",
+   "method": "Kruskal-Wallis over songs; q: Benjamini-Hochberg over the 12 themes",
+   "q": 0.4317762519422126,
+   "result": "Failed"
+  },
+  {
+   "claim": "Theme \u201cdeath & pain\u201d differs between albums",
+   "stat": "H 2.1",
+   "p": 0.35225641821988285,
+   "family": "themes",
+   "method": "Kruskal-Wallis over songs; q: Benjamini-Hochberg over the 12 themes",
+   "q": 0.6031686272964804,
+   "result": "Failed"
+  },
+  {
+   "claim": "Theme \u201cmind & soul\u201d differs between albums",
+   "stat": "H 1.2",
+   "p": 0.5554739743572592,
+   "family": "themes",
+   "method": "Kruskal-Wallis over songs; q: Benjamini-Hochberg over the 12 themes",
+   "q": 0.6059716083897373,
+   "result": "Failed"
+  },
+  {
+   "claim": "Theme \u201clove\u201d differs between albums",
+   "stat": "H 1.7",
+   "p": 0.43173662697073845,
+   "family": "themes",
+   "method": "Kruskal-Wallis over songs; q: Benjamini-Hochberg over the 12 themes",
+   "q": 0.6031686272964804,
+   "result": "Failed"
+  },
+  {
+   "claim": "Theme \u201ctime\u201d differs between albums",
+   "stat": "H 1.4",
+   "p": 0.5026405227470669,
+   "family": "themes",
+   "method": "Kruskal-Wallis over songs; q: Benjamini-Hochberg over the 12 themes",
+   "q": 0.6031686272964804,
+   "result": "Failed"
+  },
+  {
+   "claim": "Theme \u201cconflict\u201d differs between albums",
+   "stat": "H 2.7",
+   "p": 0.25519009280531735,
+   "family": "themes",
+   "method": "Kruskal-Wallis over songs; q: Benjamini-Hochberg over the 12 themes",
+   "q": 0.6031686272964804,
+   "result": "Failed"
+  },
+  {
+   "claim": "Sentiment (VADER) differs between albums",
+   "stat": "H 0.9",
+   "p": 0.6359593474229961,
+   "family": "sentiment",
+   "method": "Kruskal-Wallis over songs; q: BH over the two lexicons",
+   "q": 0.6359593474229961,
+   "result": "Failed"
+  },
+  {
+   "claim": "Sentiment (AFINN) differs between albums",
+   "stat": "H 3.5",
+   "p": 0.1737081894568119,
+   "family": "sentiment",
+   "method": "Kruskal-Wallis over songs; q: BH over the two lexicons",
+   "q": 0.3474163789136238,
+   "result": "Failed"
+  },
+  {
+   "claim": "Songs end happier or sadder than they start",
+   "stat": "first third +0.045, last third -0.006",
+   "p": 0.19008373658621813,
+   "family": "arc",
+   "method": "Wilcoxon signed-rank, first vs last third of each song (VADER)",
+   "q": 0.19008373658621813,
+   "result": "Failed"
+  },
+  {
+   "claim": "\u201cBleach\u201d songs share more vocabulary than random songs",
+   "stat": "within 0.015 vs 0.020",
+   "p": 0.8622754491017964,
+   "family": "cohesion",
+   "method": "Mean TF-IDF cosine within the album vs 500 label shuffles; q: BH over albums",
+   "q": 0.8622754491017964,
+   "result": "Failed"
+  },
+  {
+   "claim": "\u201cNevermind\u201d songs share more vocabulary than random songs",
+   "stat": "within 0.027 vs 0.021",
+   "p": 0.11177644710578842,
+   "family": "cohesion",
+   "method": "Mean TF-IDF cosine within the album vs 500 label shuffles; q: BH over albums",
+   "q": 0.33532934131736525,
+   "result": "Failed"
+  },
+  {
+   "claim": "\u201cIn Utero\u201d songs share more vocabulary than random songs",
+   "stat": "within 0.020 vs 0.020",
+   "p": 0.48502994011976047,
+   "family": "cohesion",
+   "method": "Mean TF-IDF cosine within the album vs 500 label shuffles; q: BH over albums",
+   "q": 0.7275449101796407,
+   "result": "Failed"
+  },
+  {
+   "claim": "Songs further apart in time are further apart in vocabulary",
+   "stat": "Mantel \u03c1 +0.052",
+   "p": 0.18,
+   "family": "mantel",
+   "method": "Spearman between year gap and TF-IDF cosine distance, 499 permutations of years",
+   "q": 0.18,
+   "result": "Failed"
+  },
+  {
+   "claim": "A song's album can be identified from the 100 most common function words",
+   "stat": "accuracy 35% vs chance 33%",
+   "p": 0.43564356435643564,
+   "family": "classifier",
+   "method": "Leave-one-song-out nearest centroid (Burrows' Delta), 100 label permutations; q: BH over the 3 feature sets",
+   "q": 0.7623762376237625,
+   "result": "Failed"
+  },
+  {
+   "claim": "A song's album can be identified from function words without pronouns",
+   "stat": "accuracy 30% vs chance 33%",
+   "p": 0.7623762376237624,
+   "family": "classifier",
+   "method": "Leave-one-song-out nearest centroid (Burrows' Delta), 100 label permutations; q: BH over the 3 feature sets",
+   "q": 0.7623762376237625,
+   "result": "Failed"
+  },
+  {
+   "claim": "A song's album can be identified from the 300 most common content words",
+   "stat": "accuracy 35% vs chance 34%",
+   "p": 0.5148514851485149,
+   "family": "classifier",
+   "method": "Leave-one-song-out nearest centroid (Burrows' Delta), 100 label permutations; q: BH over the 3 feature sets",
+   "q": 0.7623762376237625,
+   "result": "Failed"
+  },
+  {
+   "claim": "Word frequencies follow Zipf's law",
+   "stat": "slope -1.15, R\u00b2 0.972",
+   "p": NaN,
+   "family": "fit",
+   "method": "OLS on log rank vs log frequency, top 1,000 forms; a description, not a test",
+   "result": "Fit"
+  },
+  {
+   "claim": "Vocabulary growth in career order departs from random song orders",
+   "stat": "Heaps \u03b2 0.76",
+   "p": 0.25674325674325676,
+   "family": "heaps",
+   "method": "Max deviation from the mean of 1,000 shuffled song orders",
+   "q": 0.25674325674325676,
+   "result": "Failed"
+  },
+  {
+   "claim": "The word network splits into distinct communities",
+   "stat": "modularity 0.67 vs 0.70 rewired",
+   "p": 1.0,
+   "family": "network",
+   "method": "Greedy modularity vs 20 degree-preserving rewirings",
+   "q": 1.0,
+   "result": "Failed"
+  }
+ ],
+ "facts": {
+  "songs": 37,
+  "albums": 3,
+  "lines": 1321,
+  "tokens": 7455,
+  "types": 936,
+  "hapax": 355,
+  "hapax_pct": 0.37927350427350426,
+  "top_word": "away",
+  "top_word_n": 48,
+  "top_word_songs": 6,
+  "top_word_pct": 0.16216216216216217,
+  "common_checked": 300,
+  "common_used": 143
+ },
+ "headline": {
+  "title": "\u201caway\u201d is Nirvana's word",
+  "lede": "It appears 48 times, in 16% of 37 songs. No trend across albums passed the tests below."
+ },
+ "profile": {
+  "forms": {
+   "and": 118,
+   "if": 22,
+   "you": 192,
+   "would": 41,
+   "not": 256,
+   "mind": 19,
+   "i": 509,
+   "like": 36,
+   "to": 135,
+   "blew": 2,
+   "lose": 3,
+   "care": 22,
+   "leave": 3,
+   "breathe": 2,
+   "is": 163,
+   "there": 13,
+   "another": 10,
+   "reason": 3,
+   "for": 45,
+   "your": 77,
+   "stain": 3,
+   "could": 27,
+   "believe": 13,
+   "who": 13,
+   "we": 56,
+   "knew": 3,
+   "was": 19,
+   "stress": 3,
+   "or": 7,
+   "strain": 3,
+   "here": 14,
+   "word": 4,
+   "that": 31,
+   "rhymes": 3,
+   "with": 39,
+   "shame": 4,
+   "do": 141,
+   "anything": 12,
+   "bell": 1,
+   "on": 41,
+   "door": 3,
+   "clangs": 1,
+   "come": 10,
+   "in": 119,
+   "floyd": 2,
+   "observes": 1,
+   "my": 114,
+   "hairy": 1,
+   "chin": 1,
+   "sit": 6,
+   "down": 5,
+   "chair": 2,
+   "be": 23,
+   "afraid": 13,
+   "steamed": 1,
+   "hot": 1,
+   "towel": 1,
+   "face": 4,
+   "shaved": 4,
+   "barney": 1,
+   "ties": 1,
+   "me": 109,
+   "the": 151,
+   "can": 39,
+   "see": 13,
+   "am": 168,
+   "really": 2,
+   "scared": 3,
+   "breathes": 1,
+   "hard": 6,
+   "hear": 3,
+   "a": 227,
+   "zip": 2,
+   "pee": 2,
+   "pressed": 1,
+   "against": 1,
+   "lips": 3,
+   "shamed": 5,
+   "sense": 2,
+   "others": 2,
+   "room": 4,
+   "opie": 1,
+   "aunt": 2,
+   "bee": 1,
+   "presume": 1,
+   "they": 37,
+   "take": 19,
+   "turns": 4,
+   "cut": 8,
+   "up": 9,
+   "die": 1,
+   "smothered": 1,
+   "bees": 1,
+   "muff": 1,
+   "ashamed": 1,
+   "need": 17,
+   "an": 14,
+   "easy": 4,
+   "friend": 12,
+   "ear": 2,
+   "lend": 2,
+   "think": 33,
+   "fit": 3,
+   "this": 21,
+   "shoe": 2,
+   "but": 25,
+   "have": 106,
+   "clue": 2,
+   "will": 42,
+   "advantage": 3,
+   "while": 4,
+   "hang": 4,
+   "out": 34,
+   "dry": 3,
+   "every": 9,
+   "night": 5,
+   "free": 4,
+   "standin": 1,
+   "line": 3,
+   "hope": 2,
+   "time": 5,
+   "pick": 1,
+   "number": 1,
+   "two": 1,
+   "keep": 6,
+   "date": 3,
+   "no": 59,
+   "it": 105,
+   "just": 27,
+   "luck": 9,
+   "recess": 13,
+   "are": 57,
+   "high": 9,
+   "school": 8,
+   "again": 14,
+   "when": 20,
+   "tell": 3,
+   "queen": 3,
+   "of": 60,
+   "heart": 30,
+   "please": 10,
+   "deceive": 2,
+   "hurt": 4,
+   "ai": 25,
+   "way": 54,
+   "seems": 2,
+   "feel": 21,
+   "love": 24,
+   "buzz": 8,
+   "at": 6,
+   "feeding": 1,
+   "she": 44,
+   "push": 1,
+   "food": 3,
+   "through": 3,
+   "crawl": 1,
+   "towards": 1,
+   "crack": 17,
+   "light": 6,
+   "sometimes": 1,
+   "find": 26,
+   "newspapers": 1,
+   "spread": 1,
+   "around": 2,
+   "soaking": 1,
+   "all": 85,
+   "cleaning": 3,
+   "due": 1,
+   "good": 2,
+   "hosing": 1,
+   "lady": 1,
+   "whom": 1,
+   "maternal": 1,
+   "cannot": 1,
+   "look": 4,
+   "eyes": 16,
+   "hers": 1,
+   "blue": 1,
+   "cock": 1,
+   "twist": 1,
+   "masturbate": 1,
+   "said": 38,
+   "so": 30,
+   "nirvana": 14,
+   "black": 13,
+   "windows": 1,
+   "paint": 1,
+   "scratched": 2,
+   "nails": 1,
+   "why": 19,
+   "try": 2,
+   "escape": 1,
+   "bring": 2,
+   "older": 4,
+   "ones": 1,
+   "point": 1,
+   "flash": 1,
+   "family": 1,
+   "away": 48,
+   "very": 5,
+   "later": 1,
+   "learned": 3,
+   "accept": 1,
+   "some": 15,
+   "friends": 5,
+   "ridicule": 1,
+   "whole": 3,
+   "existence": 1,
+   "amusement": 1,
+   "right": 7,
+   "our": 22,
+   "reach": 3,
+   "grown": 1,
+   "getting": 6,
+   "drone": 3,
+   "negative": 12,
+   "creep": 12,
+   "stoned": 3,
+   "daddys": 23,
+   "little": 25,
+   "girl": 46,
+   "more": 46,
+   "range": 3,
+   "crude": 1,
+   "yeah": 58,
+   "lazy": 3,
+   "over": 4,
+   "worth": 3,
+   "gimme": 27,
+   "back": 37,
+   "alcohol": 18,
+   "heal": 6,
+   "million": 18,
+   "kill": 12,
+   "live": 4,
+   "lifestyle": 3,
+   "comfortable": 3,
+   "travel": 5,
+   "far": 3,
+   "their": 4,
+   "stomachs": 3,
+   "full": 3,
+   "make": 17,
+   "living": 6,
+   "off": 13,
+   "arts": 3,
+   "crafts": 3,
+   "kind": 3,
+   "seashells": 3,
+   "driftwood": 3,
+   "burlap": 3,
+   "deal": 4,
+   "town": 4,
+   "sunday": 5,
+   "swap": 3,
+   "meet": 4,
+   "battleground": 3,
+   "loves": 6,
+   "than": 18,
+   "he": 34,
+   "ever": 11,
+   "know": 35,
+   "her": 21,
+   "show": 6,
+   "keeps": 9,
+   "his": 14,
+   "cigarettes": 3,
+   "close": 9,
+   "photographs": 3,
+   "bitterness": 3,
+   "fill": 2,
+   "new": 15,
+   "vision": 2,
+   "wake": 3,
+   "indecision": 2,
+   "help": 9,
+   "trust": 2,
+   "mighty": 2,
+   "wisdom": 2,
+   "yes": 4,
+   "eat": 8,
+   "cow": 4,
+   "proud": 4,
+   "how": 14,
+   "question": 2,
+   "questions": 2,
+   "lead": 2,
+   "temptations": 2,
+   "hand": 3,
+   "give": 4,
+   "easychair": 2,
+   "poop": 2,
+   "as": 28,
+   "rock": 3,
+   "anyway": 2,
+   "seal": 2,
+   "box": 4,
+   "ah": 1,
+   "grade": 1,
+   "fun": 11,
+   "cross": 1,
+   "self": 3,
+   "floss": 1,
+   "wet": 3,
+   "bed": 2,
+   "fear": 2,
+   "none": 1,
+   "teacher": 5,
+   "preacher": 3,
+   "nothing": 24,
+   "spell": 1,
+   "smell": 9,
+   "search": 1,
+   "church": 1,
+   "cold": 8,
+   "coals": 1,
+   "big": 6,
+   "cheese": 5,
+   "mine": 6,
+   "says": 10,
+   "go": 22,
+   "office": 3,
+   "one": 29,
+   "stays": 1,
+   "straighten": 4,
+   "enemies": 8,
+   "what": 60,
+   "man": 2,
+   "lies": 2,
+   "glue": 4,
+   "about": 5,
+   "hell": 2,
+   "sure": 3,
+   "portray": 1,
+   "sincerity": 1,
+   "act": 1,
+   "loyalty": 1,
+   "defend": 1,
+   "country": 1,
+   "wish": 6,
+   "pain": 1,
+   "lobotomies": 1,
+   "save": 3,
+   "families": 1,
+   "surrealistic": 1,
+   "fantasy": 1,
+   "bland": 1,
+   "boring": 1,
+   "plain": 10,
+   "holy": 2,
+   "now": 14,
+   "restitution": 2,
+   "livin": 1,
+   "fusion": 2,
+   "fleece": 2,
+   "shun": 2,
+   "bastard": 3,
+   "guilty": 2,
+   "master": 3,
+   "writing": 2,
+   "somebody": 2,
+   "much": 2,
+   "enough": 2,
+   "words": 3,
+   "along": 8,
+   "sing": 8,
+   "song": 2,
+   "sickening": 1,
+   "pessimist": 1,
+   "hypocrite": 1,
+   "conservative": 1,
+   "communist": 1,
+   "apocalyptic": 1,
+   "thank": 1,
+   "dear": 1,
+   "god": 4,
+   "putting": 1,
+   "earth": 1,
+   "privileged": 1,
+   "debt": 10,
+   "thirst": 1,
+   "downer": 1,
+   "load": 1,
+   "guns": 1,
+   "pretend": 3,
+   "bored": 3,
+   "assured": 1,
+   "oh": 15,
+   "dirty": 4,
+   "hello": 36,
+   "low": 9,
+   "lights": 3,
+   "less": 5,
+   "dangerous": 3,
+   "entertain": 6,
+   "us": 7,
+   "stupid": 3,
+   "contagious": 3,
+   "mulatto": 3,
+   "albino": 3,
+   "mosquito": 3,
+   "libido": 3,
+   "hey": 21,
+   "yey": 2,
+   "worse": 1,
+   "best": 1,
+   "gift": 1,
+   "blessed": 1,
+   "group": 1,
+   "has": 5,
+   "always": 2,
+   "been": 8,
+   "until": 2,
+   "end": 3,
+   "forget": 1,
+   "taste": 1,
+   "guess": 1,
+   "makes": 4,
+   "smile": 3,
+   "found": 5,
+   "well": 2,
+   "whatever": 1,
+   "never": 3,
+   "denial": 9,
+   "sell": 2,
+   "kids": 1,
+   "weather": 1,
+   "changes": 1,
+   "moods": 1,
+   "spring": 1,
+   "reproductive": 1,
+   "glands": 1,
+   "likes": 18,
+   "pretty": 6,
+   "songs": 6,
+   "shoot": 6,
+   "gun": 15,
+   "knows": 14,
+   "means": 14,
+   "say": 10,
+   "nature": 1,
+   "whore": 1,
+   "bruises": 1,
+   "fruit": 1,
+   "tender": 1,
+   "age": 1,
+   "bloom": 1,
+   "were": 2,
+   "want": 13,
+   "old": 6,
+   "enemy": 2,
+   "hurry": 1,
+   "choice": 1,
+   "yours": 4,
+   "late": 1,
+   "rest": 1,
+   "memoria": 13,
+   "doused": 1,
+   "mud": 1,
+   "soaked": 1,
+   "bleach": 1,
+   "trend": 1,
+   "swear": 2,
+   "get": 15,
+   "from": 8,
+   "home": 3,
+   "ghost": 2,
+   "even": 9,
+   "mean": 5,
+   "stare": 3,
+   "breed": 3,
+   "plant": 3,
+   "house": 3,
+   "build": 3,
+   "tree": 3,
+   "three": 3,
+   "happy": 10,
+   "cause": 9,
+   "today": 3,
+   "head": 3,
+   "ugly": 2,
+   "okay": 4,
+   "broke": 4,
+   "mirrors": 2,
+   "morning": 2,
+   "everyday": 2,
+   "candles": 2,
+   "daze": 2,
+   "lonely": 1,
+   "sad": 10,
+   "maybe": 4,
+   "blame": 2,
+   "heard": 2,
+   "excited": 1,
+   "wait": 16,
+   "horny": 1,
+   "gonna": 18,
+   "miss": 13,
+   "killed": 4,
+   "polly": 4,
+   "wants": 3,
+   "cracker": 2,
+   "should": 9,
+   "first": 5,
+   "water": 3,
+   "put": 2,
+   "blow": 1,
+   "torch": 1,
+   "seed": 3,
+   "let": 11,
+   "clip": 3,
+   "wings": 3,
+   "ride": 6,
+   "yourself": 6,
+   "myself": 16,
+   "got": 19,
+   "rope": 3,
+   "told": 3,
+   "promise": 4,
+   "true": 3,
+   "asked": 1,
+   "untie": 1,
+   "chase": 1,
+   "nice": 2,
+   "few": 1,
+   "hurts": 1,
+   "caught": 1,
+   "guard": 1,
+   "amazes": 1,
+   "instinct": 1,
+   "people": 1,
+   "brother": 1,
+   "everybody": 1,
+   "together": 1,
+   "alien": 1,
+   "cultures": 1,
+   "opinions": 1,
+   "gotta": 14,
+   "better": 18,
+   "met": 3,
+   "wise": 1,
+   "woman": 1,
+   "because": 1,
+   "paranoid": 1,
+   "after": 1,
+   "heyy": 1,
+   "baby": 2,
+   "lucky": 2,
+   "unless": 2,
+   "duty": 2,
+   "completely": 2,
+   "drain": 2,
+   "tube": 2,
+   "infection": 2,
+   "chew": 3,
+   "meat": 7,
+   "pass": 3,
+   "forth": 3,
+   "passionate": 3,
+   "kiss": 4,
+   "mouth": 3,
+   "dilated": 1,
+   "become": 3,
+   "pupil": 1,
+   "taught": 1,
+   "everything": 2,
+   "without": 5,
+   "poison": 2,
+   "apple": 1,
+   "yellow": 1,
+   "healthy": 1,
+   "student": 1,
+   "indebted": 1,
+   "grateful": 1,
+   "vacuum": 1,
+   "fluids": 1,
+   "sloppy": 1,
+   "vitamins": 1,
+   "truth": 3,
+   "covered": 3,
+   "security": 2,
+   "smother": 2,
+   "work": 2,
+   "trading": 2,
+   "taking": 3,
+   "regret": 2,
+   "thing": 2,
+   "wanted": 3,
+   "steal": 3,
+   "arrest": 3,
+   "wear": 3,
+   "shield": 3,
+   "prove": 3,
+   "still": 6,
+   "wanna": 1,
+   "knowning": 1,
+   "experience": 1,
+   "fighting": 1,
+   "jealousy": 1,
+   "fucking": 1,
+   "gone": 3,
+   "made": 2,
+   "pact": 1,
+   "learn": 1,
+   "rules": 1,
+   "share": 2,
+   "lost": 4,
+   "grew": 2,
+   "monkey": 4,
+   "rather": 2,
+   "dead": 2,
+   "cool": 2,
+   "ends": 2,
+   "rhyme": 2,
+   "blind": 2,
+   "stay": 25,
+   "inch": 1,
+   "fashion": 2,
+   "shits": 1,
+   "styles": 1,
+   "throw": 4,
+   "skin": 2,
+   "gay": 2,
+   "start": 1,
+   "any": 3,
+   "till": 1,
+   "bled": 1,
+   "wrong": 19,
+   "finest": 1,
+   "day": 5,
+   "had": 4,
+   "cry": 1,
+   "command": 1,
+   "complain": 6,
+   "mother": 1,
+   "died": 1,
+   "safe": 1,
+   "quote": 1,
+   "sheep": 1,
+   "blackmailed": 1,
+   "forgot": 1,
+   "code": 1,
+   "somewhere": 1,
+   "before": 2,
+   "dream": 1,
+   "memory": 1,
+   "stored": 1,
+   "defense": 1,
+   "neutered": 1,
+   "spayed": 1,
+   "trying": 1,
+   "unclear": 1,
+   "write": 2,
+   "lines": 1,
+   "special": 1,
+   "message": 1,
+   "then": 4,
+   "done": 3,
+   "oo": 10,
+   "o": 10,
+   "underneath": 2,
+   "bridge": 2,
+   "tarp": 2,
+   "sprung": 2,
+   "leak": 2,
+   "animals": 2,
+   "trapped": 2,
+   "pets": 2,
+   "grass": 2,
+   "drippings": 2,
+   "ceiling": 2,
+   "ok": 2,
+   "fish": 2,
+   "feelings": 2,
+   "something": 15,
+   "hmm": 14,
+   "mmm": 14,
+   "teenage": 1,
+   "angst": 1,
+   "paid": 3,
+   "appointed": 1,
+   "judges": 1,
+   "judge": 1,
+   "sold": 1,
+   "floats": 1,
+   "witch": 1,
+   "thought": 2,
+   "payment": 1,
+   "salems": 1,
+   "lot": 1,
+   "serve": 15,
+   "servants": 15,
+   "legendary": 3,
+   "divorce": 3,
+   "such": 3,
+   "bore": 3,
+   "bones": 1,
+   "did": 1,
+   "bad": 2,
+   "tried": 1,
+   "father": 1,
+   "instead": 1,
+   "dad": 1,
+   "hate": 3,
+   "anymore": 1,
+   "most": 1,
+   "babies": 1,
+   "butter": 1,
+   "smelled": 1,
+   "other": 2,
+   "born": 2,
+   "scentless": 2,
+   "senseless": 1,
+   "apprentice": 1,
+   "nurse": 1,
+   "refused": 1,
+   "feed": 2,
+   "him": 1,
+   "electrolytes": 1,
+   "semen": 1,
+   "perfumed": 1,
+   "secrets": 1,
+   "countless": 1,
+   "formulas": 1,
+   "pressing": 1,
+   "flowers": 1,
+   "lie": 1,
+   "soil": 1,
+   "fertilize": 1,
+   "mushrooms": 1,
+   "leaking": 1,
+   "gas": 1,
+   "fumes": 1,
+   "into": 9,
+   "perfume": 1,
+   "fire": 3,
+   "quit": 1,
+   "pisces": 2,
+   "weak": 2,
+   "locked": 2,
+   "inside": 5,
+   "shaped": 2,
+   "weeks": 2,
+   "drawn": 2,
+   "magnet": 2,
+   "tar": 2,
+   "pit": 2,
+   "trap": 2,
+   "cancer": 2,
+   "turn": 2,
+   "complaint": 9,
+   "forever": 9,
+   "priceless": 9,
+   "advice": 14,
+   "eating": 1,
+   "orchids": 1,
+   "forgive": 1,
+   "yet": 1,
+   "angel": 4,
+   "hair": 1,
+   "babys": 1,
+   "breath": 1,
+   "broken": 4,
+   "hymen": 1,
+   "highness": 1,
+   "left": 4,
+   "umbilical": 1,
+   "noose": 1,
+   "climb": 1,
+   "rape": 26,
+   "only": 12,
+   "waste": 1,
+   "favorite": 2,
+   "source": 1,
+   "open": 1,
+   "sores": 1,
+   "appreciate": 1,
+   "concern": 1,
+   "stink": 1,
+   "burn": 4,
+   "relieving": 2,
+   "leaving": 2,
+   "soon": 2,
+   "relaxing": 2,
+   "asking": 2,
+   "whenever": 1,
+   "soothing": 2,
+   "sue": 2,
+   "starting": 2,
+   "sound": 3,
+   "same": 2,
+   "comfort": 9,
+   "being": 9,
+   "false": 1,
+   "witness": 1,
+   "float": 2,
+   "drown": 1,
+   "patient": 1,
+   "display": 1,
+   "patience": 1,
+   "disease": 1,
+   "puget": 1,
+   "liars": 1,
+   "blanket": 3,
+   "ash": 1,
+   "ground": 5,
+   "wherever": 1,
+   "them": 2,
+   "sun": 11,
+   "having": 2,
+   "dumb": 14,
+   "inhale": 1,
+   "mend": 1,
+   "clouds": 1,
+   "hangover": 4,
+   "fall": 1,
+   "asleep": 1,
+   "soul": 1,
+   "cheap": 1,
+   "lesson": 1,
+   "soothe": 1,
+   "buried": 3,
+   "neck": 1,
+   "contradictonary": 1,
+   "flies": 1,
+   "pride": 1,
+   "king": 1,
+   "illiterature": 1,
+   "ape": 1,
+   "hesitate": 2,
+   "ask": 2,
+   "someone": 2,
+   "else": 6,
+   "too": 2,
+   "busy": 2,
+   "acting": 2,
+   "naive": 2,
+   "seen": 2,
+   "sky": 6,
+   "dirt": 2,
+   "own": 3,
+   "parasite": 1,
+   "host": 1,
+   "each": 1,
+   "endorphins": 1,
+   "doll": 3,
+   "steak": 3,
+   "test": 3,
+   "bright": 3,
+   "side": 6,
+   "suicide": 3,
+   "eyesight": 3,
+   "wing": 9,
+   "lack": 3,
+   "iron": 3,
+   "sleeping": 3,
+   "pet": 2,
+   "virus": 1,
+   "name": 1,
+   "milk": 3,
+   "shit": 2,
+   "protector": 1,
+   "kennel": 1,
+   "ecto": 2,
+   "plasma": 1,
+   "skeletal": 1,
+   "obituary": 1,
+   "birthday": 1,
+   "scent": 1,
+   "place": 2,
+   "recovery": 1,
+   "everyone": 2,
+   "posture": 1,
+   "drink": 5,
+   "pennyroyal": 5,
+   "tea": 5,
+   "distill": 2,
+   "life": 2,
+   "anemic": 3,
+   "royalty": 3,
+   "leonard": 1,
+   "cohen": 1,
+   "afterworld": 1,
+   "sigh": 1,
+   "eternally": 1,
+   "tired": 1,
+   "sleep": 1,
+   "liar": 1,
+   "thief": 1,
+   "warm": 1,
+   "laxatives": 1,
+   "cherry": 1,
+   "flavored": 1,
+   "antacids": 1,
+   "use": 2,
+   "once": 3,
+   "destroy": 2,
+   "invasion": 2,
+   "piracy": 2,
+   "afterbirth": 2,
+   "nation": 2,
+   "starve": 2,
+   "skeleton": 2,
+   "key": 2,
+   "acneed": 2,
+   "cigarette": 2,
+   "burns": 3,
+   "speak": 3,
+   "bipolar": 1,
+   "opposites": 1,
+   "attract": 1,
+   "sudden": 1,
+   "second": 1,
+   "rate": 1,
+   "third": 1,
+   "degree": 1,
+   "moderate": 1,
+   "mayday": 1,
+   "attack": 1,
+   "fair": 1,
+   "sight": 1,
+   "phone": 1,
+   "apologies": 2,
+   "married": 4,
+   "easily": 1,
+   "amused": 1,
+   "nest": 1,
+   "salt": 1,
+   "fault": 1,
+   "aqua": 1,
+   "sea": 1,
+   "foam": 1,
+   "sunburn": 1,
+   "freezer": 1,
+   "choking": 1,
+   "ashes": 1
+  },
+  "content": {
+   "mind": 19,
+   "blow": 3,
+   "lose": 7,
+   "care": 22,
+   "leave": 5,
+   "breathe": 3,
+   "another": 10,
+   "reason": 3,
+   "stain": 3,
+   "believe": 13,
+   "stress": 3,
+   "strain": 3,
+   "word": 7,
+   "rhyme": 5,
+   "shame": 9,
+   "anything": 12,
+   "bell": 1,
+   "door": 3,
+   "clang": 1,
+   "floyd": 2,
+   "observe": 1,
+   "hairy": 1,
+   "chin": 1,
+   "sit": 6,
+   "chair": 2,
+   "afraid": 13,
+   "steam": 1,
+   "hot": 1,
+   "towel": 1,
+   "face": 4,
+   "shave": 4,
+   "barney": 1,
+   "tie": 1,
+   "really": 2,
+   "scare": 3,
+   "hard": 6,
+   "hear": 5,
+   "zip": 2,
+   "pee": 2,
+   "press": 2,
+   "lip": 3,
+   "sense": 2,
+   "room": 4,
+   "opie": 1,
+   "aunt": 2,
+   "bee": 2,
+   "presume": 1,
+   "turn": 6,
+   "cut": 8,
+   "die": 2,
+   "smother": 3,
+   "muff": 1,
+   "ashamed": 1,
+   "need": 17,
+   "easy": 4,
+   "friend": 17,
+   "ear": 2,
+   "lend": 2,
+   "think": 33,
+   "fit": 3,
+   "shoe": 2,
+   "clue": 2,
+   "advantage": 3,
+   "hang": 4,
+   "dry": 3,
+   "night": 5,
+   "free": 4,
+   "standin": 1,
+   "line": 4,
+   "hope": 2,
+   "time": 5,
+   "pick": 1,
+   "number": 1,
+   "two": 1,
+   "keep": 15,
+   "date": 3,
+   "luck": 9,
+   "recess": 13,
+   "high": 9,
+   "school": 8,
+   "tell": 6,
+   "queen": 3,
+   "heart": 30,
+   "please": 10,
+   "deceive": 2,
+   "hurt": 5,
+   "seem": 2,
+   "feel": 21,
+   "love": 30,
+   "buzz": 8,
+   "feeding": 1,
+   "push": 1,
+   "food": 3,
+   "crawl": 1,
+   "towards": 1,
+   "crack": 17,
+   "light": 9,
+   "sometimes": 1,
+   "find": 26,
+   "newspaper": 1,
+   "spread": 1,
+   "around": 2,
+   "soak": 2,
+   "clean": 3,
+   "due": 1,
+   "good": 21,
+   "hose": 1,
+   "lady": 1,
+   "maternal": 1,
+   "look": 4,
+   "eye": 16,
+   "blue": 1,
+   "cock": 1,
+   "twist": 1,
+   "masturbate": 1,
+   "nirvana": 14,
+   "black": 13,
+   "window": 1,
+   "paint": 1,
+   "scratch": 2,
+   "nail": 1,
+   "try": 4,
+   "escape": 1,
+   "bring": 2,
+   "old": 10,
+   "point": 1,
+   "flash": 1,
+   "family": 2,
+   "away": 48,
+   "late": 2,
+   "learn": 4,
+   "accept": 1,
+   "ridicule": 1,
+   "whole": 3,
+   "existence": 1,
+   "amusement": 1,
+   "right": 7,
+   "reach": 3,
+   "grow": 3,
+   "drone": 3,
+   "negative": 12,
+   "creep": 12,
+   "stone": 3,
+   "daddys": 23,
+   "little": 25,
+   "girl": 46,
+   "range": 3,
+   "crude": 1,
+   "lazy": 3,
+   "worth": 3,
+   "gimme": 27,
+   "alcohol": 18,
+   "heal": 6,
+   "million": 18,
+   "kill": 16,
+   "live": 4,
+   "lifestyle": 3,
+   "comfortable": 3,
+   "travel": 5,
+   "far": 3,
+   "stomach": 3,
+   "full": 3,
+   "living": 6,
+   "art": 3,
+   "craft": 3,
+   "kind": 3,
+   "seashell": 3,
+   "driftwood": 3,
+   "burlap": 3,
+   "deal": 4,
+   "town": 4,
+   "sunday": 5,
+   "swap": 3,
+   "meet": 7,
+   "battleground": 3,
+   "show": 6,
+   "cigarette": 5,
+   "close": 9,
+   "photograph": 3,
+   "bitterness": 3,
+   "fill": 2,
+   "new": 15,
+   "vision": 2,
+   "wake": 3,
+   "indecision": 2,
+   "help": 9,
+   "trust": 2,
+   "mighty": 2,
+   "wisdom": 2,
+   "eat": 9,
+   "cow": 4,
+   "proud": 4,
+   "question": 4,
+   "lead": 2,
+   "temptation": 2,
+   "hand": 3,
+   "give": 4,
+   "easychair": 2,
+   "poop": 2,
+   "rock": 3,
+   "anyway": 2,
+   "seal": 2,
+   "box": 4,
+   "grade": 1,
+   "fun": 11,
+   "cross": 1,
+   "self": 3,
+   "floss": 1,
+   "wet": 3,
+   "bed": 2,
+   "fear": 2,
+   "none": 1,
+   "teacher": 5,
+   "preacher": 3,
+   "nothing": 24,
+   "spell": 1,
+   "smell": 10,
+   "search": 1,
+   "church": 1,
+   "cold": 8,
+   "coal": 1,
+   "big": 6,
+   "cheese": 5,
+   "office": 3,
+   "stay": 26,
+   "straighten": 4,
+   "enemy": 10,
+   "man": 2,
+   "lie": 3,
+   "glue": 4,
+   "hell": 2,
+   "sure": 3,
+   "portray": 1,
+   "sincerity": 1,
+   "act": 1,
+   "loyalty": 1,
+   "defend": 1,
+   "country": 1,
+   "wish": 6,
+   "pain": 1,
+   "lobotomy": 1,
+   "save": 3,
+   "surrealistic": 1,
+   "fantasy": 1,
+   "bland": 1,
+   "bore": 7,
+   "plain": 10,
+   "holy": 2,
+   "restitution": 2,
+   "livin": 1,
+   "fusion": 2,
+   "fleece": 2,
+   "shun": 2,
+   "bastard": 3,
+   "guilty": 2,
+   "master": 3,
+   "writing": 2,
+   "somebody": 2,
+   "much": 2,
+   "enough": 2,
+   "along": 8,
+   "sing": 8,
+   "song": 8,
+   "sicken": 1,
+   "pessimist": 1,
+   "hypocrite": 1,
+   "conservative": 1,
+   "communist": 1,
+   "apocalyptic": 1,
+   "thank": 1,
+   "dear": 1,
+   "god": 4,
+   "putt": 1,
+   "earth": 1,
+   "privilege": 1,
+   "debt": 10,
+   "thirst": 1,
+   "downer": 1,
+   "load": 1,
+   "gun": 16,
+   "pretend": 3,
+   "assure": 1,
+   "dirty": 4,
+   "hello": 36,
+   "low": 9,
+   "less": 5,
+   "dangerous": 3,
+   "entertain": 6,
+   "stupid": 3,
+   "contagious": 3,
+   "mulatto": 3,
+   "albino": 3,
+   "mosquito": 3,
+   "libido": 3,
+   "yey": 2,
+   "wrong": 20,
+   "gift": 1,
+   "bless": 1,
+   "group": 1,
+   "always": 2,
+   "end": 5,
+   "forget": 2,
+   "taste": 1,
+   "guess": 1,
+   "smile": 3,
+   "found": 5,
+   "whatever": 1,
+   "never": 3,
+   "denial": 9,
+   "sell": 3,
+   "kid": 1,
+   "weather": 1,
+   "change": 1,
+   "mood": 1,
+   "spring": 3,
+   "reproductive": 1,
+   "gland": 1,
+   "pretty": 6,
+   "shoot": 6,
+   "means": 14,
+   "nature": 1,
+   "whore": 1,
+   "bruise": 1,
+   "fruit": 1,
+   "tender": 1,
+   "age": 1,
+   "bloom": 1,
+   "want": 19,
+   "hurry": 1,
+   "choice": 1,
+   "rest": 1,
+   "memoria": 13,
+   "douse": 1,
+   "mud": 1,
+   "bleach": 1,
+   "trend": 1,
+   "swear": 2,
+   "home": 3,
+   "ghost": 2,
+   "mean": 5,
+   "stare": 3,
+   "breed": 3,
+   "plant": 3,
+   "house": 3,
+   "build": 3,
+   "tree": 3,
+   "three": 3,
+   "happy": 10,
+   "today": 3,
+   "head": 3,
+   "ugly": 2,
+   "broke": 4,
+   "mirror": 2,
+   "morning": 2,
+   "everyday": 2,
+   "candle": 2,
+   "daze": 2,
+   "lonely": 1,
+   "sad": 10,
+   "maybe": 4,
+   "blame": 2,
+   "excite": 1,
+   "wait": 16,
+   "horny": 1,
+   "miss": 13,
+   "polly": 4,
+   "cracker": 2,
+   "first": 5,
+   "water": 3,
+   "put": 2,
+   "torch": 1,
+   "seed": 3,
+   "clip": 3,
+   "wing": 12,
+   "ride": 6,
+   "rope": 3,
+   "promise": 4,
+   "true": 3,
+   "aske": 1,
+   "untie": 1,
+   "chase": 1,
+   "nice": 2,
+   "catch": 1,
+   "guard": 1,
+   "amaze": 1,
+   "instinct": 1,
+   "people": 1,
+   "brother": 1,
+   "everybody": 1,
+   "together": 1,
+   "alien": 1,
+   "culture": 1,
+   "opinion": 1,
+   "wise": 1,
+   "woman": 1,
+   "paranoid": 1,
+   "heyy": 1,
+   "baby": 3,
+   "lucky": 2,
+   "unless": 2,
+   "duty": 2,
+   "completely": 2,
+   "drain": 2,
+   "tube": 2,
+   "infection": 2,
+   "chew": 3,
+   "meat": 7,
+   "pass": 3,
+   "forth": 3,
+   "passionate": 3,
+   "kiss": 4,
+   "mouth": 3,
+   "dilate": 1,
+   "become": 3,
+   "pupil": 1,
+   "teach": 1,
+   "everything": 2,
+   "without": 5,
+   "poison": 2,
+   "apple": 1,
+   "yellow": 1,
+   "healthy": 1,
+   "student": 1,
+   "indebt": 1,
+   "grateful": 1,
+   "vacuum": 1,
+   "fluid": 1,
+   "sloppy": 1,
+   "vitamin": 1,
+   "truth": 3,
+   "cover": 3,
+   "security": 2,
+   "work": 2,
+   "trading": 2,
+   "taking": 3,
+   "regret": 2,
+   "steal": 3,
+   "arrest": 3,
+   "wear": 3,
+   "shield": 3,
+   "prove": 3,
+   "knowning": 1,
+   "experience": 1,
+   "fight": 1,
+   "jealousy": 1,
+   "fuck": 1,
+   "gan": 3,
+   "pact": 1,
+   "rule": 1,
+   "share": 2,
+   "monkey": 4,
+   "rather": 2,
+   "dead": 2,
+   "cool": 2,
+   "blind": 2,
+   "inch": 1,
+   "fashion": 2,
+   "shit": 3,
+   "style": 1,
+   "throw": 4,
+   "skin": 2,
+   "gay": 2,
+   "start": 3,
+   "till": 1,
+   "bleed": 1,
+   "fine": 1,
+   "day": 5,
+   "cry": 1,
+   "command": 1,
+   "complain": 6,
+   "mother": 1,
+   "safe": 1,
+   "quote": 1,
+   "sheep": 1,
+   "blackmail": 1,
+   "code": 1,
+   "somewhere": 1,
+   "dream": 1,
+   "memory": 1,
+   "store": 1,
+   "defense": 1,
+   "neuter": 1,
+   "spay": 1,
+   "unclear": 1,
+   "write": 2,
+   "special": 1,
+   "message": 1,
+   "oo": 10,
+   "underneath": 2,
+   "bridge": 2,
+   "tarp": 2,
+   "leak": 3,
+   "animal": 2,
+   "trap": 4,
+   "pet": 4,
+   "grass": 2,
+   "drippings": 2,
+   "ceiling": 2,
+   "fish": 2,
+   "feeling": 2,
+   "something": 15,
+   "teenage": 1,
+   "angst": 1,
+   "pay": 3,
+   "appoint": 1,
+   "judge": 2,
+   "float": 3,
+   "witch": 1,
+   "thought": 2,
+   "payment": 1,
+   "salems": 1,
+   "lot": 1,
+   "serve": 15,
+   "servant": 15,
+   "legendary": 3,
+   "divorce": 3,
+   "bone": 1,
+   "bad": 2,
+   "father": 1,
+   "instead": 1,
+   "dad": 1,
+   "hate": 3,
+   "anymore": 1,
+   "butter": 1,
+   "born": 2,
+   "scentless": 2,
+   "senseless": 1,
+   "apprentice": 1,
+   "nurse": 1,
+   "refuse": 1,
+   "fee": 2,
+   "electrolyte": 1,
+   "semen": 1,
+   "perfume": 2,
+   "secret": 1,
+   "countless": 1,
+   "formula": 1,
+   "flower": 1,
+   "soil": 1,
+   "fertilize": 1,
+   "mushroom": 1,
+   "gas": 1,
+   "fume": 1,
+   "fire": 3,
+   "quit": 1,
+   "pisces": 2,
+   "weak": 2,
+   "lock": 2,
+   "inside": 5,
+   "shape": 2,
+   "week": 2,
+   "draw": 2,
+   "magnet": 2,
+   "tar": 2,
+   "pit": 2,
+   "cancer": 2,
+   "complaint": 9,
+   "forever": 9,
+   "priceless": 9,
+   "advice": 14,
+   "orchid": 1,
+   "forgive": 1,
+   "yet": 1,
+   "angel": 4,
+   "hair": 1,
+   "babys": 1,
+   "breath": 1,
+   "break": 4,
+   "hymen": 1,
+   "highness": 1,
+   "left": 4,
+   "umbilical": 1,
+   "noose": 1,
+   "climb": 1,
+   "rape": 26,
+   "waste": 1,
+   "favourite": 2,
+   "source": 1,
+   "open": 1,
+   "sore": 1,
+   "appreciate": 1,
+   "concern": 1,
+   "stink": 1,
+   "burn": 7,
+   "relieve": 2,
+   "soon": 2,
+   "relax": 2,
+   "ask": 4,
+   "whenever": 1,
+   "soothe": 3,
+   "sue": 2,
+   "sound": 3,
+   "comfort": 9,
+   "false": 1,
+   "witness": 1,
+   "drown": 1,
+   "patient": 1,
+   "display": 1,
+   "patience": 1,
+   "disease": 1,
+   "puget": 1,
+   "liar": 2,
+   "blanket": 3,
+   "ash": 2,
+   "ground": 5,
+   "wherever": 1,
+   "sun": 11,
+   "dumb": 14,
+   "inhale": 1,
+   "mend": 1,
+   "cloud": 1,
+   "hangover": 4,
+   "fall": 1,
+   "asleep": 1,
+   "soul": 1,
+   "cheap": 1,
+   "lesson": 1,
+   "bury": 3,
+   "neck": 1,
+   "contradictonary": 1,
+   "fly": 1,
+   "pride": 1,
+   "king": 1,
+   "illiterature": 1,
+   "ape": 1,
+   "hesitate": 2,
+   "someone": 2,
+   "else": 6,
+   "busy": 2,
+   "acting": 2,
+   "naive": 2,
+   "sky": 6,
+   "dirt": 2,
+   "parasite": 1,
+   "host": 1,
+   "endorphin": 1,
+   "doll": 3,
+   "steak": 3,
+   "test": 3,
+   "bright": 3,
+   "side": 6,
+   "suicide": 3,
+   "eyesight": 3,
+   "lack": 3,
+   "iron": 3,
+   "sleep": 4,
+   "virus": 1,
+   "name": 1,
+   "milk": 3,
+   "protector": 1,
+   "kennel": 1,
+   "ecto": 2,
+   "plasma": 1,
+   "skeletal": 1,
+   "obituary": 1,
+   "birthday": 1,
+   "scent": 1,
+   "place": 2,
+   "recovery": 1,
+   "everyone": 2,
+   "posture": 1,
+   "drink": 5,
+   "pennyroyal": 5,
+   "tea": 5,
+   "distill": 2,
+   "life": 2,
+   "anemic": 3,
+   "royalty": 3,
+   "leonard": 1,
+   "cohen": 1,
+   "afterworld": 1,
+   "sigh": 1,
+   "eternally": 1,
+   "tire": 1,
+   "thief": 1,
+   "warm": 1,
+   "laxative": 1,
+   "cherry": 1,
+   "flavor": 1,
+   "antacid": 1,
+   "use": 2,
+   "destroy": 2,
+   "invasion": 2,
+   "piracy": 2,
+   "afterbirth": 2,
+   "nation": 2,
+   "starve": 2,
+   "skeleton": 2,
+   "key": 2,
+   "acneed": 2,
+   "speak": 3,
+   "bipolar": 1,
+   "opposite": 1,
+   "attract": 1,
+   "sudden": 1,
+   "second": 1,
+   "rate": 1,
+   "third": 1,
+   "degree": 1,
+   "moderate": 1,
+   "mayday": 1,
+   "attack": 1,
+   "fair": 1,
+   "sight": 1,
+   "phone": 1,
+   "apology": 2,
+   "marry": 4,
+   "easily": 1,
+   "amuse": 1,
+   "nest": 1,
+   "salt": 1,
+   "fault": 1,
+   "aqua": 1,
+   "sea": 1,
+   "foam": 1,
+   "sunburn": 1,
+   "freezer": 1,
+   "choke": 1
+  },
+  "tokens": 7455,
+  "years": [
+   1989,
+   1993
+  ]
+ },
+ "unofficial_ignored": [],
+ "coverage": [],
+ "ok": true,
+ "engine": "6ce23fe7ef35",
+ "timing_s": 0.0
+}

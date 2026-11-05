@@ -1,0 +1,1390 @@
+{
+  "name": "Demo - Night Drive",
+  "owner": "demo-user",
+  "source": "synthetic demo data",
+  "coverage": {
+    "tracks": 35,
+    "lyrics": 32,
+    "instrumental": 3,
+    "bpm": 35,
+    "audio_features": 35,
+    "release_year": 35,
+    "genres_or_tags": 35,
+    "preview": 0,
+    "artists": 8,
+    "artist_country": 8,
+    "artist_similar": 8,
+    "artist_bio": 8
+  },
+  "stats": {
+    "n_tracks": 35,
+    "n_unique_tracks": 35,
+    "n_artists": 8,
+    "n_albums": 18,
+    "total_ms": 9455882,
+    "top_artists": [
+      [
+        "Velvet Circuit",
+        10
+      ],
+      [
+        "The Polaroids",
+        7
+      ],
+      [
+        "Neon Parade",
+        7
+      ],
+      [
+        "Block Theory",
+        4
+      ],
+      [
+        "Kali Verse",
+        3
+      ],
+      [
+        "Grey Monolith",
+        2
+      ],
+      [
+        "Abyssal Tide",
+        1
+      ],
+      [
+        "MC Lowfreq",
+        1
+      ]
+    ],
+    "artist_entropy_bits": 2.6356505209494365,
+    "max_entropy_bits": 5.129283016944966,
+    "artist_coverage": 0.22857142857142856,
+    "repeat_rate": 0.17647058823529413,
+    "gini": 0.38928571428571423,
+    "one_hit_artists": 2,
+    "median_year": 1986,
+    "decades": {
+      "1980": 24,
+      "1990": 3,
+      "2000": 3,
+      "2010": 2,
+      "2020": 3
+    },
+    "explicit_share": 0.11428571428571428
+  },
+  "lyrics": {
+    "songs": 32,
+    "total_words": 5155,
+    "vocabulary": 55,
+    "top_words": [
+      [
+        "never",
+        188
+      ],
+      [
+        "night",
+        178
+      ],
+      [
+        "feel",
+        170
+      ],
+      [
+        "time",
+        164
+      ],
+      [
+        "city",
+        119
+      ],
+      [
+        "dream",
+        108
+      ],
+      [
+        "heart",
+        103
+      ],
+      [
+        "electric",
+        90
+      ],
+      [
+        "midnight",
+        79
+      ],
+      [
+        "lights",
+        78
+      ],
+      [
+        "shine",
+        75
+      ],
+      [
+        "baby",
+        73
+      ],
+      [
+        "dance",
+        70
+      ],
+      [
+        "love",
+        68
+      ],
+      [
+        "summer",
+        67
+      ],
+      [
+        "forever",
+        67
+      ],
+      [
+        "tonight",
+        64
+      ],
+      [
+        "radio",
+        59
+      ],
+      [
+        "kiss",
+        57
+      ],
+      [
+        "money",
+        43
+      ],
+      [
+        "hood",
+        33
+      ],
+      [
+        "street",
+        32
+      ],
+      [
+        "grind",
+        28
+      ],
+      [
+        "mic",
+        26
+      ],
+      [
+        "real",
+        25
+      ],
+      [
+        "abyss",
+        24
+      ],
+      [
+        "rhyme",
+        24
+      ],
+      [
+        "boss",
+        24
+      ],
+      [
+        "crew",
+        21
+      ],
+      [
+        "silence",
+        20
+      ],
+      [
+        "gold",
+        20
+      ],
+      [
+        "flow",
+        20
+      ],
+      [
+        "hustle",
+        20
+      ],
+      [
+        "drown",
+        18
+      ],
+      [
+        "planet",
+        17
+      ],
+      [
+        "earth",
+        13
+      ],
+      [
+        "whale",
+        12
+      ],
+      [
+        "ash",
+        11
+      ],
+      [
+        "bleeding",
+        10
+      ],
+      [
+        "void",
+        10
+      ],
+      [
+        "flesh",
+        9
+      ],
+      [
+        "hate",
+        9
+      ],
+      [
+        "pain",
+        9
+      ],
+      [
+        "fear",
+        9
+      ],
+      [
+        "forest",
+        8
+      ],
+      [
+        "beautiful",
+        8
+      ],
+      [
+        "day",
+        8
+      ],
+      [
+        "storm",
+        7
+      ],
+      [
+        "ocean",
+        7
+      ],
+      [
+        "burn",
+        6
+      ]
+    ],
+    "pronouns": {
+      "I / me": 360,
+      "you": 365,
+      "we / us": 198,
+      "they / them": 0
+    },
+    "themes": [
+      {
+        "theme": 1,
+        "words": [
+          "shine",
+          "electric",
+          "baby",
+          "city",
+          "lights",
+          "heart",
+          "kiss",
+          "dream"
+        ],
+        "songs": [
+          "Dance Dream 4",
+          "Radio Dream 5",
+          "Shine Dream 6",
+          "Baby Road 10",
+          "Neon Dream 14",
+          "Tonight Light 16",
+          "Forever Dream 18",
+          "Lights Light 20",
+          "Electric Song 24",
+          "Midnight Dream 25",
+          "Tonight Road 28",
+          "Love Song 29",
+          "Neon Light 31",
+          "Midnight Light 35"
+        ],
+        "share": 0.4375
+      },
+      {
+        "theme": 2,
+        "words": [
+          "money",
+          "hood",
+          "mic",
+          "grind",
+          "street",
+          "real",
+          "boss",
+          "flow"
+        ],
+        "songs": [
+          "Money Light 3",
+          "Flow Tide 8",
+          "Block Tide 11",
+          "Gold Line 12",
+          "Real Song 17",
+          "Crew Song 23",
+          "Grind Road 27"
+        ],
+        "share": 0.21875
+      },
+      {
+        "theme": 3,
+        "words": [
+          "abyss",
+          "drown",
+          "planet",
+          "silence",
+          "whale",
+          "earth",
+          "bleeding",
+          "void"
+        ],
+        "songs": [
+          "Ash Line 1",
+          "Ash Dream 19",
+          "Forest Tide 26"
+        ],
+        "share": 0.09375
+      },
+      {
+        "theme": 4,
+        "words": [
+          "radio",
+          "tonight",
+          "heart",
+          "midnight",
+          "forever",
+          "love",
+          "summer",
+          "dance"
+        ],
+        "songs": [
+          "Lights Line 7",
+          "Lights Song 9",
+          "Dance Line 13",
+          "Forever Light 22",
+          "Radio Line 30",
+          "Midnight Light 32",
+          "City Light 33",
+          "Dance Light 34"
+        ],
+        "share": 0.25
+      }
+    ],
+    "per_song": [
+      {
+        "title": "Ash Line 1",
+        "artist": "Abyssal Tide",
+        "words": 172,
+        "mattr": 0.4817886178861789,
+        "repetitiveness": 0.6765402843601895,
+        "sentiment": -0.25585238095238094,
+        "distinctive": [
+          "silence",
+          "drown",
+          "whale",
+          "storm",
+          "planet",
+          "bleeding"
+        ]
+      },
+      {
+        "title": "Money Light 3",
+        "artist": "MC Lowfreq",
+        "words": 151,
+        "mattr": 0.49490196078431375,
+        "repetitiveness": 0.6407355021216408,
+        "sentiment": -0.03497142857142857,
+        "distinctive": [
+          "street",
+          "mic",
+          "hustle",
+          "grind",
+          "hood",
+          "gold"
+        ]
+      },
+      {
+        "title": "Dance Dream 4",
+        "artist": "Velvet Circuit",
+        "words": 155,
+        "mattr": 0.48886792452830186,
+        "repetitiveness": 0.6639344262295082,
+        "sentiment": 0.21355,
+        "distinctive": [
+          "love",
+          "heart",
+          "electric",
+          "dream",
+          "dance",
+          "shine"
+        ]
+      },
+      {
+        "title": "Radio Dream 5",
+        "artist": "Neon Parade",
+        "words": 156,
+        "mattr": 0.485607476635514,
+        "repetitiveness": 0.6617250673854447,
+        "sentiment": -0.05271904761904762,
+        "distinctive": [
+          "lights",
+          "shine",
+          "electric",
+          "forever",
+          "summer",
+          "tonight"
+        ]
+      },
+      {
+        "title": "Shine Dream 6",
+        "artist": "The Polaroids",
+        "words": 187,
+        "mattr": 0.5220289855072464,
+        "repetitiveness": 0.6635514018691588,
+        "sentiment": 0.021734782608695644,
+        "distinctive": [
+          "shine",
+          "lights",
+          "love",
+          "city",
+          "forever",
+          "midnight"
+        ]
+      },
+      {
+        "title": "Lights Line 7",
+        "artist": "Velvet Circuit",
+        "words": 143,
+        "mattr": 0.5263829787234042,
+        "repetitiveness": 0.652542372881356,
+        "sentiment": 0.2974,
+        "distinctive": [
+          "electric",
+          "radio",
+          "love",
+          "kiss",
+          "tonight",
+          "midnight"
+        ]
+      },
+      {
+        "title": "Flow Tide 8",
+        "artist": "Block Theory",
+        "words": 156,
+        "mattr": 0.4897196261682243,
+        "repetitiveness": 0.6361031518624642,
+        "sentiment": 0.02092727272727273,
+        "distinctive": [
+          "hustle",
+          "boss",
+          "mic",
+          "money",
+          "grind",
+          "crew"
+        ]
+      },
+      {
+        "title": "Lights Song 9",
+        "artist": "The Polaroids",
+        "words": 159,
+        "mattr": 0.5016363636363637,
+        "repetitiveness": 0.676214196762142,
+        "sentiment": 0.3628571428571429,
+        "distinctive": [
+          "heart",
+          "lights",
+          "tonight",
+          "dance",
+          "dream",
+          "forever"
+        ]
+      },
+      {
+        "title": "Baby Road 10",
+        "artist": "The Polaroids",
+        "words": 180,
+        "mattr": 0.4787786259541985,
+        "repetitiveness": 0.6990407673860911,
+        "sentiment": -0.031037499999999996,
+        "distinctive": [
+          "shine",
+          "summer",
+          "city",
+          "electric",
+          "midnight",
+          "dream"
+        ]
+      },
+      {
+        "title": "Block Tide 11",
+        "artist": "Kali Verse",
+        "words": 144,
+        "mattr": 0.5088421052631579,
+        "repetitiveness": 0.6423357664233577,
+        "sentiment": -0.127085,
+        "distinctive": [
+          "crew",
+          "grind",
+          "rhyme",
+          "money",
+          "hood",
+          "real"
+        ]
+      },
+      {
+        "title": "Gold Line 12",
+        "artist": "Kali Verse",
+        "words": 172,
+        "mattr": 0.4868292682926829,
+        "repetitiveness": 0.6701298701298701,
+        "sentiment": 0.0047545454545454505,
+        "distinctive": [
+          "hood",
+          "crew",
+          "real",
+          "rhyme",
+          "flow",
+          "mic"
+        ]
+      },
+      {
+        "title": "Dance Line 13",
+        "artist": "Velvet Circuit",
+        "words": 136,
+        "mattr": 0.4855172413793103,
+        "repetitiveness": 0.6482035928143712,
+        "sentiment": 0.33798,
+        "distinctive": [
+          "tonight",
+          "heart",
+          "radio",
+          "summer",
+          "shine",
+          "electric"
+        ]
+      },
+      {
+        "title": "Neon Dream 14",
+        "artist": "Neon Parade",
+        "words": 145,
+        "mattr": 0.495625,
+        "repetitiveness": 0.6534246575342466,
+        "sentiment": 0.01664500000000001,
+        "distinctive": [
+          "electric",
+          "radio",
+          "city",
+          "dance",
+          "heart",
+          "baby"
+        ]
+      },
+      {
+        "title": "Tonight Light 16",
+        "artist": "Velvet Circuit",
+        "words": 147,
+        "mattr": 0.5079591836734694,
+        "repetitiveness": 0.6526867627785059,
+        "sentiment": 0.10546315789473684,
+        "distinctive": [
+          "tonight",
+          "midnight",
+          "dance",
+          "baby",
+          "electric",
+          "kiss"
+        ]
+      },
+      {
+        "title": "Real Song 17",
+        "artist": "Block Theory",
+        "words": 172,
+        "mattr": 0.44439024390243903,
+        "repetitiveness": 0.6785714285714286,
+        "sentiment": 0.06416956521739131,
+        "distinctive": [
+          "street",
+          "money",
+          "mic",
+          "gold",
+          "flow",
+          "real"
+        ]
+      },
+      {
+        "title": "Forever Dream 18",
+        "artist": "Neon Parade",
+        "words": 166,
+        "mattr": 0.5196581196581197,
+        "repetitiveness": 0.65375,
+        "sentiment": 0.22502499999999998,
+        "distinctive": [
+          "electric",
+          "heart",
+          "midnight",
+          "radio",
+          "shine",
+          "summer"
+        ]
+      },
+      {
+        "title": "Ash Dream 19",
+        "artist": "Grey Monolith",
+        "words": 169,
+        "mattr": 0.5253333333333333,
+        "repetitiveness": 0.6469879518072289,
+        "sentiment": 0.03364285714285715,
+        "distinctive": [
+          "abyss",
+          "ash",
+          "flesh",
+          "fire",
+          "silence",
+          "stone"
+        ]
+      },
+      {
+        "title": "Lights Light 20",
+        "artist": "The Polaroids",
+        "words": 144,
+        "mattr": 0.4842105263157894,
+        "repetitiveness": 0.6624472573839663,
+        "sentiment": 0.46236,
+        "distinctive": [
+          "heart",
+          "baby",
+          "midnight",
+          "love",
+          "shine",
+          "summer"
+        ]
+      },
+      {
+        "title": "Forever Light 22",
+        "artist": "Velvet Circuit",
+        "words": 162,
+        "mattr": 0.48672566371681414,
+        "repetitiveness": 0.6842105263157895,
+        "sentiment": 0.08145652173913043,
+        "distinctive": [
+          "heart",
+          "forever",
+          "radio",
+          "midnight",
+          "dance",
+          "tonight"
+        ]
+      },
+      {
+        "title": "Crew Song 23",
+        "artist": "Block Theory",
+        "words": 175,
+        "mattr": 0.5176190476190476,
+        "repetitiveness": 0.6603295310519646,
+        "sentiment": -0.025304347826086964,
+        "distinctive": [
+          "money",
+          "street",
+          "boss",
+          "hustle",
+          "crew",
+          "real"
+        ]
+      },
+      {
+        "title": "Electric Song 24",
+        "artist": "Neon Parade",
+        "words": 157,
+        "mattr": 0.4653703703703704,
+        "repetitiveness": 0.6701570680628273,
+        "sentiment": 0.1360227272727273,
+        "distinctive": [
+          "baby",
+          "radio",
+          "kiss",
+          "forever",
+          "dance",
+          "shine"
+        ]
+      },
+      {
+        "title": "Midnight Dream 25",
+        "artist": "Neon Parade",
+        "words": 140,
+        "mattr": 0.48,
+        "repetitiveness": 0.647239263803681,
+        "sentiment": 0.07578,
+        "distinctive": [
+          "city",
+          "shine",
+          "electric",
+          "baby",
+          "kiss",
+          "dance"
+        ]
+      },
+      {
+        "title": "Forest Tide 26",
+        "artist": "Grey Monolith",
+        "words": 160,
+        "mattr": 0.512972972972973,
+        "repetitiveness": 0.6402116402116402,
+        "sentiment": -0.044459999999999986,
+        "distinctive": [
+          "abyss",
+          "earth",
+          "planet",
+          "drown",
+          "ocean",
+          "ash"
+        ]
+      },
+      {
+        "title": "Grind Road 27",
+        "artist": "Kali Verse",
+        "words": 171,
+        "mattr": 0.4742622950819672,
+        "repetitiveness": 0.656953642384106,
+        "sentiment": -0.03553478260869565,
+        "distinctive": [
+          "hood",
+          "gold",
+          "real",
+          "grind",
+          "mic",
+          "money"
+        ]
+      },
+      {
+        "title": "Tonight Road 28",
+        "artist": "Velvet Circuit",
+        "words": 141,
+        "mattr": 0.5365217391304348,
+        "repetitiveness": 0.6215384615384616,
+        "sentiment": 0.22644999999999996,
+        "distinctive": [
+          "baby",
+          "electric",
+          "city",
+          "summer",
+          "love",
+          "heart"
+        ]
+      },
+      {
+        "title": "Love Song 29",
+        "artist": "The Polaroids",
+        "words": 150,
+        "mattr": 0.5085148514851485,
+        "repetitiveness": 0.6481994459833795,
+        "sentiment": 0.27518571428571426,
+        "distinctive": [
+          "dance",
+          "love",
+          "midnight",
+          "summer",
+          "heart",
+          "dream"
+        ]
+      },
+      {
+        "title": "Radio Line 30",
+        "artist": "Velvet Circuit",
+        "words": 163,
+        "mattr": 0.49368421052631584,
+        "repetitiveness": 0.6541450777202072,
+        "sentiment": 0.026943478260869572,
+        "distinctive": [
+          "radio",
+          "electric",
+          "city",
+          "lights",
+          "forever",
+          "summer"
+        ]
+      },
+      {
+        "title": "Neon Light 31",
+        "artist": "Neon Parade",
+        "words": 184,
+        "mattr": 0.4906666666666667,
+        "repetitiveness": 0.7161290322580645,
+        "sentiment": -0.121384,
+        "distinctive": [
+          "shine",
+          "tonight",
+          "summer",
+          "heart",
+          "lights",
+          "love"
+        ]
+      },
+      {
+        "title": "Midnight Light 32",
+        "artist": "Neon Parade",
+        "words": 165,
+        "mattr": 0.5227586206896552,
+        "repetitiveness": 0.6687737041719343,
+        "sentiment": 0.1323238095238095,
+        "distinctive": [
+          "radio",
+          "city",
+          "summer",
+          "midnight",
+          "love",
+          "lights"
+        ]
+      },
+      {
+        "title": "City Light 33",
+        "artist": "The Polaroids",
+        "words": 152,
+        "mattr": 0.49650485436893205,
+        "repetitiveness": 0.6779661016949152,
+        "sentiment": 0.2592363636363636,
+        "distinctive": [
+          "dance",
+          "forever",
+          "kiss",
+          "heart",
+          "tonight",
+          "baby"
+        ]
+      },
+      {
+        "title": "Dance Light 34",
+        "artist": "Velvet Circuit",
+        "words": 177,
+        "mattr": 0.49328125,
+        "repetitiveness": 0.663727959697733,
+        "sentiment": 0.07345217391304348,
+        "distinctive": [
+          "radio",
+          "summer",
+          "lights",
+          "baby",
+          "heart",
+          "electric"
+        ]
+      },
+      {
+        "title": "Midnight Light 35",
+        "artist": "Velvet Circuit",
+        "words": 204,
+        "mattr": 0.47096774193548385,
+        "repetitiveness": 0.7251461988304093,
+        "sentiment": 0.16306,
+        "distinctive": [
+          "lights",
+          "baby",
+          "heart",
+          "electric",
+          "midnight",
+          "shine"
+        ]
+      }
+    ]
+  },
+  "clusters": {
+    "k": 3,
+    "silhouette": 0.5030093772594779,
+    "features": [
+      "tags",
+      "lyrics",
+      "sound"
+    ],
+    "groups": [
+      {
+        "cluster": 0,
+        "name": "synth pop / pop",
+        "size": 24,
+        "tags": [
+          "synth pop",
+          "pop",
+          "demo"
+        ],
+        "words": [
+          "electric",
+          "heart",
+          "shine",
+          "summer"
+        ],
+        "top_artists": [
+          "Velvet Circuit",
+          "The Polaroids",
+          "Neon Parade"
+        ],
+        "median_bpm": 116.5,
+        "median_year": 1984,
+        "songs": [
+          "Forever Dream 2",
+          "Dance Dream 4",
+          "Radio Dream 5",
+          "Shine Dream 6",
+          "Lights Line 7",
+          "Lights Song 9",
+          "Baby Road 10",
+          "Dance Line 13",
+          "Neon Dream 14",
+          "Tonight Light 16",
+          "Forever Dream 18",
+          "Lights Light 20",
+          "Shine Line 21",
+          "Forever Light 22",
+          "Electric Song 24",
+          "Midnight Dream 25",
+          "Tonight Road 28",
+          "Love Song 29",
+          "Radio Line 30",
+          "Neon Light 31",
+          "Midnight Light 32",
+          "City Light 33",
+          "Dance Light 34",
+          "Midnight Light 35"
+        ]
+      },
+      {
+        "cluster": 1,
+        "name": "doom metal / metal",
+        "size": 3,
+        "tags": [
+          "doom metal",
+          "metal",
+          "demo"
+        ],
+        "words": [
+          "abyss",
+          "silence",
+          "planet",
+          "drown"
+        ],
+        "top_artists": [
+          "Grey Monolith",
+          "Abyssal Tide"
+        ],
+        "median_bpm": 68.4,
+        "median_year": 1998,
+        "songs": [
+          "Ash Line 1",
+          "Ash Dream 19",
+          "Forest Tide 26"
+        ]
+      },
+      {
+        "cluster": 2,
+        "name": "hip hop / hop",
+        "size": 8,
+        "tags": [
+          "hip hop",
+          "hop",
+          "demo"
+        ],
+        "words": [
+          "money",
+          "mic",
+          "real",
+          "hood"
+        ],
+        "top_artists": [
+          "Block Theory",
+          "Kali Verse",
+          "MC Lowfreq"
+        ],
+        "median_bpm": 90.25,
+        "median_year": 2016,
+        "songs": [
+          "Money Light 3",
+          "Flow Tide 8",
+          "Block Tide 11",
+          "Gold Line 12",
+          "Hood Road 15",
+          "Real Song 17",
+          "Crew Song 23",
+          "Grind Road 27"
+        ]
+      }
+    ]
+  },
+  "mood": {
+    "basis": [
+      "valence (audio)",
+      "energy (audio)"
+    ],
+    "quadrants": {
+      "angry / tense": 3,
+      "happy / energetic": 32
+    }
+  },
+  "flow": {
+    "mean_jump_current": 16.11470588235294,
+    "mean_jump_suggested": 1.552941176470588,
+    "suggested_order": [
+      "Block Tide 11",
+      "Money Light 3",
+      "Crew Song 23",
+      "Grind Road 27",
+      "Gold Line 12",
+      "Real Song 17",
+      "Hood Road 15",
+      "Flow Tide 8",
+      "Ash Line 1",
+      "Forest Tide 26",
+      "Ash Dream 19",
+      "Lights Song 9",
+      "Baby Road 10",
+      "Lights Line 7",
+      "Neon Dream 14",
+      "Shine Dream 6",
+      "Midnight Dream 25",
+      "Tonight Light 16",
+      "Dance Line 13",
+      "Neon Light 31",
+      "Electric Song 24",
+      "Dance Dream 4",
+      "Forever Dream 2",
+      "Forever Dream 18",
+      "Tonight Road 28",
+      "Radio Line 30",
+      "Shine Line 21",
+      "Dance Light 34",
+      "Lights Light 20",
+      "City Light 33",
+      "Radio Dream 5",
+      "Love Song 29",
+      "Midnight Light 32",
+      "Forever Light 22",
+      "Midnight Light 35"
+    ]
+  },
+  "mainstream": {
+    "score": 0.24187265714285716,
+    "source": "Deezer rank / 1,000,000"
+  },
+  "recommendations": {
+    "discovery": 0.3,
+    "similar": [
+      {
+        "title": "Demo Single 21-2",
+        "artist": "New Synth Pop Collective",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 38382,
+        "score": 3.702,
+        "reason": "similar to Velvet Circuit, The Polaroids"
+      },
+      {
+        "title": "Demo Single 11-1",
+        "artist": "Circuit Revival",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 13657,
+        "score": 1.8,
+        "reason": "similar to Velvet Circuit"
+      },
+      {
+        "title": "Demo Single 21-0",
+        "artist": "New Synth Pop Collective",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 300172,
+        "score": 3.255,
+        "reason": "similar to Velvet Circuit, The Polaroids"
+      },
+      {
+        "title": "Demo Single 80-0",
+        "artist": "Parade Revival",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 14304,
+        "score": 1.069,
+        "reason": "similar to Neon Parade"
+      },
+      {
+        "title": "Demo Single 82-2",
+        "artist": "Polaroids Revival",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 18657,
+        "score": 1.011,
+        "reason": "similar to The Polaroids"
+      },
+      {
+        "title": "Demo Single 7-0",
+        "artist": "Echoes of Velvet",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 63575,
+        "score": 0.436,
+        "reason": "similar to Velvet Circuit"
+      },
+      {
+        "title": "Demo Single 18-0",
+        "artist": "Echoes of Neon",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 14758,
+        "score": 0.342,
+        "reason": "similar to Neon Parade"
+      },
+      {
+        "title": "Demo Single 68-2",
+        "artist": "Echoes of The",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 15534,
+        "score": 0.33,
+        "reason": "similar to The Polaroids"
+      },
+      {
+        "title": "Demo Single 73-1",
+        "artist": "Ashen Choir",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 16531,
+        "score": 0.231,
+        "reason": "similar to Grey Monolith, Abyssal Tide"
+      },
+      {
+        "title": "Demo Single 87-0",
+        "artist": "New Hip Hop Collective",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 336598,
+        "score": 0.211,
+        "reason": "similar to Block Theory, Kali Verse"
+      },
+      {
+        "title": "Demo Single 69-1",
+        "artist": "Verse Revival",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 12491,
+        "score": 0.138,
+        "reason": "similar to Kali Verse"
+      },
+      {
+        "title": "Demo Single 74-1",
+        "artist": "Theory Revival",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 95746,
+        "score": -0.065,
+        "reason": "similar to Block Theory"
+      },
+      {
+        "title": "Demo Single 18-0",
+        "artist": "Echoes of Block",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 16432,
+        "score": -0.094,
+        "reason": "similar to Block Theory"
+      },
+      {
+        "title": "Demo Single 89-0",
+        "artist": "Monolith Revival",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 19591,
+        "score": -0.2,
+        "reason": "similar to Grey Monolith"
+      },
+      {
+        "title": "Demo Single 55-2",
+        "artist": "Echoes of Kali",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 15018,
+        "score": -0.211,
+        "reason": "similar to Kali Verse"
+      },
+      {
+        "title": "Demo Single 22-1",
+        "artist": "Echoes of Grey",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 11161,
+        "score": -0.284,
+        "reason": "similar to Grey Monolith"
+      },
+      {
+        "title": "Demo Single 79-2",
+        "artist": "New Doom Metal Collective",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 67000,
+        "score": -0.382,
+        "reason": "similar to Grey Monolith, Abyssal Tide"
+      },
+      {
+        "title": "Demo Single 11-2",
+        "artist": "Circuit Revival",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 33291,
+        "score": 1.606,
+        "reason": "similar to Velvet Circuit"
+      },
+      {
+        "title": "Demo Single 53-1",
+        "artist": "Lowfreq Revival",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 22400,
+        "score": -0.47,
+        "reason": "similar to MC Lowfreq"
+      },
+      {
+        "title": "Demo Single 19-2",
+        "artist": "Tide Revival",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 42265,
+        "score": -0.608,
+        "reason": "similar to Abyssal Tide"
+      }
+    ],
+    "deep_cuts": [
+      {
+        "title": "Demo Single 66-0",
+        "artist": "Velvet Circuit",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 33622,
+        "score": 10.0,
+        "reason": "you have 10 songs by Velvet Circuit"
+      },
+      {
+        "title": "Demo Single 40-0",
+        "artist": "The Polaroids",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 162666,
+        "score": 7.0,
+        "reason": "you have 7 songs by The Polaroids"
+      },
+      {
+        "title": "Demo Single 27-0",
+        "artist": "Neon Parade",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 20074,
+        "score": 7.0,
+        "reason": "you have 7 songs by Neon Parade"
+      },
+      {
+        "title": "Demo Single 68-0",
+        "artist": "Block Theory",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 16101,
+        "score": 4.0,
+        "reason": "you have 4 songs by Block Theory"
+      },
+      {
+        "title": "Demo Single 49-0",
+        "artist": "Kali Verse",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 649421,
+        "score": 3.0,
+        "reason": "you have 3 songs by Kali Verse"
+      },
+      {
+        "title": "Demo Single 36-0",
+        "artist": "Grey Monolith",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 144361,
+        "score": 2.0,
+        "reason": "you have 2 songs by Grey Monolith"
+      },
+      {
+        "title": "Demo Single 38-0",
+        "artist": "Abyssal Tide",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 32189,
+        "score": 1.0,
+        "reason": "you have 1 songs by Abyssal Tide"
+      },
+      {
+        "title": "Demo Single 87-0",
+        "artist": "MC Lowfreq",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 13569,
+        "score": 1.0,
+        "reason": "you have 1 songs by MC Lowfreq"
+      }
+    ]
+  }
+}

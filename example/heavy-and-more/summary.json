@@ -1,0 +1,1315 @@
+{
+  "name": "Heavy and More",
+  "owner": "example",
+  "source": "csv:heavy_and_more.csv",
+  "coverage": {
+    "tracks": 24,
+    "lyrics": 24,
+    "instrumental": 0,
+    "bpm": 16,
+    "audio_features": 0,
+    "release_year": 22,
+    "genres_or_tags": 24,
+    "preview": 22,
+    "artists": 14,
+    "artist_country": 14,
+    "artist_similar": 14,
+    "artist_bio": 14
+  },
+  "stats": {
+    "n_tracks": 24,
+    "n_unique_tracks": 24,
+    "n_artists": 14,
+    "n_albums": 20,
+    "total_ms": 6185000,
+    "top_artists": [
+      [
+        "Gojira",
+        6
+      ],
+      [
+        "Metallica",
+        2
+      ],
+      [
+        "Radiohead",
+        2
+      ],
+      [
+        "Fleetwood Mac",
+        2
+      ],
+      [
+        "Kendrick Lamar",
+        2
+      ],
+      [
+        "Bon Iver",
+        2
+      ],
+      [
+        "Mastodon",
+        1
+      ],
+      [
+        "Tool",
+        1
+      ],
+      [
+        "System Of A Down",
+        1
+      ],
+      [
+        "Arctic Monkeys",
+        1
+      ],
+      [
+        "Daft Punk",
+        1
+      ],
+      [
+        "Queen",
+        1
+      ],
+      [
+        "Nirvana",
+        1
+      ],
+      [
+        "Johnny Cash",
+        1
+      ]
+    ],
+    "artist_entropy_bits": 3.5220552088742005,
+    "max_entropy_bits": 4.584962500721156,
+    "artist_coverage": 0.5833333333333334,
+    "repeat_rate": 0.43478260869565216,
+    "gini": 0.29761904761904767,
+    "one_hit_artists": 8,
+    "median_year": 2013,
+    "decades": {
+      "1970": 3,
+      "1990": 2,
+      "2000": 3,
+      "2010": 10,
+      "2020": 4
+    },
+    "explicit_share": 0.13636363636363635
+  },
+  "lyrics": {
+    "songs": 24,
+    "total_words": 6598,
+    "vocabulary": 1031,
+    "top_words": [
+      [
+        "night",
+        101
+      ],
+      [
+        "hol",
+        63
+      ],
+      [
+        "lucky",
+        51
+      ],
+      [
+        "never",
+        44
+      ],
+      [
+        "hello",
+        36
+      ],
+      [
+        "alright",
+        29
+      ],
+      [
+        "gon",
+        27
+      ],
+      [
+        "master",
+        26
+      ],
+      [
+        "love",
+        25
+      ],
+      [
+        "sit",
+        25
+      ],
+      [
+        "us",
+        21
+      ],
+      [
+        "lil",
+        21
+      ],
+      [
+        "hear",
+        20
+      ],
+      [
+        "life",
+        18
+      ],
+      [
+        "leave",
+        17
+      ],
+      [
+        "humble",
+        16
+      ],
+      [
+        "away",
+        15
+      ],
+      [
+        "keep",
+        15
+      ],
+      [
+        "feel",
+        15
+      ],
+      [
+        "chain",
+        15
+      ],
+      [
+        "rain",
+        14
+      ],
+      [
+        "break",
+        14
+      ],
+      [
+        "light",
+        14
+      ],
+      [
+        "wake",
+        14
+      ],
+      [
+        "low",
+        13
+      ],
+      [
+        "lost",
+        13
+      ],
+      [
+        "sky",
+        12
+      ],
+      [
+        "die",
+        12
+      ],
+      [
+        "little",
+        12
+      ],
+      [
+        "til",
+        12
+      ],
+      [
+        "sun",
+        12
+      ],
+      [
+        "pieces",
+        12
+      ],
+      [
+        "denial",
+        11
+      ],
+      [
+        "fit",
+        11
+      ],
+      [
+        "good",
+        11
+      ],
+      [
+        "fun",
+        11
+      ],
+      [
+        "kill",
+        10
+      ],
+      [
+        "another",
+        10
+      ],
+      [
+        "day",
+        10
+      ],
+      [
+        "fall",
+        10
+      ],
+      [
+        "time",
+        10
+      ],
+      [
+        "told",
+        10
+      ],
+      [
+        "put",
+        10
+      ],
+      [
+        "amazonia",
+        10
+      ],
+      [
+        "land",
+        10
+      ],
+      [
+        "dreams",
+        10
+      ],
+      [
+        "man",
+        10
+      ],
+      [
+        "father",
+        10
+      ],
+      [
+        "miles",
+        10
+      ],
+      [
+        "dead",
+        9
+      ]
+    ],
+    "pronouns": {
+      "I / me": 471,
+      "you": 322,
+      "we / us": 182,
+      "they / them": 42
+    },
+    "themes": [
+      {
+        "theme": 1,
+        "words": [
+          "life",
+          "sky",
+          "fall",
+          "us",
+          "world",
+          "master",
+          "denial",
+          "change"
+        ],
+        "songs": [
+          "Silvera",
+          "Flying Whales",
+          "The Chant",
+          "Amazonia",
+          "L'Enfant Sauvage",
+          "Master of Puppets",
+          "Schism",
+          "Do I Wanna Know?",
+          "Skinny Love",
+          "Smells Like Teen Spirit"
+        ],
+        "share": 0.4166666666666667
+      },
+      {
+        "theme": 2,
+        "words": [
+          "lost",
+          "minute",
+          "rain",
+          "police",
+          "karma",
+          "players",
+          "playing",
+          "washes"
+        ],
+        "songs": [
+          "Paranoid Android",
+          "Karma Police",
+          "Dreams"
+        ],
+        "share": 0.125
+      },
+      {
+        "theme": 3,
+        "words": [
+          "kill",
+          "another",
+          "dead",
+          "face",
+          "leave",
+          "door",
+          "day",
+          "alright"
+        ],
+        "songs": [
+          "Stranded",
+          "Chop Suey!",
+          "HUMBLE.",
+          "Alright",
+          "Holocene",
+          "Bohemian Rhapsody",
+          "Hurt"
+        ],
+        "share": 0.2916666666666667
+      },
+      {
+        "theme": 4,
+        "words": [
+          "night",
+          "lucky",
+          "never",
+          "sun",
+          "til",
+          "white",
+          "land",
+          "good"
+        ],
+        "songs": [
+          "Enter Sandman",
+          "Blood and Thunder",
+          "The Chain",
+          "Get Lucky"
+        ],
+        "share": 0.16666666666666666
+      }
+    ],
+    "per_song": [
+      {
+        "title": "Stranded",
+        "artist": "Gojira",
+        "words": 142,
+        "mattr": 0.5621505376344086,
+        "repetitiveness": 0.670406732117812,
+        "sentiment": -0.24299259259259265,
+        "distinctive": [
+          "alone",
+          "moment",
+          "lock",
+          "face",
+          "another",
+          "dead"
+        ]
+      },
+      {
+        "title": "Silvera",
+        "artist": "Gojira",
+        "words": 164,
+        "mattr": 0.7831304347826087,
+        "repetitiveness": 0.568069306930693,
+        "sentiment": -0.06517727272727272,
+        "distinctive": [
+          "change",
+          "receiving",
+          "genocide",
+          "eyes",
+          "gold",
+          "better"
+        ]
+      },
+      {
+        "title": "Flying Whales",
+        "artist": "Gojira",
+        "words": 202,
+        "mattr": 0.7762091503267974,
+        "repetitiveness": 0.485543369890329,
+        "sentiment": 0.06700588235294118,
+        "distinctive": [
+          "whales",
+          "winds",
+          "dwell",
+          "flight",
+          "fly",
+          "earth"
+        ]
+      },
+      {
+        "title": "The Chant",
+        "artist": "Gojira",
+        "words": 142,
+        "mattr": 0.4888172043010753,
+        "repetitiveness": 0.6546242774566474,
+        "sentiment": -0.057040909090909066,
+        "distinctive": [
+          "doom",
+          "climb",
+          "strong",
+          "sound",
+          "mud",
+          "wake"
+        ]
+      },
+      {
+        "title": "Amazonia",
+        "artist": "Gojira",
+        "words": 150,
+        "mattr": 0.64,
+        "repetitiveness": 0.5978128797083839,
+        "sentiment": -0.081,
+        "distinctive": [
+          "amazonia",
+          "miracle",
+          "ground",
+          "godly",
+          "burning",
+          "bloody"
+        ]
+      },
+      {
+        "title": "L'Enfant Sauvage",
+        "artist": "Gojira",
+        "words": 134,
+        "mattr": 0.8249411764705883,
+        "repetitiveness": 0.4568081991215227,
+        "sentiment": -0.1365809523809524,
+        "distinctive": [
+          "anger",
+          "denial",
+          "trying",
+          "world",
+          "raging",
+          "ran"
+        ]
+      },
+      {
+        "title": "Master of Puppets",
+        "artist": "Metallica",
+        "words": 321,
+        "mattr": 0.7273529411764705,
+        "repetitiveness": 0.6975446428571428,
+        "sentiment": -0.03302419354838709,
+        "distinctive": [
+          "master",
+          "scream",
+          "faster",
+          "obey",
+          "call",
+          "name"
+        ]
+      },
+      {
+        "title": "Enter Sandman",
+        "artist": "Metallica",
+        "words": 253,
+        "mattr": 0.6565686274509804,
+        "repetitiveness": 0.6519337016574586,
+        "sentiment": 0.06238799999999999,
+        "distinctive": [
+          "land",
+          "hand",
+          "never",
+          "sleep",
+          "exit",
+          "enter"
+        ]
+      },
+      {
+        "title": "Blood and Thunder",
+        "artist": "Mastodon",
+        "words": 136,
+        "mattr": 0.7593103448275862,
+        "repetitiveness": 0.5064194008559202,
+        "sentiment": -0.11068214285714285,
+        "distinctive": [
+          "whale",
+          "holy",
+          "grail",
+          "white",
+          "body",
+          "fight"
+        ]
+      },
+      {
+        "title": "Schism",
+        "artist": "Tool",
+        "words": 221,
+        "mattr": 0.7733720930232557,
+        "repetitiveness": 0.5805668016194332,
+        "sentiment": 0.10806521739130437,
+        "distinctive": [
+          "pieces",
+          "fit",
+          "communication",
+          "lovers",
+          "watched",
+          "mildewed"
+        ]
+      },
+      {
+        "title": "Chop Suey!",
+        "artist": "System Of A Down",
+        "words": 254,
+        "mattr": 0.5874146341463414,
+        "repetitiveness": 0.7632375189107413,
+        "sentiment": -0.20565897435897434,
+        "distinctive": [
+          "father",
+          "suicide",
+          "wanted",
+          "angels",
+          "deserve",
+          "table"
+        ]
+      },
+      {
+        "title": "Paranoid Android",
+        "artist": "Radiohead",
+        "words": 300,
+        "mattr": 0.4186454183266932,
+        "repetitiveness": 0.6657458563535912,
+        "sentiment": 0.05674651162790698,
+        "distinctive": [
+          "height",
+          "great",
+          "rain",
+          "android",
+          "paranoid",
+          "may"
+        ]
+      },
+      {
+        "title": "Karma Police",
+        "artist": "Radiohead",
+        "words": 141,
+        "mattr": 0.568695652173913,
+        "repetitiveness": 0.6492753623188405,
+        "sentiment": -0.09449032258064516,
+        "distinctive": [
+          "lost",
+          "minute",
+          "police",
+          "karma",
+          "mess",
+          "phew"
+        ]
+      },
+      {
+        "title": "Do I Wanna Know?",
+        "artist": "Arctic Monkeys",
+        "words": 340,
+        "mattr": 0.814295532646048,
+        "repetitiveness": 0.6379703534777651,
+        "sentiment": 0.042159183673469394,
+        "distinctive": [
+          "thought",
+          "busy",
+          "crawling",
+          "mainly",
+          "hoping",
+          "maybe"
+        ]
+      },
+      {
+        "title": "Dreams",
+        "artist": "Fleetwood Mac",
+        "words": 234,
+        "mattr": 0.6673513513513514,
+        "repetitiveness": 0.6818923327895595,
+        "sentiment": 0.12404117647058822,
+        "distinctive": [
+          "washes",
+          "players",
+          "raining",
+          "playing",
+          "happens",
+          "clean"
+        ]
+      },
+      {
+        "title": "The Chain",
+        "artist": "Fleetwood Mac",
+        "words": 247,
+        "mattr": 0.4956565656565657,
+        "repetitiveness": 0.8184738955823293,
+        "sentiment": -0.21573714285714285,
+        "distinctive": [
+          "chain",
+          "shadows",
+          "damn",
+          "love",
+          "break",
+          "never"
+        ]
+      },
+      {
+        "title": "Get Lucky",
+        "artist": "Daft Punk",
+        "words": 749,
+        "mattr": 0.3385142857142857,
+        "repetitiveness": 0.8978038067349927,
+        "sentiment": 0.26370535714285714,
+        "distinctive": [
+          "lucky",
+          "night",
+          "good",
+          "fun",
+          "til",
+          "sun"
+        ]
+      },
+      {
+        "title": "HUMBLE.",
+        "artist": "Kendrick Lamar",
+        "words": 574,
+        "mattr": 0.5504,
+        "repetitiveness": 0.6675938803894297,
+        "sentiment": -0.0007823529411764748,
+        "distinctive": [
+          "hol",
+          "sit",
+          "lil",
+          "humble",
+          "funk",
+          "em"
+        ]
+      },
+      {
+        "title": "Alright",
+        "artist": "Kendrick Lamar",
+        "words": 688,
+        "mattr": 0.6804068857589985,
+        "repetitiveness": 0.6186540731995278,
+        "sentiment": 0.02400937500000001,
+        "distinctive": [
+          "alright",
+          "gon",
+          "po",
+          "pat",
+          "dawg",
+          "tell"
+        ]
+      },
+      {
+        "title": "Skinny Love",
+        "artist": "Bon Iver",
+        "words": 220,
+        "mattr": 0.57953216374269,
+        "repetitiveness": 0.5875763747454175,
+        "sentiment": 0.09351290322580647,
+        "distinctive": [
+          "told",
+          "kind",
+          "love",
+          "skinny",
+          "patient",
+          "balanced"
+        ]
+      },
+      {
+        "title": "Holocene",
+        "artist": "Bon Iver",
+        "words": 194,
+        "mattr": 0.7964137931034483,
+        "repetitiveness": 0.5679845708775313,
+        "sentiment": -0.05136153846153846,
+        "distinctive": [
+          "miles",
+          "vacance",
+          "magnificent",
+          "aisle",
+          "highway",
+          "ice"
+        ]
+      },
+      {
+        "title": "Bohemian Rhapsody",
+        "artist": "Queen",
+        "words": 376,
+        "mattr": 0.6744954128440367,
+        "repetitiveness": 0.553740779768177,
+        "sentiment": -0.060191836734693874,
+        "distinctive": [
+          "really",
+          "galileo",
+          "mama",
+          "poor",
+          "easy",
+          "matters"
+        ]
+      },
+      {
+        "title": "Smells Like Teen Spirit",
+        "artist": "Nirvana",
+        "words": 255,
+        "mattr": 0.6557281553398059,
+        "repetitiveness": 0.728486646884273,
+        "sentiment": -0.03557551020408164,
+        "distinctive": [
+          "hello",
+          "denial",
+          "entertain",
+          "low",
+          "libido",
+          "less"
+        ]
+      },
+      {
+        "title": "Hurt",
+        "artist": "Johnny Cash",
+        "words": 161,
+        "mattr": 0.7698214285714287,
+        "repetitiveness": 0.5499351491569391,
+        "sentiment": -0.09452777777777777,
+        "distinctive": [
+          "hurt",
+          "sweetest",
+          "empire",
+          "become",
+          "dirt",
+          "everyone"
+        ]
+      }
+    ]
+  },
+  "clusters": {
+    "k": 6,
+    "silhouette": 0.21909245029199806,
+    "features": [
+      "tags",
+      "lyrics",
+      "sound"
+    ],
+    "groups": [
+      {
+        "cluster": 0,
+        "name": "metal / country",
+        "size": 4,
+        "tags": [
+          "metal",
+          "country",
+          "hard rock"
+        ],
+        "words": [
+          "lucky",
+          "night",
+          "pieces",
+          "fit"
+        ],
+        "top_artists": [
+          "Tool",
+          "System Of A Down",
+          "Daft Punk"
+        ],
+        "median_bpm": 111.62,
+        "median_year": 2013,
+        "songs": [
+          "Schism",
+          "Chop Suey!",
+          "Get Lucky",
+          "Hurt"
+        ]
+      },
+      {
+        "cluster": 1,
+        "name": "rock",
+        "size": 3,
+        "tags": [
+          "rock"
+        ],
+        "words": [
+          "chain",
+          "shadows",
+          "damn",
+          "love"
+        ],
+        "top_artists": [
+          "Fleetwood Mac",
+          "Queen"
+        ],
+        "median_bpm": 135.82,
+        "median_year": 1977,
+        "songs": [
+          "Dreams",
+          "The Chain",
+          "Bohemian Rhapsody"
+        ]
+      },
+      {
+        "cluster": 2,
+        "name": "rock / rap/hip hop",
+        "size": 4,
+        "tags": [
+          "rock",
+          "rap/hip hop"
+        ],
+        "words": [
+          "hello",
+          "hol",
+          "whale",
+          "holy"
+        ],
+        "top_artists": [
+          "Kendrick Lamar",
+          "Mastodon",
+          "Nirvana"
+        ],
+        "median_bpm": 129.9,
+        "median_year": 2018,
+        "songs": [
+          "Blood and Thunder",
+          "HUMBLE.",
+          "Alright",
+          "Smells Like Teen Spirit"
+        ]
+      },
+      {
+        "cluster": 3,
+        "name": "alternative",
+        "size": 5,
+        "tags": [
+          "alternative"
+        ],
+        "words": [
+          "lost",
+          "minute",
+          "height",
+          "told"
+        ],
+        "top_artists": [
+          "Radiohead",
+          "Bon Iver",
+          "Arctic Monkeys"
+        ],
+        "median_bpm": 153.14499999999998,
+        "median_year": 2008,
+        "songs": [
+          "Paranoid Android",
+          "Karma Police",
+          "Do I Wanna Know?",
+          "Skinny Love",
+          "Holocene"
+        ]
+      },
+      {
+        "cluster": 4,
+        "name": "metal / rock",
+        "size": 6,
+        "tags": [
+          "metal",
+          "rock"
+        ],
+        "words": [
+          "amazonia",
+          "change",
+          "doom",
+          "climb"
+        ],
+        "top_artists": [
+          "Gojira"
+        ],
+        "median_bpm": 133.45,
+        "median_year": 2016,
+        "songs": [
+          "Stranded",
+          "Silvera",
+          "Flying Whales",
+          "The Chant",
+          "Amazonia",
+          "L'Enfant Sauvage"
+        ]
+      },
+      {
+        "cluster": 5,
+        "name": "thrash metal / heavy metal",
+        "size": 2,
+        "tags": [
+          "thrash metal",
+          "heavy metal",
+          "hard rock"
+        ],
+        "words": [
+          "master",
+          "land",
+          "hand",
+          "never"
+        ],
+        "top_artists": [
+          "Metallica"
+        ],
+        "median_bpm": null,
+        "median_year": null,
+        "songs": [
+          "Master of Puppets",
+          "Enter Sandman"
+        ]
+      }
+    ]
+  },
+  "mood": {
+    "basis": [
+      "lyric sentiment (VADER, rescaled to 0-1)",
+      "tempo (min-max within playlist)"
+    ],
+    "quadrants": {
+      "angry / tense": 5,
+      "calm / content": 6,
+      "sad / melancholic": 3,
+      "happy / energetic": 2
+    }
+  },
+  "flow": {
+    "mean_jump_current": 32.028000000000006,
+    "mean_jump_suggested": 5.108,
+    "suggested_order": [
+      "HUMBLE.",
+      "Karma Police",
+      "The Chain",
+      "Skinny Love",
+      "Paranoid Android",
+      "Do I Wanna Know?",
+      "Hurt",
+      "Stranded",
+      "Flying Whales",
+      "Schism",
+      "Alright",
+      "Get Lucky",
+      "Dreams",
+      "Chop Suey!",
+      "L'Enfant Sauvage",
+      "Silvera"
+    ]
+  },
+  "mainstream": {
+    "score": 0.6878514545454546,
+    "source": "Deezer rank / 1,000,000"
+  },
+  "recommendations": {
+    "discovery": 0.3,
+    "similar": [
+      {
+        "title": "Rational Gaze (Remastered 2006)",
+        "artist": "Meshuggah",
+        "album": "Nothing (Remastered 2006)",
+        "preview": "https://cdnt-preview.dzcdn.net/api/1/1/1/3/b/0/13b4c2949eb4c644d83d1f69677ad283.mp3?hdnea=exp=1793901979~acl=/api/1/1/1/3/b/0/13b4c2949eb4c644d83d1f69677ad283.mp3*~data=user_id=0,application_id=42~hmac=9c0ba307ba0a337ab7548a628735effec29a72117c718e8ae8a49f890b3a5867",
+        "cover": "https://cdn-images.dzcdn.net/images/cover/5d4c176ca01e88e1bc1b14300f3c48e7/56x56-000000-80-0-0.jpg",
+        "link": "https://www.deezer.com/track/3065204261",
+        "deezer_rank": 272215,
+        "score": 2.456,
+        "reason": "similar to Gojira, Mastodon"
+      },
+      {
+        "title": "Walk with Me In Hell",
+        "artist": "Lamb Of God",
+        "album": "Sacrament (15th Anniversary Edition)",
+        "preview": "https://cdnt-preview.dzcdn.net/api/1/1/d/a/7/0/da7948b1b838252d24fcf4c9b4b7eb1c.mp3?hdnea=exp=1793901979~acl=/api/1/1/d/a/7/0/da7948b1b838252d24fcf4c9b4b7eb1c.mp3*~data=user_id=0,application_id=42~hmac=679378364353bb7d12c7f4a22e58dde0fab66185d9d9bb2037f0191f737279e9",
+        "cover": "https://cdn-images.dzcdn.net/images/cover/906abfb4fce739178dbc031e767cf8a5/56x56-000000-80-0-0.jpg",
+        "link": "https://www.deezer.com/track/1461712922",
+        "deezer_rank": 505036,
+        "score": 2.13,
+        "reason": "similar to Gojira, Mastodon"
+      },
+      {
+        "title": "Mary (Live)",
+        "artist": "Black Bomb A",
+        "album": "21 Years of Pure Madness (Live Act)",
+        "preview": "https://cdnt-preview.dzcdn.net/api/1/1/0/3/c/0/03c3788b68845b7b7b5e094f00402561.mp3?hdnea=exp=1793901982~acl=/api/1/1/0/3/c/0/03c3788b68845b7b7b5e094f00402561.mp3*~data=user_id=0,application_id=42~hmac=a327aabf18f34c8093be6d1de8bf69f8448433f78a3dc33dd00e9b25500eefe8",
+        "cover": "https://cdn-images.dzcdn.net/images/cover/29c431e6a3283e1918e78ce40f73828c/56x56-000000-80-0-0.jpg",
+        "link": "https://www.deezer.com/track/363977921",
+        "deezer_rank": 3840,
+        "score": 1.676,
+        "reason": "similar to Gojira"
+      },
+      {
+        "title": "Digimortal",
+        "artist": "Fear Factory",
+        "album": "Digimortal (Special Edition)",
+        "preview": "https://cdnt-preview.dzcdn.net/api/1/1/d/a/f/0/daf8f4408c2477fe246a594178894571.mp3?hdnea=exp=1793901980~acl=/api/1/1/d/a/f/0/daf8f4408c2477fe246a594178894571.mp3*~data=user_id=0,application_id=42~hmac=e47703ad5ffb837bc7e4ed7de74839b6853d6a2d48f56c11bdddebe51fe29dae",
+        "cover": "https://cdn-images.dzcdn.net/images/cover/6a4cb6f9cbe9fac858c9312da40a6da5/56x56-000000-80-0-0.jpg",
+        "link": "https://www.deezer.com/track/2731953",
+        "deezer_rank": 260631,
+        "score": 1.634,
+        "reason": "similar to Gojira, Mastodon"
+      },
+      {
+        "title": "I Speak Astronomy",
+        "artist": "Jinjer",
+        "album": "King of Everything",
+        "preview": "https://cdnt-preview.dzcdn.net/api/1/1/a/a/3/0/aa35a499fbe51f11d2f43bcf6bca3c45.mp3?hdnea=exp=1793901980~acl=/api/1/1/a/a/3/0/aa35a499fbe51f11d2f43bcf6bca3c45.mp3*~data=user_id=0,application_id=42~hmac=e8e618f978b763263b7d09899bce62db6c54be8439219dd3b0188cf26393f97a",
+        "cover": "https://cdn-images.dzcdn.net/images/cover/520c1a35c8344edc283884a7feca98d2/56x56-000000-80-0-0.jpg",
+        "link": "https://www.deezer.com/track/137811195",
+        "deezer_rank": 405426,
+        "score": 1.302,
+        "reason": "similar to Gojira, Mastodon"
+      },
+      {
+        "title": "Territory",
+        "artist": "Sepultura",
+        "album": "Chaos A.D.",
+        "preview": "https://cdnt-preview.dzcdn.net/api/1/1/8/b/0/0/8b00a0732be171bda3d83436b977d6b2.mp3?hdnea=exp=1793901981~acl=/api/1/1/8/b/0/0/8b00a0732be171bda3d83436b977d6b2.mp3*~data=user_id=0,application_id=42~hmac=a9d6d20cee5b1209d09cc7c2047896f4899ccb1f1492c52be232f370ebe97f7d",
+        "cover": "https://cdn-images.dzcdn.net/images/cover/1c173a07e63874e392b7d99314b61b71/56x56-000000-80-0-0.jpg",
+        "link": "https://www.deezer.com/track/2851464",
+        "deezer_rank": 570680,
+        "score": 1.075,
+        "reason": "similar to Gojira, Tool"
+      },
+      {
+        "title": "Bleed",
+        "artist": "Soulfly",
+        "album": "Soulfly",
+        "preview": "https://cdnt-preview.dzcdn.net/api/1/1/2/c/1/0/2c15d73dc8b4b964a7fa95da64c6b015.mp3?hdnea=exp=1793901981~acl=/api/1/1/2/c/1/0/2c15d73dc8b4b964a7fa95da64c6b015.mp3*~data=user_id=0,application_id=42~hmac=b58165e8655292daaaeabdcdab8e0f707c8d2d5cedb56b94a568e682412bcc08",
+        "cover": "https://cdn-images.dzcdn.net/images/cover/dd6c550061ae1b06d7ad0d1abbdcdfa4/56x56-000000-80-0-0.jpg",
+        "link": "https://www.deezer.com/track/847298",
+        "deezer_rank": 291313,
+        "score": 1.036,
+        "reason": "similar to Gojira, Mastodon"
+      },
+      {
+        "title": "Bleak",
+        "artist": "Opeth",
+        "album": "Blackwater Park",
+        "preview": "https://cdnt-preview.dzcdn.net/api/1/1/a/6/f/0/a6f0fb71e6cf2c2361eb9d427dabac09.mp3?hdnea=exp=1793901982~acl=/api/1/1/a/6/f/0/a6f0fb71e6cf2c2361eb9d427dabac09.mp3*~data=user_id=0,application_id=42~hmac=860ee5c4ff731e87b3bf3d508aaefc845e4d04df58f60a311be14600ef4889a9",
+        "cover": "https://cdn-images.dzcdn.net/images/cover/5035a736541117065e2d2388d1ca75c6/56x56-000000-80-0-0.jpg",
+        "link": "https://www.deezer.com/track/5638731",
+        "deezer_rank": 396238,
+        "score": 0.926,
+        "reason": "similar to Gojira, Mastodon"
+      },
+      {
+        "title": "Bigger than life",
+        "artist": "Psykup",
+        "album": "The Joke Of Tomorrow",
+        "preview": "https://cdnt-preview.dzcdn.net/api/1/1/1/c/b/0/1cb2f14bda9891590bc5cc0b28a8699b.mp3?hdnea=exp=1793901982~acl=/api/1/1/1/c/b/0/1cb2f14bda9891590bc5cc0b28a8699b.mp3*~data=user_id=0,application_id=42~hmac=1567f343c83c08bb24e5103567db9a8df2c52921a7cf1ab200a79e48ff7aa9ff",
+        "cover": "https://cdn-images.dzcdn.net/images/cover/0e3036ebc616c39f02a0e2d00060a228/56x56-000000-80-0-0.jpg",
+        "link": "https://www.deezer.com/track/3204891731",
+        "deezer_rank": 50322,
+        "score": 0.547,
+        "reason": "similar to Gojira"
+      },
+      {
+        "title": "Bleed (15th Anniversary Remastered 2023 Edition)",
+        "artist": "Meshuggah",
+        "album": "Obzen (15th Anniversary Remastered 2023 Edition)",
+        "preview": "https://cdnt-preview.dzcdn.net/api/1/1/0/7/9/0/0795a30fb3483e6af419c1add53d7b05.mp3?hdnea=exp=1793901979~acl=/api/1/1/0/7/9/0/0795a30fb3483e6af419c1add53d7b05.mp3*~data=user_id=0,application_id=42~hmac=7afce97c62ca5f8721b6fcd89c11aabf986e1e80a64793076c08349bec467924",
+        "cover": "https://cdn-images.dzcdn.net/images/cover/630a13d7b53d169cd0ff7fe1239c5fc5/56x56-000000-80-0-0.jpg",
+        "link": "https://www.deezer.com/track/3065403241",
+        "deezer_rank": 521026,
+        "score": 2.224,
+        "reason": "similar to Gojira, Mastodon"
+      },
+      {
+        "title": "Laid to Rest",
+        "artist": "Lamb Of God",
+        "album": "Ashes of the Wake (20th Anniversary Edition)",
+        "preview": "https://cdnt-preview.dzcdn.net/api/1/1/1/7/4/0/174a5520a56c59da72b5c55113c178b5.mp3?hdnea=exp=1793901979~acl=/api/1/1/1/7/4/0/174a5520a56c59da72b5c55113c178b5.mp3*~data=user_id=0,application_id=42~hmac=d86495910c44a1fe27c08680f94c691eee5085f1faa6fce012a8d56f3d6900d4",
+        "cover": "https://cdn-images.dzcdn.net/images/cover/14d44bc358592c3bff238d9b74d83e2d/56x56-000000-80-0-0.jpg",
+        "link": "https://www.deezer.com/track/2954720791",
+        "deezer_rank": 522306,
+        "score": 2.118,
+        "reason": "similar to Gojira, Mastodon"
+      },
+      {
+        "title": "Resurrection",
+        "artist": "Chimaira",
+        "album": "Resurrection",
+        "preview": "https://cdnt-preview.dzcdn.net/api/1/1/d/e/c/0/dec3f65bd8259cf1a7a0d5135da52dce.mp3?hdnea=exp=1793901985~acl=/api/1/1/d/e/c/0/dec3f65bd8259cf1a7a0d5135da52dce.mp3*~data=user_id=0,application_id=42~hmac=f2717c538a1e01fc11186e0d2fd3a3d9d7d763119d3a2267a9b84745affa3db8",
+        "cover": "https://cdn-images.dzcdn.net/images/cover/feacf8f154190bb3e004a55448a3ef64/56x56-000000-80-0-0.jpg",
+        "link": "https://www.deezer.com/track/14689266",
+        "deezer_rank": 105043,
+        "score": -0.135,
+        "reason": "similar to Gojira"
+      },
+      {
+        "title": "Raupatu",
+        "artist": "Alien Weaponry",
+        "album": "T\u016b",
+        "preview": "https://cdnt-preview.dzcdn.net/api/1/1/9/4/a/0/94a57e2b29f823c14deb185791b41182.mp3?hdnea=exp=1793901984~acl=/api/1/1/9/4/a/0/94a57e2b29f823c14deb185791b41182.mp3*~data=user_id=0,application_id=42~hmac=f1fa7b89b47d74e809475af3c3db5d53a4d1bfa36a67baf77fd1a4e9cec6af56",
+        "cover": "https://cdn-images.dzcdn.net/images/cover/256d011f9b90d7017547b7261fca9d1b/56x56-000000-80-0-0.jpg",
+        "link": "https://www.deezer.com/track/466714382",
+        "deezer_rank": 248754,
+        "score": -0.234,
+        "reason": "similar to Gojira"
+      },
+      {
+        "title": "Today (2011 Remaster)",
+        "artist": "The Smashing Pumpkins",
+        "album": "Siamese Dream (Deluxe Edition)",
+        "preview": "https://cdnt-preview.dzcdn.net/api/1/1/d/a/9/0/da9619fd5007dc97ad792121a2a3d9b1.mp3?hdnea=exp=1793901983~acl=/api/1/1/d/a/9/0/da9619fd5007dc97ad792121a2a3d9b1.mp3*~data=user_id=0,application_id=42~hmac=47458d45b9f56a1f0a343e20ea2f4ddc66e3b720d0d8acaaedfc37d9e955cd6d",
+        "cover": "https://cdn-images.dzcdn.net/images/cover/9821c23566db6e54775087a85d57efce/56x56-000000-80-0-0.jpg",
+        "link": "https://www.deezer.com/track/15715634",
+        "deezer_rank": 425341,
+        "score": -0.39,
+        "reason": "similar to Radiohead, Nirvana"
+      },
+      {
+        "title": "Beast Of Burden (Remastered 1994)",
+        "artist": "The Rolling Stones",
+        "album": "Some Girls (Deluxe Version)",
+        "preview": "https://cdnt-preview.dzcdn.net/api/1/1/b/e/3/0/be35de018b8529d2a6dbaa0daab0e134.mp3?hdnea=exp=1793901983~acl=/api/1/1/b/e/3/0/be35de018b8529d2a6dbaa0daab0e134.mp3*~data=user_id=0,application_id=42~hmac=b203353450141f25e620b870bfea857192f7ea451a40cbf4d8637fc96d9d8763",
+        "cover": "https://cdn-images.dzcdn.net/images/cover/4daeaee9a15329dc861f62976d0cbb7c/56x56-000000-80-0-0.jpg",
+        "link": "https://www.deezer.com/track/14458095",
+        "deezer_rank": 725266,
+        "score": -0.407,
+        "reason": "similar to Fleetwood Mac, Queen"
+      },
+      {
+        "title": "Invisible Wounds (The Suture Mix)",
+        "artist": "Fear Factory",
+        "album": "Hatefiles",
+        "preview": "https://cdnt-preview.dzcdn.net/api/1/1/f/7/6/0/f763aa379c8c7553ea07ec8075be9c26.mp3?hdnea=exp=1793901980~acl=/api/1/1/f/7/6/0/f763aa379c8c7553ea07ec8075be9c26.mp3*~data=user_id=0,application_id=42~hmac=9925262fa7fd1669855e1112788c2388de86d517e4099b6a70075f540f04ae11",
+        "cover": "https://cdn-images.dzcdn.net/images/cover/66efde4a49e297bd385db149ac7e1fbb/56x56-000000-80-0-0.jpg",
+        "link": "https://www.deezer.com/track/3583563",
+        "deezer_rank": 306010,
+        "score": 1.577,
+        "reason": "similar to Gojira, Mastodon"
+      },
+      {
+        "title": "Looking Down the Barrel of Today",
+        "artist": "Hatebreed",
+        "album": "The Concrete Confessional",
+        "preview": "https://cdnt-preview.dzcdn.net/api/1/1/c/a/2/0/ca2b48afec59aa7904e69c4e55acae20.mp3?hdnea=exp=1793901985~acl=/api/1/1/c/a/2/0/ca2b48afec59aa7904e69c4e55acae20.mp3*~data=user_id=0,application_id=42~hmac=d15e5aa4cf7e411661bac074dbbebb7dfc82ef71dd4e822266f9d41c4a0356a2",
+        "cover": "https://cdn-images.dzcdn.net/images/cover/5f2b319bab70cb935ab6a1b162e5f544/56x56-000000-80-0-0.jpg",
+        "link": "https://www.deezer.com/track/679580242",
+        "deezer_rank": 444485,
+        "score": -0.72,
+        "reason": "similar to Gojira, Mastodon"
+      },
+      {
+        "title": "The Trooper (2015 Remaster) (Remastered 2015)",
+        "artist": "Iron Maiden",
+        "album": "Piece of Mind (Remastered 2015)",
+        "preview": "https://cdnt-preview.dzcdn.net/api/1/1/a/f/5/0/af54b0ba531fa548c718435286e38488.mp3?hdnea=exp=1793901988~acl=/api/1/1/a/f/5/0/af54b0ba531fa548c718435286e38488.mp3*~data=user_id=0,application_id=42~hmac=f5c3d13d19e2f24039d35aee0e800156a645dd7d8106d7e9d2de189f94b6b84e",
+        "cover": "https://cdn-images.dzcdn.net/images/cover/c12eb47c4a44ea4f54a2a3c450e41c98/56x56-000000-80-0-0.jpg",
+        "link": "https://www.deezer.com/track/3788329922",
+        "deezer_rank": 314532,
+        "score": -0.806,
+        "reason": "similar to Metallica"
+      },
+      {
+        "title": "Welcome To The Jungle",
+        "artist": "Guns N' Roses",
+        "album": "Appetite For Destruction (Super Deluxe Edition)",
+        "preview": "https://cdnt-preview.dzcdn.net/api/1/1/e/3/b/0/e3bdd797ec36df3068f8288688889ef2.mp3?hdnea=exp=1793901984~acl=/api/1/1/e/3/b/0/e3bdd797ec36df3068f8288688889ef2.mp3*~data=user_id=0,application_id=42~hmac=081e1e36605cb534305ae4a0aa57e99ef9d79ad1f70d1522c52ede6818314299",
+        "cover": "https://cdn-images.dzcdn.net/images/cover/8bfe7b3b0985d9ff0751090fb2b6f73f/56x56-000000-80-0-0.jpg",
+        "link": "https://www.deezer.com/track/518458092",
+        "deezer_rank": 887607,
+        "score": -0.863,
+        "reason": "similar to Metallica, Nirvana"
+      },
+      {
+        "title": "Parklife (2012 Remaster)",
+        "artist": "Blur",
+        "album": "Parklife",
+        "preview": "https://cdnt-preview.dzcdn.net/api/1/1/a/5/b/0/a5b0f79300487549a0a34af72da2a6d5.mp3?hdnea=exp=1793901987~acl=/api/1/1/a/5/b/0/a5b0f79300487549a0a34af72da2a6d5.mp3*~data=user_id=0,application_id=42~hmac=45b66f5e2507855cd2fd5ce7a203846bfbb233c53cc78b5452eb456fb2afc8e2",
+        "cover": "https://cdn-images.dzcdn.net/images/cover/98f245ad2e96e9a3d80f5a4ed085d3cf/56x56-000000-80-0-0.jpg",
+        "link": "https://www.deezer.com/track/44134631",
+        "deezer_rank": 616677,
+        "score": -0.872,
+        "reason": "similar to Radiohead, Arctic Monkeys"
+      }
+    ],
+    "deep_cuts": [
+      {
+        "title": "Backbone",
+        "artist": "Gojira",
+        "album": "From Mars to Sirius",
+        "preview": "https://cdnt-preview.dzcdn.net/api/1/1/e/1/3/0/e1306c158c11ba431928768ee3c8efda.mp3?hdnea=exp=1793901989~acl=/api/1/1/e/1/3/0/e1306c158c11ba431928768ee3c8efda.mp3*~data=user_id=0,application_id=42~hmac=3f0acb36d3970280292e7cfffe2c5b1355a5b6549d99a663a18c7c593cd70bf5",
+        "cover": "https://cdn-images.dzcdn.net/images/cover/89f33d7ae3e196ccf3f6f0a8f7e497d1/56x56-000000-80-0-0.jpg",
+        "link": "https://www.deezer.com/track/288562",
+        "deezer_rank": 527501,
+        "score": 6.0,
+        "reason": "you have 6 songs by Gojira"
+      },
+      {
+        "title": "Nothing Else Matters",
+        "artist": "Metallica",
+        "album": "Metallica",
+        "preview": "https://cdnt-preview.dzcdn.net/api/1/1/1/6/8/0/16896d5206bee23f9eb6139cb83fb80c.mp3?hdnea=exp=1793901989~acl=/api/1/1/1/6/8/0/16896d5206bee23f9eb6139cb83fb80c.mp3*~data=user_id=0,application_id=42~hmac=9792b1edc12994cbfa103021e4adc412a5c79bca836254e87dd0c7c8e3cb887a",
+        "cover": "https://cdn-images.dzcdn.net/images/cover/c67cda92f863a089d7dfeedf48be191e/56x56-000000-80-0-0.jpg",
+        "link": "https://www.deezer.com/track/136408148",
+        "deezer_rank": 513132,
+        "score": 2.0,
+        "reason": "you have 2 songs by Metallica"
+      },
+      {
+        "title": "Creep",
+        "artist": "Radiohead",
+        "album": "Pablo Honey",
+        "preview": "https://cdnt-preview.dzcdn.net/api/1/1/b/9/c/0/b9c4cde36fbe176cc3e84dc08fc0611b.mp3?hdnea=exp=1793901990~acl=/api/1/1/b/9/c/0/b9c4cde36fbe176cc3e84dc08fc0611b.mp3*~data=user_id=0,application_id=42~hmac=e3dd0e57eb3c2245943445ebf9e35b37ddeaa4d115e5a4d8bd03210c50c25238",
+        "cover": "https://cdn-images.dzcdn.net/images/cover/1dd56fd8824492e1a5106c99a00a85ec/56x56-000000-80-0-0.jpg",
+        "link": "https://www.deezer.com/track/138547415",
+        "deezer_rank": 978547,
+        "score": 2.0,
+        "reason": "you have 2 songs by Radiohead"
+      },
+      {
+        "title": "Everywhere",
+        "artist": "Fleetwood Mac",
+        "album": "Greatest Hits",
+        "preview": "https://cdnt-preview.dzcdn.net/api/1/1/c/b/4/0/cb40dd3924ff107d4b85cc74a066706f.mp3?hdnea=exp=1793901990~acl=/api/1/1/c/b/4/0/cb40dd3924ff107d4b85cc74a066706f.mp3*~data=user_id=0,application_id=42~hmac=65c8e1749dd0d8bdf70c61f38ca2db2f284a4a5dca9ad8bf04c16fbd037f2971",
+        "cover": "https://cdn-images.dzcdn.net/images/cover/662706e98f7e16249bf7d8e65b4974ff/56x56-000000-80-0-0.jpg",
+        "link": "https://www.deezer.com/track/664444",
+        "deezer_rank": 888659,
+        "score": 2.0,
+        "reason": "you have 2 songs by Fleetwood Mac"
+      },
+      {
+        "title": "Not Like Us",
+        "artist": "Kendrick Lamar",
+        "album": "Not Like Us",
+        "preview": "https://cdnt-preview.dzcdn.net/api/1/1/4/9/0/0/490577bad3aa52043078917ac1cedf60.mp3?hdnea=exp=1793901990~acl=/api/1/1/4/9/0/0/490577bad3aa52043078917ac1cedf60.mp3*~data=user_id=0,application_id=42~hmac=9b07f41d0d05bf40b10ca723f05c6930e1621ffbcf34191dd9595ad0465ed6fa",
+        "cover": "https://cdn-images.dzcdn.net/images/cover/84345d29bc2ed8e713112425f8417e97/56x56-000000-80-0-0.jpg",
+        "link": "https://www.deezer.com/track/2783963122",
+        "deezer_rank": 902826,
+        "score": 2.0,
+        "reason": "you have 2 songs by Kendrick Lamar"
+      },
+      {
+        "title": "For Emma",
+        "artist": "Bon Iver",
+        "album": "For Emma, Forever Ago",
+        "preview": "https://cdnt-preview.dzcdn.net/api/1/1/8/6/f/0/86fded8df4467c9f52fd598e5b8c959e.mp3?hdnea=exp=1793901990~acl=/api/1/1/8/6/f/0/86fded8df4467c9f52fd598e5b8c959e.mp3*~data=user_id=0,application_id=42~hmac=9b79087b2eb9d1810fa734519b750498f547290ccb591cbf307e1c2e36ed121a",
+        "cover": "https://cdn-images.dzcdn.net/images/cover/2af56dee5db12e4af6323afa26257ccf/56x56-000000-80-0-0.jpg",
+        "link": "https://www.deezer.com/track/73916147",
+        "deezer_rank": 596973,
+        "score": 2.0,
+        "reason": "you have 2 songs by Bon Iver"
+      },
+      {
+        "title": "Barbarians Blood",
+        "artist": "Mastodon",
+        "album": "Marrow Deep",
+        "preview": "https://cdnt-preview.dzcdn.net/api/1/1/f/8/e/0/f8e47a777c41345574e15ef70b8263d6.mp3?hdnea=exp=1793901991~acl=/api/1/1/f/8/e/0/f8e47a777c41345574e15ef70b8263d6.mp3*~data=user_id=0,application_id=42~hmac=f86f5618485fa3757722c489a10859a1203a1e2b93dad224e9ac4cf29fdd0d4f",
+        "cover": "https://cdn-images.dzcdn.net/images/cover/f6d70f6a906d6fd48c82e6297e70b9f0/56x56-000000-80-0-0.jpg",
+        "link": "https://www.deezer.com/track/4236617692",
+        "deezer_rank": 515225,
+        "score": 1.0,
+        "reason": "you have 1 songs by Mastodon"
+      },
+      {
+        "title": "Sober",
+        "artist": "TOOL",
+        "album": "Undertow",
+        "preview": "https://cdnt-preview.dzcdn.net/api/1/1/3/9/9/0/399f8f21e2ebb99503791f25d98ca489.mp3?hdnea=exp=1793901991~acl=/api/1/1/3/9/9/0/399f8f21e2ebb99503791f25d98ca489.mp3*~data=user_id=0,application_id=42~hmac=03376b47880ff2de44cc6ee4eefc188788457cf60496baee9e2658742c18454a",
+        "cover": "https://cdn-images.dzcdn.net/images/cover/83540df6a4dc5286dc04e5fe67b73b8c/56x56-000000-80-0-0.jpg",
+        "link": "https://www.deezer.com/track/722093132",
+        "deezer_rank": 661833,
+        "score": 1.0,
+        "reason": "you have 1 songs by Tool"
+      }
+    ]
+  }
+}

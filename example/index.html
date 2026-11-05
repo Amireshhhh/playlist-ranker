@@ -1,0 +1,79 @@
+<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>example&#x27;s playlists</title><style>
+:root{color-scheme:light;--page:#f9f9f7;--surface:#fcfcfb;--text:#0b0b0b;--text2:#52514e;--muted:#898781;
+--grid:#e1e0d9;--axis:#c3c2b7;--border:rgba(11,11,11,.10);--s1:#2a78d6;--s2:#eb6834;--s3:#1baf7a;--s4:#eda100;--s5:#e87ba4;--s6:#008300;--s7:#6250d6;--s8:#e34948;}
+@media (prefers-color-scheme:dark){:root:where(:not([data-theme="light"])){color-scheme:dark;--page:#0d0d0d;
+--surface:#1a1a19;--text:#f0efec;--text2:#c3c2b7;--muted:#898781;--grid:#2c2c2a;--axis:#383835;
+--border:rgba(255,255,255,.10);--s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#c98500;--s5:#d55181;--s6:#008300;--s7:#9085e9;--s8:#e66767;}}
+:root[data-theme="dark"]{color-scheme:dark;--page:#0d0d0d;--surface:#1a1a19;--text:#f0efec;--text2:#c3c2b7;
+--muted:#898781;--grid:#2c2c2a;--axis:#383835;--border:rgba(255,255,255,.10);--s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#c98500;--s5:#d55181;--s6:#008300;--s7:#9085e9;--s8:#e66767;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--page);color:var(--text);font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+header{padding:28px 16px 8px;max-width:1180px;margin:0 auto}
+header h1{margin:0 0 4px;font-size:28px;letter-spacing:-.01em}
+header .sub{color:var(--text2)}
+nav{position:sticky;top:0;z-index:5;background:var(--page);border-bottom:1px solid var(--border)}
+nav .in{max-width:1180px;margin:0 auto;padding:8px 16px;display:flex;gap:4px;overflow-x:auto;align-items:center}
+nav a{color:var(--text2);text-decoration:none;padding:4px 10px;border-radius:999px;white-space:nowrap;font-size:14px}
+nav a:hover{background:var(--surface);color:var(--text)}
+nav button{margin-left:auto;background:none;border:1px solid var(--border);color:var(--text2);border-radius:999px;padding:4px 10px;cursor:pointer;font:inherit;font-size:13px}
+main{max-width:1180px;margin:0 auto;padding:0 16px 48px}
+section{margin-top:28px}
+h2{font-size:20px;margin:0 0 12px}
+h3{font-size:14px;margin:0 0 8px;color:var(--text2);font-weight:600}
+.lede{color:var(--text2);margin-top:-6px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px;min-width:0;margin-bottom:16px}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:16px}
+.grid2 .card{margin-bottom:0}.grid2{margin-bottom:16px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:16px}
+.tile{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px}
+.tv{font-size:26px;font-weight:600;line-height:1.15}.tl{color:var(--text2);font-size:13px}.ts{color:var(--muted);font-size:12px}
+.note{color:var(--muted);font-size:12.5px;margin:6px 0 0}
+.facts{margin:0;padding-left:18px}.facts li{margin:3px 0}
+.chips{display:flex;flex-wrap:wrap;gap:6px}.chip{border:1px solid var(--border);border-radius:999px;padding:2px 10px;font-size:12.5px;color:var(--text2)}
+.chart{width:100%;min-height:200px}
+.wc{width:100%;height:auto;display:block}.wc-dark{display:none}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .wc-light{display:none}:root:not([data-theme="light"]) .wc-dark{display:block}}
+:root[data-theme="dark"] .wc-light{display:none}:root[data-theme="dark"] .wc-dark{display:block}
+:root[data-theme="light"] .wc-light{display:block}:root[data-theme="light"] .wc-dark{display:none}
+table{border-collapse:collapse;width:100%;font-size:13.5px}
+th,td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--border);vertical-align:middle}
+th{color:var(--text2);font-weight:600;position:sticky;top:0;background:var(--surface)}
+td.n{text-align:right;font-variant-numeric:tabular-nums}
+table.sortable th{cursor:pointer}
+.scroll{max-height:520px;overflow:auto}
+details.data{margin-top:8px}details.data summary{color:var(--muted);font-size:12.5px;cursor:pointer}
+.themes{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.theme{border:1px solid var(--border);border-radius:10px;padding:10px}.words{margin-top:4px}
+.sw{display:inline-block;width:10px;height:10px;border-radius:3px;background:var(--c);margin-right:6px}
+.artists{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:12px}
+.artist{display:flex;gap:12px}.artist img{width:72px;height:72px;object-fit:cover;border-radius:8px;flex:none}
+.artist p{margin:6px 0 0;font-size:13px;color:var(--text2)}
+a{color:var(--s1)}
+audio{height:32px;max-width:220px}
+.plcards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.plcard{display:block;background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px;color:var(--text);text-decoration:none}
+.plcard:hover{border-color:var(--s1)}
+footer{color:var(--muted);font-size:12px;text-align:center;padding:24px 16px}
+</style><script src='https://cdn.plot.ly/plotly-2.35.2.min.js' charset='utf-8'></script></head><body><header><h1>example&#x27;s playlists</h1><div class='sub'>Playlist dashboards</div></header><nav><div class='in'><a href='#playlists'>Playlists</a><a href='#taste'>Taste across playlists</a><button id='theme' type='button'>Light / dark</button></div></nav><main><section id='playlists'><h2>Playlists</h2><div class='tiles'><div class='tile'><div class='tv'>1</div><div class='tl'>Playlists</div></div><div class='tile'><div class='tv'>24</div><div class='tl'>Tracks</div><div class='ts'>24 unique</div></div><div class='tile'><div class='tv'>14</div><div class='tl'>Artists</div></div><div class='tile'><div class='tv'>1 h 43 min</div><div class='tl'>Listening time</div></div></div><div class='plcards'><a class='plcard' href='heavy-and-more/index.html'><b>Heavy and More</b><div class='note'>24 tracks · 14 artists · 1 h 43 min</div><div class='note'>median year 2013</div></a></div></section><section id='taste'><h2>Taste across playlists</h2><div class='grid2'><div class='card'><h3>Top artists across all playlists</h3><div class="chart" id="u_artists" role="img"></div><details class='data'><summary>Data table</summary><table><thead><tr><th>Artist</th><th>Tracks</th></tr></thead><tbody><tr><td>Gojira</td><td>6</td></tr><tr><td>Metallica</td><td>2</td></tr><tr><td>Radiohead</td><td>2</td></tr><tr><td>Fleetwood Mac</td><td>2</td></tr><tr><td>Kendrick Lamar</td><td>2</td></tr><tr><td>Bon Iver</td><td>2</td></tr><tr><td>Mastodon</td><td>1</td></tr><tr><td>Tool</td><td>1</td></tr><tr><td>System Of A Down</td><td>1</td></tr><tr><td>Arctic Monkeys</td><td>1</td></tr><tr><td>Daft Punk</td><td>1</td></tr><tr><td>Queen</td><td>1</td></tr><tr><td>Nirvana</td><td>1</td></tr><tr><td>Johnny Cash</td><td>1</td></tr></tbody></table></details></div><div class='card'><h3>Your most-sung words</h3><div class="chart" id="u_words" role="img"></div><details class='data'><summary>Data table</summary><table><thead><tr><th>Word</th><th>Count</th></tr></thead><tbody><tr><td>night</td><td>101</td></tr><tr><td>hol</td><td>63</td></tr><tr><td>lucky</td><td>51</td></tr><tr><td>never</td><td>44</td></tr><tr><td>hello</td><td>36</td></tr><tr><td>alright</td><td>29</td></tr><tr><td>gon</td><td>27</td></tr><tr><td>master</td><td>26</td></tr><tr><td>love</td><td>25</td></tr><tr><td>sit</td><td>25</td></tr><tr><td>us</td><td>21</td></tr><tr><td>lil</td><td>21</td></tr><tr><td>hear</td><td>20</td></tr><tr><td>life</td><td>18</td></tr><tr><td>leave</td><td>17</td></tr><tr><td>humble</td><td>16</td></tr><tr><td>away</td><td>15</td></tr><tr><td>keep</td><td>15</td></tr><tr><td>feel</td><td>15</td></tr><tr><td>chain</td><td>15</td></tr></tbody></table></details></div></div></section></main><footer>Generated 2026-11-05 17:51 UTC by playlist-ranker insights</footer><script>
+const FIGS = {"u_artists": {"data": [{"type": "bar", "orientation": "h", "x": [1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 6], "y": ["Johnny Cash", "Nirvana", "Queen", "Daft Punk", "Arctic Monkeys", "System Of A Down", "Tool", "Mastodon", "Bon Iver", "Kendrick Lamar", "Fleetwood Mac", "Radiohead", "Metallica", "Gojira"], "marker": {"color": "@s1"}, "hovertemplate": "%{y}: %{x} tracks<extra></extra>", "text": null, "textposition": "outside", "cliponaxis": false}], "layout": {"margin": {"l": 160, "r": 40, "t": 8, "b": 40}, "height": 348, "showlegend": false, "hoverlabel": {"bgcolor": "@surface", "font": {"color": "@text"}, "bordercolor": "@axis"}, "xaxis": {"gridcolor": "@grid", "linecolor": "@axis", "zeroline": false}, "yaxis": {"gridcolor": "rgba(0,0,0,0)", "linecolor": "@axis", "zeroline": false, "automargin": true}, "bargap": 0.25}}, "u_words": {"data": [{"type": "bar", "orientation": "h", "x": [15, 15, 15, 15, 16, 17, 18, 20, 21, 21, 25, 25, 26, 27, 29, 36, 44, 51, 63, 101], "y": ["chain", "feel", "keep", "away", "humble", "leave", "life", "hear", "lil", "us", "sit", "love", "master", "gon", "alright", "hello", "never", "lucky", "hol", "night"], "marker": {"color": "@s7"}, "hovertemplate": "'%{y}': %{x}<extra></extra>", "text": null, "textposition": "outside", "cliponaxis": false}], "layout": {"margin": {"l": 160, "r": 40, "t": 8, "b": 40}, "height": 480, "showlegend": false, "hoverlabel": {"bgcolor": "@surface", "font": {"color": "@text"}, "bordercolor": "@axis"}, "xaxis": {"gridcolor": "@grid", "linecolor": "@axis", "zeroline": false}, "yaxis": {"gridcolor": "rgba(0,0,0,0)", "linecolor": "@axis", "zeroline": false, "automargin": true}, "bargap": 0.25}}};
+const PAL = {light: {"s1": "#2a78d6", "s2": "#eb6834", "s3": "#1baf7a", "s4": "#eda100", "s5": "#e87ba4", "s6": "#008300", "s7": "#6250d6", "s8": "#e34948", "surface": "#fcfcfb", "page": "#f9f9f7", "text": "#0b0b0b", "text2": "#52514e", "muted": "#898781", "grid": "#e1e0d9", "axis": "#c3c2b7", "neutral": "#f0efec", "seq1": "#cde2fb", "seq2": "#86b6ef", "seq3": "#3987e5", "seq4": "#1c5cab", "seq5": "#0d366b"}, dark: {"s1": "#3987e5", "s2": "#d95926", "s3": "#199e70", "s4": "#c98500", "s5": "#d55181", "s6": "#008300", "s7": "#9085e9", "s8": "#e66767", "surface": "#1a1a19", "page": "#0d0d0d", "text": "#f0efec", "text2": "#c3c2b7", "muted": "#898781", "grid": "#2c2c2a", "axis": "#383835", "neutral": "#383835", "seq1": "#184f95", "seq2": "#256abf", "seq3": "#3987e5", "seq4": "#86b6ef", "seq5": "#cde2fb"}};
+function mode(){const t=document.documentElement.dataset.theme; if(t) return t;
+  return matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}
+function resolve(v,p){ if(typeof v==='string' && v[0]==='@') return p[v.slice(1)] ?? v;
+  if(Array.isArray(v)) return v.map(x=>resolve(x,p));
+  if(v && typeof v==='object'){const o={}; for(const k in v) o[k]=resolve(v[k],p); return o;} return v;}
+function draw(){ const p=PAL[mode()];
+  for(const id in FIGS){ const el=document.getElementById(id); if(!el) continue;
+    const f=resolve(FIGS[id],p);
+    f.layout.paper_bgcolor='rgba(0,0,0,0)'; f.layout.plot_bgcolor='rgba(0,0,0,0)';
+    f.layout.font={family:'system-ui,-apple-system,Segoe UI,sans-serif',color:p.text2,size:12};
+    Plotly.react(el,f.data,f.layout,{displayModeBar:false,responsive:true}); } }
+matchMedia('(prefers-color-scheme: dark)').addEventListener('change',draw);
+document.getElementById('theme').addEventListener('click',()=>{
+  document.documentElement.dataset.theme = mode()==='dark'?'light':'dark'; draw();});
+document.querySelectorAll('table.sortable').forEach(t=>t.querySelectorAll('th').forEach((th,i)=>th.addEventListener('click',()=>{
+  const b=t.tBodies[0], rows=[...b.rows], asc=th.dataset.asc!=='1'; th.dataset.asc=asc?'1':'0';
+  const val=r=>{const s=r.cells[i].textContent.replace('%','').trim(); const n=parseFloat(s); return isNaN(n)?s.toLowerCase():n;};
+  rows.sort((a,c)=>{const x=val(a),y=val(c); return (x>y?1:x<y?-1:0)*(asc?1:-1);}); rows.forEach(r=>b.appendChild(r));})));
+draw();
+</script></body></html>

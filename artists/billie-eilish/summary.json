@@ -1,0 +1,8836 @@
+{
+ "artist": "Billie Eilish",
+ "albums": [
+  {
+   "title": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+   "year": 2019,
+   "order": 0,
+   "tracks": 14
+  },
+  {
+   "title": "Happier Than Ever",
+   "year": 2021,
+   "order": 1,
+   "tracks": 16
+  },
+  {
+   "title": "HIT ME HARD AND SOFT",
+   "year": 2024,
+   "order": 2,
+   "tracks": 10
+  }
+ ],
+ "per_song": [
+  {
+   "title": "!!!!!!!",
+   "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+   "year": 2019,
+   "order": 0,
+   "words": 22,
+   "words_unique_lines": 22,
+   "repetition": 0.0,
+   "mattr": null,
+   "mattr_u": null,
+   "vader": 0.0,
+   "afinn": 0.0,
+   "pron_I": 22.727272727272727,
+   "pron_we": 0.0,
+   "pron_you": 0.0,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 0.0,
+   "theme_death & pain": 0.0,
+   "theme_mind & soul": 0.0,
+   "theme_love": 0.0,
+   "theme_time": 0.0,
+   "theme_conflict": 0.0,
+   "repetition_pct": 0.0
+  },
+  {
+   "title": "bad guy",
+   "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+   "year": 2019,
+   "order": 0,
+   "words": 285,
+   "words_unique_lines": 226,
+   "repetition": 0.2070175438596491,
+   "mattr": 0.7116101694915254,
+   "mattr_u": 0.740225988700565,
+   "vader": -0.11727714285714286,
+   "afinn": -8.4070796460177,
+   "pron_I": 11.946902654867257,
+   "pron_we": 0.0,
+   "pron_you": 7.964601769911504,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 0.0,
+   "theme_death & pain": 0.0,
+   "theme_mind & soul": 8.849557522123893,
+   "theme_love": 0.0,
+   "theme_time": 0.0,
+   "theme_conflict": 0.0,
+   "repetition_pct": 20.70175438596491
+  },
+  {
+   "title": "xanny",
+   "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+   "year": 2019,
+   "order": 0,
+   "words": 229,
+   "words_unique_lines": 175,
+   "repetition": 0.23580786026200873,
+   "mattr": 0.8091111111111111,
+   "mattr_u": 0.809047619047619,
+   "vader": -0.031049999999999994,
+   "afinn": -7.428571428571429,
+   "pron_I": 3.4285714285714284,
+   "pron_we": 0.0,
+   "pron_you": 0.5714285714285714,
+   "theme_water": 5.714285714285714,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 5.714285714285714,
+   "theme_earth & nature": 5.714285714285714,
+   "theme_life & growth": 0.0,
+   "theme_death & pain": 22.857142857142858,
+   "theme_mind & soul": 0.0,
+   "theme_love": 11.428571428571429,
+   "theme_time": 0.0,
+   "theme_conflict": 0.0,
+   "repetition_pct": 23.580786026200872
+  },
+  {
+   "title": "you should see me in a crown",
+   "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+   "year": 2019,
+   "order": 0,
+   "words": 247,
+   "words_unique_lines": 130,
+   "repetition": 0.4736842105263158,
+   "mattr": 0.6293939393939394,
+   "mattr_u": 0.7185185185185184,
+   "vader": 0.043408333333333333,
+   "afinn": -3.076923076923077,
+   "pron_I": 12.307692307692308,
+   "pron_we": 0.0,
+   "pron_you": 4.615384615384615,
+   "theme_water": 7.6923076923076925,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 0.0,
+   "theme_death & pain": 15.384615384615385,
+   "theme_mind & soul": 15.384615384615385,
+   "theme_love": 15.384615384615385,
+   "theme_time": 7.6923076923076925,
+   "theme_conflict": 0.0,
+   "repetition_pct": 47.36842105263158
+  },
+  {
+   "title": "all the good girls go to hell",
+   "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+   "year": 2019,
+   "order": 0,
+   "words": 225,
+   "words_unique_lines": 160,
+   "repetition": 0.28888888888888886,
+   "mattr": 0.8767045454545455,
+   "mattr_u": 0.8877477477477477,
+   "vader": -0.09436785714285713,
+   "afinn": 5.0,
+   "pron_I": 5.0,
+   "pron_we": 1.25,
+   "pron_you": 3.125,
+   "theme_water": 6.25,
+   "theme_sky & cosmos": 6.25,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 6.25,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 6.25,
+   "theme_death & pain": 6.25,
+   "theme_mind & soul": 12.5,
+   "theme_love": 0.0,
+   "theme_time": 6.25,
+   "theme_conflict": 6.25,
+   "repetition_pct": 28.888888888888886
+  },
+  {
+   "title": "wish you were gay",
+   "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+   "year": 2019,
+   "order": 0,
+   "words": 277,
+   "words_unique_lines": 214,
+   "repetition": 0.22743682310469315,
+   "mattr": 0.7417543859649123,
+   "mattr_u": 0.7808484848484848,
+   "vader": 0.06127307692307693,
+   "afinn": -0.4672897196261682,
+   "pron_I": 7.94392523364486,
+   "pron_we": 1.4018691588785046,
+   "pron_you": 7.94392523364486,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 0.0,
+   "theme_death & pain": 0.0,
+   "theme_mind & soul": 0.0,
+   "theme_love": 4.672897196261682,
+   "theme_time": 18.69158878504673,
+   "theme_conflict": 0.0,
+   "repetition_pct": 22.743682310469314
+  },
+  {
+   "title": "when the party\u2019s over",
+   "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+   "year": 2019,
+   "order": 0,
+   "words": 203,
+   "words_unique_lines": 140,
+   "repetition": 0.31034482758620685,
+   "mattr": 0.5990909090909091,
+   "mattr_u": 0.6285714285714286,
+   "vader": 0.09617058823529412,
+   "afinn": 18.571428571428573,
+   "pron_I": 12.857142857142858,
+   "pron_we": 1.4285714285714286,
+   "pron_you": 7.142857142857143,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 0.0,
+   "theme_death & pain": 7.142857142857143,
+   "theme_mind & soul": 0.0,
+   "theme_love": 0.0,
+   "theme_time": 0.0,
+   "theme_conflict": 0.0,
+   "repetition_pct": 31.034482758620683
+  },
+  {
+   "title": "8",
+   "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+   "year": 2019,
+   "order": 0,
+   "words": 219,
+   "words_unique_lines": 142,
+   "repetition": 0.35159817351598177,
+   "mattr": 0.5770588235294117,
+   "mattr_u": 0.6793548387096774,
+   "vader": 0.1315090909090909,
+   "afinn": 6.338028169014085,
+   "pron_I": 15.492957746478874,
+   "pron_we": 0.0,
+   "pron_you": 8.450704225352112,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 0.0,
+   "theme_death & pain": 0.0,
+   "theme_mind & soul": 7.042253521126761,
+   "theme_love": 21.12676056338028,
+   "theme_time": 0.0,
+   "theme_conflict": 0.0,
+   "repetition_pct": 35.15981735159818
+  },
+  {
+   "title": "my strange addiction",
+   "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+   "year": 2019,
+   "order": 0,
+   "words": 349,
+   "words_unique_lines": 271,
+   "repetition": 0.22349570200573066,
+   "mattr": 0.7281333333333333,
+   "mattr_u": 0.76,
+   "vader": 0.08093611111111113,
+   "afinn": 4.428044280442805,
+   "pron_I": 11.07011070110701,
+   "pron_we": 0.36900369003690037,
+   "pron_you": 4.797047970479705,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 7.380073800738008,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 3.690036900369004,
+   "theme_death & pain": 11.07011070110701,
+   "theme_mind & soul": 7.380073800738008,
+   "theme_love": 3.690036900369004,
+   "theme_time": 0.0,
+   "theme_conflict": 0.0,
+   "repetition_pct": 22.349570200573066
+  },
+  {
+   "title": "bury a friend",
+   "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+   "year": 2019,
+   "order": 0,
+   "words": 411,
+   "words_unique_lines": 278,
+   "repetition": 0.3236009732360098,
+   "mattr": 0.6286740331491713,
+   "mattr_u": 0.6719650655021835,
+   "vader": 0.09977317073170731,
+   "afinn": 0.3597122302158273,
+   "pron_I": 13.309352517985612,
+   "pron_we": 1.079136690647482,
+   "pron_you": 6.474820143884892,
+   "theme_water": 3.597122302158273,
+   "theme_sky & cosmos": 3.597122302158273,
+   "theme_light": 0.0,
+   "theme_darkness": 3.597122302158273,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 0.0,
+   "theme_death & pain": 3.597122302158273,
+   "theme_mind & soul": 7.194244604316546,
+   "theme_love": 3.597122302158273,
+   "theme_time": 0.0,
+   "theme_conflict": 0.0,
+   "repetition_pct": 32.360097323600975
+  },
+  {
+   "title": "ilomilo",
+   "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+   "year": 2019,
+   "order": 0,
+   "words": 212,
+   "words_unique_lines": 176,
+   "repetition": 0.16981132075471694,
+   "mattr": 0.8002453987730062,
+   "mattr_u": 0.808503937007874,
+   "vader": 0.07549642857142858,
+   "afinn": -1.1363636363636365,
+   "pron_I": 9.659090909090908,
+   "pron_we": 0.5681818181818182,
+   "pron_you": 7.386363636363637,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 5.681818181818182,
+   "theme_light": 0.0,
+   "theme_darkness": 5.681818181818182,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 5.681818181818182,
+   "theme_death & pain": 5.681818181818182,
+   "theme_mind & soul": 0.0,
+   "theme_love": 11.363636363636363,
+   "theme_time": 5.681818181818182,
+   "theme_conflict": 0.0,
+   "repetition_pct": 16.981132075471695
+  },
+  {
+   "title": "listen before i go",
+   "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+   "year": 2019,
+   "order": 0,
+   "words": 183,
+   "words_unique_lines": 154,
+   "repetition": 0.1584699453551912,
+   "mattr": 0.7186567164179104,
+   "mattr_u": 0.728,
+   "vader": 0.0785,
+   "afinn": 1.2987012987012987,
+   "pron_I": 15.584415584415584,
+   "pron_we": 0.0,
+   "pron_you": 3.2467532467532467,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 0.0,
+   "theme_death & pain": 0.0,
+   "theme_mind & soul": 0.0,
+   "theme_love": 19.48051948051948,
+   "theme_time": 6.4935064935064934,
+   "theme_conflict": 0.0,
+   "repetition_pct": 15.846994535519121
+  },
+  {
+   "title": "i love you",
+   "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+   "year": 2019,
+   "order": 0,
+   "words": 208,
+   "words_unique_lines": 163,
+   "repetition": 0.21634615384615385,
+   "mattr": 0.7259119496855345,
+   "mattr_u": 0.763859649122807,
+   "vader": 0.07088333333333334,
+   "afinn": 8.588957055214724,
+   "pron_I": 9.815950920245399,
+   "pron_we": 2.4539877300613497,
+   "pron_you": 7.975460122699387,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 6.134969325153374,
+   "theme_light": 0.0,
+   "theme_darkness": 12.269938650306749,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 0.0,
+   "theme_death & pain": 6.134969325153374,
+   "theme_mind & soul": 0.0,
+   "theme_love": 24.539877300613497,
+   "theme_time": 0.0,
+   "theme_conflict": 0.0,
+   "repetition_pct": 21.634615384615387
+  },
+  {
+   "title": "goodbye",
+   "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+   "year": 2019,
+   "order": 0,
+   "words": 75,
+   "words_unique_lines": 75,
+   "repetition": 0.0,
+   "mattr": 0.7,
+   "mattr_u": 0.7,
+   "vader": -0.001349999999999994,
+   "afinn": 2.6666666666666665,
+   "pron_I": 10.666666666666666,
+   "pron_we": 0.0,
+   "pron_you": 5.333333333333333,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 0.0,
+   "theme_death & pain": 0.0,
+   "theme_mind & soul": 0.0,
+   "theme_love": 13.333333333333334,
+   "theme_time": 13.333333333333334,
+   "theme_conflict": 0.0,
+   "repetition_pct": 0.0
+  },
+  {
+   "title": "Getting Older",
+   "album": "Happier Than Ever",
+   "year": 2021,
+   "order": 1,
+   "words": 311,
+   "words_unique_lines": 287,
+   "repetition": 0.07717041800643087,
+   "mattr": 0.7793893129770992,
+   "mattr_u": 0.7692436974789917,
+   "vader": 0.06475937500000002,
+   "afinn": -0.6968641114982579,
+   "pron_I": 14.982578397212544,
+   "pron_we": 1.0452961672473868,
+   "pron_you": 0.34843205574912894,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 0.0,
+   "theme_death & pain": 0.0,
+   "theme_mind & soul": 6.968641114982578,
+   "theme_love": 0.0,
+   "theme_time": 3.484320557491289,
+   "theme_conflict": 0.0,
+   "repetition_pct": 7.717041800643088
+  },
+  {
+   "title": "I Didn\u2019t Change My Number",
+   "album": "Happier Than Ever",
+   "year": 2021,
+   "order": 1,
+   "words": 188,
+   "words_unique_lines": 144,
+   "repetition": 0.23404255319148937,
+   "mattr": 0.698273381294964,
+   "mattr_u": 0.7305263157894737,
+   "vader": 0.007207692307692308,
+   "afinn": -4.166666666666667,
+   "pron_I": 12.5,
+   "pron_we": 0.0,
+   "pron_you": 8.333333333333334,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 0.0,
+   "theme_death & pain": 6.944444444444445,
+   "theme_mind & soul": 13.88888888888889,
+   "theme_love": 6.944444444444445,
+   "theme_time": 0.0,
+   "theme_conflict": 0.0,
+   "repetition_pct": 23.404255319148938
+  },
+  {
+   "title": "Billie Bossa Nova",
+   "album": "Happier Than Ever",
+   "year": 2021,
+   "order": 1,
+   "words": 315,
+   "words_unique_lines": 299,
+   "repetition": 0.050793650793650835,
+   "mattr": 0.709624060150376,
+   "mattr_u": 0.71392,
+   "vader": -0.025574999999999997,
+   "afinn": -6.0200668896321075,
+   "pron_I": 6.688963210702341,
+   "pron_we": 0.6688963210702341,
+   "pron_you": 9.364548494983278,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 3.3444816053511706,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 0.0,
+   "theme_death & pain": 0.0,
+   "theme_mind & soul": 0.0,
+   "theme_love": 6.688963210702341,
+   "theme_time": 0.0,
+   "theme_conflict": 0.0,
+   "repetition_pct": 5.0793650793650835
+  },
+  {
+   "title": "my future",
+   "album": "Happier Than Ever",
+   "year": 2021,
+   "order": 1,
+   "words": 200,
+   "words_unique_lines": 197,
+   "repetition": 0.015000000000000013,
+   "mattr": 0.58,
+   "mattr_u": 0.5755405405405406,
+   "vader": 0.11535333333333335,
+   "afinn": 17.258883248730964,
+   "pron_I": 15.736040609137056,
+   "pron_we": 0.0,
+   "pron_you": 7.614213197969543,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 0.0,
+   "theme_death & pain": 0.0,
+   "theme_mind & soul": 0.0,
+   "theme_love": 50.76142131979695,
+   "theme_time": 10.152284263959391,
+   "theme_conflict": 0.0,
+   "repetition_pct": 1.5000000000000013
+  },
+  {
+   "title": "Oxytocin",
+   "album": "Happier Than Ever",
+   "year": 2021,
+   "order": 1,
+   "words": 300,
+   "words_unique_lines": 217,
+   "repetition": 0.2766666666666666,
+   "mattr": 0.6418326693227091,
+   "mattr_u": 0.6511904761904762,
+   "vader": 0.008623333333333332,
+   "afinn": 0.0,
+   "pron_I": 5.0691244239631335,
+   "pron_we": 0.4608294930875576,
+   "pron_you": 9.67741935483871,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 0.0,
+   "theme_death & pain": 0.0,
+   "theme_mind & soul": 13.824884792626728,
+   "theme_love": 4.608294930875576,
+   "theme_time": 4.608294930875576,
+   "theme_conflict": 0.0,
+   "repetition_pct": 27.66666666666666
+  },
+  {
+   "title": "GOLDWING",
+   "album": "Happier Than Ever",
+   "year": 2021,
+   "order": 1,
+   "words": 201,
+   "words_unique_lines": 154,
+   "repetition": 0.23383084577114432,
+   "mattr": 0.44434210526315787,
+   "mattr_u": 0.5647619047619048,
+   "vader": 0.13040434782608695,
+   "afinn": 10.38961038961039,
+   "pron_I": 0.0,
+   "pron_we": 0.6493506493506493,
+   "pron_you": 9.74025974025974,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 6.4935064935064934,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 0.0,
+   "theme_death & pain": 0.0,
+   "theme_mind & soul": 6.4935064935064934,
+   "theme_love": 6.4935064935064934,
+   "theme_time": 6.4935064935064934,
+   "theme_conflict": 0.0,
+   "repetition_pct": 23.38308457711443
+  },
+  {
+   "title": "Lost Cause",
+   "album": "Happier Than Ever",
+   "year": 2021,
+   "order": 1,
+   "words": 367,
+   "words_unique_lines": 304,
+   "repetition": 0.17166212534059944,
+   "mattr": 0.6374842767295598,
+   "mattr_u": 0.6643921568627451,
+   "vader": 0.0016600000000000005,
+   "afinn": 0.6578947368421053,
+   "pron_I": 6.25,
+   "pron_we": 0.0,
+   "pron_you": 9.539473684210526,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 3.289473684210526,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 3.289473684210526,
+   "theme_death & pain": 0.0,
+   "theme_mind & soul": 26.31578947368421,
+   "theme_love": 0.0,
+   "theme_time": 19.736842105263158,
+   "theme_conflict": 0.0,
+   "repetition_pct": 17.166212534059945
+  },
+  {
+   "title": "Halley\u2019s Comet",
+   "album": "Happier Than Ever",
+   "year": 2021,
+   "order": 1,
+   "words": 177,
+   "words_unique_lines": 177,
+   "repetition": 0.0,
+   "mattr": 0.6934375,
+   "mattr_u": 0.6934375,
+   "vader": 0.1978909090909091,
+   "afinn": 11.299435028248588,
+   "pron_I": 12.429378531073446,
+   "pron_we": 0.0,
+   "pron_you": 5.084745762711864,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 11.299435028248588,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 0.0,
+   "theme_death & pain": 0.0,
+   "theme_mind & soul": 11.299435028248588,
+   "theme_love": 22.598870056497177,
+   "theme_time": 5.649717514124294,
+   "theme_conflict": 0.0,
+   "repetition_pct": 0.0
+  },
+  {
+   "title": "Not My Responsibility",
+   "album": "Happier Than Ever",
+   "year": 2021,
+   "order": 1,
+   "words": 217,
+   "words_unique_lines": 217,
+   "repetition": 0.0,
+   "mattr": 0.6917857142857143,
+   "mattr_u": 0.6917857142857143,
+   "vader": -0.002808888888888889,
+   "afinn": -2.304147465437788,
+   "pron_I": 15.2073732718894,
+   "pron_we": 1.3824884792626728,
+   "pron_you": 6.451612903225806,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 9.216589861751151,
+   "theme_death & pain": 0.0,
+   "theme_mind & soul": 0.0,
+   "theme_love": 0.0,
+   "theme_time": 0.0,
+   "theme_conflict": 4.608294930875576,
+   "repetition_pct": 0.0
+  },
+  {
+   "title": "OverHeated",
+   "album": "Happier Than Ever",
+   "year": 2021,
+   "order": 1,
+   "words": 299,
+   "words_unique_lines": 212,
+   "repetition": 0.29096989966555187,
+   "mattr": 0.57264,
+   "mattr_u": 0.6074846625766871,
+   "vader": -0.00629285714285714,
+   "afinn": -4.716981132075472,
+   "pron_I": 11.320754716981131,
+   "pron_we": 0.0,
+   "pron_you": 3.7735849056603774,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 0.0,
+   "theme_death & pain": 14.150943396226415,
+   "theme_mind & soul": 9.433962264150944,
+   "theme_love": 0.0,
+   "theme_time": 0.0,
+   "theme_conflict": 0.0,
+   "repetition_pct": 29.096989966555185
+  },
+  {
+   "title": "Everybody Dies",
+   "album": "Happier Than Ever",
+   "year": 2021,
+   "order": 1,
+   "words": 169,
+   "words_unique_lines": 169,
+   "repetition": 0.0,
+   "mattr": 0.7413333333333334,
+   "mattr_u": 0.7413333333333334,
+   "vader": 0.06997037037037038,
+   "afinn": -4.733727810650888,
+   "pron_I": 4.733727810650888,
+   "pron_we": 2.366863905325444,
+   "pron_you": 4.1420118343195265,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 5.9171597633136095,
+   "theme_death & pain": 17.75147928994083,
+   "theme_mind & soul": 5.9171597633136095,
+   "theme_love": 0.0,
+   "theme_time": 17.75147928994083,
+   "theme_conflict": 0.0,
+   "repetition_pct": 0.0
+  },
+  {
+   "title": "Your Power",
+   "album": "Happier Than Ever",
+   "year": 2021,
+   "order": 1,
+   "words": 254,
+   "words_unique_lines": 184,
+   "repetition": 0.2755905511811023,
+   "mattr": 0.6854634146341464,
+   "mattr_u": 0.6822222222222223,
+   "vader": -0.05919999999999999,
+   "afinn": -9.782608695652174,
+   "pron_I": 2.717391304347826,
+   "pron_we": 0.5434782608695652,
+   "pron_you": 14.673913043478262,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 0.0,
+   "theme_death & pain": 10.869565217391305,
+   "theme_mind & soul": 10.869565217391305,
+   "theme_love": 0.0,
+   "theme_time": 10.869565217391305,
+   "theme_conflict": 0.0,
+   "repetition_pct": 27.55905511811023
+  },
+  {
+   "title": "NDA",
+   "album": "Happier Than Ever",
+   "year": 2021,
+   "order": 1,
+   "words": 264,
+   "words_unique_lines": 236,
+   "repetition": 0.10606060606060608,
+   "mattr": 0.7158139534883721,
+   "mattr_u": 0.735187165775401,
+   "vader": 0.00284193548387097,
+   "afinn": 2.542372881355932,
+   "pron_I": 12.288135593220339,
+   "pron_we": 0.0,
+   "pron_you": 3.8135593220338984,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 8.474576271186441,
+   "theme_light": 0.0,
+   "theme_darkness": 4.237288135593221,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 0.0,
+   "theme_death & pain": 0.0,
+   "theme_mind & soul": 21.1864406779661,
+   "theme_love": 4.237288135593221,
+   "theme_time": 8.474576271186441,
+   "theme_conflict": 4.237288135593221,
+   "repetition_pct": 10.606060606060607
+  },
+  {
+   "title": "Therefore I Am",
+   "album": "Happier Than Ever",
+   "year": 2021,
+   "order": 1,
+   "words": 329,
+   "words_unique_lines": 162,
+   "repetition": 0.5075987841945289,
+   "mattr": 0.6335714285714286,
+   "mattr_u": 0.8038938053097345,
+   "vader": 0.023226086956521744,
+   "afinn": 7.407407407407407,
+   "pron_I": 10.493827160493828,
+   "pron_we": 1.2345679012345678,
+   "pron_you": 8.641975308641975,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 0.0,
+   "theme_death & pain": 0.0,
+   "theme_mind & soul": 18.51851851851852,
+   "theme_love": 0.0,
+   "theme_time": 0.0,
+   "theme_conflict": 6.172839506172839,
+   "repetition_pct": 50.75987841945289
+  },
+  {
+   "title": "Happier Than Ever",
+   "album": "Happier Than Ever",
+   "year": 2021,
+   "order": 1,
+   "words": 368,
+   "words_unique_lines": 368,
+   "repetition": 0.0,
+   "mattr": 0.6587460815047023,
+   "mattr_u": 0.6587460815047023,
+   "vader": -0.019540000000000002,
+   "afinn": -8.423913043478262,
+   "pron_I": 11.956521739130435,
+   "pron_we": 0.0,
+   "pron_you": 10.054347826086957,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 2.717391304347826,
+   "theme_death & pain": 2.717391304347826,
+   "theme_mind & soul": 5.434782608695652,
+   "theme_love": 0.0,
+   "theme_time": 13.58695652173913,
+   "theme_conflict": 2.717391304347826,
+   "repetition_pct": 0.0
+  },
+  {
+   "title": "Male Fantasy",
+   "album": "Happier Than Ever",
+   "year": 2021,
+   "order": 1,
+   "words": 205,
+   "words_unique_lines": 171,
+   "repetition": 0.1658536585365854,
+   "mattr": 0.7592307692307692,
+   "mattr_u": 0.7704918032786885,
+   "vader": 0.04742272727272727,
+   "afinn": -1.7543859649122806,
+   "pron_I": 14.035087719298245,
+   "pron_we": 1.1695906432748537,
+   "pron_you": 4.678362573099415,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 0.0,
+   "theme_death & pain": 0.0,
+   "theme_mind & soul": 11.695906432748538,
+   "theme_love": 23.391812865497077,
+   "theme_time": 5.847953216374269,
+   "theme_conflict": 17.54385964912281,
+   "repetition_pct": 16.58536585365854
+  },
+  {
+   "title": "SKINNY",
+   "album": "HIT ME HARD AND SOFT",
+   "year": 2024,
+   "order": 2,
+   "words": 183,
+   "words_unique_lines": 183,
+   "repetition": 0.0,
+   "mattr": 0.6674626865671642,
+   "mattr_u": 0.6674626865671642,
+   "vader": 0.07877142857142858,
+   "afinn": 3.278688524590164,
+   "pron_I": 14.754098360655737,
+   "pron_we": 0.0,
+   "pron_you": 6.0109289617486334,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 0.0,
+   "theme_death & pain": 0.0,
+   "theme_mind & soul": 5.46448087431694,
+   "theme_love": 10.92896174863388,
+   "theme_time": 10.92896174863388,
+   "theme_conflict": 0.0,
+   "repetition_pct": 0.0
+  },
+  {
+   "title": "LUNCH",
+   "album": "HIT ME HARD AND SOFT",
+   "year": 2024,
+   "order": 2,
+   "words": 335,
+   "words_unique_lines": 267,
+   "repetition": 0.20298507462686566,
+   "mattr": 0.7379020979020978,
+   "mattr_u": 0.748348623853211,
+   "vader": 0.10388333333333331,
+   "afinn": 6.367041198501872,
+   "pron_I": 10.486891385767791,
+   "pron_we": 0.0,
+   "pron_you": 4.119850187265918,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 0.0,
+   "theme_death & pain": 0.0,
+   "theme_mind & soul": 7.49063670411985,
+   "theme_love": 3.745318352059925,
+   "theme_time": 0.0,
+   "theme_conflict": 0.0,
+   "repetition_pct": 20.298507462686565
+  },
+  {
+   "title": "CHIHIRO",
+   "album": "HIT ME HARD AND SOFT",
+   "year": 2024,
+   "order": 2,
+   "words": 353,
+   "words_unique_lines": 272,
+   "repetition": 0.22946175637393773,
+   "mattr": 0.63,
+   "mattr_u": 0.6667264573991031,
+   "vader": 0.009268421052631577,
+   "afinn": 0.36764705882352944,
+   "pron_I": 11.764705882352942,
+   "pron_we": 0.0,
+   "pron_you": 8.823529411764707,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 0.0,
+   "theme_death & pain": 0.0,
+   "theme_mind & soul": 0.0,
+   "theme_love": 7.352941176470588,
+   "theme_time": 7.352941176470588,
+   "theme_conflict": 3.676470588235294,
+   "repetition_pct": 22.94617563739377
+  },
+  {
+   "title": "BIRDS OF A FEATHER",
+   "album": "HIT ME HARD AND SOFT",
+   "year": 2024,
+   "order": 2,
+   "words": 321,
+   "words_unique_lines": 287,
+   "repetition": 0.10591900311526481,
+   "mattr": 0.6998529411764706,
+   "mattr_u": 0.7127731092436974,
+   "vader": -0.03351470588235294,
+   "afinn": -2.7874564459930316,
+   "pron_I": 12.543554006968641,
+   "pron_we": 0.6968641114982579,
+   "pron_you": 6.2717770034843205,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 6.968641114982578,
+   "theme_darkness": 0.0,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 3.484320557491289,
+   "theme_death & pain": 20.905923344947734,
+   "theme_mind & soul": 17.421602787456447,
+   "theme_love": 20.905923344947734,
+   "theme_time": 24.390243902439025,
+   "theme_conflict": 0.0,
+   "repetition_pct": 10.59190031152648
+  },
+  {
+   "title": "WILDFLOWER",
+   "album": "HIT ME HARD AND SOFT",
+   "year": 2024,
+   "order": 2,
+   "words": 335,
+   "words_unique_lines": 309,
+   "repetition": 0.07761194029850749,
+   "mattr": 0.6799300699300699,
+   "mattr_u": 0.6696923076923076,
+   "vader": 0.2008891891891892,
+   "afinn": 10.032362459546926,
+   "pron_I": 12.944983818770227,
+   "pron_we": 0.32362459546925565,
+   "pron_you": 6.148867313915858,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 16.181229773462782,
+   "theme_death & pain": 6.472491909385114,
+   "theme_mind & soul": 12.944983818770227,
+   "theme_love": 25.889967637540455,
+   "theme_time": 19.41747572815534,
+   "theme_conflict": 0.0,
+   "repetition_pct": 7.761194029850749
+  },
+  {
+   "title": "THE GREATEST",
+   "album": "HIT ME HARD AND SOFT",
+   "year": 2024,
+   "order": 2,
+   "words": 255,
+   "words_unique_lines": 222,
+   "repetition": 0.12941176470588234,
+   "mattr": 0.6390291262135922,
+   "mattr_u": 0.643121387283237,
+   "vader": 0.20756341463414632,
+   "afinn": 13.513513513513514,
+   "pron_I": 11.26126126126126,
+   "pron_we": 0.45045045045045046,
+   "pron_you": 6.306306306306307,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 4.504504504504505,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 0.0,
+   "theme_death & pain": 0.0,
+   "theme_mind & soul": 4.504504504504505,
+   "theme_love": 22.52252252252252,
+   "theme_time": 4.504504504504505,
+   "theme_conflict": 22.52252252252252,
+   "repetition_pct": 12.941176470588234
+  },
+  {
+   "title": "L\u2019AMOUR DE MA VIE",
+   "album": "HIT ME HARD AND SOFT",
+   "year": 2024,
+   "order": 2,
+   "words": 416,
+   "words_unique_lines": 334,
+   "repetition": 0.19711538461538458,
+   "mattr": 0.6391280653950954,
+   "mattr_u": 0.6705964912280702,
+   "vader": 0.10802826086956521,
+   "afinn": 5.089820359281437,
+   "pron_I": 10.778443113772456,
+   "pron_we": 0.8982035928143712,
+   "pron_you": 11.676646706586826,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 17.964071856287426,
+   "theme_death & pain": 2.9940119760479043,
+   "theme_mind & soul": 8.982035928143713,
+   "theme_love": 17.964071856287426,
+   "theme_time": 5.9880239520958085,
+   "theme_conflict": 0.0,
+   "repetition_pct": 19.71153846153846
+  },
+  {
+   "title": "THE DINER",
+   "album": "HIT ME HARD AND SOFT",
+   "year": 2024,
+   "order": 2,
+   "words": 334,
+   "words_unique_lines": 321,
+   "repetition": 0.038922155688622784,
+   "mattr": 0.7120701754385965,
+   "mattr_u": 0.7171323529411765,
+   "vader": 0.010202380952380954,
+   "afinn": -0.6230529595015576,
+   "pron_I": 15.264797507788161,
+   "pron_we": 0.3115264797507788,
+   "pron_you": 4.984423676012461,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 0.0,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 3.115264797507788,
+   "theme_life & growth": 3.115264797507788,
+   "theme_death & pain": 0.0,
+   "theme_mind & soul": 3.115264797507788,
+   "theme_love": 3.115264797507788,
+   "theme_time": 3.115264797507788,
+   "theme_conflict": 3.115264797507788,
+   "repetition_pct": 3.8922155688622784
+  },
+  {
+   "title": "BITTERSUITE",
+   "album": "HIT ME HARD AND SOFT",
+   "year": 2024,
+   "order": 2,
+   "words": 366,
+   "words_unique_lines": 315,
+   "repetition": 0.139344262295082,
+   "mattr": 0.7482018927444796,
+   "mattr_u": 0.7593233082706767,
+   "vader": 0.02036538461538462,
+   "afinn": 5.396825396825397,
+   "pron_I": 13.65079365079365,
+   "pron_we": 0.6349206349206349,
+   "pron_you": 4.126984126984127,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 3.1746031746031744,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 3.1746031746031744,
+   "theme_life & growth": 3.1746031746031744,
+   "theme_death & pain": 3.1746031746031744,
+   "theme_mind & soul": 15.873015873015873,
+   "theme_love": 9.523809523809524,
+   "theme_time": 0.0,
+   "theme_conflict": 0.0,
+   "repetition_pct": 13.934426229508201
+  },
+  {
+   "title": "BLUE",
+   "album": "HIT ME HARD AND SOFT",
+   "year": 2024,
+   "order": 2,
+   "words": 356,
+   "words_unique_lines": 332,
+   "repetition": 0.0674157303370787,
+   "mattr": 0.6493811074918567,
+   "mattr_u": 0.6619787985865725,
+   "vader": 0.0035638297872340446,
+   "afinn": 3.9156626506024095,
+   "pron_I": 9.036144578313253,
+   "pron_we": 1.5060240963855422,
+   "pron_you": 6.325301204819277,
+   "theme_water": 0.0,
+   "theme_sky & cosmos": 0.0,
+   "theme_light": 0.0,
+   "theme_darkness": 9.036144578313253,
+   "theme_fire": 0.0,
+   "theme_earth & nature": 0.0,
+   "theme_life & growth": 21.08433734939759,
+   "theme_death & pain": 0.0,
+   "theme_mind & soul": 9.036144578313253,
+   "theme_love": 3.0120481927710845,
+   "theme_time": 0.0,
+   "theme_conflict": 9.036144578313253,
+   "repetition_pct": 6.741573033707871
+  }
+ ],
+ "pronouns": {
+  "I": {
+   "rows": [
+    {
+     "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+     "year": 2019,
+     "order": 0,
+     "mean": 11.557860875370107,
+     "lo": 9.289990112211278,
+     "hi": 14.133657168982808,
+     "n": 14
+    },
+    {
+     "album": "Happier Than Ever",
+     "year": 2021,
+     "order": 1,
+     "mean": 9.775556530506288,
+     "lo": 7.373514491673412,
+     "hi": 12.01687448027038,
+     "n": 16
+    },
+    {
+     "album": "HIT ME HARD AND SOFT",
+     "year": 2024,
+     "order": 2,
+     "mean": 12.248567356644411,
+     "lo": 11.118063744861997,
+     "hi": 13.387923331000561,
+     "n": 10
+    }
+   ],
+   "rho": 0.5,
+   "p": 1.0,
+   "song_rho": 0.06387106415700684,
+   "song_p": 0.6953930571514848
+  },
+  "we": {
+   "rows": [
+    {
+     "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+     "year": 2019,
+     "order": 0,
+     "mean": 0.6107678940269631,
+     "lo": 0.25296644042162575,
+     "hi": 1.045964762517954,
+     "n": 14
+    },
+    {
+     "album": "Happier Than Ever",
+     "year": 2021,
+     "order": 1,
+     "mean": 0.5950851137951833,
+     "lo": 0.29939338534006327,
+     "hi": 0.9432700814192345,
+     "n": 16
+    },
+    {
+     "album": "HIT ME HARD AND SOFT",
+     "year": 2024,
+     "order": 2,
+     "mean": 0.4821613961289291,
+     "lo": 0.22784623013897062,
+     "hi": 0.773809123888763,
+     "n": 10
+    }
+   ],
+   "rho": -1.0,
+   "p": 0.3333333333333333,
+   "song_rho": 0.006250683705922548,
+   "song_p": 0.9694648041004126
+  },
+  "you": {
+   "rows": [
+    {
+     "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+     "year": 2019,
+     "order": 0,
+     "mean": 5.359120000863785,
+     "lo": 3.8781364045520146,
+     "hi": 6.6874286837871235,
+     "n": 14
+    },
+    {
+     "album": "Happier Than Ever",
+     "year": 2021,
+     "order": 1,
+     "mean": 7.245737083787645,
+     "lo": 5.566281663353518,
+     "hi": 8.89422915495759,
+     "n": 16
+    },
+    {
+     "album": "HIT ME HARD AND SOFT",
+     "year": 2024,
+     "order": 2,
+     "mean": 6.479461489888844,
+     "lo": 5.3050202869807945,
+     "hi": 7.94034325157487,
+     "n": 10
+    }
+   ],
+   "rho": 0.5,
+   "p": 1.0,
+   "song_rho": 0.12293678179436428,
+   "song_p": 0.44980574244792004
+  }
+ },
+ "repetition": {
+  "rows": [
+   {
+    "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+    "year": 2019,
+    "order": 0,
+    "mean": 22.760731592439615,
+    "lo": 15.820866932937294,
+    "hi": 28.965522865645788,
+    "n": 14
+   },
+   {
+    "album": "Happier Than Ever",
+    "year": 2021,
+    "order": 1,
+    "mean": 15.032748496302224,
+    "lo": 8.468040504814288,
+    "hi": 21.99227158481377,
+    "n": 16
+   },
+   {
+    "album": "HIT ME HARD AND SOFT",
+    "year": 2024,
+    "order": 2,
+    "mean": 11.88187072056626,
+    "lo": 7.405019759542944,
+    "hi": 15.82427822725127,
+    "n": 10
+   }
+  ],
+  "rho": -1.0,
+  "p": 0.3333333333333333,
+  "song_rho": -0.3541243517811059,
+  "song_p": 0.024970339343835444
+ },
+ "mattr": {
+  "rows": [
+   {
+    "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+    "year": 2019,
+    "order": 0,
+    "mean": 0.7112573319534854,
+    "lo": 0.6647180916604657,
+    "hi": 0.7575918834767095,
+    "n": 13
+   },
+   {
+    "album": "Happier Than Ever",
+    "year": 2021,
+    "order": 1,
+    "mean": 0.6651855000491458,
+    "lo": 0.6245959912732633,
+    "hi": 0.7017789368596932,
+    "n": 16
+   },
+   {
+    "album": "HIT ME HARD AND SOFT",
+    "year": 2024,
+    "order": 2,
+    "mean": 0.6802958162859423,
+    "lo": 0.657071488961466,
+    "hi": 0.7058634999244775,
+    "n": 10
+   }
+  ],
+  "rho": -0.5,
+  "p": 1.0,
+  "song_rho": -0.16000810915853975,
+  "song_p": 0.33053965085045844
+ },
+ "mattr_u": {
+  "rows": [
+   {
+    "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+    "year": 2019,
+    "order": 0,
+    "mean": 0.744357175213608,
+    "lo": 0.7076416440749809,
+    "hi": 0.780740080880169,
+    "n": 13
+   },
+   {
+    "album": "Happier Than Ever",
+    "year": 2021,
+    "order": 1,
+    "mean": 0.6908848362444135,
+    "lo": 0.657598029584194,
+    "hi": 0.7246399309495972,
+    "n": 16
+   },
+   {
+    "album": "HIT ME HARD AND SOFT",
+    "year": 2024,
+    "order": 2,
+    "mean": 0.6917155523065215,
+    "lo": 0.6699734618689732,
+    "hi": 0.716079446451474,
+    "n": 10
+   }
+  ],
+  "rho": -0.5,
+  "p": 1.0,
+  "song_rho": -0.3567500178538138,
+  "song_p": 0.025791065620552445
+ },
+ "themes": [
+  {
+   "theme": "water",
+   "rows": [
+    {
+     "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+     "year": 2019,
+     "order": 0,
+     "mean": 1.660979693482263,
+     "lo": 0.40816326530612246,
+     "hi": 3.1304869173734757,
+     "n": 14
+    },
+    {
+     "album": "Happier Than Ever",
+     "year": 2021,
+     "order": 1,
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 16
+    },
+    {
+     "album": "HIT ME HARD AND SOFT",
+     "year": 2024,
+     "order": 2,
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 10
+    }
+   ],
+   "H": 8.019772614928272,
+   "p": 0.018135456985689878,
+   "overall": 0.581342892718792,
+   "q": 0.21762548382827854
+  },
+  {
+   "theme": "sky & cosmos",
+   "rows": [
+    {
+     "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+     "year": 2019,
+     "order": 0,
+     "mean": 1.547422129223559,
+     "lo": 0.40584415584415584,
+     "hi": 2.8871739722794283,
+     "n": 14
+    },
+    {
+     "album": "Happier Than Ever",
+     "year": 2021,
+     "order": 1,
+     "mean": 0.7352531222123104,
+     "lo": 0.0,
+     "hi": 1.8816904549509368,
+     "n": 16
+    },
+    {
+     "album": "HIT ME HARD AND SOFT",
+     "year": 2024,
+     "order": 2,
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 10
+    }
+   ],
+   "H": 3.736851241103969,
+   "p": 0.15436650205192495,
+   "overall": 0.83569899411317,
+   "q": 0.2856733350734966
+  },
+  {
+   "theme": "light",
+   "rows": [
+    {
+     "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+     "year": 2019,
+     "order": 0,
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 14
+    },
+    {
+     "album": "Happier Than Ever",
+     "year": 2021,
+     "order": 1,
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 16
+    },
+    {
+     "album": "HIT ME HARD AND SOFT",
+     "year": 2024,
+     "order": 2,
+     "mean": 0.6968641114982578,
+     "lo": 0.0,
+     "hi": 2.090592334494773,
+     "n": 10
+    }
+   ],
+   "H": 3.0000000000001865,
+   "p": 0.22313016014840903,
+   "overall": 0.17421602787456444,
+   "q": 0.2975068801978787
+  },
+  {
+   "theme": "darkness",
+   "rows": [
+    {
+     "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+     "year": 2019,
+     "order": 0,
+     "mean": 1.5392056524488003,
+     "lo": 0.0,
+     "hi": 3.440960879611186,
+     "n": 14
+    },
+    {
+     "album": "Happier Than Ever",
+     "year": 2021,
+     "order": 1,
+     "mean": 1.585919453918717,
+     "lo": 0.20903010033444816,
+     "hi": 3.4041929882939463,
+     "n": 16
+    },
+    {
+     "album": "HIT ME HARD AND SOFT",
+     "year": 2024,
+     "order": 2,
+     "mean": 1.6715252257420932,
+     "lo": 0.0,
+     "hi": 3.6118121133181376,
+     "n": 10
+    }
+   ],
+   "H": 0.122002085505726,
+   "p": 0.9408222587303944,
+   "overall": 1.59097106636009,
+   "q": 0.9408222587303944
+  },
+  {
+   "theme": "fire",
+   "rows": [
+    {
+     "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+     "year": 2019,
+     "order": 0,
+     "mean": 1.3817399653588374,
+     "lo": 0.0,
+     "hi": 2.8824647940356956,
+     "n": 14
+    },
+    {
+     "album": "Happier Than Ever",
+     "year": 2021,
+     "order": 1,
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 16
+    },
+    {
+     "album": "HIT ME HARD AND SOFT",
+     "year": 2024,
+     "order": 2,
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 10
+    }
+   ],
+   "H": 5.862024665981493,
+   "p": 0.05334300991376921,
+   "overall": 0.48360898787559303,
+   "q": 0.23906879892319002
+  },
+  {
+   "theme": "earth & nature",
+   "rows": [
+    {
+     "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+     "year": 2019,
+     "order": 0,
+     "mean": 0.40816326530612246,
+     "lo": 0.0,
+     "hi": 1.2244897959183674,
+     "n": 14
+    },
+    {
+     "album": "Happier Than Ever",
+     "year": 2021,
+     "order": 1,
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 16
+    },
+    {
+     "album": "HIT ME HARD AND SOFT",
+     "year": 2024,
+     "order": 2,
+     "mean": 0.6289867972110963,
+     "lo": 0.0,
+     "hi": 1.5695000741729712,
+     "n": 10
+    }
+   ],
+   "H": 3.2827338129496524,
+   "p": 0.19371507085194198,
+   "overall": 0.3001038421599169,
+   "q": 0.290572606277913
+  },
+  {
+   "theme": "life & growth",
+   "rows": [
+    {
+     "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+     "year": 2019,
+     "order": 0,
+     "mean": 1.115846791584799,
+     "lo": 0.0,
+     "hi": 2.373963674701682,
+     "n": 14
+    },
+    {
+     "album": "Happier Than Ever",
+     "year": 2021,
+     "order": 1,
+     "mean": 1.3212884133514446,
+     "lo": 0.20559210526315788,
+     "hi": 2.7203709407001044,
+     "n": 16
+    },
+    {
+     "album": "HIT ME HARD AND SOFT",
+     "year": 2024,
+     "order": 2,
+     "mean": 6.500382750875005,
+     "lo": 1.9548377059204505,
+     "hi": 11.705898833068474,
+     "n": 10
+    }
+   ],
+   "H": 4.911424798792789,
+   "p": 0.08580204833572863,
+   "overall": 2.5441574301140086,
+   "q": 0.2574061450071859
+  },
+  {
+   "theme": "death & pain",
+   "rows": [
+    {
+     "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+     "year": 2019,
+     "order": 0,
+     "mean": 5.579902563918017,
+     "lo": 2.3057383383284793,
+     "hi": 9.24963363041572,
+     "n": 14
+    },
+    {
+     "album": "Happier Than Ever",
+     "year": 2021,
+     "order": 1,
+     "mean": 3.2771139782719265,
+     "lo": 0.8680555555555556,
+     "hi": 6.218462191743806,
+     "n": 16
+    },
+    {
+     "album": "HIT ME HARD AND SOFT",
+     "year": 2024,
+     "order": 2,
+     "mean": 3.354703040498393,
+     "lo": 0.31746031746031744,
+     "hi": 7.805660923116158,
+     "n": 10
+    }
+   ],
+   "H": 1.957096539403177,
+   "p": 0.3758563450243672,
+   "overall": 4.102487248804674,
+   "q": 0.4472461773139823
+  },
+  {
+   "theme": "mind & soul",
+   "rows": [
+    {
+     "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+     "year": 2019,
+     "order": 0,
+     "mean": 4.167910345208614,
+     "lo": 1.5440408518700939,
+     "hi": 6.893021719017166,
+     "n": 14
+    },
+    {
+     "album": "Happier Than Ever",
+     "year": 2021,
+     "order": 1,
+     "mean": 10.115467579670135,
+     "lo": 6.612726247713039,
+     "hi": 13.957860267891247,
+     "n": 16
+    },
+    {
+     "album": "HIT ME HARD AND SOFT",
+     "year": 2024,
+     "order": 2,
+     "mean": 8.48326698661486,
+     "lo": 5.3779627943145,
+     "hi": 11.79250759506357,
+     "n": 10
+    }
+   ],
+   "H": 5.634596535982826,
+   "p": 0.05976719973079751,
+   "overall": 7.625772399344783,
+   "q": 0.23906879892319002
+  },
+  {
+   "theme": "love",
+   "rows": [
+    {
+     "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+     "year": 2019,
+     "order": 0,
+     "mean": 9.186955018104195,
+     "lo": 4.998018920540015,
+     "hi": 13.389710745640976,
+     "n": 14
+    },
+    {
+     "album": "Happier Than Ever",
+     "year": 2021,
+     "order": 1,
+     "mean": 7.85778759105708,
+     "lo": 2.261528305275761,
+     "hi": 14.893462106314772,
+     "n": 16
+    },
+    {
+     "album": "HIT ME HARD AND SOFT",
+     "year": 2024,
+     "order": 2,
+     "mean": 12.49608291525509,
+     "lo": 7.547592399487379,
+     "hi": 17.56870043403325,
+     "n": 10
+    }
+   ],
+   "H": 3.759183673469394,
+   "p": 0.15265240014497805,
+   "overall": 9.482570021573073,
+   "q": 0.2856733350734966
+  },
+  {
+   "theme": "time",
+   "rows": [
+    {
+     "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+     "year": 2019,
+     "order": 0,
+     "mean": 4.153039606143745,
+     "lo": 1.4017232767232766,
+     "hi": 7.431850442614788,
+     "n": 14
+    },
+    {
+     "album": "Happier Than Ever",
+     "year": 2021,
+     "order": 1,
+     "mean": 6.665968523865761,
+     "lo": 3.7116524219765723,
+     "hi": 9.687751920754044,
+     "n": 16
+    },
+    {
+     "album": "HIT ME HARD AND SOFT",
+     "year": 2024,
+     "order": 2,
+     "mean": 7.5697415809806925,
+     "lo": 3.1152241586983918,
+     "hi": 13.045860736903519,
+     "n": 10
+    }
+   ],
+   "H": 1.7833149614189974,
+   "p": 0.40997566253781714,
+   "overall": 6.012386666941788,
+   "q": 0.4472461773139823
+  },
+  {
+   "theme": "conflict",
+   "rows": [
+    {
+     "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+     "year": 2019,
+     "order": 0,
+     "mean": 0.44642857142857145,
+     "lo": 0.0,
+     "hi": 1.3392857142857142,
+     "n": 14
+    },
+    {
+     "album": "Happier Than Ever",
+     "year": 2021,
+     "order": 1,
+     "mean": 2.204979595382017,
+     "lo": 0.4578553897014626,
+     "hi": 4.613997326236512,
+     "n": 16
+    },
+    {
+     "album": "HIT ME HARD AND SOFT",
+     "year": 2024,
+     "order": 2,
+     "mean": 3.8350402486578856,
+     "lo": 0.6230529595015576,
+     "hi": 8.931632731242937,
+     "n": 10
+    }
+   ],
+   "H": 3.5838056134862954,
+   "p": 0.16664277879287304,
+   "overall": 1.997001900317278,
+   "q": 0.2856733350734966
+  }
+ ],
+ "sentiment": {
+  "VADER": {
+   "rows": [
+    {
+     "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+     "year": 2019,
+     "order": 0,
+     "mean": 0.03527893808202683,
+     "lo": -0.0036474463839731644,
+     "hi": 0.07004877833452301,
+     "n": 14
+    },
+    {
+     "album": "Happier Than Ever",
+     "year": 2021,
+     "order": 1,
+     "mean": 0.03474646030894371,
+     "lo": 0.005600675178600762,
+     "hi": 0.06971323189834741,
+     "n": 16
+    },
+    {
+     "album": "HIT ME HARD AND SOFT",
+     "year": 2024,
+     "order": 2,
+     "mean": 0.07090209371229408,
+     "lo": 0.025354636951834392,
+     "hi": 0.12219751192591619,
+     "n": 10
+    }
+   ],
+   "H": 1.9910148083623653,
+   "p": 0.369535892908682
+  },
+  "AFINN": {
+   "rows": [
+    {
+     "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+     "year": 2019,
+     "order": 0,
+     "mean": 1.9096650545844265,
+     "lo": -1.2058784341750564,
+     "hi": 5.407895085257947,
+     "n": 14
+    },
+    {
+     "album": "Happier Than Ever",
+     "year": 2021,
+     "order": 1,
+     "mean": 0.43476511951196817,
+     "lo": -2.9012074460053796,
+     "hi": 4.264009520451383,
+     "n": 16
+    },
+    {
+     "album": "HIT ME HARD AND SOFT",
+     "year": 2024,
+     "order": 2,
+     "mean": 4.455105175619066,
+     "lo": 1.674940290674838,
+     "hi": 7.515276847164021,
+     "n": 10
+    }
+   ],
+   "H": 3.622536035945476,
+   "p": 0.16344675192758706
+  },
+  "agreement": 0.7093203253734168
+ },
+ "arc": [
+  {
+   "x": 5,
+   "y": 0.051007557997558,
+   "lo": -0.01945640338827839,
+   "hi": 0.1186312368742368
+  },
+  {
+   "x": 15,
+   "y": 0.039339358974358966,
+   "lo": 0.0005168856837606934,
+   "hi": 0.0771824049145299
+  },
+  {
+   "x": 25,
+   "y": 0.056532148962148976,
+   "lo": -0.0031379377289377304,
+   "hi": 0.11824656959706957
+  },
+  {
+   "x": 35,
+   "y": -0.004625256410256406,
+   "lo": -0.056456565170940165,
+   "hi": 0.049840450854700756
+  },
+  {
+   "x": 45,
+   "y": -0.006795024420024421,
+   "lo": -0.06228438003663004,
+   "hi": 0.046235035866910836
+  },
+  {
+   "x": 55,
+   "y": 0.043783974358974354,
+   "lo": -0.01535225106837607,
+   "hi": 0.10256502457264954
+  },
+  {
+   "x": 65,
+   "y": 0.09014015873015871,
+   "lo": 0.01382743086080586,
+   "hi": 0.16569144459706958
+  },
+  {
+   "x": 75,
+   "y": 0.01939341880341881,
+   "lo": -0.024659228632478627,
+   "hi": 0.06293863782051277
+  },
+  {
+   "x": 85,
+   "y": 0.04332954822954824,
+   "lo": -0.0025015508241758274,
+   "hi": 0.08781983165445664
+  },
+  {
+   "x": 95,
+   "y": 0.06479606837606837,
+   "lo": -0.007083627136752136,
+   "hi": 0.13279849145299133
+  }
+ ],
+ "arc_test": {
+  "first": 0.045932021767505514,
+  "last": 0.042058810563890346,
+  "p": 0.8630762992361269
+ },
+ "top_content": [
+  {
+   "w": "love",
+   "all": 65,
+   "uniq": 57,
+   "songs": 18,
+   "song": "my future",
+   "song_n": 10
+  },
+  {
+   "w": "good",
+   "all": 56,
+   "uniq": 50,
+   "songs": 27,
+   "song": "GOLDWING",
+   "song_n": 5
+  },
+  {
+   "w": "think",
+   "all": 51,
+   "uniq": 32,
+   "songs": 19,
+   "song": "Therefore I Am",
+   "song_n": 18
+  },
+  {
+   "w": "tell",
+   "all": 41,
+   "uniq": 37,
+   "songs": 19,
+   "song": "CHIHIRO",
+   "song_n": 5
+  },
+  {
+   "w": "never",
+   "all": 36,
+   "uniq": 32,
+   "songs": 14,
+   "song": "wish you were gay",
+   "song_n": 5
+  },
+  {
+   "w": "want",
+   "all": 35,
+   "uniq": 30,
+   "songs": 17,
+   "song": "THE GREATEST",
+   "song_n": 4
+  },
+  {
+   "w": "bad",
+   "all": 30,
+   "uniq": 22,
+   "songs": 10,
+   "song": "bad guy",
+   "song_n": 11
+  },
+  {
+   "w": "look",
+   "all": 30,
+   "uniq": 28,
+   "songs": 13,
+   "song": "Oxytocin",
+   "song_n": 6
+  },
+  {
+   "w": "feel",
+   "all": 29,
+   "uniq": 24,
+   "songs": 17,
+   "song": "wish you were gay",
+   "song_n": 5
+  },
+  {
+   "w": "keep",
+   "all": 27,
+   "uniq": 25,
+   "songs": 13,
+   "song": "GOLDWING",
+   "song_n": 7
+  },
+  {
+   "w": "really",
+   "all": 26,
+   "uniq": 19,
+   "songs": 10,
+   "song": "OverHeated",
+   "song_n": 9
+  },
+  {
+   "w": "time",
+   "all": 25,
+   "uniq": 23,
+   "songs": 13,
+   "song": "WILDFLOWER",
+   "song_n": 6
+  },
+  {
+   "w": "friend",
+   "all": 24,
+   "uniq": 15,
+   "songs": 10,
+   "song": "Therefore I Am",
+   "song_n": 8
+  },
+  {
+   "w": "need",
+   "all": 23,
+   "uniq": 18,
+   "songs": 13,
+   "song": "Oxytocin",
+   "song_n": 3
+  },
+  {
+   "w": "try",
+   "all": 23,
+   "uniq": 19,
+   "songs": 13,
+   "song": "L\u2019AMOUR DE MA VIE",
+   "song_n": 4
+  },
+  {
+   "w": "might",
+   "all": 22,
+   "uniq": 16,
+   "songs": 10,
+   "song": "LUNCH",
+   "song_n": 5
+  },
+  {
+   "w": "nothing",
+   "all": 22,
+   "uniq": 16,
+   "songs": 11,
+   "song": "Lost Cause",
+   "song_n": 5
+  },
+  {
+   "w": "away",
+   "all": 22,
+   "uniq": 19,
+   "songs": 7,
+   "song": "Oxytocin",
+   "song_n": 9
+  },
+  {
+   "w": "wish",
+   "all": 21,
+   "uniq": 15,
+   "songs": 6,
+   "song": "wish you were gay",
+   "song_n": 8
+  },
+  {
+   "w": "sorry",
+   "all": 20,
+   "uniq": 15,
+   "songs": 7,
+   "song": "listen before i go",
+   "song_n": 11
+  },
+  {
+   "w": "alone",
+   "all": 19,
+   "uniq": 19,
+   "songs": 11,
+   "song": "Everybody Dies",
+   "song_n": 4
+  },
+  {
+   "w": "change",
+   "all": 18,
+   "uniq": 13,
+   "songs": 10,
+   "song": "I Didn\u2019t Change My Number",
+   "song_n": 4
+  },
+  {
+   "w": "day",
+   "all": 17,
+   "uniq": 14,
+   "songs": 8,
+   "song": "BIRDS OF A FEATHER",
+   "song_n": 5
+  },
+  {
+   "w": "man",
+   "all": 16,
+   "uniq": 6,
+   "songs": 5,
+   "song": "Therefore I Am",
+   "song_n": 8
+  },
+  {
+   "w": "maybe",
+   "all": 16,
+   "uniq": 14,
+   "songs": 10,
+   "song": "i love you",
+   "song_n": 3
+  },
+  {
+   "w": "wait",
+   "all": 16,
+   "uniq": 14,
+   "songs": 9,
+   "song": "THE GREATEST",
+   "song_n": 6
+  },
+  {
+   "w": "lose",
+   "all": 16,
+   "uniq": 11,
+   "songs": 8,
+   "song": "Lost Cause",
+   "song_n": 5
+  },
+  {
+   "w": "leave",
+   "all": 16,
+   "uniq": 14,
+   "songs": 9,
+   "song": "listen before i go",
+   "song_n": 4
+  },
+  {
+   "w": "lie",
+   "all": 16,
+   "uniq": 13,
+   "songs": 6,
+   "song": "when the party\u2019s over",
+   "song_n": 6
+  },
+  {
+   "w": "guy",
+   "all": 15,
+   "uniq": 8,
+   "songs": 2,
+   "song": "bad guy",
+   "song_n": 14
+  },
+  {
+   "w": "eye",
+   "all": 15,
+   "uniq": 14,
+   "songs": 9,
+   "song": "I Didn\u2019t Change My Number",
+   "song_n": 4
+  },
+  {
+   "w": "blue",
+   "all": 15,
+   "uniq": 15,
+   "songs": 4,
+   "song": "BLUE",
+   "song_n": 12
+  },
+  {
+   "w": "people",
+   "all": 15,
+   "uniq": 12,
+   "songs": 4,
+   "song": "Oxytocin",
+   "song_n": 8
+  },
+  {
+   "w": "life",
+   "all": 15,
+   "uniq": 13,
+   "songs": 7,
+   "song": "L\u2019AMOUR DE MA VIE",
+   "song_n": 8
+  },
+  {
+   "w": "hm",
+   "all": 15,
+   "uniq": 15,
+   "songs": 7,
+   "song": "i love you",
+   "song_n": 4
+  },
+  {
+   "w": "break",
+   "all": 14,
+   "uniq": 13,
+   "songs": 10,
+   "song": "my strange addiction",
+   "song_n": 2
+  },
+  {
+   "w": "die",
+   "all": 14,
+   "uniq": 13,
+   "songs": 8,
+   "song": "BIRDS OF A FEATHER",
+   "song_n": 5
+  },
+  {
+   "w": "fall",
+   "all": 14,
+   "uniq": 11,
+   "songs": 7,
+   "song": "bury a friend",
+   "song_n": 4
+  },
+  {
+   "w": "anything",
+   "all": 14,
+   "uniq": 6,
+   "songs": 5,
+   "song": "Therefore I Am",
+   "song_n": 8
+  },
+  {
+   "w": "call",
+   "all": 14,
+   "uniq": 12,
+   "songs": 8,
+   "song": "THE DINER",
+   "song_n": 4
+  }
+ ],
+ "top_all": [
+  {
+   "w": "i",
+   "n": 778
+  },
+  {
+   "w": "you",
+   "n": 594
+  },
+  {
+   "w": "not",
+   "n": 369
+  },
+  {
+   "w": "the",
+   "n": 215
+  },
+  {
+   "w": "to",
+   "n": 209
+  },
+  {
+   "w": "it",
+   "n": 209
+  },
+  {
+   "w": "me",
+   "n": 196
+  },
+  {
+   "w": "am",
+   "n": 191
+  },
+  {
+   "w": "do",
+   "n": 181
+  },
+  {
+   "w": "my",
+   "n": 168
+  },
+  {
+   "w": "is",
+   "n": 155
+  },
+  {
+   "w": "and",
+   "n": 144
+  },
+  {
+   "w": "a",
+   "n": 144
+  },
+  {
+   "w": "but",
+   "n": 123
+  },
+  {
+   "w": "your",
+   "n": 110
+  },
+  {
+   "w": "in",
+   "n": 106
+  },
+  {
+   "w": "know",
+   "n": 104
+  },
+  {
+   "w": "that",
+   "n": 93
+  },
+  {
+   "w": "like",
+   "n": 92
+  },
+  {
+   "w": "can",
+   "n": 91
+  },
+  {
+   "w": "are",
+   "n": 90
+  },
+  {
+   "w": "be",
+   "n": 82
+  },
+  {
+   "w": "so",
+   "n": 76
+  },
+  {
+   "w": "for",
+   "n": 74
+  },
+  {
+   "w": "wanna",
+   "n": 71
+  },
+  {
+   "w": "on",
+   "n": 70
+  },
+  {
+   "w": "da",
+   "n": 70
+  },
+  {
+   "w": "what",
+   "n": 65
+  },
+  {
+   "w": "was",
+   "n": 64
+  },
+  {
+   "w": "of",
+   "n": 63
+  }
+ ],
+ "album_top": [
+  {
+   "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+   "words": [
+    [
+     "good",
+     21
+    ],
+    [
+     "bad",
+     17
+    ],
+    [
+     "guy",
+     15
+    ],
+    [
+     "tell",
+     15
+    ],
+    [
+     "want",
+     14
+    ],
+    [
+     "sorry",
+     14
+    ],
+    [
+     "love",
+     14
+    ],
+    [
+     "never",
+     14
+    ]
+   ]
+  },
+  {
+   "album": "Happier Than Ever",
+   "words": [
+    [
+     "think",
+     37
+    ],
+    [
+     "love",
+     22
+    ],
+    [
+     "good",
+     20
+    ],
+    [
+     "really",
+     20
+    ],
+    [
+     "look",
+     15
+    ],
+    [
+     "people",
+     13
+    ],
+    [
+     "bad",
+     12
+    ],
+    [
+     "keep",
+     12
+    ]
+   ]
+  },
+  {
+   "album": "HIT ME HARD AND SOFT",
+   "words": [
+    [
+     "love",
+     29
+    ],
+    [
+     "tell",
+     16
+    ],
+    [
+     "good",
+     15
+    ],
+    [
+     "never",
+     14
+    ],
+    [
+     "blue",
+     13
+    ],
+    [
+     "time",
+     12
+    ],
+    [
+     "want",
+     12
+    ],
+    [
+     "try",
+     12
+    ]
+   ]
+  }
+ ],
+ "hist_len": [
+  [
+   1,
+   924
+  ],
+  [
+   2,
+   2258
+  ],
+  [
+   3,
+   2735
+  ],
+  [
+   4,
+   2292
+  ],
+  [
+   5,
+   1061
+  ],
+  [
+   6,
+   559
+  ],
+  [
+   7,
+   362
+  ],
+  [
+   8,
+   183
+  ],
+  [
+   9,
+   93
+  ],
+  [
+   10,
+   62
+  ],
+  [
+   11,
+   19
+  ],
+  [
+   12,
+   7
+  ],
+  [
+   13,
+   4
+  ],
+  [
+   14,
+   1
+  ],
+  [
+   15,
+   3
+  ]
+ ],
+ "hist_freq": [
+  [
+   1,
+   589
+  ],
+  [
+   2,
+   231
+  ],
+  [
+   3,
+   120
+  ],
+  [
+   4,
+   53
+  ],
+  [
+   5,
+   45
+  ],
+  [
+   6,
+   35
+  ],
+  [
+   7,
+   22
+  ],
+  [
+   8,
+   19
+  ],
+  [
+   9,
+   14
+  ],
+  [
+   10,
+   14
+  ],
+  [
+   11,
+   5
+  ],
+  [
+   12,
+   8
+  ],
+  [
+   13,
+   8
+  ],
+  [
+   14,
+   6
+  ],
+  [
+   15,
+   13
+  ],
+  [
+   16,
+   3
+  ],
+  [
+   17,
+   4
+  ],
+  [
+   18,
+   7
+  ],
+  [
+   19,
+   4
+  ],
+  [
+   20,
+   89
+  ]
+ ],
+ "hist_line": [
+  [
+   0,
+   66
+  ],
+  [
+   1,
+   46
+  ],
+  [
+   2,
+   38
+  ],
+  [
+   3,
+   83
+  ],
+  [
+   4,
+   138
+  ],
+  [
+   5,
+   236
+  ],
+  [
+   6,
+   239
+  ],
+  [
+   7,
+   241
+  ],
+  [
+   8,
+   152
+  ],
+  [
+   9,
+   105
+  ],
+  [
+   10,
+   107
+  ],
+  [
+   11,
+   59
+  ],
+  [
+   12,
+   34
+  ],
+  [
+   13,
+   28
+  ],
+  [
+   14,
+   24
+  ],
+  [
+   15,
+   10
+  ],
+  [
+   16,
+   7
+  ],
+  [
+   17,
+   2
+  ],
+  [
+   18,
+   2
+  ],
+  [
+   19,
+   1
+  ]
+ ],
+ "keyness": [
+  {
+   "w": "hm",
+   "n": 15,
+   "songs": 7,
+   "per": 214.8
+  },
+  {
+   "w": "til",
+   "n": 13,
+   "songs": 4,
+   "per": 115.0
+  },
+  {
+   "w": "bout",
+   "n": 8,
+   "songs": 4,
+   "per": 67.6
+  },
+  {
+   "w": "lonely",
+   "n": 8,
+   "songs": 3,
+   "per": 42.5
+  },
+  {
+   "w": "em",
+   "n": 13,
+   "songs": 6,
+   "per": 33.1
+  },
+  {
+   "w": "tongue",
+   "n": 7,
+   "songs": 4,
+   "per": 28.3
+  },
+  {
+   "w": "strange",
+   "n": 12,
+   "songs": 3,
+   "per": 26.0
+  },
+  {
+   "w": "kinda",
+   "n": 10,
+   "songs": 4,
+   "per": 24.3
+  },
+  {
+   "w": "cry",
+   "n": 9,
+   "songs": 4,
+   "per": 21.9
+  },
+  {
+   "w": "lie",
+   "n": 14,
+   "songs": 5,
+   "per": 19.2
+  },
+  {
+   "w": "scared",
+   "n": 7,
+   "songs": 4,
+   "per": 16.7
+  },
+  {
+   "w": "wish",
+   "n": 21,
+   "songs": 6,
+   "per": 13.2
+  },
+  {
+   "w": "sorry",
+   "n": 20,
+   "songs": 7,
+   "per": 12.5
+  },
+  {
+   "w": "alone",
+   "n": 19,
+   "songs": 11,
+   "per": 12.4
+  },
+  {
+   "w": "apart",
+   "n": 7,
+   "songs": 4,
+   "per": 11.0
+  },
+  {
+   "w": "blue",
+   "n": 14,
+   "songs": 4,
+   "per": 9.8
+  },
+  {
+   "w": "fall",
+   "n": 13,
+   "songs": 7,
+   "per": 9.1
+  },
+  {
+   "w": "hate",
+   "n": 12,
+   "songs": 7,
+   "per": 8.8
+  },
+  {
+   "w": "love",
+   "n": 60,
+   "songs": 18,
+   "per": 8.6
+  },
+  {
+   "w": "bad",
+   "n": 30,
+   "songs": 10,
+   "per": 8.4
+  },
+  {
+   "w": "break",
+   "n": 13,
+   "songs": 9,
+   "per": 8.2
+  },
+  {
+   "w": "eyes",
+   "n": 14,
+   "songs": 8,
+   "per": 8.2
+  },
+  {
+   "w": "save",
+   "n": 12,
+   "songs": 6,
+   "per": 8.2
+  },
+  {
+   "w": "door",
+   "n": 10,
+   "songs": 5,
+   "per": 7.9
+  },
+  {
+   "w": "friend",
+   "n": 18,
+   "songs": 7,
+   "per": 7.3
+  }
+ ],
+ "never": [
+  "may",
+  "many",
+  "game",
+  "place",
+  "school",
+  "big",
+  "family",
+  "company",
+  "however",
+  "government",
+  "group",
+  "public",
+  "women",
+  "system",
+  "case",
+  "person",
+  "point",
+  "yet",
+  "support",
+  "including",
+  "states",
+  "national",
+  "side",
+  "actually",
+  "american",
+  "later",
+  "order",
+  "service",
+  "country",
+  "season",
+  "children",
+  "everyone",
+  "general",
+  "united",
+  "using",
+  "area",
+  "following",
+  "law",
+  "per",
+  "president",
+  "course",
+  "games",
+  "health",
+  "important",
+  "within",
+  "book",
+  "early",
+  "local"
+ ],
+ "versus": [
+  {
+   "pair": "Light vs dark",
+   "a": 19,
+   "b": 11,
+   "a_songs": 7,
+   "b_songs": 8,
+   "p": 1.0
+  },
+  {
+   "pair": "Life vs death",
+   "a": 22,
+   "b": 17,
+   "a_songs": 5,
+   "b_songs": 7,
+   "p": 0.7744140625
+  },
+  {
+   "pair": "Love vs hate",
+   "a": 65,
+   "b": 12,
+   "a_songs": 17,
+   "b_songs": 5,
+   "p": 0.01690053939819336
+  },
+  {
+   "pair": "Rise vs fall",
+   "a": 29,
+   "b": 77,
+   "a_songs": 10,
+   "b_songs": 9,
+   "p": 1.0
+  },
+  {
+   "pair": "Heaven vs hell",
+   "a": 2,
+   "b": 5,
+   "a_songs": 0,
+   "b_songs": 3,
+   "p": 0.25
+  },
+  {
+   "pair": "Hope vs fear",
+   "a": 6,
+   "b": 0,
+   "a_songs": 5,
+   "b_songs": 0,
+   "p": 0.0625
+  }
+ ],
+ "album_sim": {
+  "names": [
+   "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+   "Happier Than Ever",
+   "HIT ME HARD AND SOFT"
+  ],
+  "z": [
+   [
+    0.059291706774751804,
+    0.05219047086098657,
+    0.06343123759793734
+   ],
+   [
+    0.05219047086098657,
+    0.054013849037814615,
+    0.06238047411377893
+   ],
+   [
+    0.06343123759793734,
+    0.06238047411377893,
+    0.08261347973290149
+   ]
+  ]
+ },
+ "cohesion": [
+  {
+   "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+   "within": 0.059291706774751804,
+   "null": 0.058865458266794526,
+   "p": 0.47704590818363274,
+   "q": 0.7155688622754491
+  },
+  {
+   "album": "Happier Than Ever",
+   "within": 0.054013849037814615,
+   "null": 0.05876741335733769,
+   "p": 0.7305389221556886,
+   "q": 0.7305389221556885
+  },
+  {
+   "album": "HIT ME HARD AND SOFT",
+   "within": 0.08261347973290149,
+   "null": 0.05989074778614325,
+   "p": 0.03792415169660679,
+   "q": 0.11377245508982037
+  }
+ ],
+ "mantel": {
+  "rho": -0.038419988699232355,
+  "p": 0.5
+ },
+ "map_var": 0.09512701398333558,
+ "map": [
+  {
+   "title": "!!!!!!!",
+   "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+   "year": 2019,
+   "order": 0,
+   "x": 0.15039373933653782,
+   "y": -0.04930669167479694,
+   "near": "bad guy",
+   "near_sim": 0.0
+  },
+  {
+   "title": "bad guy",
+   "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+   "year": 2019,
+   "order": 0,
+   "x": 0.21251015141439575,
+   "y": 0.08302592507571879,
+   "near": "goodbye",
+   "near_sim": 0.161
+  },
+  {
+   "title": "xanny",
+   "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+   "year": 2019,
+   "order": 0,
+   "x": -0.012309837745584404,
+   "y": -0.26836701215663855,
+   "near": "when the party\u2019s over",
+   "near_sim": 0.115
+  },
+  {
+   "title": "you should see me in a crown",
+   "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+   "year": 2019,
+   "order": 0,
+   "x": 0.10310910127829973,
+   "y": 0.14177992021528765,
+   "near": "goodbye",
+   "near_sim": 0.121
+  },
+  {
+   "title": "all the good girls go to hell",
+   "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+   "year": 2019,
+   "order": 0,
+   "x": 0.15852518087278672,
+   "y": -0.12398264415925425,
+   "near": "Therefore I Am",
+   "near_sim": 0.095
+  },
+  {
+   "title": "wish you were gay",
+   "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+   "year": 2019,
+   "order": 0,
+   "x": -0.06696730577994911,
+   "y": 0.18481235572105645,
+   "near": "i love you",
+   "near_sim": 0.15
+  },
+  {
+   "title": "when the party\u2019s over",
+   "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+   "year": 2019,
+   "order": 0,
+   "x": -0.10166143779379691,
+   "y": -0.337516343551895,
+   "near": "ilomilo",
+   "near_sim": 0.171
+  },
+  {
+   "title": "8",
+   "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+   "year": 2019,
+   "order": 0,
+   "x": 0.18921270253132577,
+   "y": 0.016082272295303464,
+   "near": "goodbye",
+   "near_sim": 0.18
+  },
+  {
+   "title": "my strange addiction",
+   "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+   "year": 2019,
+   "order": 0,
+   "x": 0.16590171586374522,
+   "y": 0.004288241279666836,
+   "near": "Your Power",
+   "near_sim": 0.138
+  },
+  {
+   "title": "bury a friend",
+   "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+   "year": 2019,
+   "order": 0,
+   "x": -0.004516480411749378,
+   "y": -0.08258262329065258,
+   "near": "ilomilo",
+   "near_sim": 0.12
+  },
+  {
+   "title": "ilomilo",
+   "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+   "year": 2019,
+   "order": 0,
+   "x": -0.2769081445374502,
+   "y": -0.20073096450078542,
+   "near": "i love you",
+   "near_sim": 0.221
+  },
+  {
+   "title": "listen before i go",
+   "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+   "year": 2019,
+   "order": 0,
+   "x": 0.020011241260030815,
+   "y": -0.3259783231197238,
+   "near": "L\u2019AMOUR DE MA VIE",
+   "near_sim": 0.18
+  },
+  {
+   "title": "i love you",
+   "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+   "year": 2019,
+   "order": 0,
+   "x": -0.35827778677960387,
+   "y": 0.05437889267080895,
+   "near": "ilomilo",
+   "near_sim": 0.221
+  },
+  {
+   "title": "goodbye",
+   "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+   "year": 2019,
+   "order": 0,
+   "x": 0.12809690619314515,
+   "y": -0.033433193189142826,
+   "near": "8",
+   "near_sim": 0.18
+  },
+  {
+   "title": "Getting Older",
+   "album": "Happier Than Ever",
+   "year": 2021,
+   "order": 1,
+   "x": -0.0290510067604911,
+   "y": 0.182927150214271,
+   "near": "Halley\u2019s Comet",
+   "near_sim": 0.136
+  },
+  {
+   "title": "I Didn\u2019t Change My Number",
+   "album": "Happier Than Ever",
+   "year": 2021,
+   "order": 1,
+   "x": -0.03645118100380813,
+   "y": -0.025929148741691596,
+   "near": "i love you",
+   "near_sim": 0.161
+  },
+  {
+   "title": "Billie Bossa Nova",
+   "album": "Happier Than Ever",
+   "year": 2021,
+   "order": 1,
+   "x": 0.13796013595275544,
+   "y": -0.028604624736206574,
+   "near": "Male Fantasy",
+   "near_sim": 0.103
+  },
+  {
+   "title": "my future",
+   "album": "Happier Than Ever",
+   "year": 2021,
+   "order": 1,
+   "x": -0.11265635816717919,
+   "y": -0.17543607138759695,
+   "near": "ilomilo",
+   "near_sim": 0.176
+  },
+  {
+   "title": "Oxytocin",
+   "album": "Happier Than Ever",
+   "year": 2021,
+   "order": 1,
+   "x": 0.2168445409216474,
+   "y": 0.1473827205535488,
+   "near": "Happier Than Ever",
+   "near_sim": 0.116
+  },
+  {
+   "title": "GOLDWING",
+   "album": "Happier Than Ever",
+   "year": 2021,
+   "order": 1,
+   "x": -0.0697876413546948,
+   "y": -0.2769638384129381,
+   "near": "when the party\u2019s over",
+   "near_sim": 0.109
+  },
+  {
+   "title": "Lost Cause",
+   "album": "Happier Than Ever",
+   "year": 2021,
+   "order": 1,
+   "x": -0.07894795092812124,
+   "y": 0.1419202534025914,
+   "near": "Getting Older",
+   "near_sim": 0.132
+  },
+  {
+   "title": "Halley\u2019s Comet",
+   "album": "Happier Than Ever",
+   "year": 2021,
+   "order": 1,
+   "x": -0.06467019237052492,
+   "y": 0.09989611108554705,
+   "near": "BITTERSUITE",
+   "near_sim": 0.184
+  },
+  {
+   "title": "Not My Responsibility",
+   "album": "Happier Than Ever",
+   "year": 2021,
+   "order": 1,
+   "x": 0.18245340331826487,
+   "y": 0.13192051486220094,
+   "near": "8",
+   "near_sim": 0.092
+  },
+  {
+   "title": "OverHeated",
+   "album": "Happier Than Ever",
+   "year": 2021,
+   "order": 1,
+   "x": 0.2323516445161278,
+   "y": 0.008141396030696801,
+   "near": "Therefore I Am",
+   "near_sim": 0.089
+  },
+  {
+   "title": "Everybody Dies",
+   "album": "Happier Than Ever",
+   "year": 2021,
+   "order": 1,
+   "x": -0.21250523555898213,
+   "y": 0.11887178585230636,
+   "near": "BIRDS OF A FEATHER",
+   "near_sim": 0.208
+  },
+  {
+   "title": "Your Power",
+   "album": "Happier Than Ever",
+   "year": 2021,
+   "order": 1,
+   "x": 0.05848963337889619,
+   "y": -0.005215862312213293,
+   "near": "my strange addiction",
+   "near_sim": 0.138
+  },
+  {
+   "title": "NDA",
+   "album": "Happier Than Ever",
+   "year": 2021,
+   "order": 1,
+   "x": -0.06738786807301152,
+   "y": -0.005857803532437876,
+   "near": "Therefore I Am",
+   "near_sim": 0.119
+  },
+  {
+   "title": "Therefore I Am",
+   "album": "Happier Than Ever",
+   "year": 2021,
+   "order": 1,
+   "x": 0.19663903701567867,
+   "y": -0.030987560020595235,
+   "near": "8",
+   "near_sim": 0.153
+  },
+  {
+   "title": "Happier Than Ever",
+   "album": "Happier Than Ever",
+   "year": 2021,
+   "order": 1,
+   "x": 0.027175178935433354,
+   "y": 0.08872477964212948,
+   "near": "wish you were gay",
+   "near_sim": 0.149
+  },
+  {
+   "title": "Male Fantasy",
+   "album": "Happier Than Ever",
+   "year": 2021,
+   "order": 1,
+   "x": 0.01645146340129407,
+   "y": 0.018683415585348265,
+   "near": "8",
+   "near_sim": 0.169
+  },
+  {
+   "title": "SKINNY",
+   "album": "HIT ME HARD AND SOFT",
+   "year": 2024,
+   "order": 2,
+   "x": -0.20662133265653584,
+   "y": 0.262237257077433,
+   "near": "i love you",
+   "near_sim": 0.205
+  },
+  {
+   "title": "LUNCH",
+   "album": "HIT ME HARD AND SOFT",
+   "year": 2024,
+   "order": 2,
+   "x": 0.16811741247771703,
+   "y": -0.045396301851949886,
+   "near": "goodbye",
+   "near_sim": 0.108
+  },
+  {
+   "title": "CHIHIRO",
+   "album": "HIT ME HARD AND SOFT",
+   "year": 2024,
+   "order": 2,
+   "x": -0.05052154452374517,
+   "y": 0.05927632409626147,
+   "near": "i love you",
+   "near_sim": 0.135
+  },
+  {
+   "title": "BIRDS OF A FEATHER",
+   "album": "HIT ME HARD AND SOFT",
+   "year": 2024,
+   "order": 2,
+   "x": -0.18653846482435907,
+   "y": 0.10699973944262087,
+   "near": "Everybody Dies",
+   "near_sim": 0.208
+  },
+  {
+   "title": "WILDFLOWER",
+   "album": "HIT ME HARD AND SOFT",
+   "year": 2024,
+   "order": 2,
+   "x": -0.2080173294735255,
+   "y": 0.09926938122430644,
+   "near": "L\u2019AMOUR DE MA VIE",
+   "near_sim": 0.248
+  },
+  {
+   "title": "THE GREATEST",
+   "album": "HIT ME HARD AND SOFT",
+   "year": 2024,
+   "order": 2,
+   "x": -0.009615967749550373,
+   "y": 0.09842083320523272,
+   "near": "SKINNY",
+   "near_sim": 0.143
+  },
+  {
+   "title": "L\u2019AMOUR DE MA VIE",
+   "album": "HIT ME HARD AND SOFT",
+   "year": 2024,
+   "order": 2,
+   "x": -0.135228955715516,
+   "y": -0.045673448761549315,
+   "near": "WILDFLOWER",
+   "near_sim": 0.248
+  },
+  {
+   "title": "THE DINER",
+   "album": "HIT ME HARD AND SOFT",
+   "year": 2024,
+   "order": 2,
+   "x": 0.05542190875242543,
+   "y": -0.05973766270021914,
+   "near": "Happier Than Ever",
+   "near_sim": 0.14
+  },
+  {
+   "title": "BITTERSUITE",
+   "album": "HIT ME HARD AND SOFT",
+   "year": 2024,
+   "order": 2,
+   "x": -0.012755275523578,
+   "y": 0.09242619236626286,
+   "near": "Halley\u2019s Comet",
+   "near_sim": 0.184
+  },
+  {
+   "title": "BLUE",
+   "album": "HIT ME HARD AND SOFT",
+   "year": 2024,
+   "order": 2,
+   "x": -0.11826779968874997,
+   "y": -0.019765343798313347,
+   "near": "i love you",
+   "near_sim": 0.146
+  }
+ ],
+ "cl_function": {
+  "acc": 0.6,
+  "chance": 0.33125,
+  "p": 0.009900990099009901
+ },
+ "confusion": {
+  "names": [
+   "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+   "Happier Than Ever",
+   "HIT ME HARD AND SOFT"
+  ],
+  "z": [
+   [
+    11,
+    1,
+    2
+   ],
+   [
+    7,
+    5,
+    4
+   ],
+   [
+    1,
+    1,
+    8
+   ]
+  ]
+ },
+ "cl_within1": 0.925,
+ "cl_nopron": {
+  "acc": 0.65,
+  "chance": 0.32849999999999996,
+  "p": 0.009900990099009901
+ },
+ "cl_content": {
+  "acc": 0.4,
+  "chance": 0.3324999999999999,
+  "p": 0.25742574257425743
+ },
+ "zipf": {
+  "slope": -1.2006965772618257,
+  "r2": 0.9766572238901505,
+  "alpha": 1.6297459012689202,
+  "points": [
+   [
+    1,
+    778.0
+   ],
+   [
+    2,
+    594.0
+   ],
+   [
+    3,
+    369.0
+   ],
+   [
+    4,
+    215.0
+   ],
+   [
+    5,
+    209.0
+   ],
+   [
+    6,
+    209.0
+   ],
+   [
+    7,
+    196.0
+   ],
+   [
+    8,
+    191.0
+   ],
+   [
+    9,
+    181.0
+   ],
+   [
+    10,
+    168.0
+   ],
+   [
+    11,
+    155.0
+   ],
+   [
+    12,
+    144.0
+   ],
+   [
+    13,
+    144.0
+   ],
+   [
+    14,
+    123.0
+   ],
+   [
+    15,
+    110.0
+   ],
+   [
+    16,
+    106.0
+   ],
+   [
+    17,
+    104.0
+   ],
+   [
+    18,
+    93.0
+   ],
+   [
+    19,
+    92.0
+   ],
+   [
+    20,
+    91.0
+   ],
+   [
+    22,
+    82.0
+   ],
+   [
+    23,
+    76.0
+   ],
+   [
+    24,
+    74.0
+   ],
+   [
+    26,
+    70.0
+   ],
+   [
+    27,
+    70.0
+   ],
+   [
+    29,
+    64.0
+   ],
+   [
+    31,
+    63.0
+   ],
+   [
+    33,
+    60.0
+   ],
+   [
+    35,
+    56.0
+   ],
+   [
+    37,
+    56.0
+   ],
+   [
+    39,
+    54.0
+   ],
+   [
+    42,
+    53.0
+   ],
+   [
+    44,
+    51.0
+   ],
+   [
+    47,
+    41.0
+   ],
+   [
+    50,
+    38.0
+   ],
+   [
+    53,
+    36.0
+   ],
+   [
+    56,
+    32.0
+   ],
+   [
+    60,
+    30.0
+   ],
+   [
+    64,
+    30.0
+   ],
+   [
+    68,
+    28.0
+   ],
+   [
+    72,
+    25.0
+   ],
+   [
+    76,
+    23.0
+   ],
+   [
+    81,
+    22.0
+   ],
+   [
+    86,
+    21.0
+   ],
+   [
+    91,
+    19.0
+   ],
+   [
+    97,
+    18.0
+   ],
+   [
+    103,
+    17.0
+   ],
+   [
+    109,
+    15.0
+   ],
+   [
+    116,
+    15.0
+   ],
+   [
+    123,
+    14.0
+   ],
+   [
+    131,
+    13.0
+   ],
+   [
+    139,
+    12.0
+   ],
+   [
+    148,
+    10.0
+   ],
+   [
+    157,
+    10.0
+   ],
+   [
+    167,
+    9.0
+   ],
+   [
+    177,
+    8.0
+   ],
+   [
+    188,
+    8.0
+   ],
+   [
+    200,
+    7.0
+   ],
+   [
+    212,
+    7.0
+   ],
+   [
+    225,
+    6.0
+   ],
+   [
+    239,
+    6.0
+   ],
+   [
+    254,
+    5.0
+   ],
+   [
+    270,
+    5.0
+   ],
+   [
+    286,
+    5.0
+   ],
+   [
+    304,
+    4.0
+   ],
+   [
+    323,
+    4.0
+   ],
+   [
+    343,
+    4.0
+   ],
+   [
+    364,
+    3.0
+   ],
+   [
+    387,
+    3.0
+   ],
+   [
+    411,
+    3.0
+   ],
+   [
+    436,
+    3.0
+   ],
+   [
+    463,
+    3.0
+   ],
+   [
+    492,
+    2.0
+   ],
+   [
+    523,
+    2.0
+   ],
+   [
+    555,
+    2.0
+   ],
+   [
+    589,
+    2.0
+   ],
+   [
+    626,
+    2.0
+   ],
+   [
+    665,
+    2.0
+   ],
+   [
+    706,
+    1.0
+   ],
+   [
+    750,
+    1.0
+   ],
+   [
+    796,
+    1.0
+   ],
+   [
+    846,
+    1.0
+   ],
+   [
+    898,
+    1.0
+   ],
+   [
+    954,
+    1.0
+   ],
+   [
+    1013,
+    1.0
+   ],
+   [
+    1076,
+    1.0
+   ],
+   [
+    1143,
+    1.0
+   ],
+   [
+    1214,
+    1.0
+   ],
+   [
+    1289,
+    1.0
+   ]
+  ]
+ },
+ "heaps": {
+  "beta": 0.6792659282427742,
+  "p": 0.15084915084915085,
+  "points": [
+   {
+    "x": 1,
+    "y": 1,
+    "lo": 1.0,
+    "hi": 1.0
+   },
+   {
+    "x": 71,
+    "y": 52,
+    "lo": 31.0,
+    "hi": 61.0
+   },
+   {
+    "x": 142,
+    "y": 85,
+    "lo": 50.0,
+    "hi": 110.0
+   },
+   {
+    "x": 213,
+    "y": 106,
+    "lo": 73.0,
+    "hi": 121.0
+   },
+   {
+    "x": 284,
+    "y": 122,
+    "lo": 92.0,
+    "hi": 144.02499999999998
+   },
+   {
+    "x": 355,
+    "y": 148,
+    "lo": 103.0,
+    "hi": 168.0
+   },
+   {
+    "x": 426,
+    "y": 181,
+    "lo": 126.0,
+    "hi": 188.0
+   },
+   {
+    "x": 497,
+    "y": 194,
+    "lo": 143.0,
+    "hi": 206.0
+   },
+   {
+    "x": 568,
+    "y": 222,
+    "lo": 158.0,
+    "hi": 226.0
+   },
+   {
+    "x": 638,
+    "y": 239,
+    "lo": 171.0,
+    "hi": 244.02499999999998
+   },
+   {
+    "x": 709,
+    "y": 251,
+    "lo": 185.0,
+    "hi": 261.025
+   },
+   {
+    "x": 780,
+    "y": 251,
+    "lo": 197.0,
+    "hi": 276.0
+   },
+   {
+    "x": 851,
+    "y": 287,
+    "lo": 211.0,
+    "hi": 292.0
+   },
+   {
+    "x": 922,
+    "y": 317,
+    "lo": 224.0,
+    "hi": 308.025
+   },
+   {
+    "x": 993,
+    "y": 323,
+    "lo": 239.0,
+    "hi": 323.0
+   },
+   {
+    "x": 1064,
+    "y": 349,
+    "lo": 250.0,
+    "hi": 336.025
+   },
+   {
+    "x": 1135,
+    "y": 372,
+    "lo": 261.0,
+    "hi": 350.025
+   },
+   {
+    "x": 1206,
+    "y": 380,
+    "lo": 275.0,
+    "hi": 366.0
+   },
+   {
+    "x": 1276,
+    "y": 389,
+    "lo": 285.0,
+    "hi": 379.025
+   },
+   {
+    "x": 1347,
+    "y": 401,
+    "lo": 298.0,
+    "hi": 391.025
+   },
+   {
+    "x": 1418,
+    "y": 406,
+    "lo": 308.975,
+    "hi": 406.025
+   },
+   {
+    "x": 1489,
+    "y": 409,
+    "lo": 319.975,
+    "hi": 421.0
+   },
+   {
+    "x": 1560,
+    "y": 422,
+    "lo": 331.0,
+    "hi": 435.0
+   },
+   {
+    "x": 1631,
+    "y": 429,
+    "lo": 340.975,
+    "hi": 444.025
+   },
+   {
+    "x": 1702,
+    "y": 429,
+    "lo": 350.0,
+    "hi": 456.0
+   },
+   {
+    "x": 1773,
+    "y": 446,
+    "lo": 360.0,
+    "hi": 469.0
+   },
+   {
+    "x": 1844,
+    "y": 460,
+    "lo": 373.0,
+    "hi": 478.025
+   },
+   {
+    "x": 1914,
+    "y": 482,
+    "lo": 382.0,
+    "hi": 489.025
+   },
+   {
+    "x": 1985,
+    "y": 488,
+    "lo": 392.0,
+    "hi": 500.025
+   },
+   {
+    "x": 2056,
+    "y": 501,
+    "lo": 403.0,
+    "hi": 509.025
+   },
+   {
+    "x": 2127,
+    "y": 515,
+    "lo": 413.0,
+    "hi": 520.025
+   },
+   {
+    "x": 2198,
+    "y": 526,
+    "lo": 421.0,
+    "hi": 531.0
+   },
+   {
+    "x": 2269,
+    "y": 533,
+    "lo": 431.0,
+    "hi": 541.025
+   },
+   {
+    "x": 2340,
+    "y": 555,
+    "lo": 440.975,
+    "hi": 551.05
+   },
+   {
+    "x": 2411,
+    "y": 560,
+    "lo": 449.0,
+    "hi": 564.0
+   },
+   {
+    "x": 2482,
+    "y": 563,
+    "lo": 459.0,
+    "hi": 574.025
+   },
+   {
+    "x": 2552,
+    "y": 572,
+    "lo": 468.0,
+    "hi": 583.025
+   },
+   {
+    "x": 2623,
+    "y": 577,
+    "lo": 478.0,
+    "hi": 594.025
+   },
+   {
+    "x": 2694,
+    "y": 584,
+    "lo": 488.0,
+    "hi": 603.025
+   },
+   {
+    "x": 2765,
+    "y": 595,
+    "lo": 496.0,
+    "hi": 611.0
+   },
+   {
+    "x": 2836,
+    "y": 600,
+    "lo": 505.0,
+    "hi": 620.025
+   },
+   {
+    "x": 2907,
+    "y": 606,
+    "lo": 516.0,
+    "hi": 629.025
+   },
+   {
+    "x": 2978,
+    "y": 612,
+    "lo": 523.0,
+    "hi": 639.025
+   },
+   {
+    "x": 3049,
+    "y": 617,
+    "lo": 532.975,
+    "hi": 646.0
+   },
+   {
+    "x": 3119,
+    "y": 618,
+    "lo": 542.975,
+    "hi": 657.0
+   },
+   {
+    "x": 3190,
+    "y": 628,
+    "lo": 550.95,
+    "hi": 666.025
+   },
+   {
+    "x": 3261,
+    "y": 651,
+    "lo": 559.95,
+    "hi": 676.025
+   },
+   {
+    "x": 3332,
+    "y": 664,
+    "lo": 566.975,
+    "hi": 683.05
+   },
+   {
+    "x": 3403,
+    "y": 677,
+    "lo": 576.0,
+    "hi": 691.025
+   },
+   {
+    "x": 3474,
+    "y": 689,
+    "lo": 585.0,
+    "hi": 702.025
+   },
+   {
+    "x": 3545,
+    "y": 696,
+    "lo": 594.0,
+    "hi": 710.025
+   },
+   {
+    "x": 3616,
+    "y": 702,
+    "lo": 599.0,
+    "hi": 719.025
+   },
+   {
+    "x": 3687,
+    "y": 708,
+    "lo": 607.975,
+    "hi": 729.025
+   },
+   {
+    "x": 3757,
+    "y": 724,
+    "lo": 616.975,
+    "hi": 736.0
+   },
+   {
+    "x": 3828,
+    "y": 733,
+    "lo": 625.975,
+    "hi": 747.025
+   },
+   {
+    "x": 3899,
+    "y": 734,
+    "lo": 630.0,
+    "hi": 754.0749999999999
+   },
+   {
+    "x": 3970,
+    "y": 739,
+    "lo": 640.0,
+    "hi": 760.025
+   },
+   {
+    "x": 4041,
+    "y": 750,
+    "lo": 649.0,
+    "hi": 769.0
+   },
+   {
+    "x": 4112,
+    "y": 755,
+    "lo": 656.0,
+    "hi": 776.025
+   },
+   {
+    "x": 4183,
+    "y": 761,
+    "lo": 664.975,
+    "hi": 785.0
+   },
+   {
+    "x": 4254,
+    "y": 767,
+    "lo": 669.975,
+    "hi": 792.0
+   },
+   {
+    "x": 4325,
+    "y": 769,
+    "lo": 680.975,
+    "hi": 799.0
+   },
+   {
+    "x": 4395,
+    "y": 772,
+    "lo": 688.975,
+    "hi": 805.0
+   },
+   {
+    "x": 4466,
+    "y": 776,
+    "lo": 695.0,
+    "hi": 815.0
+   },
+   {
+    "x": 4537,
+    "y": 795,
+    "lo": 702.975,
+    "hi": 822.025
+   },
+   {
+    "x": 4608,
+    "y": 798,
+    "lo": 710.0,
+    "hi": 832.0
+   },
+   {
+    "x": 4679,
+    "y": 802,
+    "lo": 716.975,
+    "hi": 838.025
+   },
+   {
+    "x": 4750,
+    "y": 812,
+    "lo": 723.975,
+    "hi": 847.025
+   },
+   {
+    "x": 4821,
+    "y": 820,
+    "lo": 732.0,
+    "hi": 854.0
+   },
+   {
+    "x": 4892,
+    "y": 825,
+    "lo": 740.0,
+    "hi": 864.0
+   },
+   {
+    "x": 4963,
+    "y": 830,
+    "lo": 746.975,
+    "hi": 871.0
+   },
+   {
+    "x": 5033,
+    "y": 833,
+    "lo": 754.0,
+    "hi": 876.025
+   },
+   {
+    "x": 5104,
+    "y": 844,
+    "lo": 761.0,
+    "hi": 884.0
+   },
+   {
+    "x": 5175,
+    "y": 850,
+    "lo": 768.975,
+    "hi": 892.0
+   },
+   {
+    "x": 5246,
+    "y": 863,
+    "lo": 775.95,
+    "hi": 898.0
+   },
+   {
+    "x": 5317,
+    "y": 880,
+    "lo": 782.975,
+    "hi": 905.0
+   },
+   {
+    "x": 5388,
+    "y": 891,
+    "lo": 788.975,
+    "hi": 910.025
+   },
+   {
+    "x": 5459,
+    "y": 901,
+    "lo": 796.0,
+    "hi": 917.025
+   },
+   {
+    "x": 5530,
+    "y": 911,
+    "lo": 803.975,
+    "hi": 924.0
+   },
+   {
+    "x": 5600,
+    "y": 916,
+    "lo": 812.0,
+    "hi": 930.0
+   },
+   {
+    "x": 5671,
+    "y": 924,
+    "lo": 821.0,
+    "hi": 936.0
+   },
+   {
+    "x": 5742,
+    "y": 932,
+    "lo": 827.0,
+    "hi": 942.025
+   },
+   {
+    "x": 5813,
+    "y": 934,
+    "lo": 834.0,
+    "hi": 950.0
+   },
+   {
+    "x": 5884,
+    "y": 942,
+    "lo": 843.0,
+    "hi": 957.0
+   },
+   {
+    "x": 5955,
+    "y": 952,
+    "lo": 850.0,
+    "hi": 964.0
+   },
+   {
+    "x": 6026,
+    "y": 953,
+    "lo": 855.975,
+    "hi": 970.0
+   },
+   {
+    "x": 6097,
+    "y": 957,
+    "lo": 862.975,
+    "hi": 978.0
+   },
+   {
+    "x": 6168,
+    "y": 962,
+    "lo": 869.975,
+    "hi": 984.05
+   },
+   {
+    "x": 6238,
+    "y": 972,
+    "lo": 877.975,
+    "hi": 991.0
+   },
+   {
+    "x": 6309,
+    "y": 980,
+    "lo": 886.0,
+    "hi": 996.0
+   },
+   {
+    "x": 6380,
+    "y": 983,
+    "lo": 892.0,
+    "hi": 1001.025
+   },
+   {
+    "x": 6451,
+    "y": 986,
+    "lo": 898.975,
+    "hi": 1009.025
+   },
+   {
+    "x": 6522,
+    "y": 991,
+    "lo": 906.0,
+    "hi": 1014.0
+   },
+   {
+    "x": 6593,
+    "y": 996,
+    "lo": 912.0,
+    "hi": 1019.025
+   },
+   {
+    "x": 6664,
+    "y": 1002,
+    "lo": 919.0,
+    "hi": 1027.025
+   },
+   {
+    "x": 6735,
+    "y": 1003,
+    "lo": 924.975,
+    "hi": 1035.025
+   },
+   {
+    "x": 6806,
+    "y": 1010,
+    "lo": 932.0,
+    "hi": 1039.0
+   },
+   {
+    "x": 6876,
+    "y": 1016,
+    "lo": 939.0,
+    "hi": 1045.0
+   },
+   {
+    "x": 6947,
+    "y": 1022,
+    "lo": 945.0,
+    "hi": 1051.025
+   },
+   {
+    "x": 7018,
+    "y": 1029,
+    "lo": 953.0,
+    "hi": 1056.025
+   },
+   {
+    "x": 7089,
+    "y": 1037,
+    "lo": 958.0,
+    "hi": 1062.0
+   },
+   {
+    "x": 7160,
+    "y": 1049,
+    "lo": 966.975,
+    "hi": 1068.0
+   },
+   {
+    "x": 7231,
+    "y": 1055,
+    "lo": 973.95,
+    "hi": 1073.0
+   },
+   {
+    "x": 7302,
+    "y": 1057,
+    "lo": 979.975,
+    "hi": 1078.0
+   },
+   {
+    "x": 7373,
+    "y": 1062,
+    "lo": 985.975,
+    "hi": 1083.025
+   },
+   {
+    "x": 7444,
+    "y": 1071,
+    "lo": 993.975,
+    "hi": 1089.0
+   },
+   {
+    "x": 7514,
+    "y": 1076,
+    "lo": 999.95,
+    "hi": 1096.0
+   },
+   {
+    "x": 7585,
+    "y": 1087,
+    "lo": 1004.975,
+    "hi": 1101.0
+   },
+   {
+    "x": 7656,
+    "y": 1093,
+    "lo": 1012.0,
+    "hi": 1106.0
+   },
+   {
+    "x": 7727,
+    "y": 1100,
+    "lo": 1018.975,
+    "hi": 1111.0
+   },
+   {
+    "x": 7798,
+    "y": 1103,
+    "lo": 1023.0,
+    "hi": 1116.0
+   },
+   {
+    "x": 7869,
+    "y": 1109,
+    "lo": 1031.0,
+    "hi": 1121.025
+   },
+   {
+    "x": 7940,
+    "y": 1113,
+    "lo": 1036.0,
+    "hi": 1127.0
+   },
+   {
+    "x": 8011,
+    "y": 1115,
+    "lo": 1043.975,
+    "hi": 1132.0
+   },
+   {
+    "x": 8081,
+    "y": 1122,
+    "lo": 1048.975,
+    "hi": 1137.025
+   },
+   {
+    "x": 8152,
+    "y": 1126,
+    "lo": 1053.0,
+    "hi": 1143.025
+   },
+   {
+    "x": 8223,
+    "y": 1133,
+    "lo": 1060.0,
+    "hi": 1148.025
+   },
+   {
+    "x": 8294,
+    "y": 1140,
+    "lo": 1065.975,
+    "hi": 1153.025
+   },
+   {
+    "x": 8365,
+    "y": 1145,
+    "lo": 1073.975,
+    "hi": 1159.025
+   },
+   {
+    "x": 8436,
+    "y": 1151,
+    "lo": 1077.975,
+    "hi": 1163.0
+   },
+   {
+    "x": 8507,
+    "y": 1153,
+    "lo": 1084.975,
+    "hi": 1168.025
+   },
+   {
+    "x": 8578,
+    "y": 1157,
+    "lo": 1092.975,
+    "hi": 1174.0
+   },
+   {
+    "x": 8649,
+    "y": 1162,
+    "lo": 1099.0,
+    "hi": 1180.0
+   },
+   {
+    "x": 8719,
+    "y": 1165,
+    "lo": 1103.975,
+    "hi": 1184.0
+   },
+   {
+    "x": 8790,
+    "y": 1168,
+    "lo": 1108.975,
+    "hi": 1189.0
+   },
+   {
+    "x": 8861,
+    "y": 1169,
+    "lo": 1116.0,
+    "hi": 1195.0
+   },
+   {
+    "x": 8932,
+    "y": 1178,
+    "lo": 1120.0,
+    "hi": 1200.0
+   },
+   {
+    "x": 9003,
+    "y": 1180,
+    "lo": 1128.975,
+    "hi": 1204.025
+   },
+   {
+    "x": 9074,
+    "y": 1183,
+    "lo": 1137.0,
+    "hi": 1208.0
+   },
+   {
+    "x": 9145,
+    "y": 1184,
+    "lo": 1143.0,
+    "hi": 1212.0
+   },
+   {
+    "x": 9216,
+    "y": 1189,
+    "lo": 1149.975,
+    "hi": 1217.0
+   },
+   {
+    "x": 9287,
+    "y": 1189,
+    "lo": 1155.0,
+    "hi": 1222.0
+   },
+   {
+    "x": 9357,
+    "y": 1193,
+    "lo": 1163.0,
+    "hi": 1226.025
+   },
+   {
+    "x": 9428,
+    "y": 1193,
+    "lo": 1169.975,
+    "hi": 1231.025
+   },
+   {
+    "x": 9499,
+    "y": 1197,
+    "lo": 1177.0,
+    "hi": 1237.0
+   },
+   {
+    "x": 9570,
+    "y": 1204,
+    "lo": 1184.0,
+    "hi": 1241.0
+   },
+   {
+    "x": 9641,
+    "y": 1214,
+    "lo": 1190.975,
+    "hi": 1245.0
+   },
+   {
+    "x": 9712,
+    "y": 1224,
+    "lo": 1196.0,
+    "hi": 1250.0
+   },
+   {
+    "x": 9783,
+    "y": 1228,
+    "lo": 1202.0,
+    "hi": 1254.0
+   },
+   {
+    "x": 9854,
+    "y": 1233,
+    "lo": 1209.0,
+    "hi": 1259.0
+   },
+   {
+    "x": 9925,
+    "y": 1236,
+    "lo": 1215.975,
+    "hi": 1262.025
+   },
+   {
+    "x": 9995,
+    "y": 1245,
+    "lo": 1223.0,
+    "hi": 1266.0
+   },
+   {
+    "x": 10066,
+    "y": 1253,
+    "lo": 1229.0,
+    "hi": 1271.0
+   },
+   {
+    "x": 10137,
+    "y": 1258,
+    "lo": 1237.0,
+    "hi": 1275.0
+   },
+   {
+    "x": 10208,
+    "y": 1265,
+    "lo": 1245.0,
+    "hi": 1276.0
+   },
+   {
+    "x": 10279,
+    "y": 1271,
+    "lo": 1250.0,
+    "hi": 1281.0
+   },
+   {
+    "x": 10350,
+    "y": 1271,
+    "lo": 1255.0,
+    "hi": 1283.0
+   },
+   {
+    "x": 10421,
+    "y": 1279,
+    "lo": 1267.0,
+    "hi": 1286.0
+   },
+   {
+    "x": 10492,
+    "y": 1286,
+    "lo": 1280.0,
+    "hi": 1289.0
+   },
+   {
+    "x": 10563,
+    "y": 1289,
+    "lo": 1289.0,
+    "hi": 1289.0
+   }
+  ]
+ },
+ "rarefaction": {
+  "sample": 3145,
+  "rows": [
+   {
+    "album": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+    "expected": 618.0
+   },
+   {
+    "album": "Happier Than Ever",
+    "expected": 615.7126159848345
+   },
+   {
+    "album": "HIT ME HARD AND SOFT",
+    "expected": 550.1825145813814
+   }
+  ]
+ },
+ "phrases": [
+  {
+   "p": "i think i",
+   "songs": 5,
+   "albums": 2,
+   "first": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+   "last": "Happier Than Ever"
+  },
+  {
+   "p": "do not need",
+   "songs": 4,
+   "albums": 3,
+   "first": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+   "last": "HIT ME HARD AND SOFT"
+  },
+  {
+   "p": "please do not",
+   "songs": 4,
+   "albums": 2,
+   "first": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+   "last": "HIT ME HARD AND SOFT"
+  },
+  {
+   "p": "i do not want",
+   "songs": 4,
+   "albums": 2,
+   "first": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+   "last": "Happier Than Ever"
+  },
+  {
+   "p": "i would never",
+   "songs": 4,
+   "albums": 2,
+   "first": "Happier Than Ever",
+   "last": "HIT ME HARD AND SOFT"
+  },
+  {
+   "p": "think i was",
+   "songs": 3,
+   "albums": 3,
+   "first": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+   "last": "HIT ME HARD AND SOFT"
+  },
+  {
+   "p": "not save me",
+   "songs": 3,
+   "albums": 3,
+   "first": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+   "last": "HIT ME HARD AND SOFT"
+  },
+  {
+   "p": "i love you",
+   "songs": 3,
+   "albums": 3,
+   "first": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+   "last": "HIT ME HARD AND SOFT"
+  },
+  {
+   "p": "it is not true",
+   "songs": 3,
+   "albums": 2,
+   "first": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+   "last": "HIT ME HARD AND SOFT"
+  },
+  {
+   "p": "do not need to",
+   "songs": 3,
+   "albums": 2,
+   "first": "Happier Than Ever",
+   "last": "HIT ME HARD AND SOFT"
+  },
+  {
+   "p": "think you are",
+   "songs": 3,
+   "albums": 2,
+   "first": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+   "last": "Happier Than Ever"
+  },
+  {
+   "p": "maybe that is",
+   "songs": 3,
+   "albums": 2,
+   "first": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+   "last": "Happier Than Ever"
+  },
+  {
+   "p": "fall in love",
+   "songs": 3,
+   "albums": 2,
+   "first": "Happier Than Ever",
+   "last": "HIT ME HARD AND SOFT"
+  },
+  {
+   "p": "do not care",
+   "songs": 3,
+   "albums": 2,
+   "first": "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?",
+   "last": "Happier Than Ever"
+  },
+  {
+   "p": "i loved you",
+   "songs": 3,
+   "albums": 2,
+   "first": "Happier Than Ever",
+   "last": "HIT ME HARD AND SOFT"
+  },
+  {
+   "p": "in a cage",
+   "songs": 3,
+   "albums": 2,
+   "first": "Happier Than Ever",
+   "last": "HIT ME HARD AND SOFT"
+  }
+ ],
+ "network": {
+  "nodes": [
+   {
+    "id": "please",
+    "x": -0.40434535918376746,
+    "y": 0.14614972638529372,
+    "f": 8,
+    "deg": 1
+   },
+   {
+    "id": "think",
+    "x": -0.33084638669893807,
+    "y": 0.09241921847559836,
+    "f": 31,
+    "deg": 7
+   },
+   {
+    "id": "maybe",
+    "x": 0.19642321364736137,
+    "y": 0.23534368945028336,
+    "f": 14,
+    "deg": 5
+   },
+   {
+    "id": "mean",
+    "x": 0.08152660507848579,
+    "y": 0.25551672153321897,
+    "f": 10,
+    "deg": 3
+   },
+   {
+    "id": "bad",
+    "x": 0.2660247483491562,
+    "y": 0.3001916452425042,
+    "f": 20,
+    "deg": 1
+   },
+   {
+    "id": "keep",
+    "x": 0.020639280861219852,
+    "y": -0.06540229058308814,
+    "f": 24,
+    "deg": 3
+   },
+   {
+    "id": "something",
+    "x": 0.0721268794536534,
+    "y": -0.1921974624583954,
+    "f": 9,
+    "deg": 4
+   },
+   {
+    "id": "break",
+    "x": -0.07279856531157963,
+    "y": 0.10069086421573618,
+    "f": 12,
+    "deg": 5
+   },
+   {
+    "id": "someone",
+    "x": -0.025344423455463682,
+    "y": 0.0808997172817059,
+    "f": 9,
+    "deg": 4
+   },
+   {
+    "id": "try",
+    "x": -0.06822158199641111,
+    "y": 0.21382051624119075,
+    "f": 19,
+    "deg": 3
+   },
+   {
+    "id": "die",
+    "x": -0.025280927503526566,
+    "y": 0.1405085028235394,
+    "f": 13,
+    "deg": 8
+   },
+   {
+    "id": "sign",
+    "x": -0.26841424772749856,
+    "y": 0.3461005652072882,
+    "f": 5,
+    "deg": 1
+   },
+   {
+    "id": "time",
+    "x": -0.23821013088660647,
+    "y": 0.25044514524606676,
+    "f": 21,
+    "deg": 6
+   },
+   {
+    "id": "nothing",
+    "x": -0.40513071757946273,
+    "y": 0.10708507898617273,
+    "f": 16,
+    "deg": 4
+   },
+   {
+    "id": "watch",
+    "x": -0.5056361035467969,
+    "y": 0.11453346974354305,
+    "f": 6,
+    "deg": 1
+   },
+   {
+    "id": "wrong",
+    "x": 0.1201608321244981,
+    "y": 0.0812315829222603,
+    "f": 11,
+    "deg": 2
+   },
+   {
+    "id": "sleep",
+    "x": -0.16010540674731352,
+    "y": 0.07643795514738483,
+    "f": 7,
+    "deg": 3
+   },
+   {
+    "id": "baby",
+    "x": -0.13447671844965245,
+    "y": 0.2410581554083661,
+    "f": 10,
+    "deg": 4
+   },
+   {
+    "id": "look",
+    "x": 0.13061176206394579,
+    "y": 0.020451167282416666,
+    "f": 24,
+    "deg": 3
+   },
+   {
+    "id": "without",
+    "x": 0.22519950271537395,
+    "y": -0.012668824896986433,
+    "f": 7,
+    "deg": 1
+   },
+   {
+    "id": "day",
+    "x": -0.232232208985225,
+    "y": 0.18765979802274155,
+    "f": 14,
+    "deg": 4
+   },
+   {
+    "id": "feel",
+    "x": -0.26521885254320043,
+    "y": 0.07216097124925056,
+    "f": 24,
+    "deg": 5
+   },
+   {
+    "id": "long",
+    "x": -0.3213817574402573,
+    "y": -0.0008556443023245409,
+    "f": 9,
+    "deg": 4
+   },
+   {
+    "id": "away",
+    "x": -0.20611452684412906,
+    "y": 0.013424799273544435,
+    "f": 14,
+    "deg": 3
+   },
+   {
+    "id": "kinda",
+    "x": -0.02155346821966896,
+    "y": -0.44289005654770774,
+    "f": 5,
+    "deg": 2
+   },
+   {
+    "id": "tell",
+    "x": 0.011623860571454836,
+    "y": -0.31794987219913196,
+    "f": 34,
+    "deg": 6
+   },
+   {
+    "id": "another",
+    "x": 0.10788498400089035,
+    "y": 0.1395924809946766,
+    "f": 8,
+    "deg": 3
+   },
+   {
+    "id": "home",
+    "x": -0.21478031479421195,
+    "y": -0.9999999999999999,
+    "f": 10,
+    "deg": 1
+   },
+   {
+    "id": "lie",
+    "x": -0.17850561738159995,
+    "y": -0.9797520461413041,
+    "f": 12,
+    "deg": 1
+   },
+   {
+    "id": "ask",
+    "x": -0.4211554551143221,
+    "y": -0.08464025372598043,
+    "f": 7,
+    "deg": 2
+   },
+   {
+    "id": "life",
+    "x": 0.059929031826123545,
+    "y": 0.17874446628429758,
+    "f": 11,
+    "deg": 4
+   },
+   {
+    "id": "hurt",
+    "x": -0.043681618358430756,
+    "y": -0.5292509553273171,
+    "f": 8,
+    "deg": 1
+   },
+   {
+    "id": "last",
+    "x": -0.4955712383396966,
+    "y": -0.14250140307492723,
+    "f": 5,
+    "deg": 1
+   },
+   {
+    "id": "right",
+    "x": 0.612057007760268,
+    "y": -0.9087705524237097,
+    "f": 13,
+    "deg": 1
+   },
+   {
+    "id": "thought",
+    "x": 0.6463257565032207,
+    "y": -0.8857388511313822,
+    "f": 11,
+    "deg": 1
+   },
+   {
+    "id": "listen",
+    "x": 0.08364083906982211,
+    "y": -0.07513193150101377,
+    "f": 5,
+    "deg": 1
+   },
+   {
+    "id": "eye",
+    "x": 0.2042123325609276,
+    "y": 0.15252224668536388,
+    "f": 11,
+    "deg": 5
+   },
+   {
+    "id": "night",
+    "x": 0.20140162608140066,
+    "y": -0.028183958031600478,
+    "f": 6,
+    "deg": 2
+   },
+   {
+    "id": "love",
+    "x": 0.177677291943061,
+    "y": -0.19667913187005873,
+    "f": 47,
+    "deg": 3
+   },
+   {
+    "id": "sorry",
+    "x": 0.032461077846069754,
+    "y": -0.4070223566368832,
+    "f": 13,
+    "deg": 1
+   },
+   {
+    "id": "change",
+    "x": 0.17752872009728657,
+    "y": 0.2868302069402664,
+    "f": 13,
+    "deg": 6
+   },
+   {
+    "id": "learn",
+    "x": 0.28495084317921143,
+    "y": 0.16922786203111614,
+    "f": 7,
+    "deg": 1
+   },
+   {
+    "id": "wish",
+    "x": 0.3173497614782957,
+    "y": 0.2164898458306228,
+    "f": 13,
+    "deg": 4
+   },
+   {
+    "id": "wait",
+    "x": 0.03595319231981793,
+    "y": -0.0551868920121028,
+    "f": 11,
+    "deg": 5
+   },
+   {
+    "id": "want",
+    "x": 0.16119629163921476,
+    "y": -0.09851484607478339,
+    "f": 28,
+    "deg": 4
+   },
+   {
+    "id": "girl",
+    "x": -0.3354728886436945,
+    "y": 0.354535384670636,
+    "f": 8,
+    "deg": 2
+   },
+   {
+    "id": "tongue",
+    "x": -0.40157013964348415,
+    "y": 0.42737688536726864,
+    "f": 5,
+    "deg": 1
+   },
+   {
+    "id": "door",
+    "x": -0.06738394009510143,
+    "y": -0.2055513169612288,
+    "f": 6,
+    "deg": 2
+   },
+   {
+    "id": "lot",
+    "x": -0.11826563856027848,
+    "y": -0.06172310392596682,
+    "f": 8,
+    "deg": 3
+   },
+   {
+    "id": "seem",
+    "x": 0.07519852301453721,
+    "y": -0.12873708025778297,
+    "f": 7,
+    "deg": 1
+   },
+   {
+    "id": "good",
+    "x": 0.39984809536710775,
+    "y": 0.05768071293073037,
+    "f": 47,
+    "deg": 3
+   },
+   {
+    "id": "happy",
+    "x": 0.3986356976841018,
+    "y": 0.15044128536065943,
+    "f": 5,
+    "deg": 2
+   },
+   {
+    "id": "less",
+    "x": 0.25164121884170054,
+    "y": 0.015534694917720427,
+    "f": 5,
+    "deg": 3
+   },
+   {
+    "id": "guess",
+    "x": 0.19585381294182347,
+    "y": -0.2947799332326589,
+    "f": 5,
+    "deg": 1
+   },
+   {
+    "id": "leave",
+    "x": 0.2366116170175795,
+    "y": 0.36832742354375253,
+    "f": 14,
+    "deg": 1
+   },
+   {
+    "id": "lose",
+    "x": 0.20031519013451038,
+    "y": 0.3831404651483515,
+    "f": 11,
+    "deg": 1
+   },
+   {
+    "id": "name",
+    "x": 0.8664717369422172,
+    "y": -0.5146882022443161,
+    "f": 6,
+    "deg": 1
+   },
+   {
+    "id": "stop",
+    "x": 0.9021447908260501,
+    "y": -0.49360121470841917,
+    "f": 9,
+    "deg": 1
+   },
+   {
+    "id": "really",
+    "x": -0.2880866018821405,
+    "y": 0.2512679724806214,
+    "f": 17,
+    "deg": 1
+   },
+   {
+    "id": "need",
+    "x": -0.2558020801015599,
+    "y": -0.06491800618630444,
+    "f": 18,
+    "deg": 1
+   },
+   {
+    "id": "mind",
+    "x": -0.19304579940113475,
+    "y": 0.30001405683447435,
+    "f": 8,
+    "deg": 2
+   },
+   {
+    "id": "care",
+    "x": 0.5055042146449985,
+    "y": 0.33706349722876927,
+    "f": 9,
+    "deg": 1
+   },
+   {
+    "id": "give",
+    "x": 0.4273762941069477,
+    "y": 0.28636883820094056,
+    "f": 11,
+    "deg": 2
+   },
+   {
+    "id": "around",
+    "x": -0.1266379433579157,
+    "y": 0.11514659820128922,
+    "f": 9,
+    "deg": 1
+   },
+   {
+    "id": "week",
+    "x": -0.4135365155655289,
+    "y": 0.05843423338003131,
+    "f": 5,
+    "deg": 1
+   },
+   {
+    "id": "hate",
+    "x": -0.6001740023880199,
+    "y": 0.045444288222180426,
+    "f": 10,
+    "deg": 2
+   },
+   {
+    "id": "use",
+    "x": -0.6877453403458206,
+    "y": 0.0366984434410527,
+    "f": 7,
+    "deg": 1
+   },
+   {
+    "id": "people",
+    "x": -0.3413092487223955,
+    "y": 0.03900977354608979,
+    "f": 10,
+    "deg": 1
+   },
+   {
+    "id": "always",
+    "x": -0.49497721359271635,
+    "y": 0.15442800840397294,
+    "f": 7,
+    "deg": 1
+   },
+   {
+    "id": "body",
+    "x": 0.24506291341043712,
+    "y": -0.1509652830712759,
+    "f": 5,
+    "deg": 1
+   },
+   {
+    "id": "alone",
+    "x": -0.129462480683052,
+    "y": 0.17919354546923352,
+    "f": 16,
+    "deg": 2
+   },
+   {
+    "id": "cry",
+    "x": -0.3058906542580448,
+    "y": 0.31576158822807915,
+    "f": 11,
+    "deg": 1
+   },
+   {
+    "id": "year",
+    "x": -0.47890429091194653,
+    "y": 0.061491976503312444,
+    "f": 7,
+    "deg": 2
+   },
+   {
+    "id": "shit",
+    "x": -0.022158907974616646,
+    "y": -0.3938705576804704,
+    "f": 5,
+    "deg": 1
+   },
+   {
+    "id": "might",
+    "x": 0.10902445898267875,
+    "y": 0.39748540354131634,
+    "f": 16,
+    "deg": 1
+   },
+   {
+    "id": "never",
+    "x": 0.10570353834261724,
+    "y": 0.3004689670731762,
+    "f": 29,
+    "deg": 3
+   },
+   {
+    "id": "open",
+    "x": 0.1100570844984537,
+    "y": -0.29565367367770484,
+    "f": 5,
+    "deg": 2
+   },
+   {
+    "id": "save",
+    "x": -0.13489587815403423,
+    "y": 0.33890129448638306,
+    "f": 9,
+    "deg": 1
+   },
+   {
+    "id": "bird",
+    "x": 0.5222508305900238,
+    "y": 0.05144990621583141,
+    "f": 5,
+    "deg": 2
+   },
+   {
+    "id": "blue",
+    "x": 0.6116133965644184,
+    "y": 0.04813204034424482,
+    "f": 14,
+    "deg": 1
+   },
+   {
+    "id": "til",
+    "x": 0.11233975214511899,
+    "y": -0.26238981398802746,
+    "f": 12,
+    "deg": 1
+   },
+   {
+    "id": "foot",
+    "x": -0.06823341583683797,
+    "y": -0.00311816777171414,
+    "f": 6,
+    "deg": 2
+   }
+  ],
+  "edges": [
+   {
+    "a": "please",
+    "b": "think",
+    "n": 3,
+    "lift": 3.2,
+    "p": 0.06845642567572054,
+    "strict": false
+   },
+   {
+    "a": "maybe",
+    "b": "mean",
+    "n": 5,
+    "lift": 6.8,
+    "p": 0.0009645784202122947,
+    "strict": false
+   },
+   {
+    "a": "bad",
+    "b": "maybe",
+    "n": 4,
+    "lift": 3.2,
+    "p": 0.03984157902674045,
+    "strict": false
+   },
+   {
+    "a": "keep",
+    "b": "something",
+    "n": 5,
+    "lift": 5.2,
+    "p": 0.0031739765373811715,
+    "strict": false
+   },
+   {
+    "a": "break",
+    "b": "someone",
+    "n": 4,
+    "lift": 12.0,
+    "p": 0.000394591421750799,
+    "strict": false
+   },
+   {
+    "a": "someone",
+    "b": "try",
+    "n": 3,
+    "lift": 5.3,
+    "p": 0.019950502061175115,
+    "strict": false
+   },
+   {
+    "a": "break",
+    "b": "die",
+    "n": 3,
+    "lift": 3.5,
+    "p": 0.057481026734977646,
+    "strict": false
+   },
+   {
+    "a": "die",
+    "b": "someone",
+    "n": 3,
+    "lift": 5.3,
+    "p": 0.019950502061175115,
+    "strict": false
+   },
+   {
+    "a": "keep",
+    "b": "someone",
+    "n": 5,
+    "lift": 8.3,
+    "p": 0.0003944860183402557,
+    "strict": false
+   },
+   {
+    "a": "sign",
+    "b": "time",
+    "n": 4,
+    "lift": 8.0,
+    "p": 0.001751622556290824,
+    "strict": false
+   },
+   {
+    "a": "nothing",
+    "b": "watch",
+    "n": 3,
+    "lift": 6.9,
+    "p": 0.009834114770472096,
+    "strict": false
+   },
+   {
+    "a": "die",
+    "b": "wrong",
+    "n": 4,
+    "lift": 6.0,
+    "p": 0.004858176689914221,
+    "strict": false
+   },
+   {
+    "a": "die",
+    "b": "sleep",
+    "n": 3,
+    "lift": 22.5,
+    "p": 0.0003575866931666861,
+    "strict": false
+   },
+   {
+    "a": "baby",
+    "b": "die",
+    "n": 4,
+    "lift": 5.5,
+    "p": 0.006752356126595625,
+    "strict": false
+   },
+   {
+    "a": "sleep",
+    "b": "think",
+    "n": 4,
+    "lift": 3.4,
+    "p": 0.030949689778107668,
+    "strict": false
+   },
+   {
+    "a": "look",
+    "b": "without",
+    "n": 3,
+    "lift": 4.1,
+    "p": 0.03832205270686835,
+    "strict": false
+   },
+   {
+    "a": "baby",
+    "b": "day",
+    "n": 4,
+    "lift": 4.8,
+    "p": 0.010417196524392101,
+    "strict": false
+   },
+   {
+    "a": "feel",
+    "b": "long",
+    "n": 4,
+    "lift": 4.8,
+    "p": 0.010417196524392101,
+    "strict": false
+   },
+   {
+    "a": "feel",
+    "b": "nothing",
+    "n": 7,
+    "lift": 5.7,
+    "p": 0.0002956179444685447,
+    "strict": false
+   },
+   {
+    "a": "away",
+    "b": "long",
+    "n": 3,
+    "lift": 5.3,
+    "p": 0.019950502061175115,
+    "strict": false
+   },
+   {
+    "a": "kinda",
+    "b": "tell",
+    "n": 3,
+    "lift": 5.0,
+    "p": 0.023115287752632954,
+    "strict": false
+   },
+   {
+    "a": "feel",
+    "b": "time",
+    "n": 9,
+    "lift": 4.4,
+    "p": 0.0002675594526235933,
+    "strict": false
+   },
+   {
+    "a": "another",
+    "b": "look",
+    "n": 4,
+    "lift": 3.8,
+    "p": 0.02335103624652896,
+    "strict": false
+   },
+   {
+    "a": "home",
+    "b": "lie",
+    "n": 5,
+    "lift": 11.5,
+    "p": 8.890567659441167e-05,
+    "strict": true
+   },
+   {
+    "a": "ask",
+    "b": "long",
+    "n": 3,
+    "lift": 45.0,
+    "p": 4.697822175970702e-05,
+    "strict": true
+   },
+   {
+    "a": "break",
+    "b": "life",
+    "n": 4,
+    "lift": 4.8,
+    "p": 0.010417196524392101,
+    "strict": false
+   },
+   {
+    "a": "hurt",
+    "b": "kinda",
+    "n": 4,
+    "lift": 20.0,
+    "p": 5.684024075815667e-05,
+    "strict": true
+   },
+   {
+    "a": "ask",
+    "b": "last",
+    "n": 3,
+    "lift": 30.0,
+    "p": 0.00015465307026467172,
+    "strict": false
+   },
+   {
+    "a": "right",
+    "b": "thought",
+    "n": 3,
+    "lift": 6.4,
+    "p": 0.011986307869784897,
+    "strict": false
+   },
+   {
+    "a": "keep",
+    "b": "listen",
+    "n": 4,
+    "lift": 20.0,
+    "p": 5.684024075815667e-05,
+    "strict": true
+   },
+   {
+    "a": "eye",
+    "b": "night",
+    "n": 3,
+    "lift": 22.5,
+    "p": 0.0003575866931666861,
+    "strict": false
+   },
+   {
+    "a": "love",
+    "b": "night",
+    "n": 4,
+    "lift": 3.9,
+    "p": 0.02110042325530191,
+    "strict": false
+   },
+   {
+    "a": "sorry",
+    "b": "tell",
+    "n": 7,
+    "lift": 4.8,
+    "p": 0.0008140721268719824,
+    "strict": false
+   },
+   {
+    "a": "change",
+    "b": "maybe",
+    "n": 3,
+    "lift": 3.5,
+    "p": 0.057481026734977646,
+    "strict": false
+   },
+   {
+    "a": "change",
+    "b": "mean",
+    "n": 4,
+    "lift": 13.3,
+    "p": 0.0002658111900217398,
+    "strict": false
+   },
+   {
+    "a": "eye",
+    "b": "learn",
+    "n": 4,
+    "lift": 20.0,
+    "p": 5.684024075815667e-05,
+    "strict": true
+   },
+   {
+    "a": "eye",
+    "b": "wish",
+    "n": 3,
+    "lift": 5.3,
+    "p": 0.019950502061175115,
+    "strict": false
+   },
+   {
+    "a": "maybe",
+    "b": "wish",
+    "n": 3,
+    "lift": 3.5,
+    "p": 0.057481026734977646,
+    "strict": false
+   },
+   {
+    "a": "mean",
+    "b": "try",
+    "n": 4,
+    "lift": 3.5,
+    "p": 0.02827428939063327,
+    "strict": false
+   },
+   {
+    "a": "wait",
+    "b": "want",
+    "n": 7,
+    "lift": 5.4,
+    "p": 0.0004035785868057069,
+    "strict": false
+   },
+   {
+    "a": "girl",
+    "b": "time",
+    "n": 3,
+    "lift": 4.5,
+    "p": 0.03021210849399283,
+    "strict": false
+   },
+   {
+    "a": "girl",
+    "b": "tongue",
+    "n": 4,
+    "lift": 24.0,
+    "p": 2.8147525053898634e-05,
+    "strict": true
+   },
+   {
+    "a": "door",
+    "b": "lot",
+    "n": 3,
+    "lift": 60.0,
+    "p": 6.0205572150090555e-06,
+    "strict": true
+   },
+   {
+    "a": "door",
+    "b": "tell",
+    "n": 5,
+    "lift": 3.8,
+    "p": 0.011781922537337083,
+    "strict": false
+   },
+   {
+    "a": "lot",
+    "b": "wait",
+    "n": 4,
+    "lift": 13.3,
+    "p": 0.0002658111900217398,
+    "strict": false
+   },
+   {
+    "a": "seem",
+    "b": "wait",
+    "n": 3,
+    "lift": 15.0,
+    "p": 0.0011484812448621328,
+    "strict": false
+   },
+   {
+    "a": "good",
+    "b": "happy",
+    "n": 6,
+    "lift": 9.0,
+    "p": 6.910068247714714e-05,
+    "strict": true
+   },
+   {
+    "a": "good",
+    "b": "less",
+    "n": 4,
+    "lift": 4.0,
+    "p": 0.01898815687615381,
+    "strict": false
+   },
+   {
+    "a": "less",
+    "b": "wrong",
+    "n": 3,
+    "lift": 6.9,
+    "p": 0.009834114770472096,
+    "strict": false
+   },
+   {
+    "a": "happy",
+    "b": "wish",
+    "n": 5,
+    "lift": 10.0,
+    "p": 0.00017211562995584072,
+    "strict": false
+   },
+   {
+    "a": "guess",
+    "b": "love",
+    "n": 3,
+    "lift": 3.2,
+    "p": 0.06845642567572054,
+    "strict": false
+   },
+   {
+    "a": "change",
+    "b": "leave",
+    "n": 3,
+    "lift": 5.0,
+    "p": 0.023115287752632954,
+    "strict": false
+   },
+   {
+    "a": "change",
+    "b": "eye",
+    "n": 5,
+    "lift": 12.5,
+    "p": 6.12433271023338e-05,
+    "strict": true
+   },
+   {
+    "a": "feel",
+    "b": "lot",
+    "n": 4,
+    "lift": 4.8,
+    "p": 0.010417196524392101,
+    "strict": false
+   },
+   {
+    "a": "change",
+    "b": "lose",
+    "n": 3,
+    "lift": 3.5,
+    "p": 0.057481026734977646,
+    "strict": false
+   },
+   {
+    "a": "name",
+    "b": "stop",
+    "n": 4,
+    "lift": 17.1,
+    "p": 0.00010255269822407532,
+    "strict": true
+   },
+   {
+    "a": "look",
+    "b": "wait",
+    "n": 3,
+    "lift": 3.0,
+    "p": 0.08030139707139418,
+    "strict": false
+   },
+   {
+    "a": "day",
+    "b": "really",
+    "n": 4,
+    "lift": 5.7,
+    "p": 0.005753457592299579,
+    "strict": false
+   },
+   {
+    "a": "away",
+    "b": "break",
+    "n": 4,
+    "lift": 9.2,
+    "p": 0.0010414449113343351,
+    "strict": false
+   },
+   {
+    "a": "away",
+    "b": "need",
+    "n": 4,
+    "lift": 3.3,
+    "p": 0.03376896818565569,
+    "strict": false
+   },
+   {
+    "a": "long",
+    "b": "think",
+    "n": 4,
+    "lift": 4.0,
+    "p": 0.01898815687615381,
+    "strict": false
+   },
+   {
+    "a": "nothing",
+    "b": "think",
+    "n": 6,
+    "lift": 3.3,
+    "p": 0.010378036866159538,
+    "strict": false
+   },
+   {
+    "a": "mind",
+    "b": "time",
+    "n": 9,
+    "lift": 11.7,
+    "p": 1.267984540661132e-07,
+    "strict": true
+   },
+   {
+    "a": "care",
+    "b": "give",
+    "n": 4,
+    "lift": 8.6,
+    "p": 0.0013645026229375792,
+    "strict": false
+   },
+   {
+    "a": "give",
+    "b": "wish",
+    "n": 4,
+    "lift": 4.3,
+    "p": 0.01516988058616829,
+    "strict": false
+   },
+   {
+    "a": "around",
+    "b": "break",
+    "n": 4,
+    "lift": 12.0,
+    "p": 0.000394591421750799,
+    "strict": false
+   },
+   {
+    "a": "think",
+    "b": "week",
+    "n": 4,
+    "lift": 6.0,
+    "p": 0.004858176689914221,
+    "strict": false
+   },
+   {
+    "a": "hate",
+    "b": "use",
+    "n": 3,
+    "lift": 12.9,
+    "p": 0.0017792077676902253,
+    "strict": false
+   },
+   {
+    "a": "feel",
+    "b": "people",
+    "n": 3,
+    "lift": 3.6,
+    "p": 0.052334462005398874,
+    "strict": false
+   },
+   {
+    "a": "always",
+    "b": "nothing",
+    "n": 5,
+    "lift": 12.5,
+    "p": 6.12433271023338e-05,
+    "strict": true
+   },
+   {
+    "a": "body",
+    "b": "want",
+    "n": 3,
+    "lift": 7.5,
+    "p": 0.007926331867253838,
+    "strict": false
+   },
+   {
+    "a": "alone",
+    "b": "die",
+    "n": 5,
+    "lift": 7.1,
+    "p": 0.0007855354489530238,
+    "strict": false
+   },
+   {
+    "a": "another",
+    "b": "die",
+    "n": 3,
+    "lift": 9.0,
+    "p": 0.004817624203070487,
+    "strict": false
+   },
+   {
+    "a": "another",
+    "b": "maybe",
+    "n": 3,
+    "lift": 7.5,
+    "p": 0.007926331867253838,
+    "strict": false
+   },
+   {
+    "a": "alone",
+    "b": "day",
+    "n": 5,
+    "lift": 4.4,
+    "p": 0.006142374331293162,
+    "strict": false
+   },
+   {
+    "a": "day",
+    "b": "think",
+    "n": 7,
+    "lift": 4.0,
+    "p": 0.0023191131950481636,
+    "strict": false
+   },
+   {
+    "a": "die",
+    "b": "life",
+    "n": 3,
+    "lift": 5.0,
+    "p": 0.023115287752632954,
+    "strict": false
+   },
+   {
+    "a": "cry",
+    "b": "time",
+    "n": 3,
+    "lift": 4.7,
+    "p": 0.02653610760821779,
+    "strict": false
+   },
+   {
+    "a": "hate",
+    "b": "year",
+    "n": 3,
+    "lift": 10.0,
+    "p": 0.003599493183089468,
+    "strict": false
+   },
+   {
+    "a": "think",
+    "b": "year",
+    "n": 3,
+    "lift": 3.3,
+    "p": 0.06285693429791904,
+    "strict": false
+   },
+   {
+    "a": "less",
+    "b": "want",
+    "n": 3,
+    "lift": 5.0,
+    "p": 0.023115287752632954,
+    "strict": false
+   },
+   {
+    "a": "something",
+    "b": "want",
+    "n": 5,
+    "lift": 5.8,
+    "p": 0.001994430012436972,
+    "strict": false
+   },
+   {
+    "a": "something",
+    "b": "tell",
+    "n": 4,
+    "lift": 3.2,
+    "p": 0.03984157902674045,
+    "strict": false
+   },
+   {
+    "a": "shit",
+    "b": "tell",
+    "n": 6,
+    "lift": 5.3,
+    "p": 0.0011258069178427406,
+    "strict": false
+   },
+   {
+    "a": "time",
+    "b": "try",
+    "n": 6,
+    "lift": 4.1,
+    "p": 0.0040033385018175315,
+    "strict": false
+   },
+   {
+    "a": "might",
+    "b": "never",
+    "n": 6,
+    "lift": 3.3,
+    "p": 0.010378036866159538,
+    "strict": false
+   },
+   {
+    "a": "open",
+    "b": "tell",
+    "n": 4,
+    "lift": 3.6,
+    "p": 0.02574181652967084,
+    "strict": false
+   },
+   {
+    "a": "love",
+    "b": "open",
+    "n": 3,
+    "lift": 3.2,
+    "p": 0.06845642567572054,
+    "strict": false
+   },
+   {
+    "a": "baby",
+    "b": "save",
+    "n": 3,
+    "lift": 10.0,
+    "p": 0.003599493183089468,
+    "strict": false
+   },
+   {
+    "a": "bird",
+    "b": "blue",
+    "n": 4,
+    "lift": 6.7,
+    "p": 0.003358068853247998,
+    "strict": false
+   },
+   {
+    "a": "bird",
+    "b": "good",
+    "n": 5,
+    "lift": 4.5,
+    "p": 0.005435293461239234,
+    "strict": false
+   },
+   {
+    "a": "change",
+    "b": "never",
+    "n": 5,
+    "lift": 4.5,
+    "p": 0.005435293461239234,
+    "strict": false
+   },
+   {
+    "a": "baby",
+    "b": "mind",
+    "n": 3,
+    "lift": 5.0,
+    "p": 0.023115287752632954,
+    "strict": false
+   },
+   {
+    "a": "eye",
+    "b": "life",
+    "n": 4,
+    "lift": 13.3,
+    "p": 0.0002658111900217398,
+    "strict": false
+   },
+   {
+    "a": "life",
+    "b": "never",
+    "n": 4,
+    "lift": 3.4,
+    "p": 0.030949689778107668,
+    "strict": false
+   },
+   {
+    "a": "something",
+    "b": "til",
+    "n": 3,
+    "lift": 5.3,
+    "p": 0.019950502061175115,
+    "strict": false
+   },
+   {
+    "a": "foot",
+    "b": "wait",
+    "n": 4,
+    "lift": 20.0,
+    "p": 5.684024075815667e-05,
+    "strict": true
+   },
+   {
+    "a": "foot",
+    "b": "sleep",
+    "n": 4,
+    "lift": 24.0,
+    "p": 2.8147525053898634e-05,
+    "strict": true
+   }
+  ],
+  "tested": 355,
+  "strict": 14,
+  "Q": 0.6310912119950021,
+  "Q_null": 0.6461942940441483,
+  "Q_p": 0.9047619047619048,
+  "hub": "die",
+  "hub_deg": 8
+ },
+ "tests": [
+  {
+   "claim": "\u201cI\u201d rate changes with album order",
+   "stat": "album \u03c1 +0.50, song \u03c1 +0.06",
+   "p": 1.0,
+   "kind": "trend",
+   "family": "trends",
+   "key": "pron_I",
+   "rho": 0.5,
+   "method": "Spearman \u03c1 of album means vs release order, exact over all orders; song-level \u03c1 p 0.695",
+   "q": 1.0,
+   "result": "Failed"
+  },
+  {
+   "claim": "\u201cwe\u201d rate changes with album order",
+   "stat": "album \u03c1 -1.00, song \u03c1 +0.01",
+   "p": 0.3333333333333333,
+   "kind": "trend",
+   "family": "trends",
+   "key": "pron_we",
+   "rho": -1.0,
+   "method": "Spearman \u03c1 of album means vs release order, exact over all orders; song-level \u03c1 p 0.969",
+   "q": 1.0,
+   "result": "Failed"
+  },
+  {
+   "claim": "\u201cyou\u201d rate changes with album order",
+   "stat": "album \u03c1 +0.50, song \u03c1 +0.12",
+   "p": 1.0,
+   "kind": "trend",
+   "family": "trends",
+   "key": "pron_you",
+   "rho": 0.5,
+   "method": "Spearman \u03c1 of album means vs release order, exact over all orders; song-level \u03c1 p 0.450",
+   "q": 1.0,
+   "result": "Failed"
+  },
+  {
+   "claim": "Share of repeated lines changes with album order",
+   "stat": "album \u03c1 -1.00, song \u03c1 -0.35",
+   "p": 0.3333333333333333,
+   "kind": "trend",
+   "family": "trends",
+   "key": "repetition_pct",
+   "rho": -1.0,
+   "method": "Spearman \u03c1 of album means vs release order, exact over all orders; song-level \u03c1 p 0.025",
+   "q": 1.0,
+   "result": "Failed"
+  },
+  {
+   "claim": "Word variety (MATTR, all lines) changes with album order",
+   "stat": "album \u03c1 -0.50, song \u03c1 -0.16",
+   "p": 1.0,
+   "kind": "trend",
+   "family": "trends",
+   "key": "mattr",
+   "rho": -0.5,
+   "method": "Spearman \u03c1 of album means vs release order, exact over all orders; song-level \u03c1 p 0.331",
+   "q": 1.0,
+   "result": "Failed"
+  },
+  {
+   "claim": "Word variety (MATTR, repeats removed) changes with album order",
+   "stat": "album \u03c1 -0.50, song \u03c1 -0.36",
+   "p": 1.0,
+   "kind": "trend",
+   "family": "trends",
+   "key": "mattr_u",
+   "rho": -0.5,
+   "method": "Spearman \u03c1 of album means vs release order, exact over all orders; song-level \u03c1 p 0.026",
+   "q": 1.0,
+   "result": "Failed"
+  },
+  {
+   "claim": "Theme \u201cwater\u201d differs between albums",
+   "stat": "H 8.0",
+   "p": 0.018135456985689878,
+   "family": "themes",
+   "method": "Kruskal-Wallis over songs; q: Benjamini-Hochberg over the 12 themes",
+   "q": 0.21762548382827854,
+   "result": "Partly"
+  },
+  {
+   "claim": "Theme \u201csky & cosmos\u201d differs between albums",
+   "stat": "H 3.7",
+   "p": 0.15436650205192495,
+   "family": "themes",
+   "method": "Kruskal-Wallis over songs; q: Benjamini-Hochberg over the 12 themes",
+   "q": 0.2856733350734966,
+   "result": "Failed"
+  },
+  {
+   "claim": "Theme \u201clight\u201d differs between albums",
+   "stat": "H 3.0",
+   "p": 0.22313016014840903,
+   "family": "themes",
+   "method": "Kruskal-Wallis over songs; q: Benjamini-Hochberg over the 12 themes",
+   "q": 0.2975068801978787,
+   "result": "Failed"
+  },
+  {
+   "claim": "Theme \u201cdarkness\u201d differs between albums",
+   "stat": "H 0.1",
+   "p": 0.9408222587303944,
+   "family": "themes",
+   "method": "Kruskal-Wallis over songs; q: Benjamini-Hochberg over the 12 themes",
+   "q": 0.9408222587303944,
+   "result": "Failed"
+  },
+  {
+   "claim": "Theme \u201cfire\u201d differs between albums",
+   "stat": "H 5.9",
+   "p": 0.05334300991376921,
+   "family": "themes",
+   "method": "Kruskal-Wallis over songs; q: Benjamini-Hochberg over the 12 themes",
+   "q": 0.23906879892319002,
+   "result": "Failed"
+  },
+  {
+   "claim": "Theme \u201cearth & nature\u201d differs between albums",
+   "stat": "H 3.3",
+   "p": 0.19371507085194198,
+   "family": "themes",
+   "method": "Kruskal-Wallis over songs; q: Benjamini-Hochberg over the 12 themes",
+   "q": 0.290572606277913,
+   "result": "Failed"
+  },
+  {
+   "claim": "Theme \u201clife & growth\u201d differs between albums",
+   "stat": "H 4.9",
+   "p": 0.08580204833572863,
+   "family": "themes",
+   "method": "Kruskal-Wallis over songs; q: Benjamini-Hochberg over the 12 themes",
+   "q": 0.2574061450071859,
+   "result": "Failed"
+  },
+  {
+   "claim": "Theme \u201cdeath & pain\u201d differs between albums",
+   "stat": "H 2.0",
+   "p": 0.3758563450243672,
+   "family": "themes",
+   "method": "Kruskal-Wallis over songs; q: Benjamini-Hochberg over the 12 themes",
+   "q": 0.4472461773139823,
+   "result": "Failed"
+  },
+  {
+   "claim": "Theme \u201cmind & soul\u201d differs between albums",
+   "stat": "H 5.6",
+   "p": 0.05976719973079751,
+   "family": "themes",
+   "method": "Kruskal-Wallis over songs; q: Benjamini-Hochberg over the 12 themes",
+   "q": 0.23906879892319002,
+   "result": "Failed"
+  },
+  {
+   "claim": "Theme \u201clove\u201d differs between albums",
+   "stat": "H 3.8",
+   "p": 0.15265240014497805,
+   "family": "themes",
+   "method": "Kruskal-Wallis over songs; q: Benjamini-Hochberg over the 12 themes",
+   "q": 0.2856733350734966,
+   "result": "Failed"
+  },
+  {
+   "claim": "Theme \u201ctime\u201d differs between albums",
+   "stat": "H 1.8",
+   "p": 0.40997566253781714,
+   "family": "themes",
+   "method": "Kruskal-Wallis over songs; q: Benjamini-Hochberg over the 12 themes",
+   "q": 0.4472461773139823,
+   "result": "Failed"
+  },
+  {
+   "claim": "Theme \u201cconflict\u201d differs between albums",
+   "stat": "H 3.6",
+   "p": 0.16664277879287304,
+   "family": "themes",
+   "method": "Kruskal-Wallis over songs; q: Benjamini-Hochberg over the 12 themes",
+   "q": 0.2856733350734966,
+   "result": "Failed"
+  },
+  {
+   "claim": "Sentiment (VADER) differs between albums",
+   "stat": "H 2.0",
+   "p": 0.369535892908682,
+   "family": "sentiment",
+   "method": "Kruskal-Wallis over songs; q: BH over the two lexicons",
+   "q": 0.369535892908682,
+   "result": "Failed"
+  },
+  {
+   "claim": "Sentiment (AFINN) differs between albums",
+   "stat": "H 3.6",
+   "p": 0.16344675192758706,
+   "family": "sentiment",
+   "method": "Kruskal-Wallis over songs; q: BH over the two lexicons",
+   "q": 0.32689350385517413,
+   "result": "Failed"
+  },
+  {
+   "claim": "Songs end happier or sadder than they start",
+   "stat": "first third +0.046, last third +0.042",
+   "p": 0.8630762992361269,
+   "family": "arc",
+   "method": "Wilcoxon signed-rank, first vs last third of each song (VADER)",
+   "q": 0.8630762992361269,
+   "result": "Failed"
+  },
+  {
+   "claim": "\u201cWHEN WE ALL FALL ASLEEP, WHERE DO WE GO?\u201d songs share more vocabulary than random songs",
+   "stat": "within 0.059 vs 0.059",
+   "p": 0.47704590818363274,
+   "family": "cohesion",
+   "method": "Mean TF-IDF cosine within the album vs 500 label shuffles; q: BH over albums",
+   "q": 0.7155688622754491,
+   "result": "Failed"
+  },
+  {
+   "claim": "\u201cHappier Than Ever\u201d songs share more vocabulary than random songs",
+   "stat": "within 0.054 vs 0.059",
+   "p": 0.7305389221556886,
+   "family": "cohesion",
+   "method": "Mean TF-IDF cosine within the album vs 500 label shuffles; q: BH over albums",
+   "q": 0.7305389221556885,
+   "result": "Failed"
+  },
+  {
+   "claim": "\u201cHIT ME HARD AND SOFT\u201d songs share more vocabulary than random songs",
+   "stat": "within 0.083 vs 0.060",
+   "p": 0.03792415169660679,
+   "family": "cohesion",
+   "method": "Mean TF-IDF cosine within the album vs 500 label shuffles; q: BH over albums",
+   "q": 0.11377245508982037,
+   "result": "Partly"
+  },
+  {
+   "claim": "Songs further apart in time are further apart in vocabulary",
+   "stat": "Mantel \u03c1 -0.038",
+   "p": 0.5,
+   "family": "mantel",
+   "method": "Spearman between year gap and TF-IDF cosine distance, 499 permutations of years",
+   "q": 0.5,
+   "result": "Failed"
+  },
+  {
+   "claim": "A song's album can be identified from the 100 most common function words",
+   "stat": "accuracy 60% vs chance 33%",
+   "p": 0.009900990099009901,
+   "family": "classifier",
+   "method": "Leave-one-song-out nearest centroid (Burrows' Delta), 100 label permutations; q: BH over the 3 feature sets",
+   "q": 0.01485148514851485,
+   "result": "Held"
+  },
+  {
+   "claim": "A song's album can be identified from function words without pronouns",
+   "stat": "accuracy 65% vs chance 33%",
+   "p": 0.009900990099009901,
+   "family": "classifier",
+   "method": "Leave-one-song-out nearest centroid (Burrows' Delta), 100 label permutations; q: BH over the 3 feature sets",
+   "q": 0.01485148514851485,
+   "result": "Held"
+  },
+  {
+   "claim": "A song's album can be identified from the 300 most common content words",
+   "stat": "accuracy 40% vs chance 33%",
+   "p": 0.25742574257425743,
+   "family": "classifier",
+   "method": "Leave-one-song-out nearest centroid (Burrows' Delta), 100 label permutations; q: BH over the 3 feature sets",
+   "q": 0.25742574257425743,
+   "result": "Failed"
+  },
+  {
+   "claim": "Word frequencies follow Zipf's law",
+   "stat": "slope -1.20, R\u00b2 0.977",
+   "p": NaN,
+   "family": "fit",
+   "method": "OLS on log rank vs log frequency, top 1,000 forms; a description, not a test",
+   "result": "Fit"
+  },
+  {
+   "claim": "Vocabulary growth in career order departs from random song orders",
+   "stat": "Heaps \u03b2 0.68",
+   "p": 0.15084915084915085,
+   "family": "heaps",
+   "method": "Max deviation from the mean of 1,000 shuffled song orders",
+   "q": 0.15084915084915085,
+   "result": "Failed"
+  },
+  {
+   "claim": "The word network splits into distinct communities",
+   "stat": "modularity 0.63 vs 0.65 rewired",
+   "p": 0.9047619047619048,
+   "family": "network",
+   "method": "Greedy modularity vs 20 degree-preserving rewirings",
+   "q": 0.9047619047619048,
+   "result": "Failed"
+  }
+ ],
+ "facts": {
+  "songs": 40,
+  "albums": 3,
+  "lines": 1618,
+  "tokens": 10563,
+  "types": 1289,
+  "hapax": 589,
+  "hapax_pct": 0.4569433669511249,
+  "top_word": "love",
+  "top_word_n": 65,
+  "top_word_songs": 18,
+  "top_word_pct": 0.45,
+  "common_checked": 300,
+  "common_used": 204
+ },
+ "headline": {
+  "title": "\u201clove\u201d is Billie Eilish's word",
+  "lede": "It appears 65 times, in 45% of 40 songs. No trend across albums passed the tests below."
+ },
+ "profile": {
+  "forms": {
+   "my": 168,
+   "invisalign": 3,
+   "has": 6,
+   "finally": 1,
+   "i": 778,
+   "have": 54,
+   "taken": 3,
+   "out": 25,
+   "and": 144,
+   "this": 18,
+   "is": 155,
+   "the": 215,
+   "album": 1,
+   "ah": 32,
+   "white": 3,
+   "shirt": 2,
+   "now": 56,
+   "red": 2,
+   "bloody": 1,
+   "nose": 1,
+   "sleepin": 2,
+   "you": 594,
+   "are": 90,
+   "on": 70,
+   "your": 110,
+   "tippy": 1,
+   "toes": 1,
+   "creepin": 1,
+   "around": 11,
+   "like": 92,
+   "no": 29,
+   "one": 53,
+   "knows": 3,
+   "think": 51,
+   "so": 76,
+   "criminal": 1,
+   "bruises": 1,
+   "both": 6,
+   "knees": 3,
+   "for": 74,
+   "do": 181,
+   "not": 369,
+   "say": 54,
+   "thank": 1,
+   "or": 30,
+   "please": 10,
+   "what": 65,
+   "want": 29,
+   "when": 60,
+   "am": 191,
+   "wanting": 1,
+   "to": 209,
+   "soul": 2,
+   "cynical": 1,
+   "a": 144,
+   "tough": 2,
+   "guy": 15,
+   "it": 209,
+   "really": 26,
+   "rough": 2,
+   "just": 57,
+   "can": 91,
+   "get": 32,
+   "enough": 6,
+   "chest": 3,
+   "always": 8,
+   "puffed": 2,
+   "that": 93,
+   "bad": 30,
+   "type": 8,
+   "make": 32,
+   "mama": 2,
+   "sad": 3,
+   "girlfriend": 2,
+   "mad": 4,
+   "tight": 2,
+   "might": 22,
+   "seduce": 2,
+   "dad": 2,
+   "duh": 3,
+   "take": 22,
+   "control": 4,
+   "even": 18,
+   "if": 41,
+   "know": 104,
+   "own": 5,
+   "me": 196,
+   "will": 50,
+   "let": 15,
+   "play": 1,
+   "role": 1,
+   "be": 82,
+   "animal": 1,
+   "mommy": 1,
+   "likes": 1,
+   "sing": 2,
+   "along": 3,
+   "with": 22,
+   "but": 123,
+   "she": 39,
+   "song": 1,
+   "reads": 1,
+   "all": 54,
+   "lyrics": 1,
+   "pity": 3,
+   "men": 1,
+   "only": 18,
+   "good": 17,
+   "at": 31,
+   "bein": 2,
+   "guess": 6,
+   "pretty": 10,
+   "glad": 2,
+   "alone": 19,
+   "said": 32,
+   "scared": 7,
+   "of": 63,
+   "mean": 10,
+   "see": 27,
+   "sees": 1,
+   "maybe": 16,
+   "cause": 34,
+   "wearing": 2,
+   "cologne": 1,
+   "ha": 4,
+   "about": 22,
+   "them": 15,
+   "must": 3,
+   "missing": 3,
+   "something": 8,
+   "they": 36,
+   "keep": 25,
+   "doing": 4,
+   "nothing": 21,
+   "too": 18,
+   "intoxicated": 2,
+   "better": 30,
+   "off": 8,
+   "without": 7,
+   "unstable": 1,
+   "bring": 4,
+   "ashtrays": 1,
+   "table": 1,
+   "thing": 2,
+   "share": 1,
+   "in": 106,
+   "their": 5,
+   "secondhand": 2,
+   "smoke": 2,
+   "still": 18,
+   "drinking": 2,
+   "canned": 2,
+   "coke": 2,
+   "need": 22,
+   "xanny": 4,
+   "feel": 28,
+   "designated": 2,
+   "drives": 2,
+   "home": 13,
+   "who": 13,
+   "stoned": 2,
+   "give": 8,
+   "ever": 12,
+   "wakin": 1,
+   "up": 27,
+   "sundown": 1,
+   "ooh": 41,
+   "late": 1,
+   "every": 5,
+   "party": 2,
+   "nobodys": 1,
+   "sorry": 20,
+   "inebriated": 1,
+   "dance": 2,
+   "morning": 1,
+   "as": 6,
+   "come": 17,
+   "down": 63,
+   "heads": 1,
+   "hurting": 3,
+   "awfully": 1,
+   "learning": 3,
+   "same": 8,
+   "mistakes": 1,
+   "blame": 3,
+   "circumstance": 1,
+   "try": 12,
+   "kiss": 3,
+   "sidewalk": 1,
+   "cigarette": 1,
+   "break": 13,
+   "afford": 2,
+   "love": 60,
+   "someone": 11,
+   "dying": 3,
+   "by": 30,
+   "mistake": 2,
+   "silver": 1,
+   "lake": 1,
+   "doin": 1,
+   "hmm": 5,
+   "mmm": 6,
+   "bite": 3,
+   "tongue": 7,
+   "bide": 2,
+   "time": 22,
+   "warning": 2,
+   "sign": 6,
+   "wait": 5,
+   "til": 13,
+   "world": 7,
+   "mine": 6,
+   "visions": 1,
+   "vandalize": 1,
+   "cold": 4,
+   "kingdom": 1,
+   "size": 2,
+   "fell": 3,
+   "these": 2,
+   "ocean": 1,
+   "eyes": 14,
+   "should": 30,
+   "crown": 6,
+   "gonna": 16,
+   "run": 10,
+   "town": 3,
+   "watch": 8,
+   "em": 13,
+   "bow": 6,
+   "silence": 3,
+   "favorite": 3,
+   "sound": 4,
+   "count": 1,
+   "cards": 1,
+   "fall": 13,
+   "blood": 1,
+   "marble": 1,
+   "wall": 7,
+   "way": 22,
+   "scream": 1,
+   "tell": 24,
+   "which": 4,
+   "worse": 3,
+   "living": 1,
+   "first": 2,
+   "sleeping": 1,
+   "inside": 3,
+   "hearse": 1,
+   "over": 17,
+   "baby": 10,
+   "okay": 7,
+   "lucifer": 3,
+   "lonely": 8,
+   "standing": 1,
+   "there": 23,
+   "killing": 1,
+   "commit": 1,
+   "anything": 14,
+   "crime": 1,
+   "peters": 1,
+   "vacation": 1,
+   "an": 15,
+   "open": 9,
+   "invitation": 1,
+   "animals": 1,
+   "evidence": 1,
+   "pearly": 1,
+   "gates": 1,
+   "look": 23,
+   "more": 17,
+   "picket": 1,
+   "fence": 1,
+   "once": 15,
+   "got": 14,
+   "friends": 6,
+   "invite": 2,
+   "hills": 2,
+   "burn": 2,
+   "california": 2,
+   "turn": 3,
+   "ignore": 2,
+   "ya": 8,
+   "did": 56,
+   "warn": 2,
+   "girls": 5,
+   "go": 29,
+   "hell": 5,
+   "god": 7,
+   "herself": 2,
+   "enemies": 2,
+   "water": 2,
+   "starts": 4,
+   "rise": 2,
+   "heavens": 2,
+   "sight": 2,
+   "devil": 3,
+   "her": 19,
+   "team": 2,
+   "needing": 1,
+   "friend": 18,
+   "some": 10,
+   "greenery": 1,
+   "walk": 2,
+   "wearin": 1,
+   "fetters": 1,
+   "peter": 1,
+   "cover": 1,
+   "caving": 1,
+   "man": 15,
+   "such": 7,
+   "fool": 1,
+   "why": 21,
+   "we": 50,
+   "saving": 1,
+   "him": 9,
+   "poisoning": 1,
+   "themselves": 1,
+   "begging": 1,
+   "our": 3,
+   "help": 3,
+   "wow": 2,
+   "left": 10,
+   "save": 12,
+   "owe": 2,
+   "haha": 1,
+   "cannot": 1,
+   "snowflake": 1,
+   "six": 2,
+   "words": 2,
+   "never": 36,
+   "understood": 1,
+   "five": 1,
+   "aww": 1,
+   "laugh": 3,
+   "nothings": 1,
+   "wrong": 10,
+   "four": 1,
+   "days": 2,
+   "felt": 6,
+   "long": 7,
+   "threes": 1,
+   "crowd": 2,
+   "two": 6,
+   "was": 64,
+   "us": 5,
+   "slipped": 1,
+   "away": 22,
+   "hahahahaha": 1,
+   "wanna": 71,
+   "other": 7,
+   "how": 36,
+   "much": 8,
+   "wish": 21,
+   "stay": 8,
+   "kinda": 10,
+   "were": 38,
+   "gay": 5,
+   "reason": 2,
+   "through": 9,
+   "step": 5,
+   "conversations": 1,
+   "blue": 14,
+   "heys": 1,
+   "hey": 4,
+   "ten": 1,
+   "fingers": 1,
+   "tearin": 1,
+   "hair": 2,
+   "nine": 1,
+   "times": 3,
+   "made": 15,
+   "ate": 1,
+   "seven": 1,
+   "minutes": 1,
+   "supposed": 2,
+   "spare": 1,
+   "pride": 1,
+   "lack": 1,
+   "interest": 1,
+   "explanation": 1,
+   "preferred": 1,
+   "sexual": 1,
+   "orientation": 1,
+   "selfish": 1,
+   "helpless": 1,
+   "yeah": 12,
+   "stand": 3,
+   "another": 9,
+   "day": 15,
+   "learned": 4,
+   "lose": 9,
+   "tore": 1,
+   "stop": 6,
+   "bleeding": 1,
+   "nothin": 6,
+   "stops": 1,
+   "leaving": 4,
+   "quiet": 4,
+   "coming": 3,
+   "could": 52,
+   "lie": 14,
+   "already": 2,
+   "hurt": 5,
+   "call": 10,
+   "closer": 2,
+   "partys": 1,
+   "sometimes": 2,
+   "goodbyes": 1,
+   "lets": 1,
+   "minute": 2,
+   "finish": 1,
+   "care": 14,
+   "listen": 6,
+   "came": 3,
+   "committed": 1,
+   "overdid": 1,
+   "wore": 1,
+   "heart": 6,
+   "chain": 1,
+   "neck": 1,
+   "da": 70,
+   "lookin": 5,
+   "treat": 4,
+   "badly": 1,
+   "sadly": 1,
+   "best": 9,
+   "thinking": 1,
+   "would": 56,
+   "gladly": 1,
+   "billy": 1,
+   "done": 3,
+   "since": 3,
+   "wife": 2,
+   "died": 1,
+   "whole": 1,
+   "people": 15,
+   "learn": 1,
+   "scarn": 2,
+   "ask": 5,
+   "questions": 2,
+   "lesson": 1,
+   "ago": 2,
+   "talking": 3,
+   "belladonna": 1,
+   "oxford": 1,
+   "comma": 1,
+   "news": 3,
+   "powder": 2,
+   "fuse": 2,
+   "add": 2,
+   "friction": 2,
+   "strange": 12,
+   "addiction": 9,
+   "doctors": 3,
+   "explain": 6,
+   "symptoms": 3,
+   "pain": 4,
+   "relieved": 1,
+   "micheal": 1,
+   "his": 5,
+   "confidence": 1,
+   "back": 19,
+   "michael": 1,
+   "movie": 2,
+   "amazing": 1,
+   "though": 5,
+   "movies": 1,
+   "seen": 5,
+   "life": 15,
+   "deadly": 2,
+   "fever": 4,
+   "reliever": 1,
+   "self": 1,
+   "medicate": 1,
+   "burns": 1,
+   "gin": 1,
+   "put": 4,
+   "lips": 1,
+   "skin": 2,
+   "ignite": 1,
+   "hurts": 1,
+   "hide": 2,
+   "tuh": 1,
+   "glass": 3,
+   "set": 3,
+   "myself": 11,
+   "fire": 1,
+   "crass": 1,
+   "wired": 1,
+   "lasts": 2,
+   "asking": 4,
+   "motto": 1,
+   "enter": 1,
+   "festivals": 1,
+   "carnivals": 1,
+   "thoughts": 1,
+   "reaction": 3,
+   "cool": 2,
+   "right": 13,
+   "um": 1,
+   "part": 3,
+   "billie": 1,
+   "from": 18,
+   "wondering": 3,
+   "asleep": 3,
+   "where": 7,
+   "here": 6,
+   "spit": 1,
+   "exactly": 1,
+   "payin": 1,
+   "amount": 1,
+   "cleanin": 1,
+   "satisfactory": 1,
+   "today": 5,
+   "thinkin": 2,
+   "things": 15,
+   "drinkin": 1,
+   "drown": 1,
+   "end": 9,
+   "staple": 2,
+   "bury": 7,
+   "wake": 2,
+   "cannibal": 2,
+   "class": 3,
+   "killin": 2,
+   "son": 2,
+   "dark": 5,
+   "had": 11,
+   "expected": 1,
+   "art": 2,
+   "star": 1,
+   "connected": 1,
+   "meet": 3,
+   "park": 2,
+   "calm": 1,
+   "collected": 1,
+   "knew": 4,
+   "start": 1,
+   "apart": 7,
+   "expensive": 1,
+   "talk": 5,
+   "somethin": 5,
+   "loud": 1,
+   "honestly": 1,
+   "thought": 10,
+   "dead": 2,
+   "callin": 1,
+   "security": 2,
+   "keepin": 1,
+   "head": 8,
+   "held": 1,
+   "hatchet": 1,
+   "debt": 1,
+   "gotta": 6,
+   "sell": 2,
+   "then": 12,
+   "limbs": 1,
+   "froze": 1,
+   "close": 3,
+   "careful": 2,
+   "told": 16,
+   "worry": 3,
+   "honey": 1,
+   "hurry": 5,
+   "remember": 1,
+   "stars": 4,
+   "ours": 1,
+   "show": 4,
+   "worried": 2,
+   "worlds": 2,
+   "little": 2,
+   "blurry": 1,
+   "night": 4,
+   "die": 7,
+   "tried": 8,
+   "upset": 3,
+   "rescue": 1,
+   "met": 1,
+   "wanted": 5,
+   "protect": 1,
+   "hoping": 1,
+   "rooftop": 2,
+   "breathing": 3,
+   "turning": 1,
+   "endless": 1,
+   "pretentious": 1,
+   "leave": 10,
+   "soon": 2,
+   "mm": 54,
+   "taste": 1,
+   "salty": 1,
+   "tears": 1,
+   "cheek": 1,
+   "year": 4,
+   "headache": 1,
+   "does": 6,
+   "scattered": 1,
+   "matters": 1,
+   "deja": 1,
+   "vu": 1,
+   "miss": 4,
+   "true": 12,
+   "been": 19,
+   "lied": 1,
+   "crying": 3,
+   "hm": 15,
+   "tryna": 2,
+   "change": 15,
+   "eye": 1,
+   "fly": 1,
+   "ourselves": 1,
+   "cry": 9,
+   "smile": 1,
+   "gave": 5,
+   "gets": 2,
+   "arms": 2,
+   "central": 1,
+   "escape": 1,
+   "getting": 8,
+   "older": 3,
+   "aging": 1,
+   "well": 6,
+   "reasons": 1,
+   "thankful": 1,
+   "lot": 9,
+   "grateful": 1,
+   "different": 5,
+   "strangers": 2,
+   "waiting": 4,
+   "door": 10,
+   "ironic": 2,
+   "seem": 6,
+   "than": 13,
+   "anyone": 7,
+   "before": 9,
+   "usually": 1,
+   "deranged": 1,
+   "last": 4,
+   "week": 6,
+   "realized": 2,
+   "crave": 3,
+   "retell": 1,
+   "story": 1,
+   "everything": 5,
+   "shake": 1,
+   "feeling": 3,
+   "healing": 1,
+   "sentence": 1,
+   "sounds": 1,
+   "rehearsed": 1,
+   "because": 5,
+   "honest": 3,
+   "being": 2,
+   "ignored": 1,
+   "estranged": 1,
+   "enjoyed": 2,
+   "employed": 2,
+   "longing": 2,
+   "someday": 2,
+   "bored": 2,
+   "weird": 2,
+   "until": 3,
+   "shoulders": 2,
+   "admitting": 1,
+   "happier": 4,
+   "least": 3,
+   "endeavor": 1,
+   "together": 4,
+   "prioritize": 1,
+   "pleasure": 1,
+   "promise": 3,
+   "depend": 1,
+   "given": 1,
+   "permission": 1,
+   "decision": 1,
+   "abused": 1,
+   "mmh": 5,
+   "next": 3,
+   "hope": 5,
+   "somewhere": 2,
+   "laughing": 2,
+   "anybody": 3,
+   "fine": 3,
+   "trauma": 1,
+   "afraid": 4,
+   "number": 4,
+   "changed": 3,
+   "reply": 1,
+   "laura": 1,
+   "nicer": 1,
+   "text": 1,
+   "guessed": 1,
+   "obsessed": 1,
+   "sympathy": 2,
+   "believe": 6,
+   "easy": 5,
+   "looks": 2,
+   "deceiving": 1,
+   "work": 2,
+   "deserve": 2,
+   "fucking": 4,
+   "nerve": 1,
+   "drew": 1,
+   "comes": 4,
+   "boring": 1,
+   "seconds": 1,
+   "happen": 1,
+   "makes": 4,
+   "bearings": 1,
+   "informations": 1,
+   "sharing": 1,
+   "use": 3,
+   "names": 1,
+   "hotel": 3,
+   "check": 2,
+   "ins": 1,
+   "hard": 8,
+   "sentimental": 5,
+   "bout": 8,
+   "tonight": 3,
+   "picture": 1,
+   "lock": 3,
+   "phone": 2,
+   "oh": 20,
+   "going": 6,
+   "torture": 3,
+   "obsession": 1,
+   "strong": 1,
+   "impression": 1,
+   "yes": 1,
+   "nobody": 4,
+   "saw": 11,
+   "lobby": 2,
+   "jealous": 1,
+   "worth": 3,
+   "heavy": 1,
+   "floor": 2,
+   "yours": 4,
+   "focus": 1,
+   "notice": 1,
+   "mirror": 2,
+   "complexion": 1,
+   "find": 6,
+   "reflections": 1,
+   "hear": 3,
+   "comin": 2,
+   "understand": 1,
+   "plans": 2,
+   "future": 3,
+   "else": 5,
+   "supposedly": 1,
+   "unhappy": 1,
+   "answer": 2,
+   "handsome": 2,
+   "drive": 1,
+   "again": 5,
+   "couple": 2,
+   "years": 3,
+   "motion": 2,
+   "rub": 1,
+   "lotion": 1,
+   "pray": 1,
+   "sunday": 2,
+   "monday": 1,
+   "approve": 1,
+   "involved": 6,
+   "clear": 3,
+   "yell": 3,
+   "oxytocin": 1,
+   "swallow": 1,
+   "loosen": 1,
+   "collar": 1,
+   "obey": 1,
+   "he": 7,
+   "hath": 1,
+   "bosom": 1,
+   "beloved": 1,
+   "smiling": 1,
+   "beareth": 1,
+   "highest": 1,
+   "heavn": 1,
+   "yearning": 1,
+   "thee": 1,
+   "gaze": 1,
+   "o": 1,
+   "gold": 1,
+   "winged": 1,
+   "messenger": 1,
+   "mighty": 1,
+   "gods": 1,
+   "goldwing": 1,
+   "angel": 1,
+   "sacred": 1,
+   "starved": 1,
+   "tear": 4,
+   "disappear": 2,
+   "claim": 1,
+   "souvenir": 1,
+   "somethings": 2,
+   "air": 1,
+   "losing": 2,
+   "track": 1,
+   "waitin": 3,
+   "wondered": 1,
+   "aware": 2,
+   "straw": 1,
+   "sent": 1,
+   "flowers": 2,
+   "ran": 1,
+   "shower": 2,
+   "stairs": 2,
+   "ay": 6,
+   "shit": 4,
+   "damn": 9,
+   "ai": 8,
+   "lost": 5,
+   "outlaw": 5,
+   "job": 4,
+   "onc\u0435": 1,
+   "used": 4,
+   "shy": 1,
+   "mind": 8,
+   "yourself": 1,
+   "hee": 1,
+   "gone": 5,
+   "hours": 2,
+   "anywhere": 1,
+   "grown": 1,
+   "eventually": 1,
+   "proved": 1,
+   "complacent": 2,
+   "face": 3,
+   "na": 9,
+   "dreams": 4,
+   "admit": 1,
+   "quite": 1,
+   "few": 1,
+   "halleys": 1,
+   "comet": 1,
+   "takes": 1,
+   "silly": 1,
+   "slept": 2,
+   "midnight": 1,
+   "m": 1,
+   "sleepless": 1,
+   "nights": 2,
+   "hopeless": 1,
+   "drag": 1,
+   "loved": 5,
+   "moment": 1,
+   "sitting": 1,
+   "brothers": 1,
+   "room": 1,
+   "fallen": 1,
+   "opinions": 2,
+   "music": 1,
+   "clothes": 5,
+   "body": 5,
+   "hate": 12,
+   "wear": 4,
+   "praise": 1,
+   "shame": 2,
+   "others": 1,
+   "watching": 2,
+   "goes": 3,
+   "unseen": 1,
+   "while": 4,
+   "stares": 1,
+   "disapproval": 1,
+   "sigh": 1,
+   "relief": 1,
+   "lived": 1,
+   "able": 1,
+   "move": 1,
+   "smaller": 1,
+   "weaker": 1,
+   "softer": 1,
+   "taller": 1,
+   "provoke": 1,
+   "stomach": 2,
+   "hips": 1,
+   "born": 5,
+   "comfortable": 1,
+   "woman": 1,
+   "shed": 1,
+   "layers": 1,
+   "slut": 1,
+   "judge": 2,
+   "assumptions": 1,
+   "based": 2,
+   "decide": 2,
+   "less": 3,
+   "decides": 1,
+   "means": 2,
+   "value": 1,
+   "perception": 1,
+   "opinion": 1,
+   "responsibility": 1,
+   "happened": 3,
+   "started": 4,
+   "photographing": 1,
+   "instead": 1,
+   "stopping": 1,
+   "flashing": 1,
+   "walking": 2,
+   "overheated": 10,
+   "defeated": 6,
+   "deleted": 6,
+   "un": 3,
+   "repeated": 3,
+   "went": 3,
+   "kill": 5,
+   "flirty": 1,
+   "working": 1,
+   "looked": 4,
+   "rest": 5,
+   "everybody": 6,
+   "built": 1,
+   "surgery": 1,
+   "redesign": 1,
+   "inanimate": 1,
+   "bitches": 1,
+   "none": 1,
+   "business": 1,
+   "sick": 1,
+   "posing": 1,
+   "pictures": 2,
+   "plastic": 1,
+   "dies": 3,
+   "surprise": 2,
+   "each": 2,
+   "lies": 1,
+   "hundred": 2,
+   "wonder": 6,
+   "sure": 3,
+   "knack": 1,
+   "seeing": 1,
+   "child": 1,
+   "fault": 3,
+   "oughta": 1,
+   "alright": 5,
+   "fold": 1,
+   "unknown": 1,
+   "abuse": 3,
+   "power": 7,
+   "choose": 3,
+   "havin": 4,
+   "hero": 1,
+   "played": 1,
+   "ruined": 2,
+   "act": 3,
+   "swear": 2,
+   "dare": 2,
+   "special": 1,
+   "appeal": 1,
+   "cage": 3,
+   "age": 2,
+   "turns": 1,
+   "contract": 1,
+   "limousine": 1,
+   "money": 1,
+   "stalker": 1,
+   "street": 1,
+   "says": 1,
+   "satan": 1,
+   "bought": 2,
+   "secret": 2,
+   "house": 1,
+   "keys": 1,
+   "boy": 1,
+   "nda": 2,
+   "having": 2,
+   "under": 3,
+   "barely": 1,
+   "outside": 3,
+   "new": 1,
+   "career": 1,
+   "kauai": 1,
+   "fun": 3,
+   "shut": 2,
+   "mouth": 2,
+   "far": 2,
+   "hit": 1,
+   "took": 2,
+   "sold": 1,
+   "therefore": 8,
+   "name": 6,
+   "outta": 1,
+   "top": 1,
+   "real": 2,
+   "ideal": 1,
+   "press": 1,
+   "lines": 1,
+   "nice": 1,
+   "bluff": 1,
+   "articles": 3,
+   "rather": 1,
+   "remain": 1,
+   "unremarkable": 1,
+   "lotta": 1,
+   "interviews": 4,
+   "confused": 1,
+   "caught": 3,
+   "clever": 1,
+   "write": 4,
+   "letter": 3,
+   "read": 4,
+   "skip": 1,
+   "avenue": 2,
+   "passing": 1,
+   "asked": 2,
+   "telling": 1,
+   "opposite": 1,
+   "fair": 1,
+   "clearly": 1,
+   "miserable": 1,
+   "drunk": 1,
+   "benz": 1,
+   "driving": 1,
+   "influence": 1,
+   "death": 1,
+   "wasting": 1,
+   "breath": 1,
+   "relate": 2,
+   "shitty": 1,
+   "city": 1,
+   "internet": 2,
+   "shits": 1,
+   "embarrassing": 1,
+   "waste": 2,
+   "showed": 2,
+   "empty": 1,
+   "line": 3,
+   "paid": 1,
+   "any": 1,
+   "mother": 1,
+   "kid": 1,
+   "misunderstood": 1,
+   "moments": 1,
+   "whoa": 1,
+   "trying": 3,
+   "eat": 7,
+   "distract": 1,
+   "pornography": 1,
+   "dialogue": 1,
+   "satisfied": 2,
+   "male": 1,
+   "fantasy": 1,
+   "therapy": 1,
+   "pretending": 2,
+   "convince": 2,
+   "girl": 7,
+   "inseparable": 1,
+   "behind": 3,
+   "wheel": 1,
+   "deal": 1,
+   "matter": 2,
+   "patience": 5,
+   "lifetime": 1,
+   "happy": 3,
+   "skinny": 1,
+   "old": 1,
+   "acting": 1,
+   "stage": 1,
+   "bird": 2,
+   "dog": 2,
+   "pound": 1,
+   "hungry": 1,
+   "meanest": 1,
+   "kind": 1,
+   "funny": 1,
+   "somebodys": 1,
+   "feed": 1,
+   "lunch": 5,
+   "dances": 3,
+   "tastes": 4,
+   "buy": 2,
+   "stuff": 2,
+   "craving": 2,
+   "crush": 2,
+   "huh": 3,
+   "rare": 1,
+   "claire": 1,
+   "pullin": 1,
+   "chair": 1,
+   "puttin": 1,
+   "somebody": 1,
+   "recipe": 1,
+   "tryin": 1,
+   "overeat": 1,
+   "sweet": 1,
+   "counter": 2,
+   "allowed": 1,
+   "takin": 2,
+   "seat": 2,
+   "volunteer": 1,
+   "smilin": 1,
+   "ear": 2,
+   "headlights": 1,
+   "deer": 1,
+   "interested": 1,
+   "bend": 2,
+   "hunch": 1,
+   "forget": 1,
+   "tomorrow": 2,
+   "feelin": 1,
+   "sorrow": 1,
+   "yup": 1,
+   "borrow": 2,
+   "cope": 2,
+   "anymore": 2,
+   "war": 2,
+   "store": 3,
+   "returned": 1,
+   "called": 2,
+   "found": 3,
+   "garden": 1,
+   "contemplatin": 1,
+   "beg": 1,
+   "pardon": 1,
+   "recognizes": 1,
+   "serious": 3,
+   "curious": 1,
+   "wringing": 1,
+   "hands": 2,
+   "lap": 1,
+   "trap": 1,
+   "grave": 1,
+   "rot": 1,
+   "buried": 1,
+   "casket": 1,
+   "carry": 1,
+   "uh": 6,
+   "turnin": 1,
+   "birds": 3,
+   "feather": 3,
+   "stick": 2,
+   "weather": 2,
+   "forever": 4,
+   "cryin": 3,
+   "light": 2,
+   "leaves": 2,
+   "compliments": 1,
+   "throw": 1,
+   "full": 1,
+   "bit": 1,
+   "minds": 1,
+   "polluted": 1,
+   "quit": 1,
+   "stupid": 1,
+   "goodbye": 1,
+   "surprised": 1,
+   "breaks": 1,
+   "shoulder": 2,
+   "hold": 1,
+   "july": 1,
+   "remind": 3,
+   "burning": 3,
+   "alive": 3,
+   "cross": 2,
+   "moves": 2,
+   "fast": 2,
+   "free": 2,
+   "leather": 1,
+   "feels": 1,
+   "touch": 2,
+   "valentines": 2,
+   "kept": 2,
+   "stayed": 1,
+   "whatever": 1,
+   "state": 1,
+   "greatest": 9,
+   "congratulations": 3,
+   "admiration": 3,
+   "waited": 7,
+   "naked": 4,
+   "painless": 3,
+   "reward": 1,
+   "fight": 3,
+   "fighting": 2,
+   "passion": 1,
+   "unappreciated": 1,
+   "jaded": 1,
+   "confess": 3,
+   "apology": 2,
+   "making": 2,
+   "moved": 7,
+   "immediately": 1,
+   "bum": 3,
+   "depressed": 1,
+   "almost": 1,
+   "after": 1,
+   "obvious": 1,
+   "hand": 1,
+   "mediocre": 1,
+   "camera": 3,
+   "fan": 1,
+   "screens": 1,
+   "meant": 1,
+   "starrin": 1,
+   "magazines": 1,
+   "clock": 1,
+   "block": 1,
+   "cops": 2,
+   "bet": 2,
+   "into": 1,
+   "goodnight": 1,
+   "corner": 2,
+   "sitter": 1,
+   "landed": 1,
+   "feet": 7,
+   "kitchen": 2,
+   "calling": 2,
+   "card": 2,
+   "failed": 1,
+   "fifty": 2,
+   "thousand": 2,
+   "dollar": 2,
+   "bail": 1,
+   "mail": 2,
+   "veil": 2,
+   "visit": 2,
+   "jail": 2,
+   "diner": 1,
+   "stopped": 1,
+   "crazy": 2,
+   "knocked": 1,
+   "discrete": 2,
+   "memorized": 1,
+   "car": 1,
+   "sleep": 4,
+   "happens": 1,
+   "overseas": 5,
+   "foyer": 1,
+   "watchin": 1,
+   "above": 1,
+   "breathe": 2,
+   "green": 2,
+   "between": 2,
+   "dream": 2,
+   "land": 2,
+   "underneath": 2,
+   "beliefs": 2,
+   "brief": 3,
+   "suite": 3,
+   "paranoid": 2,
+   "looking": 1,
+   "boys": 1,
+   "filled": 1,
+   "void": 1,
+   "spite": 1,
+   "paralyzed": 1,
+   "romanticized": 1,
+   "lamour": 1,
+   "de": 1,
+   "ma": 1,
+   "vie": 1,
+   "bittersweet": 1,
+   "stayin": 1,
+   "truth": 1,
+   "seems": 1,
+   "bitter": 1,
+   "watched": 1,
+   "pay": 1,
+   "attention": 1,
+   "live": 2,
+   "black": 2,
+   "ashamed": 1,
+   "d\u00e9sol\u00e9": 1,
+   "mon": 1,
+   "amour": 1,
+   "bluer": 1,
+   "butterfly": 1,
+   "beautiful": 1,
+   "deprived": 1,
+   "oxygen": 1,
+   "colder": 1,
+   "fathers": 2,
+   "sympathize": 1,
+   "reaching": 1,
+   "mothers": 1,
+   "victim": 1,
+   "rule": 1,
+   "petrified": 1,
+   "heard": 1,
+   "three": 1,
+   "blameless": 1,
+   "grew": 1,
+   "famous": 1
+  },
+  "content": {
+   "invisalign": 3,
+   "finally": 1,
+   "album": 1,
+   "white": 3,
+   "shirt": 2,
+   "red": 2,
+   "bloody": 1,
+   "nose": 1,
+   "sleepin": 2,
+   "tippy": 1,
+   "toe": 1,
+   "creepin": 1,
+   "around": 11,
+   "think": 51,
+   "criminal": 1,
+   "bruise": 1,
+   "knee": 3,
+   "thank": 1,
+   "please": 10,
+   "want": 35,
+   "soul": 2,
+   "cynical": 1,
+   "tough": 2,
+   "guy": 15,
+   "really": 26,
+   "rough": 2,
+   "enough": 6,
+   "chest": 3,
+   "always": 8,
+   "puff": 2,
+   "bad": 30,
+   "type": 8,
+   "mama": 3,
+   "sad": 3,
+   "girlfriend": 2,
+   "mad": 4,
+   "tight": 2,
+   "might": 22,
+   "seduce": 2,
+   "dad": 2,
+   "duh": 3,
+   "control": 4,
+   "play": 1,
+   "role": 1,
+   "animal": 2,
+   "mommy": 1,
+   "sing": 2,
+   "along": 3,
+   "song": 1,
+   "read": 5,
+   "lyric": 1,
+   "pity": 3,
+   "man": 16,
+   "good": 56,
+   "bein": 2,
+   "guess": 7,
+   "pretty": 10,
+   "glad": 2,
+   "alone": 19,
+   "scare": 7,
+   "mean": 12,
+   "maybe": 16,
+   "wear": 7,
+   "cologne": 1,
+   "must": 3,
+   "miss": 7,
+   "something": 10,
+   "keep": 27,
+   "nothing": 22,
+   "intoxicate": 2,
+   "without": 7,
+   "unstable": 1,
+   "bring": 4,
+   "ashtray": 1,
+   "table": 1,
+   "share": 2,
+   "secondhand": 2,
+   "smoke": 2,
+   "drink": 2,
+   "coke": 2,
+   "need": 23,
+   "xanny": 4,
+   "feel": 29,
+   "designate": 2,
+   "drive": 4,
+   "home": 13,
+   "stone": 2,
+   "give": 13,
+   "wakin": 1,
+   "sundown": 1,
+   "late": 1,
+   "party": 2,
+   "nobodys": 1,
+   "sorry": 20,
+   "inebriate": 1,
+   "dance": 5,
+   "morning": 1,
+   "head": 9,
+   "hurt": 9,
+   "awfully": 1,
+   "learn": 8,
+   "mistake": 3,
+   "blame": 3,
+   "circumstance": 1,
+   "try": 23,
+   "kiss": 3,
+   "sidewalk": 1,
+   "cigarette": 1,
+   "break": 14,
+   "afford": 2,
+   "love": 65,
+   "someone": 11,
+   "die": 14,
+   "silver": 1,
+   "lake": 1,
+   "doin": 1,
+   "bite": 4,
+   "tongue": 7,
+   "bide": 2,
+   "time": 25,
+   "warn": 4,
+   "sign": 6,
+   "wait": 16,
+   "til": 13,
+   "world": 9,
+   "vision": 1,
+   "vandalize": 1,
+   "cold": 5,
+   "kingdom": 1,
+   "size": 2,
+   "fell": 3,
+   "ocean": 1,
+   "eye": 15,
+   "crown": 6,
+   "run": 10,
+   "town": 3,
+   "watch": 11,
+   "em": 13,
+   "bow": 6,
+   "silence": 3,
+   "favourite": 3,
+   "sound": 5,
+   "count": 1,
+   "card": 3,
+   "fall": 14,
+   "blood": 1,
+   "marble": 1,
+   "wall": 7,
+   "scream": 1,
+   "tell": 41,
+   "wrong": 13,
+   "living": 1,
+   "first": 2,
+   "sleep": 7,
+   "inside": 3,
+   "hearse": 1,
+   "baby": 10,
+   "lucifer": 3,
+   "lonely": 8,
+   "stand": 4,
+   "kill": 6,
+   "commit": 2,
+   "anything": 14,
+   "crime": 1,
+   "peter": 2,
+   "vacation": 1,
+   "open": 9,
+   "invitation": 1,
+   "evidence": 1,
+   "pearly": 1,
+   "gate": 1,
+   "look": 30,
+   "picket": 1,
+   "fence": 1,
+   "friend": 24,
+   "invite": 2,
+   "hill": 2,
+   "burn": 3,
+   "california": 2,
+   "turn": 5,
+   "ignore": 3,
+   "girl": 12,
+   "hell": 5,
+   "god": 8,
+   "enemy": 2,
+   "water": 2,
+   "start": 9,
+   "rise": 2,
+   "heaven": 2,
+   "sight": 2,
+   "devil": 3,
+   "team": 2,
+   "greenery": 1,
+   "walk": 4,
+   "wearin": 1,
+   "fetter": 1,
+   "cover": 1,
+   "cave": 1,
+   "fool": 1,
+   "save": 13,
+   "poison": 1,
+   "beg": 2,
+   "help": 3,
+   "wow": 2,
+   "left": 10,
+   "owe": 2,
+   "haha": 1,
+   "snowflake": 1,
+   "six": 2,
+   "word": 2,
+   "never": 36,
+   "understand": 2,
+   "five": 1,
+   "aww": 1,
+   "laugh": 3,
+   "four": 1,
+   "day": 17,
+   "felt": 6,
+   "long": 9,
+   "three": 2,
+   "crowd": 2,
+   "two": 6,
+   "slip": 1,
+   "away": 22,
+   "hahahahaha": 1,
+   "much": 8,
+   "wish": 21,
+   "stay": 9,
+   "kinda": 10,
+   "gay": 5,
+   "reason": 3,
+   "step": 5,
+   "conversation": 1,
+   "blue": 15,
+   "heys": 1,
+   "ten": 1,
+   "finger": 1,
+   "tearin": 1,
+   "hair": 2,
+   "nine": 1,
+   "eat": 8,
+   "seven": 1,
+   "minute": 3,
+   "suppose": 2,
+   "spare": 1,
+   "pride": 1,
+   "lack": 1,
+   "interest": 2,
+   "explanation": 1,
+   "preferr": 1,
+   "sexual": 1,
+   "orientation": 1,
+   "selfish": 1,
+   "helpless": 1,
+   "another": 9,
+   "lose": 16,
+   "tear": 6,
+   "stop": 9,
+   "bleeding": 1,
+   "nothin": 6,
+   "leave": 16,
+   "quiet": 4,
+   "coming": 3,
+   "lie": 16,
+   "already": 2,
+   "call": 14,
+   "closer": 2,
+   "partys": 1,
+   "sometimes": 2,
+   "goodbye": 2,
+   "finish": 1,
+   "care": 14,
+   "listen": 6,
+   "overdo": 1,
+   "heart": 6,
+   "chain": 1,
+   "neck": 1,
+   "lookin": 5,
+   "treat": 4,
+   "badly": 1,
+   "sadly": 1,
+   "thinke": 1,
+   "gladly": 1,
+   "billy": 1,
+   "since": 3,
+   "wife": 2,
+   "whole": 1,
+   "people": 15,
+   "scarn": 2,
+   "ask": 9,
+   "question": 2,
+   "lesson": 1,
+   "ago": 2,
+   "talke": 3,
+   "belladonna": 1,
+   "oxford": 1,
+   "comma": 1,
+   "news": 3,
+   "powder": 2,
+   "fuse": 2,
+   "add": 2,
+   "friction": 2,
+   "strange": 12,
+   "addiction": 9,
+   "doctor": 3,
+   "explain": 6,
+   "symptom": 3,
+   "pain": 4,
+   "relieve": 1,
+   "micheal": 1,
+   "confidence": 1,
+   "michael": 1,
+   "movie": 3,
+   "amaze": 1,
+   "though": 5,
+   "life": 15,
+   "deadly": 2,
+   "fever": 4,
+   "reliever": 1,
+   "self": 1,
+   "medicate": 1,
+   "gin": 1,
+   "put": 4,
+   "lip": 1,
+   "skin": 2,
+   "ignite": 1,
+   "hide": 2,
+   "tuh": 1,
+   "glass": 3,
+   "set": 3,
+   "fire": 1,
+   "crass": 1,
+   "wire": 1,
+   "last": 6,
+   "motto": 1,
+   "enter": 1,
+   "festival": 1,
+   "carnival": 1,
+   "thought": 11,
+   "reaction": 3,
+   "cool": 2,
+   "right": 13,
+   "um": 1,
+   "part": 3,
+   "billie": 1,
+   "wonder": 10,
+   "asleep": 3,
+   "spit": 1,
+   "exactly": 1,
+   "payin": 1,
+   "amount": 1,
+   "cleanin": 1,
+   "satisfactory": 1,
+   "today": 5,
+   "thinkin": 2,
+   "drinkin": 1,
+   "drown": 1,
+   "end": 9,
+   "staple": 2,
+   "bury": 8,
+   "wake": 2,
+   "cannibal": 2,
+   "class": 3,
+   "killin": 2,
+   "son": 2,
+   "dark": 5,
+   "expect": 1,
+   "art": 2,
+   "star": 5,
+   "connect": 1,
+   "meet": 4,
+   "park": 2,
+   "calm": 1,
+   "collect": 1,
+   "apart": 7,
+   "expensive": 1,
+   "talk": 5,
+   "somethin": 5,
+   "loud": 1,
+   "honestly": 1,
+   "dead": 2,
+   "callin": 1,
+   "security": 2,
+   "keepin": 1,
+   "hold": 2,
+   "hatchet": 1,
+   "debt": 1,
+   "sell": 3,
+   "limb": 1,
+   "freeze": 1,
+   "close": 3,
+   "careful": 2,
+   "worry": 5,
+   "honey": 1,
+   "hurry": 5,
+   "remember": 1,
+   "show": 6,
+   "little": 2,
+   "blurry": 1,
+   "night": 6,
+   "upset": 3,
+   "rescue": 1,
+   "protect": 1,
+   "hope": 6,
+   "rooftop": 2,
+   "breathing": 3,
+   "endless": 1,
+   "pretentious": 1,
+   "soon": 2,
+   "taste": 5,
+   "salty": 1,
+   "cheek": 1,
+   "year": 7,
+   "headache": 1,
+   "scatter": 1,
+   "matter": 1,
+   "deja": 1,
+   "vu": 1,
+   "true": 12,
+   "cry": 12,
+   "hm": 15,
+   "tryna": 2,
+   "change": 18,
+   "fly": 1,
+   "smile": 2,
+   "arm": 2,
+   "central": 1,
+   "escape": 1,
+   "old": 4,
+   "aging": 1,
+   "thankful": 1,
+   "lot": 9,
+   "grateful": 1,
+   "different": 5,
+   "stranger": 2,
+   "door": 10,
+   "ironic": 2,
+   "seem": 7,
+   "anyone": 7,
+   "usually": 1,
+   "derange": 1,
+   "week": 6,
+   "realize": 2,
+   "crave": 3,
+   "retell": 1,
+   "story": 1,
+   "everything": 5,
+   "shake": 1,
+   "feeling": 3,
+   "healing": 1,
+   "sentence": 1,
+   "rehearse": 1,
+   "honest": 3,
+   "estrange": 1,
+   "enjoy": 2,
+   "employ": 2,
+   "someday": 2,
+   "bore": 3,
+   "weird": 2,
+   "shoulder": 4,
+   "admit": 2,
+   "happy": 7,
+   "less": 6,
+   "endeavor": 1,
+   "together": 4,
+   "prioritize": 1,
+   "pleasure": 1,
+   "promise": 3,
+   "depend": 1,
+   "given": 1,
+   "permission": 1,
+   "decision": 1,
+   "abuse": 4,
+   "mmh": 5,
+   "next": 3,
+   "somewhere": 2,
+   "laughe": 2,
+   "anybody": 3,
+   "fine": 3,
+   "trauma": 1,
+   "afraid": 4,
+   "number": 4,
+   "reply": 1,
+   "laura": 1,
+   "nice": 2,
+   "text": 1,
+   "obsess": 1,
+   "sympathy": 2,
+   "believe": 6,
+   "easy": 5,
+   "deceive": 1,
+   "work": 3,
+   "deserve": 2,
+   "fuck": 4,
+   "nerve": 1,
+   "draw": 1,
+   "second": 1,
+   "happen": 5,
+   "bearing": 1,
+   "information": 1,
+   "use": 7,
+   "name": 7,
+   "hotel": 3,
+   "check": 2,
+   "hard": 8,
+   "sentimental": 5,
+   "bout": 8,
+   "tonight": 3,
+   "picture": 3,
+   "lock": 3,
+   "phone": 2,
+   "torture": 3,
+   "obsession": 1,
+   "strong": 1,
+   "impression": 1,
+   "nobody": 4,
+   "lobby": 2,
+   "jealous": 1,
+   "worth": 3,
+   "heavy": 1,
+   "floor": 2,
+   "focus": 1,
+   "notice": 1,
+   "mirror": 2,
+   "complexion": 1,
+   "find": 6,
+   "reflection": 1,
+   "hear": 4,
+   "comin": 2,
+   "plan": 2,
+   "future": 3,
+   "else": 5,
+   "supposedly": 1,
+   "unhappy": 1,
+   "answer": 2,
+   "handsome": 2,
+   "couple": 2,
+   "motion": 2,
+   "rub": 1,
+   "lotion": 1,
+   "pray": 1,
+   "sunday": 2,
+   "monday": 1,
+   "approve": 1,
+   "involve": 6,
+   "clear": 3,
+   "yell": 3,
+   "oxytocin": 1,
+   "swallow": 1,
+   "loosen": 1,
+   "collar": 1,
+   "obey": 1,
+   "hath": 1,
+   "bosom": 1,
+   "beloved": 1,
+   "beareth": 1,
+   "high": 1,
+   "heavn": 1,
+   "yearn": 1,
+   "gaze": 1,
+   "gold": 1,
+   "winge": 1,
+   "messenger": 1,
+   "mighty": 1,
+   "goldwing": 1,
+   "angel": 1,
+   "sacre": 1,
+   "starve": 1,
+   "disappear": 2,
+   "claim": 1,
+   "souvenir": 1,
+   "air": 1,
+   "track": 1,
+   "waitin": 3,
+   "aware": 2,
+   "straw": 1,
+   "send": 1,
+   "flower": 2,
+   "rin": 1,
+   "shower": 2,
+   "stair": 2,
+   "shit": 5,
+   "damn": 9,
+   "outlaw": 5,
+   "job": 4,
+   "onc\u0435": 1,
+   "shy": 1,
+   "mind": 9,
+   "hee": 1,
+   "gan": 5,
+   "hour": 2,
+   "anywhere": 1,
+   "grow": 2,
+   "eventually": 1,
+   "prove": 1,
+   "complacent": 2,
+   "face": 3,
+   "dream": 6,
+   "quite": 1,
+   "halleys": 1,
+   "comet": 1,
+   "silly": 1,
+   "midnight": 1,
+   "sleepless": 1,
+   "hopeless": 1,
+   "drag": 1,
+   "moment": 2,
+   "sitting": 1,
+   "brother": 1,
+   "room": 1,
+   "opinion": 3,
+   "music": 1,
+   "clothes": 5,
+   "body": 5,
+   "hate": 12,
+   "praise": 1,
+   "shame": 2,
+   "unsee": 1,
+   "stare": 1,
+   "disapproval": 1,
+   "sigh": 1,
+   "relief": 1,
+   "live": 3,
+   "able": 1,
+   "move": 10,
+   "small": 1,
+   "weak": 1,
+   "soft": 1,
+   "tall": 1,
+   "provoke": 1,
+   "stomach": 2,
+   "hip": 1,
+   "born": 5,
+   "comfortable": 1,
+   "woman": 1,
+   "shed": 1,
+   "layer": 1,
+   "slut": 1,
+   "judge": 2,
+   "assumption": 1,
+   "base": 2,
+   "decide": 3,
+   "means": 2,
+   "value": 1,
+   "perception": 1,
+   "responsibility": 1,
+   "photograph": 1,
+   "instead": 1,
+   "flash": 1,
+   "overheat": 10,
+   "defeat": 6,
+   "delete": 6,
+   "un": 3,
+   "repeat": 3,
+   "wend": 3,
+   "flirty": 1,
+   "rest": 5,
+   "everybody": 6,
+   "build": 1,
+   "surgery": 1,
+   "redesign": 1,
+   "inanimate": 1,
+   "bitch": 1,
+   "none": 1,
+   "business": 1,
+   "sick": 1,
+   "pose": 1,
+   "plastic": 1,
+   "surprise": 3,
+   "hundred": 2,
+   "sure": 3,
+   "knack": 1,
+   "child": 1,
+   "fault": 3,
+   "oughta": 1,
+   "alright": 5,
+   "fold": 1,
+   "unknow": 1,
+   "power": 7,
+   "choose": 3,
+   "havin": 4,
+   "hero": 1,
+   "playe": 1,
+   "ruin": 2,
+   "act": 3,
+   "swear": 2,
+   "dare": 2,
+   "special": 1,
+   "appeal": 1,
+   "cage": 3,
+   "age": 2,
+   "contract": 1,
+   "limousine": 1,
+   "money": 1,
+   "stalker": 1,
+   "street": 1,
+   "satan": 1,
+   "buy": 4,
+   "secret": 2,
+   "house": 1,
+   "key": 1,
+   "boy": 2,
+   "nda": 2,
+   "barely": 1,
+   "outside": 3,
+   "new": 1,
+   "career": 1,
+   "kauai": 1,
+   "fun": 3,
+   "shut": 2,
+   "mouth": 2,
+   "far": 2,
+   "hit": 1,
+   "therefore": 8,
+   "outta": 1,
+   "top": 1,
+   "real": 2,
+   "ideal": 1,
+   "press": 1,
+   "line": 4,
+   "bluff": 1,
+   "article": 3,
+   "rather": 1,
+   "remain": 1,
+   "unremarkable": 1,
+   "lotta": 1,
+   "interview": 4,
+   "confuse": 1,
+   "catch": 3,
+   "clever": 1,
+   "write": 4,
+   "letter": 3,
+   "skip": 1,
+   "avenue": 2,
+   "pass": 1,
+   "aske": 2,
+   "opposite": 1,
+   "fair": 1,
+   "clearly": 1,
+   "miserable": 1,
+   "drunk": 1,
+   "benz": 1,
+   "influence": 1,
+   "death": 1,
+   "waste": 3,
+   "breath": 1,
+   "relate": 2,
+   "shitty": 1,
+   "city": 1,
+   "internet": 2,
+   "embarrass": 1,
+   "empty": 1,
+   "pay": 2,
+   "mother": 2,
+   "kid": 1,
+   "misunderstand": 1,
+   "distract": 1,
+   "pornography": 1,
+   "dialogue": 1,
+   "satisfy": 2,
+   "male": 1,
+   "fantasy": 1,
+   "therapy": 1,
+   "pretend": 2,
+   "convince": 2,
+   "inseparable": 1,
+   "behind": 3,
+   "wheel": 1,
+   "deal": 1,
+   "matt": 2,
+   "patience": 5,
+   "lifetime": 1,
+   "skinny": 1,
+   "acting": 1,
+   "stage": 1,
+   "bird": 5,
+   "dog": 2,
+   "pound": 1,
+   "hungry": 1,
+   "kind": 1,
+   "funny": 1,
+   "somebodys": 1,
+   "fee": 1,
+   "lunch": 5,
+   "stuff": 2,
+   "craving": 2,
+   "crush": 2,
+   "rare": 1,
+   "claire": 1,
+   "pullin": 1,
+   "chair": 1,
+   "puttin": 1,
+   "somebody": 1,
+   "recipe": 1,
+   "tryin": 1,
+   "overeat": 1,
+   "sweet": 1,
+   "counter": 2,
+   "allow": 1,
+   "takin": 2,
+   "seat": 2,
+   "volunteer": 1,
+   "smilin": 1,
+   "ear": 2,
+   "headlight": 1,
+   "deer": 1,
+   "bend": 2,
+   "hunch": 1,
+   "forget": 1,
+   "tomorrow": 2,
+   "feelin": 1,
+   "sorrow": 1,
+   "yup": 1,
+   "borrow": 2,
+   "cope": 2,
+   "anymore": 2,
+   "war": 2,
+   "store": 3,
+   "return": 1,
+   "found": 3,
+   "garden": 1,
+   "contemplatin": 1,
+   "pardon": 1,
+   "recognize": 1,
+   "serious": 3,
+   "curious": 1,
+   "wring": 1,
+   "hand": 3,
+   "lap": 1,
+   "trap": 1,
+   "grave": 1,
+   "rot": 1,
+   "casket": 1,
+   "carry": 1,
+   "turnin": 1,
+   "feather": 3,
+   "stick": 2,
+   "weather": 2,
+   "forever": 4,
+   "cryin": 3,
+   "light": 2,
+   "compliment": 1,
+   "throw": 1,
+   "full": 1,
+   "pollute": 1,
+   "quit": 1,
+   "stupid": 1,
+   "july": 1,
+   "remind": 3,
+   "burning": 3,
+   "alive": 3,
+   "cross": 2,
+   "fast": 2,
+   "free": 2,
+   "leather": 1,
+   "touch": 2,
+   "valentine": 2,
+   "whatever": 1,
+   "state": 1,
+   "great": 9,
+   "congratulations": 3,
+   "admiration": 3,
+   "nake": 4,
+   "painless": 3,
+   "reward": 1,
+   "fight": 5,
+   "passion": 1,
+   "unappreciated": 1,
+   "jade": 1,
+   "confess": 3,
+   "apology": 2,
+   "immediately": 1,
+   "bum": 3,
+   "depress": 1,
+   "almost": 1,
+   "obvious": 1,
+   "mediocre": 1,
+   "camera": 3,
+   "fan": 1,
+   "screen": 1,
+   "starrin": 1,
+   "magazine": 1,
+   "clock": 1,
+   "block": 1,
+   "cop": 2,
+   "bet": 2,
+   "goodnight": 1,
+   "corner": 2,
+   "sitter": 1,
+   "land": 3,
+   "foot": 7,
+   "kitchen": 2,
+   "fail": 1,
+   "fifty": 2,
+   "thousand": 2,
+   "dollar": 2,
+   "bail": 1,
+   "mail": 2,
+   "veil": 2,
+   "visit": 2,
+   "jail": 2,
+   "diner": 1,
+   "crazy": 2,
+   "knock": 1,
+   "discrete": 2,
+   "memorize": 1,
+   "car": 1,
+   "overseas": 5,
+   "foyer": 1,
+   "watchin": 1,
+   "breathe": 2,
+   "green": 2,
+   "underneath": 2,
+   "belief": 2,
+   "brief": 3,
+   "suite": 3,
+   "paranoid": 2,
+   "fill": 1,
+   "void": 1,
+   "spite": 1,
+   "paralyze": 1,
+   "romanticize": 1,
+   "lamour": 1,
+   "de": 1,
+   "vie": 1,
+   "bittersweet": 1,
+   "stayin": 1,
+   "truth": 1,
+   "bitter": 1,
+   "attention": 1,
+   "black": 2,
+   "ashamed": 1,
+   "d\u00e9sol\u00e9": 1,
+   "mon": 1,
+   "amour": 1,
+   "butterfly": 1,
+   "beautiful": 1,
+   "deprive": 1,
+   "oxygen": 1,
+   "father": 2,
+   "sympathize": 1,
+   "reach": 1,
+   "victim": 1,
+   "rule": 1,
+   "petrify": 1,
+   "blameless": 1,
+   "famous": 1
+  },
+  "tokens": 10563,
+  "years": [
+   2019,
+   2024
+  ]
+ },
+ "unofficial_ignored": [],
+ "coverage": [],
+ "ok": true,
+ "engine": "6ce23fe7ef35",
+ "timing_s": 0.0
+}

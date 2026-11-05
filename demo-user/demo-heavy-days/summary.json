@@ -1,0 +1,1446 @@
+{
+  "name": "Demo - Heavy Days",
+  "owner": "demo-user",
+  "source": "synthetic demo data",
+  "coverage": {
+    "tracks": 40,
+    "lyrics": 37,
+    "instrumental": 3,
+    "bpm": 40,
+    "audio_features": 40,
+    "release_year": 40,
+    "genres_or_tags": 40,
+    "preview": 0,
+    "artists": 7,
+    "artist_country": 7,
+    "artist_similar": 7,
+    "artist_bio": 7
+  },
+  "stats": {
+    "n_tracks": 40,
+    "n_unique_tracks": 40,
+    "n_artists": 7,
+    "n_albums": 16,
+    "total_ms": 11469483,
+    "top_artists": [
+      [
+        "Grey Monolith",
+        12
+      ],
+      [
+        "Abyssal Tide",
+        8
+      ],
+      [
+        "Ashen Choir",
+        8
+      ],
+      [
+        "Block Theory",
+        6
+      ],
+      [
+        "MC Lowfreq",
+        4
+      ],
+      [
+        "The Quiet Rooms",
+        1
+      ],
+      [
+        "Kali Verse",
+        1
+      ]
+    ],
+    "artist_entropy_bits": 2.458694969562842,
+    "max_entropy_bits": 5.321928094887363,
+    "artist_coverage": 0.175,
+    "repeat_rate": 0.1282051282051282,
+    "gini": 0.3642857142857143,
+    "one_hit_artists": 2,
+    "median_year": 2003,
+    "decades": {
+      "1990": 16,
+      "2000": 12,
+      "2010": 10,
+      "2020": 2
+    },
+    "explicit_share": 0.175
+  },
+  "lyrics": {
+    "songs": 37,
+    "total_words": 5664,
+    "vocabulary": 57,
+    "top_words": [
+      [
+        "feel",
+        211
+      ],
+      [
+        "never",
+        186
+      ],
+      [
+        "night",
+        184
+      ],
+      [
+        "time",
+        180
+      ],
+      [
+        "planet",
+        110
+      ],
+      [
+        "flesh",
+        98
+      ],
+      [
+        "earth",
+        90
+      ],
+      [
+        "ash",
+        88
+      ],
+      [
+        "drown",
+        87
+      ],
+      [
+        "whale",
+        83
+      ],
+      [
+        "dying",
+        83
+      ],
+      [
+        "burn",
+        77
+      ],
+      [
+        "abyss",
+        76
+      ],
+      [
+        "void",
+        73
+      ],
+      [
+        "gravity",
+        73
+      ],
+      [
+        "bleeding",
+        71
+      ],
+      [
+        "fire",
+        71
+      ],
+      [
+        "silence",
+        69
+      ],
+      [
+        "forest",
+        69
+      ],
+      [
+        "iron",
+        68
+      ],
+      [
+        "ocean",
+        66
+      ],
+      [
+        "storm",
+        65
+      ],
+      [
+        "stone",
+        65
+      ],
+      [
+        "crew",
+        48
+      ],
+      [
+        "dream",
+        48
+      ],
+      [
+        "city",
+        45
+      ],
+      [
+        "grind",
+        44
+      ],
+      [
+        "hood",
+        44
+      ],
+      [
+        "street",
+        43
+      ],
+      [
+        "gold",
+        42
+      ],
+      [
+        "boss",
+        42
+      ],
+      [
+        "hustle",
+        36
+      ],
+      [
+        "real",
+        33
+      ],
+      [
+        "rhyme",
+        31
+      ],
+      [
+        "flow",
+        22
+      ],
+      [
+        "mic",
+        20
+      ],
+      [
+        "money",
+        20
+      ],
+      [
+        "love",
+        11
+      ],
+      [
+        "beautiful",
+        11
+      ],
+      [
+        "day",
+        11
+      ],
+      [
+        "father",
+        8
+      ],
+      [
+        "snow",
+        8
+      ],
+      [
+        "hate",
+        8
+      ],
+      [
+        "pain",
+        8
+      ],
+      [
+        "fear",
+        8
+      ],
+      [
+        "home",
+        7
+      ],
+      [
+        "morning",
+        6
+      ],
+      [
+        "train",
+        6
+      ],
+      [
+        "autumn",
+        4
+      ],
+      [
+        "road",
+        3
+      ]
+    ],
+    "pronouns": {
+      "I / me": 405,
+      "you": 316,
+      "we / us": 202,
+      "they / them": 0
+    },
+    "themes": [
+      {
+        "theme": 1,
+        "words": [
+          "dying",
+          "drown",
+          "abyss",
+          "stone",
+          "ocean",
+          "storm",
+          "whale",
+          "iron"
+        ],
+        "songs": [
+          "Bleeding Tide 1",
+          "Silence Road 2",
+          "Burn Tide 3",
+          "Dying Dream 6",
+          "Earth Song 7",
+          "Bleeding Road 11",
+          "Whale Road 13",
+          "Fire Song 14",
+          "Burn Song 23",
+          "Whale Dream 25",
+          "Burn Road 27",
+          "Earth Line 28",
+          "Ash Song 35",
+          "Abyss Road 39",
+          "Forest Dream 40"
+        ],
+        "share": 0.40540540540540543
+      },
+      {
+        "theme": 2,
+        "words": [
+          "crew",
+          "grind",
+          "dream",
+          "street",
+          "city",
+          "gold",
+          "boss",
+          "hood"
+        ],
+        "songs": [
+          "Rhyme Light 15",
+          "Flow Dream 16",
+          "Street Line 17",
+          "City Light 18",
+          "Flow Road 21",
+          "Boss Light 24",
+          "Crew Road 26",
+          "Flow Dream 30",
+          "Real Dream 31",
+          "Boss Song 33",
+          "Grind Dream 36"
+        ],
+        "share": 0.2972972972972973
+      },
+      {
+        "theme": 3,
+        "words": [
+          "planet",
+          "silence",
+          "bleeding",
+          "earth",
+          "ash",
+          "forest",
+          "void",
+          "flesh"
+        ],
+        "songs": [
+          "Forest Light 4",
+          "Whale Light 9",
+          "Ocean Road 10",
+          "Stone Road 19",
+          "Forest Dream 20",
+          "Iron Tide 22",
+          "Gravity Line 29",
+          "Void Light 32",
+          "Bleeding Line 34",
+          "Whale Dream 38"
+        ],
+        "share": 0.2702702702702703
+      },
+      {
+        "theme": 4,
+        "words": [
+          "father",
+          "snow",
+          "home",
+          "morning",
+          "train",
+          "autumn",
+          "river",
+          "coffee"
+        ],
+        "songs": [
+          "Road Line 8"
+        ],
+        "share": 0.02702702702702703
+      }
+    ],
+    "per_song": [
+      {
+        "title": "Bleeding Tide 1",
+        "artist": "Abyssal Tide",
+        "words": 142,
+        "mattr": 0.43784946236559136,
+        "repetitiveness": 0.6464497041420119,
+        "sentiment": -0.07261818181818182,
+        "distinctive": [
+          "whale",
+          "abyss",
+          "bleeding",
+          "storm",
+          "ocean",
+          "iron"
+        ]
+      },
+      {
+        "title": "Silence Road 2",
+        "artist": "Grey Monolith",
+        "words": 129,
+        "mattr": 0.537,
+        "repetitiveness": 0.589540412044374,
+        "sentiment": -0.10000526315789472,
+        "distinctive": [
+          "gravity",
+          "ash",
+          "storm",
+          "fire",
+          "whale",
+          "silence"
+        ]
+      },
+      {
+        "title": "Burn Tide 3",
+        "artist": "Ashen Choir",
+        "words": 143,
+        "mattr": 0.5102127659574468,
+        "repetitiveness": 0.6415094339622642,
+        "sentiment": -0.35214000000000006,
+        "distinctive": [
+          "burn",
+          "drown",
+          "planet",
+          "ash",
+          "forest",
+          "fire"
+        ]
+      },
+      {
+        "title": "Forest Light 4",
+        "artist": "Grey Monolith",
+        "words": 126,
+        "mattr": 0.5664935064935065,
+        "repetitiveness": 0.5823627287853577,
+        "sentiment": -0.0921157894736842,
+        "distinctive": [
+          "ash",
+          "planet",
+          "bleeding",
+          "fire",
+          "drown",
+          "silence"
+        ]
+      },
+      {
+        "title": "Dying Dream 6",
+        "artist": "Ashen Choir",
+        "words": 137,
+        "mattr": 0.4668181818181818,
+        "repetitiveness": 0.6215334420880914,
+        "sentiment": -0.10233999999999999,
+        "distinctive": [
+          "storm",
+          "abyss",
+          "ash",
+          "gravity",
+          "silence",
+          "stone"
+        ]
+      },
+      {
+        "title": "Earth Song 7",
+        "artist": "Grey Monolith",
+        "words": 135,
+        "mattr": 0.5295348837209303,
+        "repetitiveness": 0.5979381443298969,
+        "sentiment": -0.2487888888888889,
+        "distinctive": [
+          "dying",
+          "drown",
+          "ocean",
+          "abyss",
+          "fire",
+          "void"
+        ]
+      },
+      {
+        "title": "Road Line 8",
+        "artist": "The Quiet Rooms",
+        "words": 157,
+        "mattr": 0.5127777777777778,
+        "repetitiveness": 0.6657754010695187,
+        "sentiment": -0.05711363636363636,
+        "distinctive": [
+          "father",
+          "snow",
+          "home",
+          "morning",
+          "train",
+          "autumn"
+        ]
+      },
+      {
+        "title": "Whale Light 9",
+        "artist": "Abyssal Tide",
+        "words": 196,
+        "mattr": 0.4751020408163265,
+        "repetitiveness": 0.7050359712230216,
+        "sentiment": -0.058072,
+        "distinctive": [
+          "earth",
+          "planet",
+          "void",
+          "silence",
+          "burn",
+          "forest"
+        ]
+      },
+      {
+        "title": "Ocean Road 10",
+        "artist": "Ashen Choir",
+        "words": 163,
+        "mattr": 0.516140350877193,
+        "repetitiveness": 0.6695544554455446,
+        "sentiment": -0.06731363636363635,
+        "distinctive": [
+          "earth",
+          "gravity",
+          "flesh",
+          "void",
+          "planet",
+          "silence"
+        ]
+      },
+      {
+        "title": "Bleeding Road 11",
+        "artist": "Grey Monolith",
+        "words": 144,
+        "mattr": 0.4867368421052632,
+        "repetitiveness": 0.625920471281296,
+        "sentiment": -0.240365,
+        "distinctive": [
+          "ash",
+          "dying",
+          "drown",
+          "ocean",
+          "stone",
+          "gravity"
+        ]
+      },
+      {
+        "title": "Whale Road 13",
+        "artist": "Grey Monolith",
+        "words": 142,
+        "mattr": 0.5316129032258065,
+        "repetitiveness": 0.6500732064421669,
+        "sentiment": -0.224725,
+        "distinctive": [
+          "flesh",
+          "stone",
+          "earth",
+          "drown",
+          "dying",
+          "abyss"
+        ]
+      },
+      {
+        "title": "Fire Song 14",
+        "artist": "Abyssal Tide",
+        "words": 149,
+        "mattr": 0.5008,
+        "repetitiveness": 0.6096491228070176,
+        "sentiment": -0.27381428571428573,
+        "distinctive": [
+          "fire",
+          "stone",
+          "flesh",
+          "dying",
+          "forest",
+          "drown"
+        ]
+      },
+      {
+        "title": "Rhyme Light 15",
+        "artist": "MC Lowfreq",
+        "words": 161,
+        "mattr": 0.5253571428571429,
+        "repetitiveness": 0.6452054794520548,
+        "sentiment": -0.084645,
+        "distinctive": [
+          "grind",
+          "money",
+          "dream",
+          "rhyme",
+          "city",
+          "street"
+        ]
+      },
+      {
+        "title": "Flow Dream 16",
+        "artist": "Kali Verse",
+        "words": 145,
+        "mattr": 0.5035416666666667,
+        "repetitiveness": 0.6181277860326895,
+        "sentiment": -0.0005142857142857052,
+        "distinctive": [
+          "city",
+          "dream",
+          "hustle",
+          "street",
+          "grind",
+          "crew"
+        ]
+      },
+      {
+        "title": "Street Line 17",
+        "artist": "Block Theory",
+        "words": 161,
+        "mattr": 0.49625,
+        "repetitiveness": 0.6577896138482024,
+        "sentiment": -0.27465652173913047,
+        "distinctive": [
+          "crew",
+          "hustle",
+          "real",
+          "flow",
+          "grind",
+          "mic"
+        ]
+      },
+      {
+        "title": "City Light 18",
+        "artist": "MC Lowfreq",
+        "words": 168,
+        "mattr": 0.5001680672268908,
+        "repetitiveness": 0.658974358974359,
+        "sentiment": -0.00759047619047619,
+        "distinctive": [
+          "hood",
+          "dream",
+          "rhyme",
+          "real",
+          "hustle",
+          "money"
+        ]
+      },
+      {
+        "title": "Stone Road 19",
+        "artist": "Grey Monolith",
+        "words": 173,
+        "mattr": 0.5658064516129032,
+        "repetitiveness": 0.6593939393939394,
+        "sentiment": -0.1728608695652174,
+        "distinctive": [
+          "bleeding",
+          "fire",
+          "void",
+          "planet",
+          "forest",
+          "iron"
+        ]
+      },
+      {
+        "title": "Forest Dream 20",
+        "artist": "Ashen Choir",
+        "words": 141,
+        "mattr": 0.5191304347826087,
+        "repetitiveness": 0.6439499304589709,
+        "sentiment": -0.087885,
+        "distinctive": [
+          "void",
+          "earth",
+          "ash",
+          "silence",
+          "bleeding",
+          "storm"
+        ]
+      },
+      {
+        "title": "Flow Road 21",
+        "artist": "Block Theory",
+        "words": 138,
+        "mattr": 0.5004494382022472,
+        "repetitiveness": 0.5830564784053156,
+        "sentiment": -0.048057894736842105,
+        "distinctive": [
+          "hood",
+          "city",
+          "hustle",
+          "dream",
+          "crew",
+          "boss"
+        ]
+      },
+      {
+        "title": "Iron Tide 22",
+        "artist": "Grey Monolith",
+        "words": 147,
+        "mattr": 0.48897959183673473,
+        "repetitiveness": 0.6598079561042525,
+        "sentiment": -0.11466818181818182,
+        "distinctive": [
+          "planet",
+          "ash",
+          "storm",
+          "fire",
+          "forest",
+          "ocean"
+        ]
+      },
+      {
+        "title": "Burn Song 23",
+        "artist": "Ashen Choir",
+        "words": 154,
+        "mattr": 0.5217142857142857,
+        "repetitiveness": 0.6514131897711979,
+        "sentiment": -0.305655,
+        "distinctive": [
+          "silence",
+          "bleeding",
+          "drown",
+          "burn",
+          "whale",
+          "stone"
+        ]
+      },
+      {
+        "title": "Boss Light 24",
+        "artist": "Block Theory",
+        "words": 149,
+        "mattr": 0.5022,
+        "repetitiveness": 0.6234567901234568,
+        "sentiment": -0.1671190476190476,
+        "distinctive": [
+          "boss",
+          "crew",
+          "hood",
+          "city",
+          "flow",
+          "grind"
+        ]
+      },
+      {
+        "title": "Whale Dream 25",
+        "artist": "Ashen Choir",
+        "words": 166,
+        "mattr": 0.5133333333333333,
+        "repetitiveness": 0.6576923076923077,
+        "sentiment": -0.06978749999999999,
+        "distinctive": [
+          "dying",
+          "flesh",
+          "planet",
+          "whale",
+          "fire",
+          "ash"
+        ]
+      },
+      {
+        "title": "Crew Road 26",
+        "artist": "Block Theory",
+        "words": 141,
+        "mattr": 0.5302173913043479,
+        "repetitiveness": 0.6207430340557276,
+        "sentiment": -0.04849000000000001,
+        "distinctive": [
+          "rhyme",
+          "dream",
+          "street",
+          "crew",
+          "hood",
+          "boss"
+        ]
+      },
+      {
+        "title": "Burn Road 27",
+        "artist": "Grey Monolith",
+        "words": 166,
+        "mattr": 0.5172649572649572,
+        "repetitiveness": 0.6769041769041769,
+        "sentiment": -0.16758571428571428,
+        "distinctive": [
+          "burn",
+          "gravity",
+          "void",
+          "stone",
+          "flesh",
+          "whale"
+        ]
+      },
+      {
+        "title": "Earth Line 28",
+        "artist": "Abyssal Tide",
+        "words": 171,
+        "mattr": 0.5121311475409837,
+        "repetitiveness": 0.6830409356725147,
+        "sentiment": -0.13489090909090906,
+        "distinctive": [
+          "ocean",
+          "void",
+          "gravity",
+          "abyss",
+          "dying",
+          "whale"
+        ]
+      },
+      {
+        "title": "Gravity Line 29",
+        "artist": "Ashen Choir",
+        "words": 182,
+        "mattr": 0.49624060150375937,
+        "repetitiveness": 0.6929824561403508,
+        "sentiment": -0.006228000000000003,
+        "distinctive": [
+          "bleeding",
+          "silence",
+          "burn",
+          "flesh",
+          "abyss",
+          "ash"
+        ]
+      },
+      {
+        "title": "Flow Dream 30",
+        "artist": "Block Theory",
+        "words": 143,
+        "mattr": 0.49744680851063827,
+        "repetitiveness": 0.6019108280254777,
+        "sentiment": -0.25630526315789476,
+        "distinctive": [
+          "gold",
+          "hustle",
+          "rhyme",
+          "dream",
+          "street",
+          "real"
+        ]
+      },
+      {
+        "title": "Real Dream 31",
+        "artist": "MC Lowfreq",
+        "words": 140,
+        "mattr": 0.5276923076923077,
+        "repetitiveness": 0.6130573248407643,
+        "sentiment": -0.07858333333333334,
+        "distinctive": [
+          "grind",
+          "real",
+          "street",
+          "city",
+          "hustle",
+          "boss"
+        ]
+      },
+      {
+        "title": "Void Light 32",
+        "artist": "Ashen Choir",
+        "words": 144,
+        "mattr": 0.5442105263157895,
+        "repetitiveness": 0.6241234221598878,
+        "sentiment": -0.055280952380952375,
+        "distinctive": [
+          "burn",
+          "bleeding",
+          "planet",
+          "stone",
+          "ash",
+          "forest"
+        ]
+      },
+      {
+        "title": "Boss Song 33",
+        "artist": "MC Lowfreq",
+        "words": 173,
+        "mattr": 0.44564516129032256,
+        "repetitiveness": 0.6871794871794872,
+        "sentiment": -0.037804,
+        "distinctive": [
+          "street",
+          "boss",
+          "hood",
+          "gold",
+          "grind",
+          "crew"
+        ]
+      },
+      {
+        "title": "Bleeding Line 34",
+        "artist": "Grey Monolith",
+        "words": 154,
+        "mattr": 0.5234285714285715,
+        "repetitiveness": 0.6271870794078063,
+        "sentiment": -0.060404761904761906,
+        "distinctive": [
+          "forest",
+          "ocean",
+          "gravity",
+          "ash",
+          "flesh",
+          "silence"
+        ]
+      },
+      {
+        "title": "Ash Song 35",
+        "artist": "Abyssal Tide",
+        "words": 170,
+        "mattr": 0.5411570247933885,
+        "repetitiveness": 0.6931818181818181,
+        "sentiment": -0.4123136363636364,
+        "distinctive": [
+          "drown",
+          "void",
+          "stone",
+          "gravity",
+          "burn",
+          "abyss"
+        ]
+      },
+      {
+        "title": "Grind Dream 36",
+        "artist": "Block Theory",
+        "words": 148,
+        "mattr": 0.49313131313131314,
+        "repetitiveness": 0.6276276276276276,
+        "sentiment": 0.08082857142857143,
+        "distinctive": [
+          "city",
+          "boss",
+          "gold",
+          "crew",
+          "grind",
+          "dream"
+        ]
+      },
+      {
+        "title": "Whale Dream 38",
+        "artist": "Abyssal Tide",
+        "words": 162,
+        "mattr": 0.4497345132743363,
+        "repetitiveness": 0.6658064516129032,
+        "sentiment": -0.056112,
+        "distinctive": [
+          "void",
+          "bleeding",
+          "planet",
+          "silence",
+          "forest",
+          "ash"
+        ]
+      },
+      {
+        "title": "Abyss Road 39",
+        "artist": "Abyssal Tide",
+        "words": 139,
+        "mattr": 0.5175555555555555,
+        "repetitiveness": 0.6527377521613833,
+        "sentiment": -0.24991499999999997,
+        "distinctive": [
+          "flesh",
+          "drown",
+          "void",
+          "stone",
+          "dying",
+          "silence"
+        ]
+      },
+      {
+        "title": "Forest Dream 40",
+        "artist": "Grey Monolith",
+        "words": 165,
+        "mattr": 0.5031034482758621,
+        "repetitiveness": 0.663003663003663,
+        "sentiment": -0.0952304347826087,
+        "distinctive": [
+          "dying",
+          "earth",
+          "planet",
+          "silence",
+          "storm",
+          "iron"
+        ]
+      }
+    ]
+  },
+  "clusters": {
+    "k": 2,
+    "silhouette": 0.47576718169275545,
+    "features": [
+      "tags",
+      "lyrics",
+      "sound"
+    ],
+    "groups": [
+      {
+        "cluster": 0,
+        "name": "doom metal / metal",
+        "size": 28,
+        "tags": [
+          "doom metal",
+          "metal",
+          "demo"
+        ],
+        "words": [
+          "ash",
+          "silence",
+          "planet",
+          "void"
+        ],
+        "top_artists": [
+          "Grey Monolith",
+          "Abyssal Tide",
+          "Ashen Choir"
+        ],
+        "median_bpm": 72.35,
+        "median_year": 1999,
+        "songs": [
+          "Bleeding Tide 1",
+          "Silence Road 2",
+          "Burn Tide 3",
+          "Forest Light 4",
+          "Silence Road 5",
+          "Dying Dream 6",
+          "Earth Song 7",
+          "Whale Light 9",
+          "Ocean Road 10",
+          "Bleeding Road 11",
+          "Silence Line 12",
+          "Whale Road 13",
+          "Fire Song 14",
+          "Stone Road 19",
+          "Forest Dream 20",
+          "Iron Tide 22",
+          "Burn Song 23",
+          "Whale Dream 25",
+          "Burn Road 27",
+          "Earth Line 28",
+          "Gravity Line 29",
+          "Void Light 32",
+          "Bleeding Line 34",
+          "Ash Song 35",
+          "Planet Tide 37",
+          "Whale Dream 38",
+          "Abyss Road 39",
+          "Forest Dream 40"
+        ]
+      },
+      {
+        "cluster": 1,
+        "name": "hip hop / hop",
+        "size": 12,
+        "tags": [
+          "hip hop",
+          "hop",
+          "demo"
+        ],
+        "words": [
+          "dream",
+          "grind",
+          "crew",
+          "street"
+        ],
+        "top_artists": [
+          "Block Theory",
+          "MC Lowfreq",
+          "The Quiet Rooms"
+        ],
+        "median_bpm": 91.4,
+        "median_year": 2009,
+        "songs": [
+          "Road Line 8",
+          "Rhyme Light 15",
+          "Flow Dream 16",
+          "Street Line 17",
+          "City Light 18",
+          "Flow Road 21",
+          "Boss Light 24",
+          "Crew Road 26",
+          "Flow Dream 30",
+          "Real Dream 31",
+          "Boss Song 33",
+          "Grind Dream 36"
+        ]
+      }
+    ]
+  },
+  "mood": {
+    "basis": [
+      "valence (audio)",
+      "energy (audio)"
+    ],
+    "quadrants": {
+      "angry / tense": 35,
+      "sad / melancholic": 1,
+      "happy / energetic": 4
+    }
+  },
+  "flow": {
+    "mean_jump_current": 13.15641025641026,
+    "mean_jump_suggested": 0.9487179487179489,
+    "suggested_order": [
+      "Burn Tide 3",
+      "Stone Road 19",
+      "Burn Song 23",
+      "Ash Song 35",
+      "Iron Tide 22",
+      "Fire Song 14",
+      "Dying Dream 6",
+      "Whale Dream 38",
+      "Whale Road 13",
+      "Silence Line 12",
+      "Ocean Road 10",
+      "Forest Dream 40",
+      "Gravity Line 29",
+      "Bleeding Tide 1",
+      "Whale Light 9",
+      "Earth Line 28",
+      "Burn Road 27",
+      "Bleeding Line 34",
+      "Planet Tide 37",
+      "Void Light 32",
+      "Earth Song 7",
+      "Forest Light 4",
+      "Whale Dream 25",
+      "Forest Dream 20",
+      "Silence Road 2",
+      "Silence Road 5",
+      "Abyss Road 39",
+      "Bleeding Road 11",
+      "Flow Dream 30",
+      "Grind Dream 36",
+      "Flow Road 21",
+      "Rhyme Light 15",
+      "Crew Road 26",
+      "Flow Dream 16",
+      "Boss Song 33",
+      "Real Dream 31",
+      "Road Line 8",
+      "Boss Light 24",
+      "City Light 18",
+      "Street Line 17"
+    ]
+  },
+  "mainstream": {
+    "score": 0.151770425,
+    "source": "Deezer rank / 1,000,000"
+  },
+  "recommendations": {
+    "discovery": 0.3,
+    "similar": [
+      {
+        "title": "Demo Single 79-2",
+        "artist": "New Doom Metal Collective",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 67000,
+        "score": 3.394,
+        "reason": "similar to Grey Monolith, Abyssal Tide"
+      },
+      {
+        "title": "Demo Single 89-0",
+        "artist": "Monolith Revival",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 19591,
+        "score": 1.716,
+        "reason": "similar to Grey Monolith"
+      },
+      {
+        "title": "Demo Single 79-1",
+        "artist": "New Doom Metal Collective",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 144768,
+        "score": 3.225,
+        "reason": "similar to Grey Monolith, Abyssal Tide"
+      },
+      {
+        "title": "Demo Single 22-1",
+        "artist": "Echoes of Grey",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 11161,
+        "score": 0.838,
+        "reason": "similar to Grey Monolith"
+      },
+      {
+        "title": "Demo Single 19-2",
+        "artist": "Tide Revival",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 42265,
+        "score": 0.768,
+        "reason": "similar to Abyssal Tide"
+      },
+      {
+        "title": "Demo Single 87-0",
+        "artist": "New Hip Hop Collective",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 336598,
+        "score": 0.438,
+        "reason": "similar to Block Theory, MC Lowfreq"
+      },
+      {
+        "title": "Demo Single 85-0",
+        "artist": "Choir Revival",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 320692,
+        "score": 0.324,
+        "reason": "similar to Ashen Choir"
+      },
+      {
+        "title": "Demo Single 85-1",
+        "artist": "Echoes of Ashen",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 24861,
+        "score": 0.217,
+        "reason": "similar to Ashen Choir"
+      },
+      {
+        "title": "Demo Single 74-1",
+        "artist": "Theory Revival",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 95746,
+        "score": 0.199,
+        "reason": "similar to Block Theory"
+      },
+      {
+        "title": "Demo Single 53-1",
+        "artist": "Lowfreq Revival",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 22400,
+        "score": 0.129,
+        "reason": "similar to MC Lowfreq"
+      },
+      {
+        "title": "Demo Single 18-0",
+        "artist": "Echoes of Block",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 16432,
+        "score": 0.085,
+        "reason": "similar to Block Theory"
+      },
+      {
+        "title": "Demo Single 21-2",
+        "artist": "Echoes of Abyssal",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 56734,
+        "score": 0.036,
+        "reason": "similar to Abyssal Tide"
+      },
+      {
+        "title": "Demo Single 95-1",
+        "artist": "Echoes of MC",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 35811,
+        "score": -0.308,
+        "reason": "similar to MC Lowfreq"
+      },
+      {
+        "title": "Demo Single 32-0",
+        "artist": "June Harbor",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 14404,
+        "score": -0.317,
+        "reason": "similar to The Quiet Rooms"
+      },
+      {
+        "title": "Demo Single 95-1",
+        "artist": "Rooms Revival",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 11978,
+        "score": -0.319,
+        "reason": "similar to The Quiet Rooms"
+      },
+      {
+        "title": "Demo Single 69-1",
+        "artist": "Verse Revival",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 12491,
+        "score": -0.328,
+        "reason": "similar to Kali Verse"
+      },
+      {
+        "title": "Demo Single 4-2",
+        "artist": "Willow & Pine",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 23084,
+        "score": -0.379,
+        "reason": "similar to The Quiet Rooms"
+      },
+      {
+        "title": "Demo Single 55-2",
+        "artist": "Echoes of Kali",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 15018,
+        "score": -0.452,
+        "reason": "similar to Kali Verse"
+      },
+      {
+        "title": "Demo Single 68-2",
+        "artist": "Echoes of The",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 15534,
+        "score": -0.459,
+        "reason": "similar to The Quiet Rooms"
+      },
+      {
+        "title": "Demo Single 89-1",
+        "artist": "Monolith Revival",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 94713,
+        "score": 1.37,
+        "reason": "similar to Grey Monolith"
+      }
+    ],
+    "deep_cuts": [
+      {
+        "title": "Demo Single 36-0",
+        "artist": "Grey Monolith",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 144361,
+        "score": 12.0,
+        "reason": "you have 12 songs by Grey Monolith"
+      },
+      {
+        "title": "Demo Single 38-0",
+        "artist": "Abyssal Tide",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 32189,
+        "score": 8.0,
+        "reason": "you have 8 songs by Abyssal Tide"
+      },
+      {
+        "title": "Demo Single 73-0",
+        "artist": "Ashen Choir",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 418355,
+        "score": 8.0,
+        "reason": "you have 8 songs by Ashen Choir"
+      },
+      {
+        "title": "Demo Single 68-0",
+        "artist": "Block Theory",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 16101,
+        "score": 6.0,
+        "reason": "you have 6 songs by Block Theory"
+      },
+      {
+        "title": "Demo Single 87-0",
+        "artist": "MC Lowfreq",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 13569,
+        "score": 4.0,
+        "reason": "you have 4 songs by MC Lowfreq"
+      },
+      {
+        "title": "Demo Single 83-0",
+        "artist": "The Quiet Rooms",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 79268,
+        "score": 1.0,
+        "reason": "you have 1 songs by The Quiet Rooms"
+      },
+      {
+        "title": "Demo Single 49-0",
+        "artist": "Kali Verse",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 649421,
+        "score": 1.0,
+        "reason": "you have 1 songs by Kali Verse"
+      }
+    ]
+  }
+}

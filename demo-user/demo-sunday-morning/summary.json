@@ -1,0 +1,1193 @@
+{
+  "name": "Demo - Sunday Morning",
+  "owner": "demo-user",
+  "source": "synthetic demo data",
+  "coverage": {
+    "tracks": 30,
+    "lyrics": 27,
+    "instrumental": 3,
+    "bpm": 30,
+    "audio_features": 30,
+    "release_year": 30,
+    "genres_or_tags": 30,
+    "preview": 0,
+    "artists": 6,
+    "artist_country": 6,
+    "artist_similar": 6,
+    "artist_bio": 6
+  },
+  "stats": {
+    "n_tracks": 30,
+    "n_unique_tracks": 30,
+    "n_artists": 6,
+    "n_albums": 13,
+    "total_ms": 8770020,
+    "top_artists": [
+      [
+        "June Harbor",
+        10
+      ],
+      [
+        "The Quiet Rooms",
+        7
+      ],
+      [
+        "Willow & Pine",
+        5
+      ],
+      [
+        "The Polaroids",
+        4
+      ],
+      [
+        "Neon Parade",
+        3
+      ],
+      [
+        "Velvet Circuit",
+        1
+      ]
+    ],
+    "artist_entropy_bits": 2.3323808162792803,
+    "max_entropy_bits": 4.906890595608519,
+    "artist_coverage": 0.2,
+    "repeat_rate": 0.20689655172413793,
+    "gini": 0.3222222222222222,
+    "one_hit_artists": 1,
+    "median_year": 2009,
+    "decades": {
+      "1980": 8,
+      "2000": 8,
+      "2010": 12,
+      "2020": 2
+    },
+    "explicit_share": 0.0
+  },
+  "lyrics": {
+    "songs": 27,
+    "total_words": 4323,
+    "vocabulary": 38,
+    "top_words": [
+      [
+        "feel",
+        157
+      ],
+      [
+        "time",
+        143
+      ],
+      [
+        "night",
+        138
+      ],
+      [
+        "never",
+        129
+      ],
+      [
+        "home",
+        98
+      ],
+      [
+        "window",
+        89
+      ],
+      [
+        "river",
+        88
+      ],
+      [
+        "morning",
+        83
+      ],
+      [
+        "garden",
+        82
+      ],
+      [
+        "mountain",
+        73
+      ],
+      [
+        "letter",
+        71
+      ],
+      [
+        "coffee",
+        68
+      ],
+      [
+        "father",
+        67
+      ],
+      [
+        "road",
+        66
+      ],
+      [
+        "winter",
+        65
+      ],
+      [
+        "train",
+        64
+      ],
+      [
+        "snow",
+        53
+      ],
+      [
+        "autumn",
+        45
+      ],
+      [
+        "lights",
+        40
+      ],
+      [
+        "electric",
+        36
+      ],
+      [
+        "love",
+        34
+      ],
+      [
+        "radio",
+        29
+      ],
+      [
+        "summer",
+        29
+      ],
+      [
+        "baby",
+        27
+      ],
+      [
+        "shine",
+        23
+      ],
+      [
+        "heart",
+        22
+      ],
+      [
+        "midnight",
+        22
+      ],
+      [
+        "kiss",
+        18
+      ],
+      [
+        "tonight",
+        18
+      ],
+      [
+        "dream",
+        17
+      ],
+      [
+        "city",
+        17
+      ],
+      [
+        "dance",
+        13
+      ],
+      [
+        "beautiful",
+        7
+      ],
+      [
+        "day",
+        7
+      ],
+      [
+        "hate",
+        5
+      ],
+      [
+        "pain",
+        5
+      ],
+      [
+        "fear",
+        5
+      ],
+      [
+        "forever",
+        5
+      ]
+    ],
+    "pronouns": {
+      "I / me": 311,
+      "you": 307,
+      "we / us": 166,
+      "they / them": 0
+    },
+    "themes": [
+      {
+        "theme": 1,
+        "words": [
+          "mountain",
+          "letter",
+          "road",
+          "morning",
+          "snow",
+          "home",
+          "father",
+          "river"
+        ],
+        "songs": [
+          "Window Dream 6",
+          "Autumn Song 10",
+          "River Road 13",
+          "Road Dream 15",
+          "Road Dream 21",
+          "Morning Song 24",
+          "Father Line 27",
+          "Morning Dream 30"
+        ],
+        "share": 0.2962962962962963
+      },
+      {
+        "theme": 2,
+        "words": [
+          "electric",
+          "lights",
+          "summer",
+          "radio",
+          "heart",
+          "baby",
+          "midnight",
+          "kiss"
+        ],
+        "songs": [
+          "Heart Road 4",
+          "Kiss Road 8",
+          "Summer Song 14",
+          "Summer Light 16",
+          "City Tide 22",
+          "Kiss Line 28",
+          "City Tide 29"
+        ],
+        "share": 0.25925925925925924
+      },
+      {
+        "theme": 3,
+        "words": [
+          "winter",
+          "garden",
+          "home",
+          "window",
+          "coffee",
+          "train",
+          "letter",
+          "father"
+        ],
+        "songs": [
+          "Road Light 2",
+          "Morning Road 3",
+          "Window Tide 5",
+          "Train Tide 7",
+          "Road Song 17",
+          "River Road 19",
+          "Window Dream 23",
+          "Snow Road 25",
+          "Home Dream 26"
+        ],
+        "share": 0.3333333333333333
+      },
+      {
+        "theme": 4,
+        "words": [
+          "morning",
+          "river",
+          "garden",
+          "coffee",
+          "fear",
+          "pain",
+          "hate",
+          "train"
+        ],
+        "songs": [
+          "Quiet Tide 1",
+          "Autumn Dream 12",
+          "Road Road 20"
+        ],
+        "share": 0.1111111111111111
+      }
+    ],
+    "per_song": [
+      {
+        "title": "Quiet Tide 1",
+        "artist": "The Quiet Rooms",
+        "words": 169,
+        "mattr": 0.4495,
+        "repetitiveness": 0.6881987577639752,
+        "sentiment": -0.07074799999999999,
+        "distinctive": [
+          "home",
+          "morning",
+          "river",
+          "father",
+          "mountain",
+          "coffee"
+        ]
+      },
+      {
+        "title": "Road Light 2",
+        "artist": "June Harbor",
+        "words": 165,
+        "mattr": 0.4743103448275862,
+        "repetitiveness": 0.6564495530012772,
+        "sentiment": -0.044399999999999995,
+        "distinctive": [
+          "garden",
+          "home",
+          "winter",
+          "snow",
+          "mountain",
+          "coffee"
+        ]
+      },
+      {
+        "title": "Morning Road 3",
+        "artist": "The Quiet Rooms",
+        "words": 161,
+        "mattr": 0.48517857142857146,
+        "repetitiveness": 0.6653543307086613,
+        "sentiment": -0.11128636363636363,
+        "distinctive": [
+          "winter",
+          "road",
+          "river",
+          "mountain",
+          "window",
+          "home"
+        ]
+      },
+      {
+        "title": "Heart Road 4",
+        "artist": "The Polaroids",
+        "words": 143,
+        "mattr": 0.4887234042553192,
+        "repetitiveness": 0.5993788819875776,
+        "sentiment": 0.27407894736842103,
+        "distinctive": [
+          "dream",
+          "kiss",
+          "city",
+          "dance",
+          "shine",
+          "electric"
+        ]
+      },
+      {
+        "title": "Window Tide 5",
+        "artist": "Willow & Pine",
+        "words": 157,
+        "mattr": 0.46851851851851856,
+        "repetitiveness": 0.6754617414248021,
+        "sentiment": -0.044399999999999995,
+        "distinctive": [
+          "garden",
+          "window",
+          "winter",
+          "coffee",
+          "train",
+          "home"
+        ]
+      },
+      {
+        "title": "Window Dream 6",
+        "artist": "June Harbor",
+        "words": 129,
+        "mattr": 0.523,
+        "repetitiveness": 0.6242424242424243,
+        "sentiment": 0.014615789473684214,
+        "distinctive": [
+          "home",
+          "mountain",
+          "snow",
+          "father",
+          "autumn",
+          "road"
+        ]
+      },
+      {
+        "title": "Train Tide 7",
+        "artist": "The Quiet Rooms",
+        "words": 137,
+        "mattr": 0.5056818181818182,
+        "repetitiveness": 0.6289398280802292,
+        "sentiment": -0.0008714285714285653,
+        "distinctive": [
+          "home",
+          "winter",
+          "father",
+          "letter",
+          "train",
+          "window"
+        ]
+      },
+      {
+        "title": "Kiss Road 8",
+        "artist": "The Polaroids",
+        "words": 192,
+        "mattr": 0.4907692307692308,
+        "repetitiveness": 0.7232905982905983,
+        "sentiment": 0.21244166666666664,
+        "distinctive": [
+          "electric",
+          "baby",
+          "lights",
+          "summer",
+          "love",
+          "heart"
+        ]
+      },
+      {
+        "title": "Autumn Song 10",
+        "artist": "June Harbor",
+        "words": 153,
+        "mattr": 0.45634615384615385,
+        "repetitiveness": 0.6751592356687899,
+        "sentiment": 0.02494347826086957,
+        "distinctive": [
+          "road",
+          "mountain",
+          "winter",
+          "home",
+          "father",
+          "garden"
+        ]
+      },
+      {
+        "title": "Autumn Dream 12",
+        "artist": "Willow & Pine",
+        "words": 169,
+        "mattr": 0.48383333333333334,
+        "repetitiveness": 0.6784810126582279,
+        "sentiment": -0.059196,
+        "distinctive": [
+          "river",
+          "morning",
+          "train",
+          "coffee",
+          "garden",
+          "window"
+        ]
+      },
+      {
+        "title": "River Road 13",
+        "artist": "Willow & Pine",
+        "words": 163,
+        "mattr": 0.48789473684210527,
+        "repetitiveness": 0.676056338028169,
+        "sentiment": -0.14799999999999996,
+        "distinctive": [
+          "river",
+          "snow",
+          "road",
+          "letter",
+          "autumn",
+          "morning"
+        ]
+      },
+      {
+        "title": "Summer Song 14",
+        "artist": "The Polaroids",
+        "words": 157,
+        "mattr": 0.47555555555555556,
+        "repetitiveness": 0.6392318244170097,
+        "sentiment": -0.017338095238095243,
+        "distinctive": [
+          "shine",
+          "summer",
+          "dance",
+          "tonight",
+          "midnight",
+          "dream"
+        ]
+      },
+      {
+        "title": "Road Dream 15",
+        "artist": "June Harbor",
+        "words": 135,
+        "mattr": 0.49186046511627907,
+        "repetitiveness": 0.6314984709480123,
+        "sentiment": -0.05126315789473684,
+        "distinctive": [
+          "window",
+          "snow",
+          "mountain",
+          "road",
+          "coffee",
+          "morning"
+        ]
+      },
+      {
+        "title": "Summer Light 16",
+        "artist": "Velvet Circuit",
+        "words": 144,
+        "mattr": 0.4762105263157895,
+        "repetitiveness": 0.6562942008486563,
+        "sentiment": 0.21847000000000003,
+        "distinctive": [
+          "summer",
+          "kiss",
+          "midnight",
+          "electric",
+          "heart",
+          "lights"
+        ]
+      },
+      {
+        "title": "Road Song 17",
+        "artist": "The Quiet Rooms",
+        "words": 157,
+        "mattr": 0.44425925925925924,
+        "repetitiveness": 0.669761273209549,
+        "sentiment": -0.04476,
+        "distinctive": [
+          "autumn",
+          "winter",
+          "train",
+          "coffee",
+          "snow",
+          "home"
+        ]
+      },
+      {
+        "title": "River Road 19",
+        "artist": "Willow & Pine",
+        "words": 153,
+        "mattr": 0.4723076923076923,
+        "repetitiveness": 0.6734693877551021,
+        "sentiment": -0.044399999999999995,
+        "distinctive": [
+          "window",
+          "garden",
+          "winter",
+          "river",
+          "snow",
+          "home"
+        ]
+      },
+      {
+        "title": "Road Road 20",
+        "artist": "The Quiet Rooms",
+        "words": 169,
+        "mattr": 0.45649999999999996,
+        "repetitiveness": 0.6755050505050505,
+        "sentiment": -0.06119130434782609,
+        "distinctive": [
+          "morning",
+          "garden",
+          "father",
+          "train",
+          "mountain",
+          "river"
+        ]
+      },
+      {
+        "title": "Road Dream 21",
+        "artist": "June Harbor",
+        "words": 196,
+        "mattr": 0.4601360544217687,
+        "repetitiveness": 0.720954356846473,
+        "sentiment": -0.14820799999999998,
+        "distinctive": [
+          "mountain",
+          "garden",
+          "morning",
+          "river",
+          "window",
+          "coffee"
+        ]
+      },
+      {
+        "title": "City Tide 22",
+        "artist": "Neon Parade",
+        "words": 162,
+        "mattr": 0.516283185840708,
+        "repetitiveness": 0.6893453145057766,
+        "sentiment": 0.12014999999999999,
+        "distinctive": [
+          "lights",
+          "radio",
+          "tonight",
+          "baby",
+          "shine",
+          "midnight"
+        ]
+      },
+      {
+        "title": "Window Dream 23",
+        "artist": "June Harbor",
+        "words": 175,
+        "mattr": 0.48,
+        "repetitiveness": 0.6780660377358491,
+        "sentiment": -0.026909090909090907,
+        "distinctive": [
+          "home",
+          "morning",
+          "letter",
+          "garden",
+          "window",
+          "father"
+        ]
+      },
+      {
+        "title": "Morning Song 24",
+        "artist": "June Harbor",
+        "words": 152,
+        "mattr": 0.529126213592233,
+        "repetitiveness": 0.6779220779220779,
+        "sentiment": -0.074,
+        "distinctive": [
+          "mountain",
+          "river",
+          "morning",
+          "road",
+          "garden",
+          "train"
+        ]
+      },
+      {
+        "title": "Snow Road 25",
+        "artist": "Willow & Pine",
+        "words": 169,
+        "mattr": 0.4893333333333333,
+        "repetitiveness": 0.6727748691099477,
+        "sentiment": -0.04036363636363636,
+        "distinctive": [
+          "winter",
+          "garden",
+          "river",
+          "morning",
+          "window",
+          "coffee"
+        ]
+      },
+      {
+        "title": "Home Dream 26",
+        "artist": "June Harbor",
+        "words": 165,
+        "mattr": 0.5355172413793103,
+        "repetitiveness": 0.6549479166666667,
+        "sentiment": -0.144735,
+        "distinctive": [
+          "home",
+          "autumn",
+          "letter",
+          "father",
+          "coffee",
+          "train"
+        ]
+      },
+      {
+        "title": "Father Line 27",
+        "artist": "June Harbor",
+        "words": 150,
+        "mattr": 0.49089108910891094,
+        "repetitiveness": 0.6615598885793872,
+        "sentiment": -0.051649999999999995,
+        "distinctive": [
+          "mountain",
+          "river",
+          "letter",
+          "window",
+          "father",
+          "road"
+        ]
+      },
+      {
+        "title": "Kiss Line 28",
+        "artist": "Neon Parade",
+        "words": 171,
+        "mattr": 0.4690163934426229,
+        "repetitiveness": 0.6734207389749702,
+        "sentiment": 0.1672913043478261,
+        "distinctive": [
+          "radio",
+          "electric",
+          "heart",
+          "city",
+          "lights",
+          "tonight"
+        ]
+      },
+      {
+        "title": "City Tide 29",
+        "artist": "Neon Parade",
+        "words": 144,
+        "mattr": 0.492421052631579,
+        "repetitiveness": 0.6444759206798867,
+        "sentiment": 0.26788,
+        "distinctive": [
+          "lights",
+          "electric",
+          "radio",
+          "love",
+          "heart",
+          "city"
+        ]
+      },
+      {
+        "title": "Morning Dream 30",
+        "artist": "June Harbor",
+        "words": 186,
+        "mattr": 0.4776642335766423,
+        "repetitiveness": 0.7003293084522503,
+        "sentiment": 0.008400000000000003,
+        "distinctive": [
+          "letter",
+          "mountain",
+          "home",
+          "road",
+          "father",
+          "river"
+        ]
+      }
+    ]
+  },
+  "clusters": {
+    "k": 2,
+    "silhouette": 0.5375894791710325,
+    "features": [
+      "tags",
+      "lyrics",
+      "sound"
+    ],
+    "groups": [
+      {
+        "cluster": 0,
+        "name": "indie folk / folk",
+        "size": 22,
+        "tags": [
+          "indie folk",
+          "folk",
+          "demo"
+        ],
+        "words": [
+          "home",
+          "mountain",
+          "river",
+          "garden"
+        ],
+        "top_artists": [
+          "June Harbor",
+          "The Quiet Rooms",
+          "Willow & Pine"
+        ],
+        "median_bpm": 84.3,
+        "median_year": 2012,
+        "songs": [
+          "Quiet Tide 1",
+          "Road Light 2",
+          "Morning Road 3",
+          "Window Tide 5",
+          "Window Dream 6",
+          "Train Tide 7",
+          "Autumn Song 10",
+          "Winter Tide 11",
+          "Autumn Dream 12",
+          "River Road 13",
+          "Road Dream 15",
+          "Road Song 17",
+          "Father Light 18",
+          "River Road 19",
+          "Road Road 20",
+          "Road Dream 21",
+          "Window Dream 23",
+          "Morning Song 24",
+          "Snow Road 25",
+          "Home Dream 26",
+          "Father Line 27",
+          "Morning Dream 30"
+        ]
+      },
+      {
+        "cluster": 1,
+        "name": "synth pop / pop",
+        "size": 8,
+        "tags": [
+          "synth pop",
+          "pop",
+          "demo"
+        ],
+        "words": [
+          "electric",
+          "lights",
+          "radio",
+          "heart"
+        ],
+        "top_artists": [
+          "The Polaroids",
+          "Neon Parade",
+          "Velvet Circuit"
+        ],
+        "median_bpm": 116.95,
+        "median_year": 1983,
+        "songs": [
+          "Heart Road 4",
+          "Kiss Road 8",
+          "Lights Road 9",
+          "Summer Song 14",
+          "Summer Light 16",
+          "City Tide 22",
+          "Kiss Line 28",
+          "City Tide 29"
+        ]
+      }
+    ]
+  },
+  "mood": {
+    "basis": [
+      "valence (audio)",
+      "energy (audio)"
+    ],
+    "quadrants": {
+      "sad / melancholic": 16,
+      "happy / energetic": 8,
+      "calm / content": 6
+    }
+  },
+  "flow": {
+    "mean_jump_current": 22.69310344827586,
+    "mean_jump_suggested": 1.9517241379310348,
+    "suggested_order": [
+      "Train Tide 7",
+      "Father Light 18",
+      "Window Tide 5",
+      "Morning Song 24",
+      "Morning Road 3",
+      "Father Line 27",
+      "Winter Tide 11",
+      "Morning Dream 30",
+      "Snow Road 25",
+      "Autumn Song 10",
+      "River Road 13",
+      "Road Dream 21",
+      "Home Dream 26",
+      "Road Dream 15",
+      "Quiet Tide 1",
+      "River Road 19",
+      "Autumn Dream 12",
+      "Road Road 20",
+      "Window Dream 6",
+      "Road Song 17",
+      "Window Dream 23",
+      "Road Light 2",
+      "Kiss Road 8",
+      "Heart Road 4",
+      "City Tide 22",
+      "Kiss Line 28",
+      "Summer Song 14",
+      "Summer Light 16",
+      "City Tide 29",
+      "Lights Road 9"
+    ]
+  },
+  "mainstream": {
+    "score": 0.25684426666666665,
+    "source": "Deezer rank / 1,000,000"
+  },
+  "recommendations": {
+    "discovery": 0.3,
+    "similar": [
+      {
+        "title": "Demo Single 6-0",
+        "artist": "New Indie Folk Collective",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 49399,
+        "score": 2.881,
+        "reason": "similar to June Harbor, The Quiet Rooms"
+      },
+      {
+        "title": "Demo Single 21-0",
+        "artist": "Harbor Revival",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 19824,
+        "score": 1.376,
+        "reason": "similar to June Harbor"
+      },
+      {
+        "title": "Demo Single 95-1",
+        "artist": "Rooms Revival",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 11978,
+        "score": 0.785,
+        "reason": "similar to The Quiet Rooms"
+      },
+      {
+        "title": "Demo Single 68-2",
+        "artist": "Echoes of The",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 15534,
+        "score": 0.561,
+        "reason": "similar to The Quiet Rooms, The Polaroids"
+      },
+      {
+        "title": "Demo Single 6-2",
+        "artist": "New Indie Folk Collective",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 221258,
+        "score": 2.552,
+        "reason": "similar to June Harbor, The Quiet Rooms"
+      },
+      {
+        "title": "Demo Single 21-2",
+        "artist": "New Synth Pop Collective",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 38382,
+        "score": 0.362,
+        "reason": "similar to The Polaroids, Neon Parade"
+      },
+      {
+        "title": "Demo Single 18-1",
+        "artist": "Echoes of June",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 26445,
+        "score": 0.31,
+        "reason": "similar to June Harbor"
+      },
+      {
+        "title": "Demo Single 69-2",
+        "artist": "Pine Revival",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 23452,
+        "score": 0.169,
+        "reason": "similar to Willow & Pine"
+      },
+      {
+        "title": "Demo Single 82-2",
+        "artist": "Polaroids Revival",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 18657,
+        "score": -0.015,
+        "reason": "similar to The Polaroids"
+      },
+      {
+        "title": "Demo Single 80-0",
+        "artist": "Parade Revival",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 14304,
+        "score": -0.19,
+        "reason": "similar to Neon Parade"
+      },
+      {
+        "title": "Demo Single 17-2",
+        "artist": "Echoes of Willow",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 13659,
+        "score": -0.214,
+        "reason": "similar to Willow & Pine"
+      },
+      {
+        "title": "Demo Single 18-0",
+        "artist": "Echoes of Neon",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 14758,
+        "score": -0.498,
+        "reason": "similar to Neon Parade"
+      },
+      {
+        "title": "Demo Single 11-1",
+        "artist": "Circuit Revival",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 13657,
+        "score": -0.649,
+        "reason": "similar to Velvet Circuit"
+      },
+      {
+        "title": "Demo Single 21-1",
+        "artist": "Harbor Revival",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 50486,
+        "score": 1.171,
+        "reason": "similar to June Harbor"
+      },
+      {
+        "title": "Demo Single 7-0",
+        "artist": "Echoes of Velvet",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 63575,
+        "score": -1.087,
+        "reason": "similar to Velvet Circuit"
+      },
+      {
+        "title": "Demo Single 95-2",
+        "artist": "Rooms Revival",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 18921,
+        "score": 0.684,
+        "reason": "similar to The Quiet Rooms"
+      },
+      {
+        "title": "Demo Single 68-0",
+        "artist": "Echoes of The",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 31518,
+        "score": 0.405,
+        "reason": "similar to The Quiet Rooms, The Polaroids"
+      },
+      {
+        "title": "Demo Single 69-1",
+        "artist": "Pine Revival",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 24440,
+        "score": 0.16,
+        "reason": "similar to Willow & Pine"
+      },
+      {
+        "title": "Demo Single 18-2",
+        "artist": "Echoes of June",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 123362,
+        "score": -0.028,
+        "reason": "similar to June Harbor"
+      },
+      {
+        "title": "Demo Single 82-1",
+        "artist": "Polaroids Revival",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 25455,
+        "score": -0.083,
+        "reason": "similar to The Polaroids"
+      }
+    ],
+    "deep_cuts": [
+      {
+        "title": "Demo Single 32-0",
+        "artist": "June Harbor",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 14404,
+        "score": 10.0,
+        "reason": "you have 10 songs by June Harbor"
+      },
+      {
+        "title": "Demo Single 83-0",
+        "artist": "The Quiet Rooms",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 79268,
+        "score": 7.0,
+        "reason": "you have 7 songs by The Quiet Rooms"
+      },
+      {
+        "title": "Demo Single 4-0",
+        "artist": "Willow & Pine",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 253480,
+        "score": 5.0,
+        "reason": "you have 5 songs by Willow & Pine"
+      },
+      {
+        "title": "Demo Single 40-0",
+        "artist": "The Polaroids",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 162666,
+        "score": 4.0,
+        "reason": "you have 4 songs by The Polaroids"
+      },
+      {
+        "title": "Demo Single 27-0",
+        "artist": "Neon Parade",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 20074,
+        "score": 3.0,
+        "reason": "you have 3 songs by Neon Parade"
+      },
+      {
+        "title": "Demo Single 66-0",
+        "artist": "Velvet Circuit",
+        "album": "Demo EP",
+        "preview": null,
+        "cover": null,
+        "link": null,
+        "deezer_rank": 33622,
+        "score": 1.0,
+        "reason": "you have 1 songs by Velvet Circuit"
+      }
+    ]
+  }
+}
