@@ -33,7 +33,7 @@ footer{color:var(--muted);font-size:13px;margin-top:48px}
 """
 
 
-def build(site: str, commit: str = "local") -> Path:
+def build(site: str, commit: str = "local", service_url: str = "") -> Path:
     root = Path(site)
     artists = []
     for f in sorted((root / "artists").glob("*/summary.json")):
@@ -69,7 +69,8 @@ def build(site: str, commit: str = "local") -> Path:
              f"<h1>How voices change.</h1><p class='lede'>{NAME} measures language the way a scientist would: a whole body of work, "
              "the same tests for every voice, and a public scorecard of what held and what failed. Artists' lyrics, presidents' "
              "speeches, or your own journal.</p>",
-             "<div class='cta'>" + ("<a class='btn primary' href='atlas/index.html'>Open the Atlas</a>" if has_atlas else "") +
+             "<div class='cta'>" + (f"<a class='btn primary' href='{esc(service_url)}'>Analyse your playlist</a>" if service_url else "") +
+             ("<a class='btn" + ("" if service_url else " primary") + "' href='atlas/index.html'>Open the Atlas</a>" if has_atlas else "") +
              "<a class='btn' href='#artists'>Browse artists</a><a class='btn' href='mirror/index.html'>Analyse your writing</a></div>",
              f"<div class='stats'><div><b>{len(real)}</b><span>artists</span></div><div><b>{songs:,}</b><span>songs analysed</span></div>"
              f"<div><b>{sum(x['songs'] for x in speeches)}</b><span>speeches</span></div><div><b>0</b><span>lyrics stored</span></div></div>",
@@ -110,4 +111,5 @@ def build(site: str, commit: str = "local") -> Path:
 if __name__ == "__main__":
     import os
     import sys
-    print(build(sys.argv[1] if len(sys.argv) > 1 else "site", os.environ.get("GITHUB_SHA", "local")))
+    print(build(sys.argv[1] if len(sys.argv) > 1 else "site", os.environ.get("GITHUB_SHA", "local"),
+                os.environ.get("SERVICE_URL", "")))

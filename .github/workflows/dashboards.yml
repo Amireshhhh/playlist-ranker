@@ -51,6 +51,7 @@ jobs:
         env:
           LASTFM_API_KEY: ${{ secrets.LASTFM_API_KEY }}
           PREV: prev
+          SERVICE_URL: ${{ vars.SERVICE_URL }}
         run: ./scripts/build_site.sh site
 
       - name: Check that no lyrics are on disk

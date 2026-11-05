@@ -34,7 +34,8 @@ MIN_INTERVAL = {
 
 # Responses from these hosts are kept in memory for one run only and never written to disk:
 # LRCLIB responses contain full lyrics text, which this project must not store.
-NO_DISK = {"lrclib.net"}
+# Playlist reads (YouTube, Spotify) are personal and change over time: memory only as well.
+NO_DISK = {"lrclib.net", "www.googleapis.com", "api.spotify.com", "accounts.spotify.com"}
 
 
 class OfflineError(RuntimeError):
@@ -70,7 +71,7 @@ class CachedHTTP:
             self._last[host] = time.monotonic()
 
     def get_json(self, url: str, params: Optional[Dict[str, Any]] = None,
-                 cache_key_exclude: tuple = ("api_key",)) -> Optional[Any]:
+                 cache_key_exclude: tuple = ("api_key", "key")) -> Optional[Any]:
         """GET a JSON document. Returns None on 404 / network failure / offline cache miss.
 
         Parameters named in ``cache_key_exclude`` (API keys) are left out of the cache key,

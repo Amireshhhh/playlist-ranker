@@ -82,3 +82,40 @@ coverage chips on the Overview.
   and others from one URL.
 - **Hosting.** GitHub Pages for the static dashboards, or a Streamlit app if the dashboards
   should take input interactively.
+
+## The playlist service
+
+`serving/insights_app.py` is a web app: paste a playlist link or upload an export, get the
+dashboard. Run it locally with:
+
+```bash
+pip install -r requirements-service.txt
+uvicorn serving.insights_app:app --port 7860
+```
+
+| Input | Works for | Needs |
+|---|---|---|
+| Deezer link | any public playlist | nothing |
+| YouTube / YouTube Music link | any public playlist | `YOUTUBE_API_KEY` (free; 1 quota unit per 50 tracks, 10,000 units a day) |
+| Spotify link | playlists the visitor owns or collaborates on | `SPOTIFY_CLIENT_ID` + `SPOTIFY_REDIRECT_URI`; the visitor logs in. Since February 2026 Spotify returns playlist tracks only to the owner or a collaborator, and development-mode apps need a Premium owner |
+| Apple Music | export from the Music app (File > Library > Export Playlist, .txt or .xml) | nothing; Apple's API needs a paid developer membership |
+| Exportify CSV, JSON, any CSV with title + artist | anything | nothing |
+
+Reports are private to their link and deleted after 24 hours. At most 300 tracks and 10
+analyses per hour per visitor (all settable, see the module docstring).
+
+### Hosting it for free on Hugging Face Spaces
+
+1. Create a free account at huggingface.co, then **New Space**: SDK **Docker**, hardware
+   **CPU basic** (free: 2 vCPU, 16 GB RAM; sleeps after 48 hours without visitors and wakes on
+   the next visit).
+2. Create an access token with write access (Settings > Access Tokens).
+3. In this GitHub repo: Settings > Secrets and variables > Actions. Add the secret `HF_TOKEN`
+   and the variable `HF_SPACE` (`your-username/your-space`). Optionally add the variable
+   `SERVICE_URL` (`https://your-username-your-space.hf.space`) to show an "Analyse your
+   playlist" button on the GitHub Pages site.
+4. Run the **Deploy playlist service** workflow (Actions tab), or push. Every later push
+   redeploys automatically.
+5. Optional, in the Space's settings (Variables and secrets): `YOUTUBE_API_KEY`,
+   `SPOTIFY_CLIENT_ID`, `SPOTIFY_REDIRECT_URI` (`https://<space-url>/spotify/callback`, the
+   same address registered in the Spotify app), `LASTFM_API_KEY`.

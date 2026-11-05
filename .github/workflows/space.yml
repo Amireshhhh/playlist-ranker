@@ -1,0 +1,42 @@
+name: Deploy playlist service
+
+# Pushes the service to a Hugging Face Docker Space. Does nothing until two settings exist:
+#   secret   HF_TOKEN  - a Hugging Face access token with write access
+#   variable HF_SPACE  - the Space, e.g. your-hf-username/playlist-insights
+on:
+  push:
+    branches: [main, feature/playlist-insights]
+    paths: ["insights/**", "serving/**", "evaluation/**", "models/**", "deploy/space/**", "requirements-service.txt", ".github/workflows/space.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Assemble the Space
+        run: |
+          mkdir -p space
+          cp -r insights serving evaluation models requirements-service.txt space/
+          cp deploy/space/Dockerfile deploy/space/README.md space/
+          find space -name '__pycache__' -prune -exec rm -rf {} +
+
+      - name: Push to Hugging Face
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_SPACE: ${{ vars.HF_SPACE }}
+        run: |
+          if [ -z "$HF_TOKEN" ] || [ -z "$HF_SPACE" ]; then
+            echo "HF_TOKEN secret or HF_SPACE variable not set: skipping deploy."
+            exit 0
+          fi
+          cd space
+          git init -q -b main
+          git config user.email "noreply@anthropic.com" && git config user.name "deploy"
+          git add -A && git commit -q -m "Deploy ${GITHUB_SHA::7}"
+          git push -q --force "https://user:${HF_TOKEN}@huggingface.co/spaces/${HF_SPACE}" main
+          echo "Deployed to https://huggingface.co/spaces/${HF_SPACE}"
