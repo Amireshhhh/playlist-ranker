@@ -67,6 +67,7 @@ def render(res: Dict, out_path: Path, inline_js: bool = False, back_href: Option
 
     # Hero ------------------------------------------------------------------
     P.parts.append(f"<section id='top'><h2 class='hero'>{esc(hl['title'])}</h2><p class='lede big'>{esc(hl['lede'])}</p>"
+                   "<div id='atlas-box'></div>"
                    + tiles([("Songs with lyrics", f["songs"], ""), ("Studio albums", A, ""), ("Lines", f"{f['lines']:,}", ""),
                             ("Words", f"{f['tokens']:,}", ""), ("Distinct words", f"{f['types']:,}", ""),
                             ("Claims that held", f"{held} of {len([t for t in tests if t['result'] not in ('Fit', 'Not testable')])}", "")])
@@ -345,10 +346,13 @@ def render(res: Dict, out_path: Path, inline_js: bool = False, back_href: Option
     # Coverage --------------------------------------------------------------
     cov = res["coverage"]
     status = {"missing": "no lyrics found", "duplicate": "same title earlier (counted once)", "instrumental": "instrumental",
-              "no_tracklist": "album skipped: MusicBrainz did not return its tracklist"}
+              "no_tracklist": "album skipped: the MusicBrainz request failed"}
     body = card("Tracks not analysed", ("<div class='scroll'><table><thead><tr><th>Album</th><th>Track</th><th>Why</th></tr></thead><tbody>" +
                 "".join(f"<tr><td>{esc(c['album'])}</td><td>{esc(c['track'])}</td><td>{esc(status[c['status']])}</td></tr>" for c in cov) +
                 "</tbody></table></div>") if cov else "<p>Every track on the studio albums had lyrics.</p>",
+                (f"Ignored {len(res.get('unofficial_ignored', []))} album groups with no official release (bootlegs): "
+                 f"{esc(', '.join(res['unofficial_ignored'][:12]))}{'…' if len(res.get('unofficial_ignored', [])) > 12 else ''}. "
+                 if res.get("unofficial_ignored") else "") +
                 "Studio albums and tracklists from MusicBrainz (primary type Album, no Live/Compilation/Soundtrack; the most common "
                 "official tracklist of each). Lyrics from LRCLIB. Lemmas: simplemma. English baseline: wordfreq. Sentiment: VADER, AFINN.", wide=True)
     P.section("coverage", "What the analysis covers", body)
@@ -395,6 +399,22 @@ _ARTIST_JS = """
        xaxis:{range:[-1,n],gridcolor:pal.grid,title:'word position'},yaxis:{range:[n,-1],gridcolor:pal.grid,scaleanchor:'x'}},
       {displayModeBar:false});
   }
+  // Ranks against the other artists, from the Atlas (only when served over http, e.g. GitHub Pages).
+  const slug=location.pathname.split('/').filter(Boolean).slice(-2,-1)[0];
+  if(location.protocol.startsWith('http')) fetch('../../atlas/ranks.json').then(r=>r.ok?r.json():null).then(all=>{
+    const me=all&&all[slug]; if(!me) return;
+    const n=Object.keys(all).length; const box=document.getElementById('atlas-box');
+    const items=Object.values(me.ranks).filter(r=>r.rank<=3||r.rank>r.of-1).sort((a,b)=>a.rank-b.rank).slice(0,6);
+    const card=document.createElement('div'); card.className='card';
+    const h=document.createElement('h3'); h.textContent='Compared with the other '+(n-1)+' artists in the Atlas'; card.appendChild(h);
+    const ul=document.createElement('ul'); ul.className='facts';
+    items.forEach(r=>{const li=document.createElement('li');
+      li.textContent=(r.rank===1?'#1 ':'#'+r.rank+' of '+r.of+' ')+'for '+r.phrase+' ('+r.label+')';ul.appendChild(li);});
+    const li=document.createElement('li'); li.textContent='Closest vocabulary: '+me.nearest.map(x=>x[0]).join(', ')+'. Signature words: '+me.distinctive.join(', ')+'.';
+    ul.appendChild(li); card.appendChild(ul);
+    const a=document.createElement('a'); a.href='../../atlas/index.html'; a.textContent='Open the Atlas →'; card.appendChild(a);
+    box.appendChild(card);
+  }).catch(()=>{});
   document.getElementById('wq').addEventListener('input',lookup);
   document.getElementById('sssel').addEventListener('change',selfsim);
   const redraw=()=>{lookup();selfsim();};

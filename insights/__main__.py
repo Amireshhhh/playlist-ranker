@@ -50,6 +50,9 @@ def main(argv=None):
     ar.add_argument("--offline", action="store_true")
     ar.add_argument("--inline-js", action="store_true")
     ar.add_argument("--demo", action="store_true", help="synthetic artist with planted trends (offline)")
+    at = sub.add_parser("atlas", help="compare all artist pages already built under <site>/artists")
+    at.add_argument("--site", default="reports")
+    at.add_argument("--inline-js", action="store_true")
     d = sub.add_parser("demo", help="offline demo on synthetic data")
     d.add_argument("--out", default="reports")
     d.add_argument("--inline-js", action="store_true")
@@ -70,6 +73,12 @@ def main(argv=None):
             failed += path is None
         logging.info("HTTP: %s", src.http.stats)
         return 1 if failed == len(args.names) else 0
+
+    if args.cmd == "atlas":
+        from insights.artist import atlas
+        path = atlas.build(args.site, inline_js=args.inline_js)
+        print(f"Atlas: {path}" if path else "Atlas: needs at least 2 artist pages")
+        return 0 if path else 1
 
     if args.cmd == "demo":
         from insights import demo

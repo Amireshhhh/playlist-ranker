@@ -82,7 +82,15 @@ def unique_lines(lines: List[str]) -> List[str]:
 _lemma_cache: Dict[str, str] = {}
 
 
+# Fillers that the lemmatiser maps onto real words ("yeah" -> "yes"), so they are caught by
+# form *and* by lemma. Found on the 20-artist run, where "yes" topped three artists.
+FILLER = frozenset({"yes", "yeah", "well", "okay", "ok", "gonna", "wanna", "gotta", "oh", "ooh", "na", "la"})
+
+
 def lemma(w: str) -> str:
+    """simplemma lemma, except stop words and fillers stay as typed (so they stay filtered)."""
+    if w in lyr.STOPWORDS or w in FILLER:
+        return w
     if w not in _lemma_cache:
         import simplemma
         _lemma_cache[w] = simplemma.lemmatize(w, lang="en").lower()
@@ -337,7 +345,7 @@ def analyze(corpus, min_album_songs: int = 1) -> Dict:
                       "p": wp, "family": "arc", "method": "Wilcoxon signed-rank, first vs last third of each song (VADER)"})
 
     # Words
-    stop = lyr.STOPWORDS | {w for ws in PRONOUNS.values() for w in ws} | {"am", "would", "not", "will"}
+    stop = lyr.STOPWORDS | FILLER | {w for ws in PRONOUNS.values() for w in ws} | {"am", "would", "not", "will"}
     cw_all = Counter(w for d in S for w in d["l"] if w not in stop and len(w) > 1 and w.isalpha())
     cw_u = Counter(w for d in S for w in d["lu"] if w not in stop and len(w) > 1 and w.isalpha())
     song_sets = [set(d["l"]) for d in S]
@@ -406,9 +414,9 @@ def analyze(corpus, min_album_songs: int = 1) -> Dict:
         b_lead = sum(1 for d in S if sum(w in b_set for w in d["l"]) > sum(w in a_set for w in d["l"]))
         p = ss.binomtest(a_lead, a_lead + b_lead).pvalue if a_lead + b_lead else 1.0
         vs.append({"pair": name, "a": a_n, "b": b_n, "a_songs": a_lead, "b_songs": b_lead, "p": float(p)})
-        if a_lead + b_lead >= 5:
-            tests.append({"claim": f"{name}: one side leads in more songs", "stat": f"{a_lead} vs {b_lead} songs",
-                          "p": float(p), "family": "pairs", "method": "Sign test over songs where one side leads; q: BH over pairs"})
+        # Shown as a chart only. As a scorecard test it "held" for nearly every one of 20 artists
+        # ("love" beats "hate" everywhere), so it carried no information; the Atlas compares
+        # each artist with the others instead.
     res["versus"] = vs
 
     # Self-similarity patterns (word identity replaced by per-song integer ids)
@@ -430,6 +438,10 @@ def analyze(corpus, min_album_songs: int = 1) -> Dict:
     res["tests"] = score(tests)
     res["facts"] = facts
     res["headline"] = headline(res)
+    # Comparable profile for the cross-artist Atlas: word *counts* only, never text or order.
+    res["profile"] = {"forms": dict(form_counts), "content": dict(cw_all), "tokens": len(all_tokens),
+                      "years": [min(alb_year), max(alb_year)] if alb_year else None}
+    res["unofficial_ignored"] = list(getattr(corpus, "unofficial", []))
     res["coverage"] = [{"album": s.album, "track": s.title, "status": s.status}
                        for s in corpus.songs if s.status in ("missing", "duplicate", "instrumental", "no_tracklist")]
     res["ok"] = True
@@ -450,6 +462,9 @@ def mask_slurs(res: Dict) -> Dict:
     for a in res.get("album_top", []):
         a["words"] = [(_mask(w), c) for w, c in a["words"]]
     res["lookup"] = {_mask(w): v for w, v in res.get("lookup", {}).items()}
+    if "profile" in res:
+        for k in ("forms", "content"):
+            res["profile"][k] = {_mask(w): c for w, c in res["profile"][k].items()}
     for r in res.get("phrases", []):
         r["p"] = _mask(r["p"])
     nw = res.get("network", {})

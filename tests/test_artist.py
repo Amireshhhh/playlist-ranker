@@ -1,6 +1,7 @@
 """Tests for artist pages: statistics helpers, planted-effect recovery, discography parsing."""
 
 import itertools
+import json
 import math
 
 import numpy as np
@@ -137,3 +138,36 @@ def test_network_error_retries(tmp_path, monkeypatch):
     http._session = S()
     assert http.get_json("https://musicbrainz.org/ws/2/release") == {"ok": 1}
     assert http.stats["retries"] == 1 and http.stats["errors"] == 0
+
+
+def test_rarefy_exact():
+    from math import comb
+    from insights.artist.atlas import rarefy
+    counts = np.array([10.0] * 10)
+    assert rarefy(counts, 10) == pytest.approx(10 * (1 - comb(90, 10) / comb(100, 10)))
+    assert rarefy(np.array([5.0, 1.0]), 6) == 2.0
+
+
+def test_fightin_words_finds_planted_word():
+    from insights.artist.atlas import fightin_words
+    base = {f"w{i}": 50 for i in range(200)}
+    a = dict(base, whale=200)
+    b = dict(base, whale=2)
+    c = dict(base, whale=3)
+    out = fightin_words([a, b, c])
+    assert out[0][0][0] == "whale" and out[0][0][1] > 1.96
+    assert all(w != "whale" for w, _, _ in out[1])
+
+
+def test_atlas_end_to_end(tmp_path):
+    from insights.artist import atlas, run
+    for i, name in enumerate(["Alpha Tide", "Beta Stone", "Gamma Sky"]):
+        c = demo.make(seed=10 + i)
+        c.artist = name
+        run.build(name, None, str(tmp_path), corpus=c)
+    path = atlas.build(str(tmp_path))
+    html = path.read_text()
+    assert "3 artists" in html and "Word explorer" in html
+    ranks = json.loads((tmp_path / "atlas" / "ranks.json").read_text())
+    assert set(ranks) == {"alpha-tide", "beta-stone", "gamma-sky"}
+    assert all(name not in [n for n, _ in r["nearest"]] for name, r in ((r["artist"], r) for r in ranks.values()))

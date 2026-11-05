@@ -99,6 +99,8 @@ python -m insights analyze exports/*.csv --user amir  # Exportify CSVs
 
 See [docs/INSIGHTS.md](docs/INSIGHTS.md) for inputs, methods and data sources.
 
+Artist lyric studies and the cross-artist Atlas: `python -m insights artist "Gojira"`, then `python -m insights atlas --site reports`. Live site: https://amireshhhh.github.io/playlist-ranker/
+
 ---
 
 ##  System Architecture

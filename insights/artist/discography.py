@@ -76,14 +76,16 @@ def studio_albums(http, mbid: str) -> List[Dict]:
     return out
 
 
-def canonical_tracklist(http, rg_id: str) -> List[Dict]:
+def canonical_tracklist(http, rg_id: str) -> Optional[List[Dict]]:
     """Tracks of the release whose track count is the most common among official releases
     (so deluxe bonus tracks do not count), earliest such release first."""
     res = http.get_json(f"{MB}/release", {"release-group": rg_id, "status": "official",
                                           "inc": "recordings+media", "fmt": "json", "limit": 100})
-    rels = (res or {}).get("releases") or []
+    if res is None:
+        return None          # request failed
+    rels = res.get("releases") or []
     if not rels:
-        return []
+        return []            # no official release
 
     def tracks(r):
         return [t for m in r.get("media") or [] for t in m.get("tracks") or []]
@@ -107,14 +109,29 @@ def build(src, artist: str, max_albums: int = 20, progress=None) -> Optional[Cor
     if not a:
         logger.warning("MusicBrainz: no confident match for %r", artist)
         return None
-    albums = studio_albums(http, a["id"])[:max_albums]
+    groups = studio_albums(http, a["id"])
     corpus = Corpus(artist=a.get("name", artist), mbid=a["id"], albums=[], source="MusicBrainz + LRCLIB")
+    corpus.unofficial = []   # album groups with no official release (bootlegs), ignored
     seen = set()
-    for order, alb in enumerate(albums):
+    albums = []
+    for alb in groups:
+        if len(albums) >= max_albums:
+            break
         tl = canonical_tracklist(http, alb["id"])
+        if tl is None:       # request failed even after retries: report, do not drop silently
+            alb["tracklist"] = []
+            alb["failed"] = True
+        elif not tl:         # no official release at all: a bootleg / unofficial album group
+            corpus.unofficial.append(alb["title"])
+            continue
+        else:
+            alb["tracklist"] = tl
+        albums.append(alb)
+    for order, alb in enumerate(albums):
+        tl = alb["tracklist"]
         corpus.albums.append({"title": alb["title"], "year": alb["year"], "order": order, "tracks": len(tl)})
-        if not tl:  # say so on the page instead of dropping the album silently
-            corpus.songs.append(Song(title="(tracklist unavailable from MusicBrainz)", album=alb["title"], year=alb["year"],
+        if alb.get("failed"):
+            corpus.songs.append(Song(title="(tracklist request failed)", album=alb["title"], year=alb["year"],
                                      order=order, position=0, duration_s=None, status="no_tracklist"))
         for t in tl:
             s = Song(title=t["title"], album=alb["title"], year=alb["year"], order=order, position=t["position"],
